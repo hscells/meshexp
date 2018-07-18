@@ -106,6 +106,10 @@ func (t MeSHTree) Depth(term string) int64 {
 	return 0
 }
 
+// Parents finds the parents for a particular mesh term.
+// This method may return >1 term as one term may map to more than one parent of different names, for example when a
+// a term is both a symptom of a disease and the description of a disease.
+// see: https://meshb.nlm.nih.gov/record/ui?ui=D051474
 func (t MeSHTree) Parents(term string) (parents []string) {
 	if locations, ok := t.Locations[strings.ToLower(term)]; ok {
 		for _, location := range locations {
