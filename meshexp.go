@@ -129,7 +129,6 @@ func (t MeSHTree) Parents(term string) (parents []string) {
 					}
 
 					if eq {
-						fmt.Println(eq, parent.Reference.TreeLocation, loc)
 						parents = append(parents, parent.Reference.MedicalSubjectHeading)
 					}
 				}
