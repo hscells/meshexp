@@ -1,12 +1,12 @@
 package meshexp
 
 import (
-	"os"
 	"bufio"
-	"strings"
-	"github.com/pkg/errors"
 	"fmt"
+	"github.com/pkg/errors"
 	"io"
+	"os"
+	"strings"
 )
 
 // TreeReference is a reference to a MeSH term with the corresponding location in the tree.
@@ -20,6 +20,7 @@ type TreeReference struct {
 type Node struct {
 	Reference TreeReference
 	Children  Tree
+	Depth     int64
 }
 
 // Tree is used to represent the structure of MeSH.
@@ -68,7 +69,7 @@ func MeSHTreeFromReader(reader io.Reader) (*MeSHTree, error) {
 			}
 		} else {
 			// Add a child node to an existing node.
-			tree.Tree[ref.TreeLocation[0]].addChild(ref.TreeLocation[1:], ref)
+			tree.Tree[ref.TreeLocation[0]].addChild(ref.TreeLocation[1:], ref, 0)
 		}
 
 		// Remember the location for this heading.
@@ -88,6 +89,47 @@ func (t MeSHTree) Explode(term string) (terms []string) {
 	if locations, ok := t.Locations[strings.ToLower(term)]; ok {
 		for _, location := range locations {
 			terms = append(terms, t.Tree.At(location).Terms()...)
+		}
+	}
+	return
+}
+
+// Depth extracts the depth at which the term appears in the ontology.
+func (t MeSHTree) Depth(term string) int64 {
+	if locations, ok := t.Locations[strings.ToLower(term)]; ok {
+		for _, location := range locations {
+			for _, node := range t.Tree.At(location) {
+				return node.Depth
+			}
+		}
+	}
+	return 0
+}
+
+func (t MeSHTree) Parents(term string) (parents []string) {
+	if locations, ok := t.Locations[strings.ToLower(term)]; ok {
+		for _, location := range locations {
+			if len(location) > 2 {
+				// Get the locations of all the parents.
+				loc := location[:len(location)-1]
+				p := t.Tree.At(location[:len(location)-2])
+				for _, parent := range p {
+
+					// Test that the locations are the same.
+					eq := true
+					for i, v := range loc {
+						if v != parent.Reference.TreeLocation[i] {
+							eq = false
+							break
+						}
+					}
+
+					if eq {
+						fmt.Println(eq, parent.Reference.TreeLocation, loc)
+						parents = append(parents, parent.Reference.MedicalSubjectHeading)
+					}
+				}
+			}
 		}
 	}
 	return
@@ -114,13 +156,14 @@ func (t Tree) At(location []string) Tree {
 }
 
 // addChild adds a TreeReference at the specified location in the tree.
-func (n Node) addChild(location []string, ref *TreeReference) {
+func (n Node) addChild(location []string, ref *TreeReference, depth int64) {
 	if innerNode, ok := n.Children[location[0]]; ok {
-		innerNode.addChild(location[1:], ref)
+		innerNode.addChild(location[1:], ref, depth+1)
 	} else {
 		n.Children[location[0]] = Node{
 			Reference: *ref,
 			Children:  make(Tree),
+			Depth:     depth,
 		}
 	}
 }

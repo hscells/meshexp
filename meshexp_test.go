@@ -1,8 +1,8 @@
 package meshexp
 
 import (
-	"testing"
 	"github.com/gin-gonic/gin/json"
+	"testing"
 )
 
 func TestLoad(t *testing.T) {
@@ -24,4 +24,13 @@ func TestExplode(t *testing.T) {
 	}
 
 	t.Log(tree.Explode("neuralgia, postherpetic"))
+}
+
+func TestParent(t *testing.T) {
+	tree, err := Default()
+	if err != nil {
+		t.Error(err)
+	}
+
+	t.Log(tree.Parent("neuralgia, postherpetic"))
 }
