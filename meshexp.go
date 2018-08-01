@@ -98,9 +98,7 @@ func (t MeSHTree) Explode(term string) (terms []string) {
 func (t MeSHTree) Depth(term string) int64 {
 	if locations, ok := t.Locations[strings.ToLower(term)]; ok {
 		for _, location := range locations {
-			for _, node := range t.Tree.At(location) {
-				return node.Depth
-			}
+			return int64(len(location))
 		}
 	}
 	return 0

@@ -31,6 +31,13 @@ func TestParent(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
+	t.Log(tree.Parents("neuralgia, postherpetic"))
+}
 
-	t.Log(tree.Parent("neuralgia, postherpetic"))
+func TestMeSHTree_Depth(t *testing.T) {
+	tree, err := Default()
+	if err != nil {
+		t.Error(err)
+	}
+	t.Log(tree.Depth("Dentistry"))
 }
