@@ -104,6 +104,14 @@ func (t MeSHTree) Depth(term string) int64 {
 	return 0
 }
 
+// Contains indicates if a term is contained within the MeSH ontology.
+func (t MeSHTree) Contains(term string) bool {
+	if _, ok := t.Locations[strings.ToLower(term)]; ok {
+		return true
+	}
+	return false
+}
+
 // Parents finds the parents for a particular mesh term.
 // This method may return >1 term as one term may map to more than one parent of different names, for example when a
 // a term is both a symptom of a disease and the description of a disease.
