@@ -43,9 +43,9 @@ func New(meshTreeFilepath string) (*MeSHTree, error) {
 	return MeSHTreeFromReader(file)
 }
 
-// Default loads the default MeSH tree file (mtrees2018.bin).
+// Default loads the default MeSH tree file.
 func Default() (*MeSHTree, error) {
-	return MeSHTreeFromReader(strings.NewReader(mtrees2008))
+	return MeSHTreeFromReader(strings.NewReader(mtrees2019))
 }
 
 // MeSHTreeFromReader loads a MeSH tree from any reader.
@@ -64,7 +64,7 @@ func MeSHTreeFromReader(reader io.Reader) (*MeSHTree, error) {
 		// Add the first layer.
 		if _, ok := tree.Tree[ref.TreeLocation[0]]; !ok {
 			tree.Tree[ref.TreeLocation[0]] = Node{
-				Reference: *ref,
+				Reference: ref,
 				Children:  make(Tree),
 			}
 		} else {
@@ -144,6 +144,21 @@ func (t MeSHTree) Parents(term string) (parents []string) {
 	return
 }
 
+func (t MeSHTree) Reference(term string) []TreeReference {
+	var references []TreeReference
+	if locations, ok := t.Locations[strings.ToLower(term)]; ok {
+		for _, location := range locations {
+			ref, err := treeReferenceFromString(fmt.Sprintf("%s;%s", term, strings.Join(location, ".")))
+			if err != nil {
+				panic(err)
+			}
+			references = append(references, ref)
+		}
+		return references
+	}
+	return nil
+}
+
 // Terms extracts the Medical Subject Headings from a tree and all of the children of that tree.
 func (t Tree) Terms() (terms []string) {
 	for _, node := range t {
@@ -165,12 +180,12 @@ func (t Tree) At(location []string) Tree {
 }
 
 // addChild adds a TreeReference at the specified location in the tree.
-func (n Node) addChild(location []string, ref *TreeReference, depth int64) {
+func (n Node) addChild(location []string, ref TreeReference, depth int64) {
 	if innerNode, ok := n.Children[location[0]]; ok {
 		innerNode.addChild(location[1:], ref, depth+1)
 	} else {
 		n.Children[location[0]] = Node{
-			Reference: *ref,
+			Reference: ref,
 			Children:  make(Tree),
 			Depth:     depth,
 		}
@@ -178,15 +193,15 @@ func (n Node) addChild(location []string, ref *TreeReference, depth int64) {
 }
 
 // treeReferenceFromString creates a TreeReference from a string.
-func treeReferenceFromString(text string) (*TreeReference, error) {
+func treeReferenceFromString(text string) (TreeReference, error) {
 	parts := strings.Split(text, ";")
 	if len(parts) != 2 {
-		return nil, errors.New(fmt.Sprintf("malformed tree reference %v", text))
+		return TreeReference{}, errors.New(fmt.Sprintf("malformed tree reference %v", text))
 	}
 
 	locations := strings.Split(parts[1], ".")
 
-	return &TreeReference{
+	return TreeReference{
 		MedicalSubjectHeading: parts[0],
 		TreeLocation:          locations,
 	}, nil

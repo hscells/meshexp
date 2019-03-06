@@ -1,6 +1,6 @@
 package meshexp
 
-var mtrees2019 = `Body Regions;A01
+var mtrees2008 = `Body Regions;A01
 Anatomic Landmarks;A01.111
 Breast;A01.236
 Mammary Glands, Human;A01.236.249
@@ -85,7 +85,6 @@ Thoracic Wall;A01.923.761.850
 Transplant Donor Site;A01.935
 Transplants;A01.941
 Allografts;A01.941.500
-Allogeneic Cells;A01.941.500.500
 Autografts;A01.941.750
 Bone-Patellar Tendon-Bone Grafts;A01.941.812
 Composite Tissue Allografts;A01.941.843
@@ -326,10 +325,10 @@ Lateral Ligament, Ankle;A02.835.583.512.162.500
 Medial Collateral Ligament, Knee;A02.835.583.512.162.600
 Ligamentum Flavum;A02.835.583.512.287
 Longitudinal Ligaments;A02.835.583.512.350
-Palmar Plate;A02.835.583.512.400
 Patellar Ligament;A02.835.583.512.475
 Plantar Plate;A02.835.583.512.538
 Posterior Cruciate Ligament;A02.835.583.512.600
+Palmar Plate;A02.835.583.512.900
 Round Ligament of Femur;A02.835.583.512.950
 Pubic Symphysis;A02.835.583.656
 Sacroiliac Joint;A02.835.583.707
@@ -462,8 +461,8 @@ Lung;A04.411
 Bronchi;A04.411.125
 Bronchioles;A04.411.125.500
 Pulmonary Alveoli;A04.411.715
-Alveolar Epithelial Cells;A04.411.715.100
-Blood-Air Barrier;A04.411.715.200
+Blood-Air Barrier;A04.411.715.025
+Alveolar Epithelial Cells;A04.411.715.512
 Nose;A04.531
 Nasal Bone;A04.531.378
 Nasal Cartilages;A04.531.413
@@ -599,43 +598,6 @@ Enterochromaffin Cells;A06.224.358
 Enterochromaffin-like Cells;A06.224.365
 Para-Aortic Bodies;A06.224.636
 Paraganglia, Chromaffin;A06.224.736
-Endocrine Glands;A06.300
-Adrenal Glands;A06.300.071
-Adrenal Cortex;A06.300.071.140
-Zona Fasciculata;A06.300.071.140.950
-Zona Glomerulosa;A06.300.071.140.960
-Zona Reticularis;A06.300.071.140.970
-Adrenal Medulla;A06.300.071.265
-Gonads;A06.300.312
-Ovary;A06.300.312.497
-Corpus Luteum;A06.300.312.497.278
-Luteal Cells;A06.300.312.497.278.400
-Ovarian Follicle;A06.300.312.497.535
-Follicular Fluid;A06.300.312.497.535.150
-Granulosa Cells;A06.300.312.497.535.300
-Cumulus Cells;A06.300.312.497.535.300.500
-Theca Cells;A06.300.312.497.535.600
-Testis;A06.300.312.782
-Leydig Cells;A06.300.312.782.513
-Islets of Langerhans;A06.300.414
-Glucagon-Secreting Cells;A06.300.414.043
-Insulin-Secreting Cells;A06.300.414.087
-Pancreatic Polypeptide-Secreting Cells;A06.300.414.587
-Somatostatin-Secreting Cells;A06.300.414.793
-Parathyroid Glands;A06.300.560
-Pineal Gland;A06.300.635
-Pituitary-Adrenal System;A06.300.691
-Pituitary Gland;A06.300.747
-Pituitary Gland, Anterior;A06.300.747.500
-Corticotrophs;A06.300.747.500.500
-Gonadotrophs;A06.300.747.500.750
-Lactotrophs;A06.300.747.500.812
-Somatotrophs;A06.300.747.500.937
-Thyrotrophs;A06.300.747.500.968
-Pituitary Gland, Intermediate;A06.300.747.750
-Melanotrophs;A06.300.747.750.500
-Pituitary Gland, Posterior;A06.300.747.875
-Thyroid Gland;A06.300.900
 Enteroendocrine Cells;A06.390
 Enterochromaffin Cells;A06.390.021
 Enterochromaffin-like Cells;A06.390.043
@@ -644,6 +606,43 @@ Glucagon-Secreting Cells;A06.390.087
 Insulin-Secreting Cells;A06.390.131
 Pancreatic Polypeptide-Secreting Cells;A06.390.650
 Somatostatin-Secreting Cells;A06.390.825
+Endocrine Glands;A06.407
+Adrenal Glands;A06.407.071
+Adrenal Cortex;A06.407.071.140
+Zona Fasciculata;A06.407.071.140.950
+Zona Glomerulosa;A06.407.071.140.960
+Zona Reticularis;A06.407.071.140.970
+Adrenal Medulla;A06.407.071.265
+Gonads;A06.407.312
+Ovary;A06.407.312.497
+Corpus Luteum;A06.407.312.497.278
+Luteal Cells;A06.407.312.497.278.400
+Ovarian Follicle;A06.407.312.497.535
+Follicular Fluid;A06.407.312.497.535.150
+Granulosa Cells;A06.407.312.497.535.300
+Cumulus Cells;A06.407.312.497.535.300.500
+Theca Cells;A06.407.312.497.535.600
+Testis;A06.407.312.782
+Leydig Cells;A06.407.312.782.513
+Islets of Langerhans;A06.407.414
+Glucagon-Secreting Cells;A06.407.414.043
+Insulin-Secreting Cells;A06.407.414.087
+Pancreatic Polypeptide-Secreting Cells;A06.407.414.587
+Somatostatin-Secreting Cells;A06.407.414.793
+Parathyroid Glands;A06.407.560
+Pineal Gland;A06.407.635
+Pituitary-Adrenal System;A06.407.691
+Pituitary Gland;A06.407.747
+Pituitary Gland, Anterior;A06.407.747.500
+Corticotrophs;A06.407.747.500.500
+Gonadotrophs;A06.407.747.500.750
+Lactotrophs;A06.407.747.500.812
+Somatotrophs;A06.407.747.500.937
+Thyrotrophs;A06.407.747.500.968
+Pituitary Gland, Intermediate;A06.407.747.750
+Melanotrophs;A06.407.747.750.500
+Pituitary Gland, Posterior;A06.407.747.875
+Thyroid Gland;A06.407.900
 Neurosecretory Systems;A06.688
 Circumventricular Organs;A06.688.178
 Area Postrema;A06.688.178.500
@@ -666,113 +665,111 @@ Melanotrophs;A06.688.357.750.750.500
 Pituitary Gland, Posterior;A06.688.357.750.875
 Pineal Gland;A06.688.733
 Cardiovascular System;A07
-Blood Vessels;A07.015
-Adventitia;A07.015.057
-Arteries;A07.015.114
-Aorta;A07.015.114.056
-Aorta, Abdominal;A07.015.114.056.205
-Aorta, Thoracic;A07.015.114.056.372
-Sinus of Valsalva;A07.015.114.056.847
-Arterioles;A07.015.114.060
-Axillary Artery;A07.015.114.085
-Basilar Artery;A07.015.114.106
-Brachial Artery;A07.015.114.139
-Brachiocephalic Trunk;A07.015.114.145
-Bronchial Arteries;A07.015.114.158
-Carotid Arteries;A07.015.114.186
-Carotid Artery, Common;A07.015.114.186.200
-Carotid Artery, External;A07.015.114.186.200.210
-Carotid Artery, Internal;A07.015.114.186.200.230
-Carotid Sinus;A07.015.114.186.456
-Celiac Artery;A07.015.114.207
-Cerebral Arteries;A07.015.114.228
-Anterior Cerebral Artery;A07.015.114.228.100
-Circle of Willis;A07.015.114.228.351
-Middle Cerebral Artery;A07.015.114.228.550
-Posterior Cerebral Artery;A07.015.114.228.700
-Temporal Arteries;A07.015.114.228.868
-Ciliary Arteries;A07.015.114.248
-Coronary Vessels;A07.015.114.269
-Epigastric Arteries;A07.015.114.330
-Femoral Artery;A07.015.114.351
-Gastric Artery;A07.015.114.365
-Gastroepiploic Artery;A07.015.114.379
-Hepatic Artery;A07.015.114.407
-Iliac Artery;A07.015.114.444
-Maxillary Artery;A07.015.114.523
-Meningeal Arteries;A07.015.114.545
-Mesenteric Arteries;A07.015.114.565
-Mesenteric Artery, Inferior;A07.015.114.565.510
-Mesenteric Artery, Superior;A07.015.114.565.755
-Ophthalmic Artery;A07.015.114.622
-Popliteal Artery;A07.015.114.681
-Pulmonary Artery;A07.015.114.715
-Radial Artery;A07.015.114.740
-Renal Artery;A07.015.114.745
-Retinal Artery;A07.015.114.765
-Splenic Artery;A07.015.114.814
-Subclavian Artery;A07.015.114.839
-Thoracic Arteries;A07.015.114.891
-Mammary Arteries;A07.015.114.891.525
-Tibial Arteries;A07.015.114.895
-Ulnar Artery;A07.015.114.920
-Umbilical Arteries;A07.015.114.929
-Uterine Artery;A07.015.114.940
-Vertebral Artery;A07.015.114.955
-Microvessels;A07.015.461
-Arterioles;A07.015.461.080
-Arteriovenous Anastomosis;A07.015.461.085
-Capillaries;A07.015.461.165
-Venules;A07.015.461.920
-Retinal Vessels;A07.015.611
-Retinal Artery;A07.015.611.647
-Retinal Vein;A07.015.611.773
-Tunica Intima;A07.015.700
-Endothelium, Vascular;A07.015.700.500
-Pericytes;A07.015.700.750
-Tunica Media;A07.015.733
-Muscle, Smooth, Vascular;A07.015.733.500
-Vasa Nervorum;A07.015.765
-Vasa Vasorum;A07.015.836
-Veins;A07.015.908
-Axillary Vein;A07.015.908.077
-Azygos Vein;A07.015.908.106
-Brachiocephalic Veins;A07.015.908.130
-Cerebral Veins;A07.015.908.155
-Coronary Vessels;A07.015.908.194
-Coronary Sinus;A07.015.908.194.500
-Cranial Sinuses;A07.015.908.224
-Cavernous Sinus;A07.015.908.224.334
-Superior Sagittal Sinus;A07.015.908.224.667
-Transverse Sinuses;A07.015.908.224.833
-Femoral Vein;A07.015.908.314
-Hepatic Veins;A07.015.908.380
-Iliac Vein;A07.015.908.427
-Jugular Veins;A07.015.908.498
-Popliteal Vein;A07.015.908.641
-Portal System;A07.015.908.670
-Mesenteric Veins;A07.015.908.670.385
-Portal Vein;A07.015.908.670.567
-Splenic Vein;A07.015.908.670.730
-Umbilical Veins;A07.015.908.670.874
-Pulmonary Veins;A07.015.908.713
-Renal Veins;A07.015.908.752
-Retinal Vein;A07.015.908.783
-Saphenous Vein;A07.015.908.819
-Subclavian Vein;A07.015.908.877
-Venae Cavae;A07.015.908.949
-Vena Cava, Inferior;A07.015.908.949.648
-Vena Cava, Superior;A07.015.908.949.815
-Venous Valves;A07.015.908.950
-Venules;A07.015.908.952
-Blood-Air Barrier;A07.020
+Blood-Air Barrier;A07.025
 Blood-Aqueous Barrier;A07.030
 Blood-Brain Barrier;A07.035
 Blood-Nerve Barrier;A07.037
 Blood-Retinal Barrier;A07.040
 Blood-Testis Barrier;A07.045
+Blood Vessels;A07.231
+Adventitia;A07.231.057
+Arteries;A07.231.114
+Aorta;A07.231.114.056
+Aorta, Abdominal;A07.231.114.056.205
+Aorta, Thoracic;A07.231.114.056.372
+Sinus of Valsalva;A07.231.114.056.847
+Arterioles;A07.231.114.060
+Axillary Artery;A07.231.114.085
+Basilar Artery;A07.231.114.106
+Brachial Artery;A07.231.114.139
+Brachiocephalic Trunk;A07.231.114.145
+Bronchial Arteries;A07.231.114.158
+Carotid Arteries;A07.231.114.186
+Carotid Artery, Common;A07.231.114.186.200
+Carotid Artery, External;A07.231.114.186.200.210
+Carotid Artery, Internal;A07.231.114.186.200.230
+Carotid Sinus;A07.231.114.186.456
+Celiac Artery;A07.231.114.207
+Cerebral Arteries;A07.231.114.228
+Anterior Cerebral Artery;A07.231.114.228.100
+Circle of Willis;A07.231.114.228.351
+Middle Cerebral Artery;A07.231.114.228.550
+Posterior Cerebral Artery;A07.231.114.228.700
+Temporal Arteries;A07.231.114.228.868
+Ciliary Arteries;A07.231.114.248
+Coronary Vessels;A07.231.114.269
+Epigastric Arteries;A07.231.114.330
+Femoral Artery;A07.231.114.351
+Gastroepiploic Artery;A07.231.114.379
+Hepatic Artery;A07.231.114.407
+Iliac Artery;A07.231.114.444
+Maxillary Artery;A07.231.114.523
+Meningeal Arteries;A07.231.114.545
+Mesenteric Arteries;A07.231.114.565
+Mesenteric Artery, Inferior;A07.231.114.565.510
+Mesenteric Artery, Superior;A07.231.114.565.755
+Ophthalmic Artery;A07.231.114.622
+Popliteal Artery;A07.231.114.681
+Pulmonary Artery;A07.231.114.715
+Radial Artery;A07.231.114.740
+Renal Artery;A07.231.114.745
+Retinal Artery;A07.231.114.765
+Splenic Artery;A07.231.114.814
+Subclavian Artery;A07.231.114.839
+Thoracic Arteries;A07.231.114.891
+Mammary Arteries;A07.231.114.891.525
+Tibial Arteries;A07.231.114.895
+Ulnar Artery;A07.231.114.920
+Umbilical Arteries;A07.231.114.929
+Uterine Artery;A07.231.114.940
+Vertebral Artery;A07.231.114.955
+Microvessels;A07.231.461
+Arterioles;A07.231.461.080
+Arteriovenous Anastomosis;A07.231.461.085
+Capillaries;A07.231.461.165
+Venules;A07.231.461.920
+Retinal Vessels;A07.231.611
+Retinal Artery;A07.231.611.647
+Retinal Vein;A07.231.611.773
+Tunica Intima;A07.231.700
+Endothelium, Vascular;A07.231.700.500
+Pericytes;A07.231.700.750
+Tunica Media;A07.231.733
+Muscle, Smooth, Vascular;A07.231.733.500
+Vasa Nervorum;A07.231.765
+Vasa Vasorum;A07.231.836
+Veins;A07.231.908
+Axillary Vein;A07.231.908.077
+Azygos Vein;A07.231.908.106
+Brachiocephalic Veins;A07.231.908.130
+Cerebral Veins;A07.231.908.155
+Coronary Vessels;A07.231.908.194
+Coronary Sinus;A07.231.908.194.500
+Cranial Sinuses;A07.231.908.224
+Cavernous Sinus;A07.231.908.224.334
+Superior Sagittal Sinus;A07.231.908.224.667
+Transverse Sinuses;A07.231.908.224.833
+Femoral Vein;A07.231.908.314
+Hepatic Veins;A07.231.908.380
+Iliac Vein;A07.231.908.427
+Jugular Veins;A07.231.908.498
+Popliteal Vein;A07.231.908.641
+Portal System;A07.231.908.670
+Mesenteric Veins;A07.231.908.670.385
+Portal Vein;A07.231.908.670.567
+Splenic Vein;A07.231.908.670.730
+Umbilical Veins;A07.231.908.670.874
+Pulmonary Veins;A07.231.908.713
+Renal Veins;A07.231.908.752
+Retinal Vein;A07.231.908.783
+Saphenous Vein;A07.231.908.819
+Subclavian Vein;A07.231.908.877
+Venae Cavae;A07.231.908.949
+Vena Cava, Inferior;A07.231.908.949.648
+Vena Cava, Superior;A07.231.908.949.815
+Venous Valves;A07.231.908.950
+Venules;A07.231.908.952
 Glomerular Filtration Barrier;A07.500
-Glymphatic System;A07.521
 Heart;A07.541
 Endocardium;A07.541.207
 Fetal Heart;A07.541.278
@@ -880,207 +877,206 @@ Trigeminal Nuclei;A08.186.211.132.931
 Trigeminal Motor Nucleus;A08.186.211.132.931.459
 Trigeminal Nucleus, Spinal;A08.186.211.132.931.920
 Trigeminal Caudal Nucleus;A08.186.211.132.931.920.927
-Cerebral Ventricles;A08.186.211.140
-Cerebral Aqueduct;A08.186.211.140.187
-Choroid Plexus;A08.186.211.140.298
-Ependyma;A08.186.211.140.460
-Fourth Ventricle;A08.186.211.140.500
-Lateral Ventricles;A08.186.211.140.650
-Septum Pellucidum;A08.186.211.140.814
-Third Ventricle;A08.186.211.140.840
-Glymphatic System;A08.186.211.150
 Gray Matter;A08.186.211.168
-Limbic System;A08.186.211.180
-Amygdala;A08.186.211.180.090
-Basolateral Nuclear Complex;A08.186.211.180.090.500
-Central Amygdaloid Nucleus;A08.186.211.180.090.750
-Corticomedial Nuclear Complex;A08.186.211.180.090.875
-Periamygdaloid Cortex;A08.186.211.180.090.875.500
-Epithalamus;A08.186.211.180.200
-Habenula;A08.186.211.180.200.360
-Pineal Gland;A08.186.211.180.200.680
-Hippocampus;A08.186.211.180.405
-CA1 Region, Hippocampal;A08.186.211.180.405.099
-CA2 Region, Hippocampal;A08.186.211.180.405.149
-CA3 Region, Hippocampal;A08.186.211.180.405.174
-Dentate Gyrus;A08.186.211.180.405.200
-Mossy Fibers, Hippocampal;A08.186.211.180.405.200.500
-Fornix, Brain;A08.186.211.180.405.600
-Hypothalamus;A08.186.211.180.497
-Hypothalamic Area, Lateral;A08.186.211.180.497.300
-Hypothalamus, Anterior;A08.186.211.180.497.342
-Anterior Hypothalamic Nucleus;A08.186.211.180.497.342.063
-Organum Vasculosum;A08.186.211.180.497.342.231
-Paraventricular Hypothalamic Nucleus;A08.186.211.180.497.342.400
-Preoptic Area;A08.186.211.180.497.342.450
-Suprachiasmatic Nucleus;A08.186.211.180.497.342.625
-Suprachiasmatic Nucleus Neurons;A08.186.211.180.497.342.625.500
-Supraoptic Nucleus;A08.186.211.180.497.342.650
-Hypothalamus, Middle;A08.186.211.180.497.352
-Arcuate Nucleus of Hypothalamus;A08.186.211.180.497.352.081
-Dorsomedial Hypothalamic Nucleus;A08.186.211.180.497.352.270
-Hypothalamo-Hypophyseal System;A08.186.211.180.497.352.435
-Median Eminence;A08.186.211.180.497.352.435.249
-Pituitary Gland;A08.186.211.180.497.352.435.500
-Pituitary Gland, Anterior;A08.186.211.180.497.352.435.500.500
-Corticotrophs;A08.186.211.180.497.352.435.500.500.500
-Gonadotrophs;A08.186.211.180.497.352.435.500.500.750
-Lactotrophs;A08.186.211.180.497.352.435.500.500.812
-Somatotrophs;A08.186.211.180.497.352.435.500.500.937
-Thyrotrophs;A08.186.211.180.497.352.435.500.500.968
-Pituitary Gland, Intermediate;A08.186.211.180.497.352.435.500.750
-Melanotrophs;A08.186.211.180.497.352.435.500.750.500
-Pituitary Gland, Posterior;A08.186.211.180.497.352.435.500.875
-Tuber Cinereum;A08.186.211.180.497.352.870
-Ventromedial Hypothalamic Nucleus;A08.186.211.180.497.352.953
-Hypothalamus, Posterior;A08.186.211.180.497.362
-Mammillary Bodies;A08.186.211.180.497.362.500
-Limbic Lobe;A08.186.211.180.590
-Gyrus Cinguli;A08.186.211.180.590.500
-Parahippocampal Gyrus;A08.186.211.180.590.750
-Entorhinal Cortex;A08.186.211.180.590.750.225
-Periamygdaloid Cortex;A08.186.211.180.590.750.612
-Olfactory Pathways;A08.186.211.180.699
-Parahippocampal Gyrus;A08.186.211.180.710
-Entorhinal Cortex;A08.186.211.180.710.225
-Periamygdaloid Cortex;A08.186.211.180.710.612
-Perforant Pathway;A08.186.211.180.730
-Septum of Brain;A08.186.211.180.750
-Septal Nuclei;A08.186.211.180.750.800
-Septum Pellucidum;A08.186.211.180.750.900
-Substantia Innominata;A08.186.211.180.820
-Prosencephalon;A08.186.211.200
-Diencephalon;A08.186.211.200.317
-Epithalamus;A08.186.211.200.317.200
-Habenula;A08.186.211.200.317.200.360
-Pineal Gland;A08.186.211.200.317.200.620
-Hypothalamus;A08.186.211.200.317.357
-Hypothalamic Area, Lateral;A08.186.211.200.317.357.300
-Hypothalamus, Anterior;A08.186.211.200.317.357.342
-Anterior Hypothalamic Nucleus;A08.186.211.200.317.357.342.063
-Organum Vasculosum;A08.186.211.200.317.357.342.315
-Paraventricular Hypothalamic Nucleus;A08.186.211.200.317.357.342.400
-Preoptic Area;A08.186.211.200.317.357.342.450
-Suprachiasmatic Nucleus;A08.186.211.200.317.357.342.625
-Suprachiasmatic Nucleus Neurons;A08.186.211.200.317.357.342.625.500
-Supraoptic Nucleus;A08.186.211.200.317.357.342.650
-Hypothalamus, Middle;A08.186.211.200.317.357.352
-Arcuate Nucleus of Hypothalamus;A08.186.211.200.317.357.352.081
-Dorsomedial Hypothalamic Nucleus;A08.186.211.200.317.357.352.270
-Hypothalamo-Hypophyseal System;A08.186.211.200.317.357.352.435
-Median Eminence;A08.186.211.200.317.357.352.435.249
-Pituitary Gland;A08.186.211.200.317.357.352.435.500
-Pituitary Gland, Anterior;A08.186.211.200.317.357.352.435.500.500
-Corticotrophs;A08.186.211.200.317.357.352.435.500.500.500
-Gonadotrophs;A08.186.211.200.317.357.352.435.500.500.750
-Lactotrophs;A08.186.211.200.317.357.352.435.500.500.812
-Somatotrophs;A08.186.211.200.317.357.352.435.500.500.937
-Thyrotrophs;A08.186.211.200.317.357.352.435.500.500.968
-Pituitary Gland, Intermediate;A08.186.211.200.317.357.352.435.500.750
-Melanotrophs;A08.186.211.200.317.357.352.435.500.750.500
-Pituitary Gland, Posterior;A08.186.211.200.317.357.352.435.500.875
-Tuber Cinereum;A08.186.211.200.317.357.352.870
-Ventromedial Hypothalamic Nucleus;A08.186.211.200.317.357.352.953
-Hypothalamus, Posterior;A08.186.211.200.317.357.362
-Mammillary Bodies;A08.186.211.200.317.357.362.500
-Optic Chiasm;A08.186.211.200.317.578
-Optic Tract;A08.186.211.200.317.689
-Subthalamus;A08.186.211.200.317.800
-Entopeduncular Nucleus;A08.186.211.200.317.800.240
-Subthalamic Nucleus;A08.186.211.200.317.800.800
-Zona Incerta;A08.186.211.200.317.800.900
-Thalamus;A08.186.211.200.317.826
-Thalamic Nuclei;A08.186.211.200.317.826.701
-Anterior Thalamic Nuclei;A08.186.211.200.317.826.701.080
-Geniculate Bodies;A08.186.211.200.317.826.701.444
-Intralaminar Thalamic Nuclei;A08.186.211.200.317.826.701.460
-Lateral Thalamic Nuclei;A08.186.211.200.317.826.701.485
-Pulvinar;A08.186.211.200.317.826.701.485.600
-Mediodorsal Thalamic Nucleus;A08.186.211.200.317.826.701.490
-Midline Thalamic Nuclei;A08.186.211.200.317.826.701.500
-Posterior Thalamic Nuclei;A08.186.211.200.317.826.701.700
-Ventral Thalamic Nuclei;A08.186.211.200.317.826.701.900
-Telencephalon;A08.186.211.200.885
-Cerebrum;A08.186.211.200.885.287
-Basal Ganglia;A08.186.211.200.885.287.249
-Amygdala;A08.186.211.200.885.287.249.152
-Basolateral Nuclear Complex;A08.186.211.200.885.287.249.152.500
-Central Amygdaloid Nucleus;A08.186.211.200.885.287.249.152.750
-Corticomedial Nuclear Complex;A08.186.211.200.885.287.249.152.875
-Periamygdaloid Cortex;A08.186.211.200.885.287.249.152.875.500
-Corpus Striatum;A08.186.211.200.885.287.249.487
-Globus Pallidus;A08.186.211.200.885.287.249.487.397
-Neostriatum;A08.186.211.200.885.287.249.487.550
-Caudate Nucleus;A08.186.211.200.885.287.249.487.550.184
-High Vocal Center;A08.186.211.200.885.287.249.487.550.484
-Putamen;A08.186.211.200.885.287.249.487.550.784
-Ventral Striatum;A08.186.211.200.885.287.249.487.775
-Nucleus Accumbens;A08.186.211.200.885.287.249.487.775.500
-Olfactory Tubercle;A08.186.211.200.885.287.249.487.775.750
-Islands of Calleja;A08.186.211.200.885.287.249.487.775.750.500
-Substantia Innominata;A08.186.211.200.885.287.249.880
-Basal Nucleus of Meynert;A08.186.211.200.885.287.249.880.100
-Cerebral Cortex;A08.186.211.200.885.287.500
-Frontal Lobe;A08.186.211.200.885.287.500.270
-Motor Cortex;A08.186.211.200.885.287.500.270.548
-Prefrontal Cortex;A08.186.211.200.885.287.500.270.700
-Broca Area;A08.186.211.200.885.287.500.270.700.500
-Hippocampus;A08.186.211.200.885.287.500.345
-CA1 Region, Hippocampal;A08.186.211.200.885.287.500.345.099
-CA2 Region, Hippocampal;A08.186.211.200.885.287.500.345.149
-CA3 Region, Hippocampal;A08.186.211.200.885.287.500.345.174
-Dentate Gyrus;A08.186.211.200.885.287.500.345.200
-Mossy Fibers, Hippocampal;A08.186.211.200.885.287.500.345.200.500
-Fornix, Brain;A08.186.211.200.885.287.500.345.600
-Limbic Lobe;A08.186.211.200.885.287.500.382
-Gyrus Cinguli;A08.186.211.200.885.287.500.382.500
-Parahippocampal Gyrus;A08.186.211.200.885.287.500.382.750
-Entorhinal Cortex;A08.186.211.200.885.287.500.382.750.225
-Periamygdaloid Cortex;A08.186.211.200.885.287.500.382.750.612
-Neocortex;A08.186.211.200.885.287.500.420
-Occipital Lobe;A08.186.211.200.885.287.500.571
-Visual Cortex;A08.186.211.200.885.287.500.571.735
-Olfactory Cortex;A08.186.211.200.885.287.500.620
-Basal Forebrain;A08.186.211.200.885.287.500.620.374
-Organum Vasculosum;A08.186.211.200.885.287.500.620.374.500
-Entorhinal Cortex;A08.186.211.200.885.287.500.620.562
-Olfactory Tubercle;A08.186.211.200.885.287.500.620.656
-Islands of Calleja;A08.186.211.200.885.287.500.620.656.500
-Piriform Cortex;A08.186.211.200.885.287.500.620.750
-Parietal Lobe;A08.186.211.200.885.287.500.670
-Somatosensory Cortex;A08.186.211.200.885.287.500.670.675
-Wernicke Area;A08.186.211.200.885.287.500.670.837
-Sensorimotor Cortex;A08.186.211.200.885.287.500.814
-Auditory Cortex;A08.186.211.200.885.287.500.814.249
-Motor Cortex;A08.186.211.200.885.287.500.814.624
-Olfactory Cortex;A08.186.211.200.885.287.500.814.695
-Basal Forebrain;A08.186.211.200.885.287.500.814.695.249
-Entorhinal Cortex;A08.186.211.200.885.287.500.814.695.374
-Olfactory Tubercle;A08.186.211.200.885.287.500.814.695.500
-Islands of Calleja;A08.186.211.200.885.287.500.814.695.500.500
-Somatosensory Cortex;A08.186.211.200.885.287.500.814.906
-Visual Cortex;A08.186.211.200.885.287.500.814.953
-Temporal Lobe;A08.186.211.200.885.287.500.863
-Auditory Cortex;A08.186.211.200.885.287.500.863.297
-Perirhinal Cortex;A08.186.211.200.885.287.500.863.574
-Wernicke Area;A08.186.211.200.885.287.500.863.850
-Olfactory Cortex;A08.186.211.200.885.287.750
-Basal Forebrain;A08.186.211.200.885.287.750.374
-Entorhinal Cortex;A08.186.211.200.885.287.750.562
-Olfactory Tubercle;A08.186.211.200.885.287.750.656
-Islands of Calleja;A08.186.211.200.885.287.750.656.500
-Piriform Cortex;A08.186.211.200.885.287.750.750
-Diagonal Band of Broca;A08.186.211.200.885.380
-External Capsule;A08.186.211.200.885.382
-Internal Capsule;A08.186.211.200.885.385
-Olfactory Bulb;A08.186.211.200.885.388
-Septum of Brain;A08.186.211.200.885.750
-Septal Nuclei;A08.186.211.200.885.750.800
-Septum Pellucidum;A08.186.211.200.885.750.814
-Telencephalic Commissures;A08.186.211.200.885.800
-Anterior Cerebellar Commissure;A08.186.211.200.885.800.500
-Corpus Callosum;A08.186.211.200.885.800.750
 White Matter;A08.186.211.204
+Cerebral Ventricles;A08.186.211.276
+Cerebral Aqueduct;A08.186.211.276.187
+Choroid Plexus;A08.186.211.276.298
+Ependyma;A08.186.211.276.460
+Fourth Ventricle;A08.186.211.276.500
+Lateral Ventricles;A08.186.211.276.650
+Septum Pellucidum;A08.186.211.276.814
+Third Ventricle;A08.186.211.276.840
+Limbic System;A08.186.211.464
+Amygdala;A08.186.211.464.090
+Basolateral Nuclear Complex;A08.186.211.464.090.500
+Central Amygdaloid Nucleus;A08.186.211.464.090.750
+Corticomedial Nuclear Complex;A08.186.211.464.090.875
+Periamygdaloid Cortex;A08.186.211.464.090.875.500
+Epithalamus;A08.186.211.464.200
+Habenula;A08.186.211.464.200.360
+Pineal Gland;A08.186.211.464.200.680
+Hippocampus;A08.186.211.464.405
+CA1 Region, Hippocampal;A08.186.211.464.405.099
+CA2 Region, Hippocampal;A08.186.211.464.405.149
+CA3 Region, Hippocampal;A08.186.211.464.405.174
+Dentate Gyrus;A08.186.211.464.405.200
+Mossy Fibers, Hippocampal;A08.186.211.464.405.200.500
+Fornix, Brain;A08.186.211.464.405.600
+Hypothalamus;A08.186.211.464.497
+Hypothalamic Area, Lateral;A08.186.211.464.497.300
+Hypothalamus, Anterior;A08.186.211.464.497.342
+Anterior Hypothalamic Nucleus;A08.186.211.464.497.342.063
+Organum Vasculosum;A08.186.211.464.497.342.231
+Paraventricular Hypothalamic Nucleus;A08.186.211.464.497.342.400
+Preoptic Area;A08.186.211.464.497.342.450
+Suprachiasmatic Nucleus;A08.186.211.464.497.342.625
+Suprachiasmatic Nucleus Neurons;A08.186.211.464.497.342.625.500
+Supraoptic Nucleus;A08.186.211.464.497.342.650
+Hypothalamus, Middle;A08.186.211.464.497.352
+Arcuate Nucleus of Hypothalamus;A08.186.211.464.497.352.081
+Dorsomedial Hypothalamic Nucleus;A08.186.211.464.497.352.270
+Hypothalamo-Hypophyseal System;A08.186.211.464.497.352.435
+Median Eminence;A08.186.211.464.497.352.435.249
+Pituitary Gland;A08.186.211.464.497.352.435.500
+Pituitary Gland, Anterior;A08.186.211.464.497.352.435.500.500
+Corticotrophs;A08.186.211.464.497.352.435.500.500.500
+Gonadotrophs;A08.186.211.464.497.352.435.500.500.750
+Lactotrophs;A08.186.211.464.497.352.435.500.500.812
+Somatotrophs;A08.186.211.464.497.352.435.500.500.937
+Thyrotrophs;A08.186.211.464.497.352.435.500.500.968
+Pituitary Gland, Intermediate;A08.186.211.464.497.352.435.500.750
+Melanotrophs;A08.186.211.464.497.352.435.500.750.500
+Pituitary Gland, Posterior;A08.186.211.464.497.352.435.500.875
+Tuber Cinereum;A08.186.211.464.497.352.870
+Ventromedial Hypothalamic Nucleus;A08.186.211.464.497.352.953
+Hypothalamus, Posterior;A08.186.211.464.497.362
+Mammillary Bodies;A08.186.211.464.497.362.500
+Limbic Lobe;A08.186.211.464.590
+Gyrus Cinguli;A08.186.211.464.590.500
+Parahippocampal Gyrus;A08.186.211.464.590.750
+Entorhinal Cortex;A08.186.211.464.590.750.225
+Periamygdaloid Cortex;A08.186.211.464.590.750.612
+Olfactory Pathways;A08.186.211.464.699
+Parahippocampal Gyrus;A08.186.211.464.710
+Entorhinal Cortex;A08.186.211.464.710.225
+Periamygdaloid Cortex;A08.186.211.464.710.612
+Perforant Pathway;A08.186.211.464.730
+Septum of Brain;A08.186.211.464.750
+Septal Nuclei;A08.186.211.464.750.800
+Septum Pellucidum;A08.186.211.464.750.900
+Substantia Innominata;A08.186.211.464.820
+Prosencephalon;A08.186.211.730
+Diencephalon;A08.186.211.730.317
+Epithalamus;A08.186.211.730.317.200
+Habenula;A08.186.211.730.317.200.360
+Pineal Gland;A08.186.211.730.317.200.620
+Hypothalamus;A08.186.211.730.317.357
+Hypothalamic Area, Lateral;A08.186.211.730.317.357.300
+Hypothalamus, Anterior;A08.186.211.730.317.357.342
+Anterior Hypothalamic Nucleus;A08.186.211.730.317.357.342.063
+Organum Vasculosum;A08.186.211.730.317.357.342.315
+Paraventricular Hypothalamic Nucleus;A08.186.211.730.317.357.342.400
+Preoptic Area;A08.186.211.730.317.357.342.450
+Suprachiasmatic Nucleus;A08.186.211.730.317.357.342.625
+Suprachiasmatic Nucleus Neurons;A08.186.211.730.317.357.342.625.500
+Supraoptic Nucleus;A08.186.211.730.317.357.342.650
+Hypothalamus, Middle;A08.186.211.730.317.357.352
+Arcuate Nucleus of Hypothalamus;A08.186.211.730.317.357.352.081
+Dorsomedial Hypothalamic Nucleus;A08.186.211.730.317.357.352.270
+Hypothalamo-Hypophyseal System;A08.186.211.730.317.357.352.435
+Median Eminence;A08.186.211.730.317.357.352.435.249
+Pituitary Gland;A08.186.211.730.317.357.352.435.500
+Pituitary Gland, Anterior;A08.186.211.730.317.357.352.435.500.500
+Corticotrophs;A08.186.211.730.317.357.352.435.500.500.500
+Gonadotrophs;A08.186.211.730.317.357.352.435.500.500.750
+Lactotrophs;A08.186.211.730.317.357.352.435.500.500.812
+Somatotrophs;A08.186.211.730.317.357.352.435.500.500.937
+Thyrotrophs;A08.186.211.730.317.357.352.435.500.500.968
+Pituitary Gland, Intermediate;A08.186.211.730.317.357.352.435.500.750
+Melanotrophs;A08.186.211.730.317.357.352.435.500.750.500
+Pituitary Gland, Posterior;A08.186.211.730.317.357.352.435.500.875
+Tuber Cinereum;A08.186.211.730.317.357.352.870
+Ventromedial Hypothalamic Nucleus;A08.186.211.730.317.357.352.953
+Hypothalamus, Posterior;A08.186.211.730.317.357.362
+Mammillary Bodies;A08.186.211.730.317.357.362.500
+Optic Chiasm;A08.186.211.730.317.578
+Optic Tract;A08.186.211.730.317.689
+Subthalamus;A08.186.211.730.317.800
+Entopeduncular Nucleus;A08.186.211.730.317.800.240
+Subthalamic Nucleus;A08.186.211.730.317.800.800
+Zona Incerta;A08.186.211.730.317.800.900
+Thalamus;A08.186.211.730.317.826
+Thalamic Nuclei;A08.186.211.730.317.826.701
+Anterior Thalamic Nuclei;A08.186.211.730.317.826.701.080
+Geniculate Bodies;A08.186.211.730.317.826.701.444
+Intralaminar Thalamic Nuclei;A08.186.211.730.317.826.701.460
+Lateral Thalamic Nuclei;A08.186.211.730.317.826.701.485
+Pulvinar;A08.186.211.730.317.826.701.485.600
+Mediodorsal Thalamic Nucleus;A08.186.211.730.317.826.701.490
+Midline Thalamic Nuclei;A08.186.211.730.317.826.701.500
+Posterior Thalamic Nuclei;A08.186.211.730.317.826.701.700
+Ventral Thalamic Nuclei;A08.186.211.730.317.826.701.900
+Telencephalon;A08.186.211.730.885
+Cerebrum;A08.186.211.730.885.287
+Basal Ganglia;A08.186.211.730.885.287.249
+Amygdala;A08.186.211.730.885.287.249.152
+Basolateral Nuclear Complex;A08.186.211.730.885.287.249.152.500
+Central Amygdaloid Nucleus;A08.186.211.730.885.287.249.152.750
+Corticomedial Nuclear Complex;A08.186.211.730.885.287.249.152.875
+Periamygdaloid Cortex;A08.186.211.730.885.287.249.152.875.500
+Corpus Striatum;A08.186.211.730.885.287.249.487
+Globus Pallidus;A08.186.211.730.885.287.249.487.397
+Neostriatum;A08.186.211.730.885.287.249.487.550
+Caudate Nucleus;A08.186.211.730.885.287.249.487.550.184
+High Vocal Center;A08.186.211.730.885.287.249.487.550.484
+Putamen;A08.186.211.730.885.287.249.487.550.784
+Ventral Striatum;A08.186.211.730.885.287.249.487.775
+Nucleus Accumbens;A08.186.211.730.885.287.249.487.775.500
+Olfactory Tubercle;A08.186.211.730.885.287.249.487.775.750
+Islands of Calleja;A08.186.211.730.885.287.249.487.775.750.500
+Substantia Innominata;A08.186.211.730.885.287.249.880
+Basal Nucleus of Meynert;A08.186.211.730.885.287.249.880.100
+Cerebral Cortex;A08.186.211.730.885.287.500
+Frontal Lobe;A08.186.211.730.885.287.500.270
+Motor Cortex;A08.186.211.730.885.287.500.270.548
+Prefrontal Cortex;A08.186.211.730.885.287.500.270.700
+Broca Area;A08.186.211.730.885.287.500.270.700.500
+Hippocampus;A08.186.211.730.885.287.500.345
+CA1 Region, Hippocampal;A08.186.211.730.885.287.500.345.099
+CA2 Region, Hippocampal;A08.186.211.730.885.287.500.345.149
+CA3 Region, Hippocampal;A08.186.211.730.885.287.500.345.174
+Dentate Gyrus;A08.186.211.730.885.287.500.345.200
+Mossy Fibers, Hippocampal;A08.186.211.730.885.287.500.345.200.500
+Fornix, Brain;A08.186.211.730.885.287.500.345.600
+Limbic Lobe;A08.186.211.730.885.287.500.382
+Gyrus Cinguli;A08.186.211.730.885.287.500.382.500
+Parahippocampal Gyrus;A08.186.211.730.885.287.500.382.750
+Entorhinal Cortex;A08.186.211.730.885.287.500.382.750.225
+Periamygdaloid Cortex;A08.186.211.730.885.287.500.382.750.612
+Neocortex;A08.186.211.730.885.287.500.420
+Occipital Lobe;A08.186.211.730.885.287.500.571
+Visual Cortex;A08.186.211.730.885.287.500.571.735
+Olfactory Cortex;A08.186.211.730.885.287.500.620
+Basal Forebrain;A08.186.211.730.885.287.500.620.374
+Organum Vasculosum;A08.186.211.730.885.287.500.620.374.500
+Entorhinal Cortex;A08.186.211.730.885.287.500.620.562
+Olfactory Tubercle;A08.186.211.730.885.287.500.620.656
+Islands of Calleja;A08.186.211.730.885.287.500.620.656.500
+Piriform Cortex;A08.186.211.730.885.287.500.620.750
+Parietal Lobe;A08.186.211.730.885.287.500.670
+Somatosensory Cortex;A08.186.211.730.885.287.500.670.675
+Wernicke Area;A08.186.211.730.885.287.500.670.837
+Sensorimotor Cortex;A08.186.211.730.885.287.500.814
+Auditory Cortex;A08.186.211.730.885.287.500.814.249
+Motor Cortex;A08.186.211.730.885.287.500.814.624
+Olfactory Cortex;A08.186.211.730.885.287.500.814.695
+Basal Forebrain;A08.186.211.730.885.287.500.814.695.249
+Entorhinal Cortex;A08.186.211.730.885.287.500.814.695.374
+Olfactory Tubercle;A08.186.211.730.885.287.500.814.695.500
+Islands of Calleja;A08.186.211.730.885.287.500.814.695.500.500
+Somatosensory Cortex;A08.186.211.730.885.287.500.814.906
+Visual Cortex;A08.186.211.730.885.287.500.814.953
+Temporal Lobe;A08.186.211.730.885.287.500.863
+Auditory Cortex;A08.186.211.730.885.287.500.863.297
+Perirhinal Cortex;A08.186.211.730.885.287.500.863.574
+Wernicke Area;A08.186.211.730.885.287.500.863.850
+Olfactory Cortex;A08.186.211.730.885.287.750
+Basal Forebrain;A08.186.211.730.885.287.750.374
+Entorhinal Cortex;A08.186.211.730.885.287.750.562
+Olfactory Tubercle;A08.186.211.730.885.287.750.656
+Islands of Calleja;A08.186.211.730.885.287.750.656.500
+Piriform Cortex;A08.186.211.730.885.287.750.750
+Diagonal Band of Broca;A08.186.211.730.885.380
+External Capsule;A08.186.211.730.885.385
+Olfactory Bulb;A08.186.211.730.885.388
+Telencephalic Commissures;A08.186.211.730.885.390
+Anterior Cerebellar Commissure;A08.186.211.730.885.390.500
+Corpus Callosum;A08.186.211.730.885.390.750
+Internal Capsule;A08.186.211.730.885.435
+Septum of Brain;A08.186.211.730.885.750
+Septal Nuclei;A08.186.211.730.885.750.800
+Septum Pellucidum;A08.186.211.730.885.750.814
 Meninges;A08.186.566
 Arachnoid;A08.186.566.166
 Subarachnoid Space;A08.186.566.166.686
@@ -1091,9 +1087,9 @@ Pia Mater;A08.186.566.731
 Spinal Cord;A08.186.854
 Cervical Cord;A08.186.854.126
 Extrapyramidal Tracts;A08.186.854.253
-Pyramidal Tracts;A08.186.854.300
 Gray Matter;A08.186.854.348
 Spinal Cord Lateral Horn;A08.186.854.443
+Pyramidal Tracts;A08.186.854.633
 Spinal Cord Dorsal Horn;A08.186.854.697
 Posterior Horn Cells;A08.186.854.697.500
 Substantia Gelatinosa;A08.186.854.697.500.500
@@ -1457,37 +1453,6 @@ Ear Auricle;A09.246.272.197
 Ear Canal;A09.246.272.396
 Ear Cartilage;A09.246.272.549
 Tympanic Membrane;A09.246.272.702
-Ear, Inner;A09.246.300
-Cochlea;A09.246.300.246
-Basilar Membrane;A09.246.300.246.125
-Cochlear Aqueduct;A09.246.300.246.280
-Cochlear Duct;A09.246.300.246.292
-Stria Vascularis;A09.246.300.246.292.876
-Tectorial Membrane;A09.246.300.246.292.938
-Organ of Corti;A09.246.300.246.577
-Hair Cells, Auditory;A09.246.300.246.577.325
-Hair Cells, Auditory, Inner;A09.246.300.246.577.325.315
-Hair Cells, Auditory, Outer;A09.246.300.246.577.325.380
-Labyrinth Supporting Cells;A09.246.300.246.577.543
-Round Window, Ear;A09.246.300.246.814
-Scala Tympani;A09.246.300.246.848
-Scala Vestibuli;A09.246.300.246.874
-Spiral Ganglion;A09.246.300.246.900
-Spiral Lamina;A09.246.300.246.930
-Spiral Ligament of Cochlea;A09.246.300.246.965
-Labyrinthine Fluids;A09.246.300.455
-Semicircular Canals;A09.246.300.663
-Semicircular Ducts;A09.246.300.663.500
-Hair Cells, Ampulla;A09.246.300.663.500.500
-Vestibule, Labyrinth;A09.246.300.909
-Oval Window, Ear;A09.246.300.909.551
-Saccule and Utricle;A09.246.300.909.625
-Acoustic Maculae;A09.246.300.909.625.125
-Hair Cells, Vestibular;A09.246.300.909.625.125.340
-Otolithic Membrane;A09.246.300.909.625.125.680
-Vestibular Aqueduct;A09.246.300.909.957
-Endolymphatic Duct;A09.246.300.909.957.360
-Endolymphatic Sac;A09.246.300.909.957.360.701
 Ear, Middle;A09.246.397
 Ear Ossicles;A09.246.397.247
 Incus;A09.246.397.247.362
@@ -1497,6 +1462,37 @@ Eustachian Tube;A09.246.397.369
 Glomus Tympanicum;A09.246.397.400
 Stapedius;A09.246.397.727
 Tensor Tympani;A09.246.397.749
+Ear, Inner;A09.246.631
+Cochlea;A09.246.631.246
+Basilar Membrane;A09.246.631.246.125
+Cochlear Aqueduct;A09.246.631.246.280
+Cochlear Duct;A09.246.631.246.292
+Stria Vascularis;A09.246.631.246.292.876
+Tectorial Membrane;A09.246.631.246.292.938
+Organ of Corti;A09.246.631.246.577
+Hair Cells, Auditory;A09.246.631.246.577.325
+Hair Cells, Auditory, Inner;A09.246.631.246.577.325.315
+Hair Cells, Auditory, Outer;A09.246.631.246.577.325.380
+Labyrinth Supporting Cells;A09.246.631.246.577.543
+Round Window, Ear;A09.246.631.246.814
+Scala Tympani;A09.246.631.246.848
+Scala Vestibuli;A09.246.631.246.874
+Spiral Ganglion;A09.246.631.246.900
+Spiral Lamina;A09.246.631.246.930
+Spiral Ligament of Cochlea;A09.246.631.246.965
+Labyrinthine Fluids;A09.246.631.455
+Semicircular Canals;A09.246.631.663
+Semicircular Ducts;A09.246.631.663.500
+Hair Cells, Ampulla;A09.246.631.663.500.500
+Vestibule, Labyrinth;A09.246.631.909
+Oval Window, Ear;A09.246.631.909.551
+Saccule and Utricle;A09.246.631.909.625
+Acoustic Maculae;A09.246.631.909.625.125
+Hair Cells, Vestibular;A09.246.631.909.625.125.340
+Otolithic Membrane;A09.246.631.909.625.125.680
+Vestibular Aqueduct;A09.246.631.909.957
+Endolymphatic Duct;A09.246.631.909.957.360
+Endolymphatic Sac;A09.246.631.909.957.360.701
 Eye;A09.371
 Anterior Eye Segment;A09.371.060
 Anterior Chamber;A09.371.060.067
@@ -1753,7 +1749,6 @@ Surgical Stomas;A10.850.720
 Urinary Reservoirs, Continent;A10.850.750
 Cells;A11
 Acinar Cells;A11.031
-Allogeneic Cells;A11.047
 Antibody-Producing Cells;A11.063
 B-Lymphocytes;A11.063.438
 B-Lymphocyte Subsets;A11.063.438.450
@@ -1874,7 +1869,6 @@ HT29 Cells;A11.251.210.190.475
 Jurkat Cells;A11.251.210.190.495
 K562 Cells;A11.251.210.190.510
 MCF-7 Cells;A11.251.210.190.630
-PC-3 Cells;A11.251.210.190.690
 PC12 Cells;A11.251.210.190.750
 THP-1 Cells;A11.251.210.190.815
 U937 Cells;A11.251.210.190.880
@@ -2233,7 +2227,7 @@ Odontoblasts;A11.329.522
 Osteoblasts;A11.329.629
 Osteocytes;A11.329.629.500
 Stromal Cells;A11.329.830
-Mesenchymal Stem Cells;A11.329.830.500
+Mesenchymal Stromal Cells;A11.329.830.500
 Telocytes;A11.329.830.750
 Telopodes;A11.329.830.750.500
 Synoviocytes;A11.329.835
@@ -2262,11 +2256,6 @@ Sertoli Cells;A11.382.952
 Somatotrophs;A11.382.968
 Thyrotrophs;A11.382.984
 Trophoblasts;A11.382.992
-Epidermal Cells;A11.409
-Keratinocytes;A11.409.500
-Melanocytes;A11.409.750
-Melanosomes;A11.409.750.560
-Merkel Cells;A11.409.875
 Epithelial Cells;A11.436
 A549 Cells;A11.436.054
 Alveolar Epithelial Cells;A11.436.081
@@ -2320,7 +2309,6 @@ Neuroepithelial Cells;A11.436.690
 Neuroepithelial Bodies;A11.436.690.550
 Paneth Cells;A11.436.700
 Parietal Cells, Gastric;A11.436.708
-PC-3 Cells;A11.436.714
 Podocytes;A11.436.720
 Sertoli Cells;A11.436.837
 Somatotrophs;A11.436.896
@@ -2587,7 +2575,7 @@ Erythroid Precursor Cells;A11.872.378.590.817.250
 Megakaryocyte Progenitor Cells;A11.872.378.590.817.625
 Peripheral Blood Stem Cells;A11.872.378.795
 Multipotent Stem Cells;A11.872.590
-Mesenchymal Stem Cells;A11.872.590.500
+Mesenchymal Stromal Cells;A11.872.590.500
 Myoblasts;A11.872.620
 Myoblasts, Cardiac;A11.872.620.470
 Myoblasts, Skeletal;A11.872.620.500
@@ -2983,7 +2971,6 @@ Lymphocytes, Tumor-Infiltrating;A15.382.490.555.567.650
 Monocytes;A15.382.490.555.652
 Monocytes, Activated Killer;A15.382.490.555.652.500
 Lymphatic System;A15.382.520
-Glymphatic System;A15.382.520.075
 Lymph;A15.382.520.150
 Chyle;A15.382.520.150.350
 Lymphatic Vessels;A15.382.520.301
@@ -3002,20 +2989,6 @@ Spleen;A15.382.520.604.700
 Tertiary Lymphoid Structures;A15.382.520.604.725
 Thymus Gland;A15.382.520.604.750
 Mast Cells;A15.382.652
-Mononuclear Phagocyte System;A15.382.670
-Dendritic Cells;A15.382.670.260
-Langerhans Cells;A15.382.670.260.500
-Macrophages;A15.382.670.522
-Epithelioid Cells;A15.382.670.522.300
-Foam Cells;A15.382.670.522.368
-Giant Cells, Foreign-Body;A15.382.670.522.376
-Giant Cells, Langhans;A15.382.670.522.380
-Histiocytes;A15.382.670.522.385
-Kupffer Cells;A15.382.670.522.588
-Macrophages, Alveolar;A15.382.670.522.600
-Macrophages, Peritoneal;A15.382.670.522.630
-Monocytes;A15.382.670.547
-Monocytes, Activated Killer;A15.382.670.547.500
 Phagocytes;A15.382.680
 Macrophages;A15.382.680.397
 Epithelioid Cells;A15.382.680.397.300
@@ -3029,6 +3002,20 @@ Macrophages, Peritoneal;A15.382.680.397.630
 Monocytes;A15.382.680.547
 Monocytes, Activated Killer;A15.382.680.547.500
 Neutrophils;A15.382.680.689
+Mononuclear Phagocyte System;A15.382.812
+Dendritic Cells;A15.382.812.260
+Langerhans Cells;A15.382.812.260.500
+Macrophages;A15.382.812.522
+Epithelioid Cells;A15.382.812.522.300
+Foam Cells;A15.382.812.522.368
+Giant Cells, Foreign-Body;A15.382.812.522.376
+Giant Cells, Langhans;A15.382.812.522.380
+Histiocytes;A15.382.812.522.385
+Kupffer Cells;A15.382.812.522.588
+Macrophages, Alveolar;A15.382.812.522.600
+Macrophages, Peritoneal;A15.382.812.522.630
+Monocytes;A15.382.812.547
+Monocytes, Activated Killer;A15.382.812.547.500
 Embryonic Structures;A16
 Blastomeres;A16.094
 Branchial Region;A16.142
@@ -3099,7 +3086,6 @@ Vitelline Duct;A16.920
 Wolffian Ducts;A16.935
 Zygote;A16.950
 Integumentary System;A17
-Animal Scales;A17.100
 Hair;A17.360
 Animal Fur;A17.360.148
 Eyebrows;A17.360.296
@@ -3116,6 +3102,7 @@ Sebaceous Glands;A17.815.805
 Sweat Glands;A17.815.830
 Apocrine Glands;A17.815.830.206
 Eccrine Glands;A17.815.830.480
+Animal Scales;A17.907
 Plant Structures;A18
 Chromosomes, Plant;A18.005
 Plant Components, Aerial;A18.024
@@ -3177,8 +3164,6 @@ Sporangia;A19.800
 Bacterial Structures;A20
 Bacterial Capsules;A20.186
 Bacterial Chromatophores;A20.374
-Biofilms;A20.593
-Extracellular Polymeric Substance Matrix;A20.593.500
 Chromosomes, Bacterial;A20.812
 Chromosomes, Artificial, Bacterial;A20.812.170
 Fimbriae, Bacterial;A20.843
@@ -3340,8 +3325,7 @@ Lancelets;B01.050.150.200.199.500
 Hyperotreti;B01.050.150.200.400
 Hagfishes;B01.050.150.200.400.380
 Urochordata;B01.050.150.200.727
-Ciona;B01.050.150.200.727.150
-Ciona intestinalis;B01.050.150.200.727.150.500
+Ciona intestinalis;B01.050.150.200.727.300
 Vertebrates;B01.050.150.900
 Amphibians;B01.050.150.900.090
 Anura;B01.050.150.900.090.180
@@ -3389,6 +3373,11 @@ Palaeognathae;B01.050.150.900.248.600
 Dromaiidae;B01.050.150.900.248.600.200
 Rheiformes;B01.050.150.900.248.600.750
 Struthioniformes;B01.050.150.900.248.600.800
+Poultry;B01.050.150.900.248.617
+Chickens;B01.050.150.900.248.617.192
+Ducks;B01.050.150.900.248.617.345
+Geese;B01.050.150.900.248.617.492
+Turkeys;B01.050.150.900.248.617.800
 Passeriformes;B01.050.150.900.248.620
 Songbirds;B01.050.150.900.248.620.750
 Crows;B01.050.150.900.248.620.750.150
@@ -3397,11 +3386,6 @@ Canaries;B01.050.150.900.248.620.750.250.150
 Sparrows;B01.050.150.900.248.620.750.700
 Starlings;B01.050.150.900.248.620.750.712
 Swallows;B01.050.150.900.248.620.750.725
-Poultry;B01.050.150.900.248.690
-Chickens;B01.050.150.900.248.690.192
-Ducks;B01.050.150.900.248.690.345
-Geese;B01.050.150.900.248.690.492
-Turkeys;B01.050.150.900.248.690.800
 Psittaciformes;B01.050.150.900.248.710
 Cockatoos;B01.050.150.900.248.710.251
 Parrots;B01.050.150.900.248.710.672
@@ -3503,28 +3487,6 @@ Swine;B01.050.150.900.649.313.500.880
 Sus scrofa;B01.050.150.900.649.313.500.880.399
 Swine, Miniature;B01.050.150.900.649.313.500.880.399.800
 Carnivora;B01.050.150.900.649.313.750
-Caniformia;B01.050.150.900.649.313.750.250
-Ailuridae;B01.050.150.900.649.313.750.250.108
-Canidae;B01.050.150.900.649.313.750.250.216
-Coyotes;B01.050.150.900.649.313.750.250.216.150
-Dogs;B01.050.150.900.649.313.750.250.216.200
-Foxes;B01.050.150.900.649.313.750.250.216.250
-Jackals;B01.050.150.900.649.313.750.250.216.400
-Raccoon Dogs;B01.050.150.900.649.313.750.250.216.700
-Wolves;B01.050.150.900.649.313.750.250.216.900
-Fur Seals;B01.050.150.900.649.313.750.250.288
-Mephitidae;B01.050.150.900.649.313.750.250.479
-Mustelidae;B01.050.150.900.649.313.750.250.575
-Ferrets;B01.050.150.900.649.313.750.250.575.350
-Mink;B01.050.150.900.649.313.750.250.575.500
-Otters;B01.050.150.900.649.313.750.250.575.600
-Procyonidae;B01.050.150.900.649.313.750.250.623
-Raccoons;B01.050.150.900.649.313.750.250.623.700
-Sea Lions;B01.050.150.900.649.313.750.250.670
-Seals, Earless;B01.050.150.900.649.313.750.250.700
-Phoca;B01.050.150.900.649.313.750.250.700.600
-Ursidae;B01.050.150.900.649.313.750.250.761
-Walruses;B01.050.150.900.649.313.750.250.821
 Feliformia;B01.050.150.900.649.313.750.377
 Eupleridae;B01.050.150.900.649.313.750.377.500
 Felidae;B01.050.150.900.649.313.750.377.750
@@ -3540,6 +3502,28 @@ Herpestidae;B01.050.150.900.649.313.750.377.875
 Hyaenidae;B01.050.150.900.649.313.750.377.937
 Nandiniidae;B01.050.150.900.649.313.750.377.968
 Viverridae;B01.050.150.900.649.313.750.377.984
+Caniformia;B01.050.150.900.649.313.750.600
+Ailuridae;B01.050.150.900.649.313.750.600.108
+Canidae;B01.050.150.900.649.313.750.600.216
+Coyotes;B01.050.150.900.649.313.750.600.216.150
+Dogs;B01.050.150.900.649.313.750.600.216.200
+Foxes;B01.050.150.900.649.313.750.600.216.250
+Jackals;B01.050.150.900.649.313.750.600.216.400
+Raccoon Dogs;B01.050.150.900.649.313.750.600.216.700
+Wolves;B01.050.150.900.649.313.750.600.216.900
+Fur Seals;B01.050.150.900.649.313.750.600.288
+Mephitidae;B01.050.150.900.649.313.750.600.479
+Mustelidae;B01.050.150.900.649.313.750.600.575
+Ferrets;B01.050.150.900.649.313.750.600.575.350
+Mink;B01.050.150.900.649.313.750.600.575.500
+Otters;B01.050.150.900.649.313.750.600.575.600
+Procyonidae;B01.050.150.900.649.313.750.600.623
+Raccoons;B01.050.150.900.649.313.750.600.623.700
+Sea Lions;B01.050.150.900.649.313.750.600.670
+Seals, Earless;B01.050.150.900.649.313.750.600.700
+Phoca;B01.050.150.900.649.313.750.600.700.600
+Ursidae;B01.050.150.900.649.313.750.600.761
+Walruses;B01.050.150.900.649.313.750.600.821
 Cetacea;B01.050.150.900.649.313.875
 Dolphins;B01.050.150.900.649.313.875.267
 Bottle-Nosed Dolphin;B01.050.150.900.649.313.875.267.100
@@ -3609,13 +3593,13 @@ Alouattinae;B01.050.150.900.649.313.988.400.600.075.050
 Alouatta;B01.050.150.900.649.313.988.400.600.075.050.075
 Atelinae;B01.050.150.900.649.313.988.400.600.075.075
 Cebidae;B01.050.150.900.649.313.988.400.600.150
+Cebinae;B01.050.150.900.649.313.988.400.600.150.120
+Cebus;B01.050.150.900.649.313.988.400.600.150.120.120
 Callitrichinae;B01.050.150.900.649.313.988.400.600.150.150
 Callimico;B01.050.150.900.649.313.988.400.600.150.150.105
 Callithrix;B01.050.150.900.649.313.988.400.600.150.150.114
 Leontopithecus;B01.050.150.900.649.313.988.400.600.150.150.450
 Saguinus;B01.050.150.900.649.313.988.400.600.150.150.710
-Cebinae;B01.050.150.900.649.313.988.400.600.150.170
-Cebus;B01.050.150.900.649.313.988.400.600.150.170.120
 Saimirinae;B01.050.150.900.649.313.988.400.600.150.710
 Saimiri;B01.050.150.900.649.313.988.400.600.150.710.710
 Pitheciidae;B01.050.150.900.649.313.988.400.600.575
@@ -3649,7 +3633,6 @@ Murinae;B01.050.150.900.649.313.992.635.505
 Mice;B01.050.150.900.649.313.992.635.505.500
 Mice, Congenic;B01.050.150.900.649.313.992.635.505.500.150
 Mice, Inbred Strains;B01.050.150.900.649.313.992.635.505.500.400
-Collaborative Cross Mice;B01.050.150.900.649.313.992.635.505.500.400.013
 Mice, 129 Strain;B01.050.150.900.649.313.992.635.505.500.400.025
 Mice, Hairless;B01.050.150.900.649.313.992.635.505.500.400.200
 Mice, Inbred A;B01.050.150.900.649.313.992.635.505.500.400.300
@@ -3756,11 +3739,11 @@ Boidae;B01.050.150.900.833.672.125.500
 Colubridae;B01.050.150.900.833.672.125.750
 Elapidae;B01.050.150.900.833.672.125.875
 Bungarus;B01.050.150.900.833.672.125.875.225
-Coral Snakes;B01.050.150.900.833.672.125.875.319
 Dendroaspis;B01.050.150.900.833.672.125.875.419
 Hemachatus;B01.050.150.900.833.672.125.875.516
 Hydrophiidae;B01.050.150.900.833.672.125.875.564
 Laticauda;B01.050.150.900.833.672.125.875.576
+Coral Snakes;B01.050.150.900.833.672.125.875.588
 Naja;B01.050.150.900.833.672.125.875.612
 Naja haje;B01.050.150.900.833.672.125.875.612.250
 Naja naja;B01.050.150.900.833.672.125.875.612.500
@@ -3914,8 +3897,7 @@ Lancelets;B01.050.500.272.199.500
 Hyperotreti;B01.050.500.272.400
 Hagfishes;B01.050.500.272.400.380
 Urochordata;B01.050.500.272.727
-Ciona;B01.050.500.272.727.150
-Ciona intestinalis;B01.050.500.272.727.150.500
+Ciona intestinalis;B01.050.500.272.727.300
 Cnidaria;B01.050.500.308
 Anthozoa;B01.050.500.308.237
 Renilla;B01.050.500.308.237.700
@@ -4428,15 +4410,14 @@ Viridiplantae;B01.650.940
 Chlorophyta;B01.650.940.150
 Acetabularia;B01.650.940.150.133
 Caulerpa;B01.650.940.150.300
-Chlamydomonas;B01.650.940.150.385
-Chlamydomonas reinhardtii;B01.650.940.150.385.650
 Chlorella;B01.650.940.150.469
 Chlorella vulgaris;B01.650.940.150.469.400
-Chlorophyceae;B01.650.940.150.511
 Prototheca;B01.650.940.150.634
 Scenedesmus;B01.650.940.150.800
 Ulva;B01.650.940.150.900
 Volvocida;B01.650.940.150.925
+Chlamydomonas;B01.650.940.150.925.344
+Chlamydomonas reinhardtii;B01.650.940.150.925.344.650
 Volvox;B01.650.940.150.950
 Streptophyta;B01.650.940.800
 Charophyceae;B01.650.940.800.150
@@ -4537,7 +4518,7 @@ Anethum graveolens;B01.650.940.800.575.912.250.075.077
 Angelica;B01.650.940.800.575.912.250.075.088
 Angelica archangelica;B01.650.940.800.575.912.250.075.088.077
 Angelica sinensis;B01.650.940.800.575.912.250.075.088.538
-Apium;B01.650.940.800.575.912.250.075.094
+Apium graveolens;B01.650.940.800.575.912.250.075.099
 Bupleurum;B01.650.940.800.575.912.250.075.144
 Carum;B01.650.940.800.575.912.250.075.166
 Centella;B01.650.940.800.575.912.250.075.180
@@ -4546,7 +4527,7 @@ Cnidium;B01.650.940.800.575.912.250.075.199
 Conium;B01.650.940.800.575.912.250.075.205
 Coriandrum;B01.650.940.800.575.912.250.075.211
 Cuminum;B01.650.940.800.575.912.250.075.233
-Daucus carota;B01.650.940.800.575.912.250.075.278
+Daucus carota;B01.650.940.800.575.912.250.075.288
 Eryngium;B01.650.940.800.575.912.250.075.294
 Ferula;B01.650.940.800.575.912.250.075.300
 Foeniculum;B01.650.940.800.575.912.250.075.333
@@ -4634,7 +4615,6 @@ Helianthus;B01.650.940.800.575.912.250.100.400
 Helichrysum;B01.650.940.800.575.912.250.100.425
 Inula;B01.650.940.800.575.912.250.100.471
 Lettuce;B01.650.940.800.575.912.250.100.500
-Leucanthemum;B01.650.940.800.575.912.250.100.503
 Leuzea;B01.650.940.800.575.912.250.100.506
 Matricaria;B01.650.940.800.575.912.250.100.509
 Mikania;B01.650.940.800.575.912.250.100.512
@@ -4664,11 +4644,6 @@ Verbesina;B01.650.940.800.575.912.250.100.979
 Vernonia;B01.650.940.800.575.912.250.100.984
 Wedelia;B01.650.940.800.575.912.250.100.989
 Xanthium;B01.650.940.800.575.912.250.100.994
-Austrobaileyales;B01.650.940.800.575.912.250.103
-Schisandraceae;B01.650.940.800.575.912.250.103.500
-Illicium;B01.650.940.800.575.912.250.103.500.250
-Kadsura;B01.650.940.800.575.912.250.103.500.500
-Schisandra;B01.650.940.800.575.912.250.103.500.750
 Balanophoraceae;B01.650.940.800.575.912.250.106
 Cynomorium;B01.650.940.800.575.912.250.106.500
 Begoniaceae;B01.650.940.800.575.912.250.118
@@ -4866,8 +4841,7 @@ Anagallis;B01.650.940.800.575.912.250.341.984.099
 Ardisia;B01.650.940.800.575.912.250.341.984.324
 Cyclamen;B01.650.940.800.575.912.250.341.984.549
 Embelia;B01.650.940.800.575.912.250.341.984.662
-Maesa;B01.650.940.800.575.912.250.341.984.718
-Myrsine;B01.650.940.800.575.912.250.341.984.746
+Primula;B01.650.940.800.575.912.250.341.984.774
 Sarraceniaceae;B01.650.940.800.575.912.250.341.992
 Styracaceae;B01.650.940.800.575.912.250.341.996
 Styrax;B01.650.940.800.575.912.250.341.996.777
@@ -4902,7 +4876,7 @@ Arachis;B01.650.940.800.575.912.250.401.077
 Aspalathus;B01.650.940.800.575.912.250.401.082
 Astragalus Plant;B01.650.940.800.575.912.250.401.087
 Astragalus gummifer;B01.650.940.800.575.912.250.401.087.500
-Astragalus propinquus;B01.650.940.800.575.912.250.401.087.750
+Astragalus membranaceus;B01.650.940.800.575.912.250.401.087.750
 Bauhinia;B01.650.940.800.575.912.250.401.088
 Butea;B01.650.940.800.575.912.250.401.090
 Caesalpinia;B01.650.940.800.575.912.250.401.093
@@ -4936,7 +4910,7 @@ Laburnum;B01.650.940.800.575.912.250.401.356
 Lathyrus;B01.650.940.800.575.912.250.401.375
 Lens Plant;B01.650.940.800.575.912.250.401.450
 Lespedeza;B01.650.940.800.575.912.250.401.525
-Lotus;B01.650.940.800.575.912.250.401.565
+Loteae;B01.650.940.800.575.912.250.401.544
 Lupinus;B01.650.940.800.575.912.250.401.571
 Maackia;B01.650.940.800.575.912.250.401.581
 Medicago;B01.650.940.800.575.912.250.401.590
@@ -4950,7 +4924,7 @@ Myroxylon;B01.650.940.800.575.912.250.401.601
 Ononis;B01.650.940.800.575.912.250.401.604
 Oxytropis;B01.650.940.800.575.912.250.401.606
 Pachyrhizus;B01.650.940.800.575.912.250.401.611
-Peas;B01.650.940.800.575.912.250.401.630
+Peas;B01.650.940.800.575.912.250.401.625
 Phaseolus;B01.650.940.800.575.912.250.401.649
 Physostigma;B01.650.940.800.575.912.250.401.694
 Pongamia;B01.650.940.800.575.912.250.401.698
@@ -4976,6 +4950,9 @@ Vicia faba;B01.650.940.800.575.912.250.401.968.500
 Vicia sativa;B01.650.940.800.575.912.250.401.968.750
 Vigna;B01.650.940.800.575.912.250.401.976
 Wisteria;B01.650.940.800.575.912.250.401.984
+Flacourtiaceae;B01.650.940.800.575.912.250.437
+Ryania;B01.650.940.800.575.912.250.437.500
+Fumariaceae;B01.650.940.800.575.912.250.443
 Gentianales;B01.650.940.800.575.912.250.456
 Apocynaceae;B01.650.940.800.575.912.250.456.500
 Alstonia;B01.650.940.800.575.912.250.456.500.043
@@ -5042,9 +5019,9 @@ Hydrophyllaceae;B01.650.940.800.575.912.250.531
 Krameriaceae;B01.650.940.800.575.912.250.572
 Lamiales;B01.650.940.800.575.912.250.583
 Acanthaceae;B01.650.940.800.575.912.250.583.040
+Justicia;B01.650.940.800.575.912.250.583.040.022
 Andrographis;B01.650.940.800.575.912.250.583.040.044
 Avicennia;B01.650.940.800.575.912.250.583.040.522
-Justicia;B01.650.940.800.575.912.250.583.040.650
 Bignoniaceae;B01.650.940.800.575.912.250.583.080
 Tabebuia;B01.650.940.800.575.912.250.583.080.500
 Calceolariaceae;B01.650.940.800.575.912.250.583.190
@@ -5256,6 +5233,22 @@ Magnolia;B01.650.940.800.575.912.250.685.500
 Malpighiaceae;B01.650.940.800.575.912.250.690
 Banisteriopsis;B01.650.940.800.575.912.250.690.099
 Galphimia;B01.650.940.800.575.912.250.690.355
+Malvaceae;B01.650.940.800.575.912.250.700
+Abelmoschus;B01.650.940.800.575.912.250.700.100
+Adansonia;B01.650.940.800.575.912.250.700.108
+Althaea;B01.650.940.800.575.912.250.700.115
+Bombax;B01.650.940.800.575.912.250.700.148
+Ceiba;B01.650.940.800.575.912.250.700.180
+Cola;B01.650.940.800.575.912.250.700.212
+Corchorus;B01.650.940.800.575.912.250.700.228
+Gossypium;B01.650.940.800.575.912.250.700.244
+Grewia;B01.650.940.800.575.912.250.700.266
+Hibiscus;B01.650.940.800.575.912.250.700.288
+Malva;B01.650.940.800.575.912.250.700.555
+Sida Plant;B01.650.940.800.575.912.250.700.777
+Sterculia;B01.650.940.800.575.912.250.700.888
+Tilia;B01.650.940.800.575.912.250.700.944
+Triumfetta;B01.650.940.800.575.912.250.700.972
 Melastomataceae;B01.650.940.800.575.912.250.707
 Meliaceae;B01.650.940.800.575.912.250.715
 Aglaia;B01.650.940.800.575.912.250.715.061
@@ -5280,7 +5273,8 @@ Moringa oleifera;B01.650.940.800.575.912.250.752.500
 Myoporaceae;B01.650.940.800.575.912.250.756
 Eremophila Plant;B01.650.940.800.575.912.250.756.249
 Myristicaceae;B01.650.940.800.575.912.250.765
-Myristica;B01.650.940.800.575.912.250.765.500
+Myristica fragrans;B01.650.940.800.575.912.250.765.500
+Myrsinaceae;B01.650.940.800.575.912.250.770
 Myrtaceae;B01.650.940.800.575.912.250.773
 Eucalyptus;B01.650.940.800.575.912.250.773.366
 Eugenia;B01.650.940.800.575.912.250.773.374
@@ -5311,6 +5305,14 @@ Oxalidaceae;B01.650.940.800.575.912.250.789
 Averrhoa;B01.650.940.800.575.912.250.789.500
 Paeonia;B01.650.940.800.575.912.250.791
 Pandanaceae;B01.650.940.800.575.912.250.792
+Papaveraceae;B01.650.940.800.575.912.250.795
+Argemone;B01.650.940.800.575.912.250.795.124
+Chelidonium;B01.650.940.800.575.912.250.795.249
+Corydalis;B01.650.940.800.575.912.250.795.312
+Eschscholzia;B01.650.940.800.575.912.250.795.374
+Fumaria;B01.650.940.800.575.912.250.795.437
+Papaver;B01.650.940.800.575.912.250.795.500
+Sanguinaria;B01.650.940.800.575.912.250.795.750
 Passifloraceae;B01.650.940.800.575.912.250.803
 Passiflora;B01.650.940.800.575.912.250.803.500
 Turnera;B01.650.940.800.575.912.250.803.750
@@ -5321,7 +5323,6 @@ Kava;B01.650.940.800.575.912.250.812.666.249
 Piper betle;B01.650.940.800.575.912.250.812.666.374
 Piper nigrum;B01.650.940.800.575.912.250.812.666.500
 Poaceae;B01.650.940.800.575.912.250.822
-Aegilops;B01.650.940.800.575.912.250.822.017
 Agropyron;B01.650.940.800.575.912.250.822.033
 Agrostis;B01.650.940.800.575.912.250.822.044
 Andropogon;B01.650.940.800.575.912.250.822.055
@@ -5331,7 +5332,6 @@ Brachiaria;B01.650.940.800.575.912.250.822.071
 Brachypodium;B01.650.940.800.575.912.250.822.072
 Bromus;B01.650.940.800.575.912.250.822.077
 Cenchrus;B01.650.940.800.575.912.250.822.151
-Chrysopogon;B01.650.940.800.575.912.250.822.180
 Coix;B01.650.940.800.575.912.250.822.227
 Cymbopogon;B01.650.940.800.575.912.250.822.266
 Cynodon;B01.650.940.800.575.912.250.822.288
@@ -5361,6 +5361,7 @@ Setaria Plant;B01.650.940.800.575.912.250.822.871
 Sorghum;B01.650.940.800.575.912.250.822.894
 Triticale;B01.650.940.800.575.912.250.822.906
 Triticum;B01.650.940.800.575.912.250.822.918
+Chrysopogon;B01.650.940.800.575.912.250.822.942
 Zea mays;B01.650.940.800.575.912.250.822.966
 Polygonaceae;B01.650.940.800.575.912.250.825
 Eriogonum;B01.650.940.800.575.912.250.825.306
@@ -5371,44 +5372,33 @@ Fallopia multiflora;B01.650.940.800.575.912.250.825.359.590
 Polygonum;B01.650.940.800.575.912.250.825.437
 Rheum;B01.650.940.800.575.912.250.825.700
 Rumex;B01.650.940.800.575.912.250.825.850
-Pontederiaceae;B01.650.940.800.575.912.250.827
-Eichhornia;B01.650.940.800.575.912.250.827.500
-Primula;B01.650.940.800.575.912.250.828
+Pontederiaceae;B01.650.940.800.575.912.250.826
+Eichhornia;B01.650.940.800.575.912.250.826.500
 Proteaceae;B01.650.940.800.575.912.250.831
 Macadamia;B01.650.940.800.575.912.250.831.500
 Punicaceae;B01.650.940.800.575.912.250.833
 Pyrolaceae;B01.650.940.800.575.912.250.835
-Ranunculales;B01.650.940.800.575.912.250.836
-Papaveraceae;B01.650.940.800.575.912.250.836.500
-Argemone;B01.650.940.800.575.912.250.836.500.124
-Chelidonium;B01.650.940.800.575.912.250.836.500.249
-Corydalis;B01.650.940.800.575.912.250.836.500.312
-Dicentra;B01.650.940.800.575.912.250.836.500.343
-Eschscholzia;B01.650.940.800.575.912.250.836.500.374
-Fumaria;B01.650.940.800.575.912.250.836.500.437
-Fumariaceae;B01.650.940.800.575.912.250.836.500.469
-Papaver;B01.650.940.800.575.912.250.836.500.500
-Sanguinaria;B01.650.940.800.575.912.250.836.500.750
-Ranunculaceae;B01.650.940.800.575.912.250.836.750
-Aconitum;B01.650.940.800.575.912.250.836.750.022
-Actaea;B01.650.940.800.575.912.250.836.750.033
-Adonis;B01.650.940.800.575.912.250.836.750.036
-Anemone;B01.650.940.800.575.912.250.836.750.077
-Aquilegia;B01.650.940.800.575.912.250.836.750.088
-Cimicifuga;B01.650.940.800.575.912.250.836.750.182
-Clematis;B01.650.940.800.575.912.250.836.750.205
-Coptis;B01.650.940.800.575.912.250.836.750.229
-Delphinium;B01.650.940.800.575.912.250.836.750.277
-Helleborus;B01.650.940.800.575.912.250.836.750.337
-Hydrastis;B01.650.940.800.575.912.250.836.750.397
-Nigella;B01.650.940.800.575.912.250.836.750.518
-Nigella damascena;B01.650.940.800.575.912.250.836.750.518.500
-Nigella sativa;B01.650.940.800.575.912.250.836.750.518.750
-Pulsatilla;B01.650.940.800.575.912.250.836.750.666
-Ranunculus;B01.650.940.800.575.912.250.836.750.733
-Semiaquilegia;B01.650.940.800.575.912.250.836.750.766
-Thalictrum;B01.650.940.800.575.912.250.836.750.883
-Xanthorhiza;B01.650.940.800.575.912.250.836.750.941
+Ranunculaceae;B01.650.940.800.575.912.250.838
+Aconitum;B01.650.940.800.575.912.250.838.022
+Actaea;B01.650.940.800.575.912.250.838.033
+Adonis;B01.650.940.800.575.912.250.838.036
+Anemone;B01.650.940.800.575.912.250.838.077
+Aquilegia;B01.650.940.800.575.912.250.838.088
+Cimicifuga;B01.650.940.800.575.912.250.838.182
+Clematis;B01.650.940.800.575.912.250.838.205
+Coptis;B01.650.940.800.575.912.250.838.229
+Delphinium;B01.650.940.800.575.912.250.838.277
+Helleborus;B01.650.940.800.575.912.250.838.337
+Hydrastis;B01.650.940.800.575.912.250.838.397
+Nigella;B01.650.940.800.575.912.250.838.518
+Nigella damascena;B01.650.940.800.575.912.250.838.518.500
+Nigella sativa;B01.650.940.800.575.912.250.838.518.750
+Pulsatilla;B01.650.940.800.575.912.250.838.666
+Ranunculus;B01.650.940.800.575.912.250.838.733
+Semiaquilegia;B01.650.940.800.575.912.250.838.766
+Thalictrum;B01.650.940.800.575.912.250.838.883
+Xanthorhiza;B01.650.940.800.575.912.250.838.941
+Resedaceae;B01.650.940.800.575.912.250.839
 Rhizophoraceae;B01.650.940.800.575.912.250.841
 Rosanae;B01.650.940.800.575.912.250.859
 Calophyllum;B01.650.940.800.575.912.250.859.250
@@ -5442,36 +5432,9 @@ Carya;B01.650.940.800.575.912.250.859.750.500.249
 Juglans;B01.650.940.800.575.912.250.859.750.500.500
 Myricaceae;B01.650.940.800.575.912.250.859.750.700
 Myrica;B01.650.940.800.575.912.250.859.750.700.500
-Malpighiales;B01.650.940.800.575.912.250.859.797
-Salicaceae;B01.650.940.800.575.912.250.859.797.875
-Casearia;B01.650.940.800.575.912.250.859.797.875.250
-Flacourtia;B01.650.940.800.575.912.250.859.797.875.450
-Populus;B01.650.940.800.575.912.250.859.797.875.453
-Ryania;B01.650.940.800.575.912.250.859.797.875.455
-Salix;B01.650.940.800.575.912.250.859.797.875.833
-Malvales;B01.650.940.800.575.912.250.859.821
-Malvaceae;B01.650.940.800.575.912.250.859.821.500
-Abelmoschus;B01.650.940.800.575.912.250.859.821.500.100
-Adansonia;B01.650.940.800.575.912.250.859.821.500.108
-Althaea;B01.650.940.800.575.912.250.859.821.500.115
-Bombax;B01.650.940.800.575.912.250.859.821.500.148
-Cacao;B01.650.940.800.575.912.250.859.821.500.164
-Ceiba;B01.650.940.800.575.912.250.859.821.500.180
-Cola;B01.650.940.800.575.912.250.859.821.500.212
-Corchorus;B01.650.940.800.575.912.250.859.821.500.228
-Gossypium;B01.650.940.800.575.912.250.859.821.500.244
-Grewia;B01.650.940.800.575.912.250.859.821.500.266
-Hibiscus;B01.650.940.800.575.912.250.859.821.500.288
-Malva;B01.650.940.800.575.912.250.859.821.500.555
-Sida Plant;B01.650.940.800.575.912.250.859.821.500.777
-Sterculia;B01.650.940.800.575.912.250.859.821.500.888
-Tilia;B01.650.940.800.575.912.250.859.821.500.944
-Triumfetta;B01.650.940.800.575.912.250.859.821.500.972
-Myrtales;B01.650.940.800.575.912.250.859.833
 Polygalaceae;B01.650.940.800.575.912.250.859.844
 Polygala;B01.650.940.800.575.912.250.859.844.500
 Securidaca;B01.650.940.800.575.912.250.859.844.750
-Resedaceae;B01.650.940.800.575.912.250.859.891
 Rosales;B01.650.940.800.575.912.250.859.937
 Cannabaceae;B01.650.940.800.575.912.250.859.937.055
 Cannabis;B01.650.940.800.575.912.250.859.937.055.500
@@ -5499,8 +5462,9 @@ Morus;B01.650.940.800.575.912.250.859.937.406.633
 Rhamnaceae;B01.650.940.800.575.912.250.859.937.437
 Ceanothus;B01.650.940.800.575.912.250.859.937.437.111
 Colubrina;B01.650.940.800.575.912.250.859.937.437.133
-Rhamnus;B01.650.940.800.575.912.250.859.937.437.316
+Frangula;B01.650.940.800.575.912.250.859.937.437.316
 Karwinskia;B01.650.940.800.575.912.250.859.937.437.408
+Rhamnus;B01.650.940.800.575.912.250.859.937.437.666
 Ziziphus;B01.650.940.800.575.912.250.859.937.437.833
 Rosaceae;B01.650.940.800.575.912.250.859.937.500
 Agrimonia;B01.650.940.800.575.912.250.859.937.500.033
@@ -5553,6 +5517,10 @@ Pilocarpus;B01.650.940.800.575.912.250.875.733
 Poncirus;B01.650.940.800.575.912.250.875.755
 Ruta;B01.650.940.800.575.912.250.875.788
 Zanthoxylum;B01.650.940.800.575.912.250.875.922
+Salicaceae;B01.650.940.800.575.912.250.881
+Casearia;B01.650.940.800.575.912.250.881.333
+Populus;B01.650.940.800.575.912.250.881.666
+Salix;B01.650.940.800.575.912.250.881.833
 Salvadoraceae;B01.650.940.800.575.912.250.882
 Santalaceae;B01.650.940.800.575.912.250.884
 Phoradendron;B01.650.940.800.575.912.250.884.333
@@ -5568,9 +5536,10 @@ Paullinia;B01.650.940.800.575.912.250.885.722
 Sapindus;B01.650.940.800.575.912.250.885.861
 Saururaceae;B01.650.940.800.575.912.250.888
 Houttuynia;B01.650.940.800.575.912.250.888.500
-Saxifragales;B01.650.940.800.575.912.250.890
-Daphniphyllaceae;B01.650.940.800.575.912.250.890.500
-Daphniphyllum;B01.650.940.800.575.912.250.890.500.500
+Schisandraceae;B01.650.940.800.575.912.250.889
+Illicium;B01.650.940.800.575.912.250.889.250
+Kadsura;B01.650.940.800.575.912.250.889.500
+Schisandra;B01.650.940.800.575.912.250.889.750
 Simaroubaceae;B01.650.940.800.575.912.250.898
 Ailanthus;B01.650.940.800.575.912.250.898.044
 Brucea;B01.650.940.800.575.912.250.898.111
@@ -5578,32 +5547,32 @@ Eurycoma;B01.650.940.800.575.912.250.898.333
 Picrasma;B01.650.940.800.575.912.250.898.555
 Quassia;B01.650.940.800.575.912.250.898.599
 Simarouba;B01.650.940.800.575.912.250.898.799
-Solanales;B01.650.940.800.575.912.250.908
-Solanaceae;B01.650.940.800.575.912.250.908.500
-Atropa;B01.650.940.800.575.912.250.908.500.049
-Atropa belladonna;B01.650.940.800.575.912.250.908.500.049.222
-Brugmansia;B01.650.940.800.575.912.250.908.500.097
-Capsicum;B01.650.940.800.575.912.250.908.500.145
-Cestrum;B01.650.940.800.575.912.250.908.500.166
-Datura;B01.650.940.800.575.912.250.908.500.188
-Datura metel;B01.650.940.800.575.912.250.908.500.188.550
-Datura stramonium;B01.650.940.800.575.912.250.908.500.188.800
-Duboisia;B01.650.940.800.575.912.250.908.500.202
-Hyoscyamus;B01.650.940.800.575.912.250.908.500.274
-Lycium;B01.650.940.800.575.912.250.908.500.310
-Lycopersicon esculentum;B01.650.940.800.575.912.250.908.500.322
-Mandragora;B01.650.940.800.575.912.250.908.500.347
-Petunia;B01.650.940.800.575.912.250.908.500.448
-Physalis;B01.650.940.800.575.912.250.908.500.499
-Scopolia;B01.650.940.800.575.912.250.908.500.612
-Solanum;B01.650.940.800.575.912.250.908.500.725
-Solanum glaucophyllum;B01.650.940.800.575.912.250.908.500.725.610
-Solanum melongena;B01.650.940.800.575.912.250.908.500.725.666
-Solanum nigrum;B01.650.940.800.575.912.250.908.500.725.699
-Solanum tuberosum;B01.650.940.800.575.912.250.908.500.725.777
-Tobacco;B01.650.940.800.575.912.250.908.500.900
-Withania;B01.650.940.800.575.912.250.908.500.950
+Solanaceae;B01.650.940.800.575.912.250.905
+Atropa;B01.650.940.800.575.912.250.905.049
+Atropa belladonna;B01.650.940.800.575.912.250.905.049.222
+Capsicum;B01.650.940.800.575.912.250.905.145
+Cestrum;B01.650.940.800.575.912.250.905.166
+Datura;B01.650.940.800.575.912.250.905.188
+Datura metel;B01.650.940.800.575.912.250.905.188.550
+Datura stramonium;B01.650.940.800.575.912.250.905.188.800
+Duboisia;B01.650.940.800.575.912.250.905.202
+Hyoscyamus;B01.650.940.800.575.912.250.905.274
+Lycium;B01.650.940.800.575.912.250.905.310
+Lycopersicon esculentum;B01.650.940.800.575.912.250.905.322
+Mandragora;B01.650.940.800.575.912.250.905.347
+Petunia;B01.650.940.800.575.912.250.905.448
+Physalis;B01.650.940.800.575.912.250.905.499
+Scopolia;B01.650.940.800.575.912.250.905.612
+Solanum;B01.650.940.800.575.912.250.905.725
+Solanum glaucophyllum;B01.650.940.800.575.912.250.905.725.610
+Solanum melongena;B01.650.940.800.575.912.250.905.725.666
+Solanum nigrum;B01.650.940.800.575.912.250.905.725.699
+Solanum tuberosum;B01.650.940.800.575.912.250.905.725.777
+Tobacco;B01.650.940.800.575.912.250.905.900
+Withania;B01.650.940.800.575.912.250.905.950
 Stemonaceae;B01.650.940.800.575.912.250.910
+Sterculiaceae;B01.650.940.800.575.912.250.915
+Cacao;B01.650.940.800.575.912.250.915.144
 Thymelaeaceae;B01.650.940.800.575.912.250.932
 Daphne;B01.650.940.800.575.912.250.932.500
 Wikstroemia;B01.650.940.800.575.912.250.932.909
@@ -5627,6 +5596,7 @@ Larrea;B01.650.940.800.575.912.250.987.399
 Peganum;B01.650.940.800.575.912.250.987.699
 Tribulus;B01.650.940.800.575.912.250.987.849
 Zygophyllum;B01.650.940.800.575.912.250.987.924
+Pteridophyta;B01.650.940.800.575.912.500
 Retortamonadidae;B01.675
 Rhizaria;B01.680
 Cercozoa;B01.680.150
@@ -5636,24 +5606,24 @@ Haplosporida;B01.680.400
 Stramenopiles;B01.750
 Chrysophyta;B01.750.150
 Ochromonas;B01.750.150.600
-Diatoms;B01.750.200
-Oomycetes;B01.750.580
-Achlya;B01.750.580.050
-Aphanomyces;B01.750.580.075
-Lagenidium;B01.750.580.500
-Peronospora;B01.750.580.710
-Phytophthora;B01.750.580.715
-Phytophthora infestans;B01.750.580.715.600
-Pythium;B01.750.580.750
-Saprolegnia;B01.750.580.825
 Phaeophyta;B01.750.600
 Ascophyllum;B01.750.600.040
+Fucus;B01.750.600.212
 Kelp;B01.750.600.425
-Fucus;B01.750.600.425.250
-Laminaria;B01.750.600.425.500
-Macrocystis;B01.750.600.425.750
+Laminaria;B01.750.600.450
+Macrocystis;B01.750.600.480
 Sargassum;B01.750.600.725
 Undaria;B01.750.600.800
+Diatoms;B01.750.875
+Oomycetes;B01.750.937
+Achlya;B01.750.937.050
+Aphanomyces;B01.750.937.075
+Lagenidium;B01.750.937.500
+Peronospora;B01.750.937.710
+Phytophthora;B01.750.937.715
+Phytophthora infestans;B01.750.937.715.600
+Pythium;B01.750.937.750
+Saprolegnia;B01.750.937.825
 Archaea;B02
 Crenarchaeota;B02.075
 Desulfurococcales;B02.075.200
@@ -6255,7 +6225,6 @@ Beggiatoa;B03.440.400.645.100
 Thiothrix;B03.440.400.645.800
 Vitreoscilla;B03.440.400.840
 Gram-Negative Anaerobic Bacteria;B03.440.425
-Desulfovibrionaceae;B03.440.425.200
 Gram-Negative Anaerobic Cocci;B03.440.425.400
 Megasphaera;B03.440.425.400.500
 Megasphaera elsdenii;B03.440.425.400.500.500
@@ -6341,12 +6310,12 @@ Eikenella corrodens;B03.440.450.400.275
 Enterobacteriaceae;B03.440.450.425
 Calymmatobacterium;B03.440.450.425.180
 Carbapenem-Resistant Enterobacteriaceae;B03.440.450.425.189
+Cronobacter;B03.440.450.425.198
+Cronobacter sakazakii;B03.440.450.425.198.150
 Citrobacter;B03.440.450.425.200
 Citrobacter freundii;B03.440.450.425.200.275
 Citrobacter koseri;B03.440.450.425.200.475
 Citrobacter rodentium;B03.440.450.425.200.737
-Cronobacter;B03.440.450.425.215
-Cronobacter sakazakii;B03.440.450.425.215.150
 Edwardsiella;B03.440.450.425.260
 Edwardsiella ictaluri;B03.440.450.425.260.340
 Edwardsiella tarda;B03.440.450.425.260.750
@@ -6986,6 +6955,19 @@ Rhizobium tropici;B03.585.900.800
 Trichodesmium;B03.585.950
 Proteobacteria;B03.660
 Alphaproteobacteria;B03.660.050
+Anaplasmataceae;B03.660.050.020
+Anaplasma;B03.660.050.020.050
+Anaplasma centrale;B03.660.050.020.050.100
+Anaplasma marginale;B03.660.050.020.050.500
+Anaplasma ovis;B03.660.050.020.050.575
+Anaplasma phagocytophilum;B03.660.050.020.050.600
+Ehrlichia;B03.660.050.020.287
+Ehrlichia canis;B03.660.050.020.287.090
+Ehrlichia chaffeensis;B03.660.050.020.287.100
+Ehrlichia ruminantium;B03.660.050.020.287.700
+Neorickettsia;B03.660.050.020.525
+Neorickettsia risticii;B03.660.050.020.525.700
+Neorickettsia sennetsu;B03.660.050.020.525.720
 Bartonellaceae;B03.660.050.030
 Bartonella;B03.660.050.030.040
 Bartonella bacilliformis;B03.660.050.030.040.080
@@ -7024,17 +7006,33 @@ Methylosinus;B03.660.050.512.500
 Methylosinus trichosporium;B03.660.050.512.500.750
 Phyllobacteriaceae;B03.660.050.600
 Mesorhizobium;B03.660.050.600.500
-Rhizobiaceae;B03.660.050.662
-Agrobacterium;B03.660.050.662.024
-Agrobacterium tumefaciens;B03.660.050.662.024.500
-Rhizobium;B03.660.050.662.670
-Rhizobium etli;B03.660.050.662.670.337
-Rhizobium leguminosarum;B03.660.050.662.670.450
-Rhizobium phaseoli;B03.660.050.662.670.600
-Rhizobium tropici;B03.660.050.662.670.800
-Sinorhizobium;B03.660.050.662.835
-Sinorhizobium fredii;B03.660.050.662.835.399
-Sinorhizobium meliloti;B03.660.050.662.835.800
+Rhodospirillales;B03.660.050.663
+Acetobacteraceae;B03.660.050.663.050
+Acetobacter;B03.660.050.663.050.010
+Acidiphilium;B03.660.050.663.050.020
+Gluconacetobacter;B03.660.050.663.050.400
+Gluconacetobacter xylinus;B03.660.050.663.050.400.500
+Gluconobacter;B03.660.050.663.050.415
+Gluconobacter oxydans;B03.660.050.663.050.415.550
+Rhodospirillaceae;B03.660.050.663.750
+Azospirillum;B03.660.050.663.750.100
+Azospirillum brasilense;B03.660.050.663.750.100.020
+Azospirillum lipoferum;B03.660.050.663.750.100.510
+Magnetospirillum;B03.660.050.663.750.500
+Rhodospirillum;B03.660.050.663.750.733
+Rhodospirillum centenum;B03.660.050.663.750.733.150
+Rhodospirillum rubrum;B03.660.050.663.750.733.650
+Rhizobiaceae;B03.660.050.730
+Agrobacterium;B03.660.050.730.024
+Agrobacterium tumefaciens;B03.660.050.730.024.500
+Rhizobium;B03.660.050.730.670
+Rhizobium etli;B03.660.050.730.670.337
+Rhizobium leguminosarum;B03.660.050.730.670.450
+Rhizobium phaseoli;B03.660.050.730.670.600
+Rhizobium tropici;B03.660.050.730.670.800
+Sinorhizobium;B03.660.050.730.835
+Sinorhizobium fredii;B03.660.050.730.835.399
+Sinorhizobium meliloti;B03.660.050.730.835.800
 Rhodobacteraceae;B03.660.050.750
 Paracoccus;B03.660.050.750.600
 Paracoccus denitrificans;B03.660.050.750.600.125
@@ -7044,22 +7042,6 @@ Rhodobacter capsulatus;B03.660.050.750.700.225
 Rhodobacter sphaeroides;B03.660.050.750.700.700
 Rhodovulum;B03.660.050.750.725
 Roseobacter;B03.660.050.750.750
-Rhodospirillales;B03.660.050.755
-Acetobacteraceae;B03.660.050.755.050
-Acetobacter;B03.660.050.755.050.010
-Acidiphilium;B03.660.050.755.050.020
-Gluconacetobacter;B03.660.050.755.050.400
-Gluconacetobacter xylinus;B03.660.050.755.050.400.500
-Gluconobacter;B03.660.050.755.050.415
-Gluconobacter oxydans;B03.660.050.755.050.415.550
-Rhodospirillaceae;B03.660.050.755.750
-Azospirillum;B03.660.050.755.750.100
-Azospirillum brasilense;B03.660.050.755.750.100.020
-Azospirillum lipoferum;B03.660.050.755.750.100.510
-Magnetospirillum;B03.660.050.755.750.500
-Rhodospirillum;B03.660.050.755.750.733
-Rhodospirillum centenum;B03.660.050.755.750.733.150
-Rhodospirillum rubrum;B03.660.050.755.750.733.650
 Rickettsiaceae;B03.660.050.765
 Rickettsieae;B03.660.050.765.650
 Orientia tsutsugamushi;B03.660.050.765.650.600
@@ -7071,20 +7053,6 @@ Rickettsia prowazekii;B03.660.050.765.650.650.600
 Rickettsia rickettsii;B03.660.050.765.650.650.650
 Rickettsia typhi;B03.660.050.765.650.650.810
 Wolbachia;B03.660.050.765.825
-Rickettsiales;B03.660.050.783
-Anaplasmataceae;B03.660.050.783.500
-Anaplasma;B03.660.050.783.500.050
-Anaplasma centrale;B03.660.050.783.500.050.100
-Anaplasma marginale;B03.660.050.783.500.050.500
-Anaplasma ovis;B03.660.050.783.500.050.575
-Anaplasma phagocytophilum;B03.660.050.783.500.050.600
-Ehrlichia;B03.660.050.783.500.287
-Ehrlichia canis;B03.660.050.783.500.287.090
-Ehrlichia chaffeensis;B03.660.050.783.500.287.100
-Ehrlichia ruminantium;B03.660.050.783.500.287.700
-Neorickettsia;B03.660.050.783.500.525
-Neorickettsia risticii;B03.660.050.783.500.525.700
-Neorickettsia sennetsu;B03.660.050.783.500.525.720
 Sphingomonadaceae;B03.660.050.800
 Sphingomonas;B03.660.050.800.750
 Zymomonas;B03.660.050.800.990
@@ -7122,9 +7090,6 @@ Comamonas testosteroni;B03.660.075.090.766.150.750
 Delftia;B03.660.075.090.766.170
 Delftia acidovorans;B03.660.075.090.766.170.030
 Sphaerotilus;B03.660.075.090.766.750
-Oxalobacteraceae;B03.660.075.090.883
-Herbaspirillum;B03.660.075.090.883.400
-Oxalobacter formigenes;B03.660.075.090.883.600
 Gallionellaceae;B03.660.075.375
 Hydrogenophilaceae;B03.660.075.400
 Thiobacillus;B03.660.075.400.800
@@ -7155,6 +7120,9 @@ Vitreoscilla;B03.660.075.525.900
 Nitrosomonadaceae;B03.660.075.550
 Nitrosomonas;B03.660.075.550.500
 Nitrosomonas europaea;B03.660.075.550.500.200
+Oxalobacteraceae;B03.660.075.600
+Herbaspirillum;B03.660.075.600.400
+Oxalobacter formigenes;B03.660.075.600.600
 Rhodocyclaceae;B03.660.075.655
 Azoarcus;B03.660.075.655.070
 Thauera;B03.660.075.655.800
@@ -7164,14 +7132,13 @@ Spirillum;B03.660.075.710.750
 Deltaproteobacteria;B03.660.125
 Bdellovibrio;B03.660.125.050
 Bdellovibrio bacteriovorus;B03.660.125.050.500
-Desulfovibrionales;B03.660.125.144
-Desulfovibrionaceae;B03.660.125.144.500
-Bilophila;B03.660.125.144.500.500
-Desulfovibrio;B03.660.125.144.500.875
-Desulfovibrio africanus;B03.660.125.144.500.875.040
-Desulfovibrio desulfuricans;B03.660.125.144.500.875.150
-Desulfovibrio gigas;B03.660.125.144.500.875.350
-Desulfovibrio vulgaris;B03.660.125.144.500.875.875
+Bilophila;B03.660.125.087
+Desulfovibrio;B03.660.125.125
+Desulfovibrio africanus;B03.660.125.125.040
+Desulfovibrio desulfuricans;B03.660.125.125.150
+Desulfovibrio gigas;B03.660.125.125.350
+Desulfovibrio vulgaris;B03.660.125.125.875
+Desulfovibrionaceae;B03.660.125.138
 Desulfuromonas;B03.660.125.150
 Geobacter;B03.660.125.305
 Lawsonia Bacteria;B03.660.125.460
@@ -7194,13 +7161,13 @@ Campylobacter rectus;B03.660.150.235.250.500.700
 Campylobacter sputorum;B03.660.150.235.250.500.740
 Campylobacter upsaliensis;B03.660.150.235.250.500.850
 Helicobacteraceae;B03.660.150.235.500
-Helicobacter;B03.660.150.235.500.250
-Helicobacter felis;B03.660.150.235.500.250.350
-Helicobacter heilmannii;B03.660.150.235.500.250.400
-Helicobacter hepaticus;B03.660.150.235.500.250.410
-Helicobacter mustelae;B03.660.150.235.500.250.480
-Helicobacter pylori;B03.660.150.235.500.250.550
-Wolinella;B03.660.150.235.500.500
+Helicobacter;B03.660.150.280
+Helicobacter felis;B03.660.150.280.350
+Helicobacter heilmannii;B03.660.150.280.400
+Helicobacter hepaticus;B03.660.150.280.410
+Helicobacter mustelae;B03.660.150.280.480
+Helicobacter pylori;B03.660.150.280.550
+Wolinella;B03.660.150.920
 Gammaproteobacteria;B03.660.250
 Acidithiobacillus;B03.660.250.015
 Acidithiobacillus thiooxidans;B03.660.250.015.800
@@ -7235,12 +7202,12 @@ Enterobacteriaceae;B03.660.250.150
 Buchnera;B03.660.250.150.047
 Calymmatobacterium;B03.660.250.150.095
 Carbapenem-Resistant Enterobacteriaceae;B03.660.250.150.097
+Cronobacter;B03.660.250.150.098
+Cronobacter sakazakii;B03.660.250.150.098.150
 Citrobacter;B03.660.250.150.100
 Citrobacter freundii;B03.660.250.150.100.210
 Citrobacter koseri;B03.660.250.150.100.475
 Citrobacter rodentium;B03.660.250.150.100.737
-Cronobacter;B03.660.250.150.110
-Cronobacter sakazakii;B03.660.250.150.110.150
 Edwardsiella;B03.660.250.150.160
 Edwardsiella ictaluri;B03.660.250.150.160.340
 Edwardsiella tarda;B03.660.250.150.160.750
@@ -7422,7 +7389,6 @@ Desulfovibrio africanus;B03.900.350.040
 Desulfovibrio desulfuricans;B03.900.350.150
 Desulfovibrio gigas;B03.900.350.350
 Desulfovibrio vulgaris;B03.900.350.875
-Desulfovibrionaceae;B03.900.360
 Desulfuromonas;B03.900.370
 Viruses;B04
 Arboviruses;B04.080
@@ -7557,6 +7523,12 @@ Herpesvirus 1, Ranid;B04.280.210.430
 Leporipoxvirus;B04.280.210.600
 Fibroma Virus, Rabbit;B04.280.210.600.250
 Myxoma virus;B04.280.210.600.550
+Polyomaviridae;B04.280.210.620
+Polyomavirus;B04.280.210.620.615
+BK Virus;B04.280.210.620.615.100
+JC Virus;B04.280.210.620.615.400
+Merkel cell polyomavirus;B04.280.210.620.615.550
+Simian virus 40;B04.280.210.620.615.700
 Papillomaviridae;B04.280.210.655
 Alphapapillomavirus;B04.280.210.655.050
 Human papillomavirus 6;B04.280.210.655.050.606
@@ -7574,12 +7546,6 @@ Lambdapapillomavirus;B04.280.210.655.520
 Mupapillomavirus;B04.280.210.655.540
 Xipapillomavirus;B04.280.210.655.950
 Bovine papillomavirus 4;B04.280.210.655.950.150
-Polyomaviridae;B04.280.210.700
-Polyomavirus;B04.280.210.700.615
-BK Virus;B04.280.210.700.615.100
-JC Virus;B04.280.210.700.615.400
-Merkel cell polyomavirus;B04.280.210.700.615.550
-Simian virus 40;B04.280.210.700.615.700
 Yatapoxvirus;B04.280.210.950
 Yaba monkey tumor virus;B04.280.210.950.950
 Fuselloviridae;B04.280.224
@@ -7703,13 +7669,13 @@ Hepatitis Viruses;B04.450
 Adenoviruses, Canine;B04.450.100
 GB virus B;B04.450.355
 GB virus C;B04.450.360
-Hepacivirus;B04.450.380
 Hepadnaviridae;B04.450.390
 Avihepadnavirus;B04.450.390.100
 Hepatitis B Virus, Duck;B04.450.390.100.450
 Orthohepadnavirus;B04.450.390.650
 Hepatitis B virus;B04.450.390.650.425
 Hepatitis B Virus, Woodchuck;B04.450.390.650.460
+Hepacivirus;B04.450.410
 Hepatitis Delta Virus;B04.450.411
 Hepatitis E virus;B04.450.412
 Hepatitis Virus, Duck;B04.450.416
@@ -7833,6 +7799,10 @@ Tungrovirus;B04.715.102.850
 Closteroviridae;B04.715.110
 Closterovirus;B04.715.110.150
 Crinivirus;B04.715.110.175
+Secoviridae;B04.715.150
+Comovirus;B04.715.150.150
+Fabavirus;B04.715.150.250
+Nepovirus;B04.715.150.500
 Flexiviridae;B04.715.260
 Carlavirus;B04.715.260.150
 Potexvirus;B04.715.260.575
@@ -7860,10 +7830,6 @@ Phycodnaviridae;B04.715.600
 Potyviridae;B04.715.635
 Potyvirus;B04.715.635.600
 Plum Pox Virus;B04.715.635.600.600
-Secoviridae;B04.715.700
-Comovirus;B04.715.700.150
-Fabavirus;B04.715.700.250
-Nepovirus;B04.715.700.500
 Sequiviridae;B04.715.750
 Sequivirus;B04.715.750.750
 Waikavirus;B04.715.750.900
@@ -7879,13 +7845,13 @@ Reassortant Viruses;B04.800
 RNA Viruses;B04.820
 Arenaviridae;B04.820.057
 Arenavirus;B04.820.057.070
-Arenaviruses, New World;B04.820.057.070.095
-Junin virus;B04.820.057.070.095.450
-Pichinde virus;B04.820.057.070.095.650
 Arenaviruses, Old World;B04.820.057.070.100
 Lassa virus;B04.820.057.070.100.500
 Lujo virus;B04.820.057.070.100.525
 Lymphocytic choriomeningitis virus;B04.820.057.070.100.550
+Arenaviruses, New World;B04.820.057.070.800
+Junin virus;B04.820.057.070.800.450
+Pichinde virus;B04.820.057.070.800.650
 Astroviridae;B04.820.069
 Avastrovirus;B04.820.069.080
 Mamastrovirus;B04.820.069.500
@@ -7933,6 +7899,10 @@ Vesicular exanthema of swine virus;B04.820.095.887.900
 Closteroviridae;B04.820.110
 Closterovirus;B04.820.110.150
 Crinivirus;B04.820.110.175
+Secoviridae;B04.820.150
+Comovirus;B04.820.150.150
+Fabavirus;B04.820.150.250
+Nepovirus;B04.820.150.500
 Cystoviridae;B04.820.180
 Bacteriophage phi 6;B04.820.180.070
 Dicistroviridae;B04.820.215
@@ -7965,10 +7935,10 @@ Hepacivirus;B04.820.250.475
 GB virus B;B04.820.250.475.405
 Pestivirus;B04.820.250.700
 Border disease virus;B04.820.250.700.100
-Classical Swine Fever Virus;B04.820.250.700.125
 Diarrhea Viruses, Bovine Viral;B04.820.250.700.150
 Diarrhea Virus 1, Bovine Viral;B04.820.250.700.150.100
 Diarrhea Virus 2, Bovine Viral;B04.820.250.700.150.120
+Classical swine fever virus;B04.820.250.700.400
 Flexiviridae;B04.820.260
 Carlavirus;B04.820.260.150
 Potexvirus;B04.820.260.575
@@ -8030,7 +8000,7 @@ Vesicular stomatitis New Jersey virus;B04.820.455.750.900.910
 Nidovirales;B04.820.504
 Arteriviridae;B04.820.504.080
 Arterivirus;B04.820.504.080.500
-Equartevirus;B04.820.504.080.500.100
+Arteritis Virus, Equine;B04.820.504.080.500.100
 Lactate dehydrogenase-elevating virus;B04.820.504.080.500.500
 Porcine respiratory and reproductive syndrome virus;B04.820.504.080.500.800
 Coronaviridae;B04.820.504.540
@@ -8061,7 +8031,6 @@ Nodaviridae;B04.820.515
 Orthomyxoviridae;B04.820.545
 Influenzavirus A;B04.820.545.405
 Influenza A virus;B04.820.545.405.400
-Influenza A Virus, H10N7 Subtype;B04.820.545.405.400.105
 Influenza A Virus, H10N8 Subtype;B04.820.545.405.400.106
 Influenza A Virus, H1N1 Subtype;B04.820.545.405.400.214
 Influenza A Virus, H1N2 Subtype;B04.820.545.405.400.216
@@ -8077,6 +8046,7 @@ Influenza A Virus, H7N3 Subtype;B04.820.545.405.400.694
 Influenza A Virus, H7N7 Subtype;B04.820.545.405.400.700
 Influenza A Virus, H7N9 Subtype;B04.820.545.405.400.800
 Influenza A Virus, H9N2 Subtype;B04.820.545.405.400.900
+Influenza A Virus, H10N7 Subtype;B04.820.545.405.400.920
 Influenzavirus B;B04.820.545.407
 Influenza B virus;B04.820.545.407.410
 Influenzavirus C;B04.820.545.410
@@ -8197,10 +8167,6 @@ Simian T-lymphotropic virus 1;B04.820.650.805.851
 Simian T-lymphotropic virus 2;B04.820.650.805.855
 Spumavirus;B04.820.650.850
 Simian foamy virus;B04.820.650.850.750
-Secoviridae;B04.820.700
-Comovirus;B04.820.700.150
-Fabavirus;B04.820.700.250
-Nepovirus;B04.820.700.500
 Sequiviridae;B04.820.750
 Sequivirus;B04.820.750.750
 Waikavirus;B04.820.750.900
@@ -8328,7 +8294,6 @@ Borrelia Infections;C01.252.400.155
 Lyme Disease;C01.252.400.155.569
 Erythema Chronicum Migrans;C01.252.400.155.569.200
 Lyme Neuroborreliosis;C01.252.400.155.569.600
-Post-Lyme Disease Syndrome;C01.252.400.155.569.800
 Relapsing Fever;C01.252.400.155.644
 Brucellosis;C01.252.400.167
 Brucellosis, Bovine;C01.252.400.167.322
@@ -8417,7 +8382,6 @@ Heartwater Disease;C01.252.400.825.300
 Lyme Disease;C01.252.400.825.480
 Erythema Chronicum Migrans;C01.252.400.825.480.400
 Lyme Neuroborreliosis;C01.252.400.825.480.700
-Post-Lyme Disease Syndrome;C01.252.400.825.480.850
 Relapsing Fever;C01.252.400.825.750
 Spotted Fever Group Rickettsiosis;C01.252.400.825.887
 Boutonneuse Fever;C01.252.400.825.887.250
@@ -8529,9 +8493,9 @@ Rheumatic Heart Disease;C01.252.410.890.731.649
 Scarlet Fever;C01.252.410.890.823
 Pneumonia, Bacterial;C01.252.620
 Chlamydial Pneumonia;C01.252.620.249
-Pneumonia of Calves, Enzootic;C01.252.620.300
-Pneumonia of Swine, Mycoplasmal;C01.252.620.330
 Pneumonia, Mycoplasma;C01.252.620.500
+Pneumonia of Calves, Enzootic;C01.252.620.530
+Pneumonia of Swine, Mycoplasmal;C01.252.620.540
 Pneumonia, Pneumococcal;C01.252.620.550
 Pneumonia, Rickettsial;C01.252.620.600
 Pneumonia, Staphylococcal;C01.252.620.620
@@ -8571,7 +8535,6 @@ Borrelia Infections;C01.252.847.193
 Lyme Disease;C01.252.847.193.569
 Erythema Chronicum Migrans;C01.252.847.193.569.200
 Lyme Neuroborreliosis;C01.252.847.193.569.600
-Post-Lyme Disease Syndrome;C01.252.847.193.569.800
 Relapsing Fever;C01.252.847.193.644
 Leptospirosis;C01.252.847.511
 Weil Disease;C01.252.847.511.739
@@ -8619,7 +8582,6 @@ Communicable Diseases, Imported;C01.539.221.625
 Waterborne Diseases;C01.539.221.750
 Community-Acquired Infections;C01.539.234
 Cross Infection;C01.539.248
-Healthcare-Associated Pneumonia;C01.539.248.250
 Pneumonia, Ventilator-Associated;C01.539.248.500
 Eye Infections;C01.539.375
 Corneal Ulcer;C01.539.375.177
@@ -9029,11 +8991,11 @@ Hemorrhagic Syndrome, Bovine;C02.782.350.675.400
 Hemorrhagic Fevers, Viral;C02.782.417
 Dengue;C02.782.417.214
 Severe Dengue;C02.782.417.214.200
-Hemorrhagic Fever with Renal Syndrome;C02.782.417.300
 Hemorrhagic Fever, American;C02.782.417.400
 Hemorrhagic Fever, Crimean;C02.782.417.412
 Hemorrhagic Fever, Ebola;C02.782.417.415
 Hemorrhagic Fever, Omsk;C02.782.417.435
+Hemorrhagic Fever with Renal Syndrome;C02.782.417.450
 Kyasanur Forest Disease;C02.782.417.475
 Lassa Fever;C02.782.417.505
 Marburg Virus Disease;C02.782.417.560
@@ -9057,10 +9019,10 @@ Measles;C02.782.580.600.500.500
 Subacute Sclerosing Panencephalitis;C02.782.580.600.500.500.800
 Peste-des-Petits-Ruminants;C02.782.580.600.500.600
 Rinderpest;C02.782.580.600.500.700
-Pneumovirus Infections;C02.782.580.600.550
-Respiratory Syncytial Virus Infections;C02.782.580.600.550.750
 Respirovirus Infections;C02.782.580.600.600
 Pasteurellosis, Pneumonic;C02.782.580.600.600.648
+Pneumovirus Infections;C02.782.580.600.620
+Respiratory Syncytial Virus Infections;C02.782.580.600.620.750
 Rubulavirus Infections;C02.782.580.600.680
 Mumps;C02.782.580.600.680.500
 Rhabdoviridae Infections;C02.782.580.830
@@ -9079,8 +9041,8 @@ Gastroenteritis, Transmissible, of Swine;C02.782.600.550.200.400
 Severe Acute Respiratory Syndrome;C02.782.600.550.200.750
 Torovirus Infections;C02.782.600.550.800
 Orthomyxoviridae Infections;C02.782.620
-Influenza in Birds;C02.782.620.300
 Influenza, Human;C02.782.620.365
+Influenza in Birds;C02.782.620.375
 Picornaviridae Infections;C02.782.687
 Cardiovirus Infections;C02.782.687.150
 Common Cold;C02.782.687.207
@@ -9118,14 +9080,14 @@ HIV Infections;C02.782.815.616.400
 Acquired Immunodeficiency Syndrome;C02.782.815.616.400.040
 Acute Retroviral Syndrome;C02.782.815.616.400.044
 AIDS Arteritis, Central Nervous System;C02.782.815.616.400.048
-AIDS Dementia Complex;C02.782.815.616.400.049
 AIDS-Associated Nephropathy;C02.782.815.616.400.050
+AIDS Dementia Complex;C02.782.815.616.400.070
 AIDS-Related Complex;C02.782.815.616.400.080
 AIDS-Related Opportunistic Infections;C02.782.815.616.400.100
-HIV Enteropathy;C02.782.815.616.400.398
+HIV-Associated Lipodystrophy Syndrome;C02.782.815.616.400.400
+HIV Enteropathy;C02.782.815.616.400.480
 HIV Seropositivity;C02.782.815.616.400.500
 HIV Wasting Syndrome;C02.782.815.616.400.520
-HIV-Associated Lipodystrophy Syndrome;C02.782.815.616.400.550
 Pneumonia, Progressive Interstitial, of Sheep;C02.782.815.616.660
 Simian Acquired Immunodeficiency Syndrome;C02.782.815.616.850
 Visna;C02.782.815.616.900
@@ -9152,13 +9114,13 @@ HIV Infections;C02.800.801.400
 Acquired Immunodeficiency Syndrome;C02.800.801.400.040
 Acute Retroviral Syndrome;C02.800.801.400.044
 AIDS Arteritis, Central Nervous System;C02.800.801.400.048
+AIDS-Associated Nephropathy;C02.800.801.400.050
 AIDS Dementia Complex;C02.800.801.400.070
-AIDS-Associated Nephropathy;C02.800.801.400.072
 AIDS-Related Complex;C02.800.801.400.080
+HIV-Associated Lipodystrophy Syndrome;C02.800.801.400.400
 HIV Enteropathy;C02.800.801.400.480
 HIV Seropositivity;C02.800.801.400.500
 HIV Wasting Syndrome;C02.800.801.400.520
-HIV-Associated Lipodystrophy Syndrome;C02.800.801.400.530
 Skin Diseases, Viral;C02.825
 Erythema Infectiosum;C02.825.260
 Exanthema Subitum;C02.825.290
@@ -9466,8 +9428,8 @@ Leukemia, Prolymphocytic, B-Cell;C04.557.337.428.565.745
 Leukemia, Prolymphocytic, T-Cell;C04.557.337.428.565.750
 Leukemia, T-Cell;C04.557.337.428.580
 Leukemia, Large Granular Lymphocytic;C04.557.337.428.580.049
-Leukemia, Prolymphocytic, T-Cell;C04.557.337.428.580.075
 Leukemia-Lymphoma, Adult T-Cell;C04.557.337.428.580.100
+Leukemia, Prolymphocytic, T-Cell;C04.557.337.428.580.125
 Precursor Cell Lymphoblastic Leukemia-Lymphoma;C04.557.337.428.600
 Precursor B-Cell Lymphoblastic Leukemia-Lymphoma;C04.557.337.428.600.600
 Precursor T-Cell Lymphoblastic Leukemia-Lymphoma;C04.557.337.428.600.620
@@ -9564,7 +9526,6 @@ Chondroblastoma;C04.557.450.565.250
 Chondroma;C04.557.450.565.265
 Chondromatosis;C04.557.450.565.265.270
 Chondrosarcoma;C04.557.450.565.280
-Chondrosarcoma, Clear Cell;C04.557.450.565.280.140
 Chondrosarcoma, Mesenchymal;C04.557.450.565.280.280
 Endometrial Stromal Tumors;C04.557.450.565.325
 Gastrointestinal Stromal Tumors;C04.557.450.565.370
@@ -9582,7 +9543,6 @@ Urticaria Pigmentosa;C04.557.450.565.465.500.850
 Mastocytosis, Systemic;C04.557.450.565.465.750
 Leukemia, Mast-Cell;C04.557.450.565.465.750.500
 Myofibroma;C04.557.450.565.540
-Myopericytoma;C04.557.450.565.545
 Myxoma;C04.557.450.565.550
 Carney Complex;C04.557.450.565.550.312
 Neurothekeoma;C04.557.450.565.550.625
@@ -9647,7 +9607,6 @@ Adenosarcoma;C04.557.450.795.135
 Carcinosarcoma;C04.557.450.795.290
 Carcinoma 256, Walker;C04.557.450.795.290.210
 Chondrosarcoma;C04.557.450.795.300
-Chondrosarcoma, Clear Cell;C04.557.450.795.300.140
 Chondrosarcoma, Mesenchymal;C04.557.450.795.300.280
 Desmoplastic Small Round Cell Tumor;C04.557.450.795.315
 Endometrial Stromal Tumors;C04.557.450.795.332
@@ -9789,15 +9748,13 @@ Prolactinoma;C04.557.470.035.625
 Carcinoma;C04.557.470.200
 Adenocarcinoma;C04.557.470.200.025
 Adenocarcinoma in Situ;C04.557.470.200.025.014
-Adenocarcinoma of Lung;C04.557.470.200.025.022
-Adenocarcinoma, Bronchiolo-Alveolar;C04.557.470.200.025.022.500
+Adenocarcinoma, Bronchiolo-Alveolar;C04.557.470.200.025.030
 Adenocarcinoma, Clear Cell;C04.557.470.200.025.045
 Adenocarcinoma, Follicular;C04.557.470.200.025.060
 Carcinoma, Papillary, Follicular;C04.557.470.200.025.060.225
 Adenocarcinoma, Mucinous;C04.557.470.200.025.075
 Adenocarcinoma, Papillary;C04.557.470.200.025.085
 Carcinoma, Papillary, Follicular;C04.557.470.200.025.085.225
-Thyroid Cancer, Papillary;C04.557.470.200.025.085.612
 Adenocarcinoma, Scirrhous;C04.557.470.200.025.095
 Linitis Plastica;C04.557.470.200.025.095.410
 Adenocarcinoma, Sebaceous;C04.557.470.200.025.105
@@ -9855,18 +9812,14 @@ Prostatic Intraepithelial Neoplasia;C04.557.470.200.240.500
 Carcinoma, Krebs 2;C04.557.470.200.255
 Carcinoma, Large Cell;C04.557.470.200.260
 Carcinoma, Lewis Lung;C04.557.470.200.280
-Carcinoma, Ovarian Epithelial;C04.557.470.200.295
 Carcinoma, Papillary;C04.557.470.200.360
 Carcinoma, Small Cell;C04.557.470.200.380
 Carcinoma, Squamous Cell;C04.557.470.200.400
 Bowen's Disease;C04.557.470.200.400.130
-Esophageal Squamous Cell Carcinoma;C04.557.470.200.400.330
-Squamous Cell Carcinoma of Head and Neck;C04.557.470.200.400.565
 Carcinoma, Transitional Cell;C04.557.470.200.430
 Carcinoma, Verrucous;C04.557.470.200.450
 Buschke-Lowenstein Tumor;C04.557.470.200.450.500
 Mammary Analogue Secretory Carcinoma;C04.557.470.200.588
-Nasopharyngeal Carcinoma;C04.557.470.200.623
 Thyroid Carcinoma, Anaplastic;C04.557.470.200.725
 Neoplasms, Adnexal and Skin Appendage;C04.557.470.550
 Adenocarcinoma, Sebaceous;C04.557.470.550.105
@@ -9907,7 +9860,6 @@ Paget's Disease, Mammary;C04.557.470.615.275.625
 Carcinoma, Lobular;C04.557.470.615.305
 Carcinoma, Medullary;C04.557.470.615.315
 Paget Disease, Extramammary;C04.557.470.615.660
-Pancreatic Intraductal Neoplasms;C04.557.470.615.665
 Papilloma, Intraductal;C04.557.470.615.670
 Neoplasms, Fibroepithelial;C04.557.470.625
 Adenofibroma;C04.557.470.625.050
@@ -9944,7 +9896,6 @@ Acanthoma;C04.557.470.700.040
 Carcinoma, Papillary;C04.557.470.700.360
 Carcinoma, Squamous Cell;C04.557.470.700.400
 Bowen's Disease;C04.557.470.700.400.130
-Esophageal Squamous Cell Carcinoma;C04.557.470.700.400.565
 Carcinoma, Verrucous;C04.557.470.700.450
 Buschke-Lowenstein Tumor;C04.557.470.700.450.500
 Papilloma;C04.557.470.700.600
@@ -10040,7 +9991,6 @@ Hemangioma, Cavernous, Central Nervous System;C04.557.645.375.385.500
 Kasabach-Merritt Syndrome;C04.557.645.375.617
 Sturge-Weber Syndrome;C04.557.645.375.850
 Hemangiopericytoma;C04.557.645.380
-Myopericytoma;C04.557.645.380.500
 Hemangiosarcoma;C04.557.645.390
 Meningioma;C04.557.645.520
 Sarcoma, Kaposi;C04.557.645.750
@@ -10091,8 +10041,8 @@ Carcinoma, Ductal, Breast;C04.588.180.390
 Carcinoma, Lobular;C04.588.180.437
 Hereditary Breast and Ovarian Cancer Syndrome;C04.588.180.483
 Inflammatory Breast Neoplasms;C04.588.180.576
+Unilateral Breast Neoplasms;C04.588.180.682
 Triple Negative Breast Neoplasms;C04.588.180.788
-Unilateral Breast Neoplasms;C04.588.180.800
 Digestive System Neoplasms;C04.588.274
 Biliary Tract Neoplasms;C04.588.274.120
 Bile Duct Neoplasms;C04.588.274.120.250
@@ -10100,7 +10050,6 @@ Common Bile Duct Neoplasms;C04.588.274.120.250.250
 Gallbladder Neoplasms;C04.588.274.120.401
 Gastrointestinal Neoplasms;C04.588.274.476
 Esophageal Neoplasms;C04.588.274.476.205
-Esophageal Squamous Cell Carcinoma;C04.588.274.476.205.500
 Intestinal Neoplasms;C04.588.274.476.411
 Cecal Neoplasms;C04.588.274.476.411.184
 Appendiceal Neoplasms;C04.588.274.476.411.184.290
@@ -10130,7 +10079,6 @@ Glucagonoma;C04.588.274.761.500.249
 Somatostatinoma;C04.588.274.761.500.500
 Vipoma;C04.588.274.761.500.750
 Carcinoma, Pancreatic Ductal;C04.588.274.761.750
-Pancreatic Intraductal Neoplasms;C04.588.274.761.875
 Peritoneal Neoplasms;C04.588.274.780
 Endocrine Gland Neoplasms;C04.588.322
 Adrenal Gland Neoplasms;C04.588.322.078
@@ -10142,7 +10090,6 @@ Multiple Endocrine Neoplasia Type 1;C04.588.322.400.500
 Multiple Endocrine Neoplasia Type 2a;C04.588.322.400.505
 Multiple Endocrine Neoplasia Type 2b;C04.588.322.400.510
 Ovarian Neoplasms;C04.588.322.455
-Carcinoma, Ovarian Epithelial;C04.588.322.455.199
 Granulosa Cell Tumor;C04.588.322.455.398
 Hereditary Breast and Ovarian Cancer Syndrome;C04.588.322.455.431
 Luteoma;C04.588.322.455.464
@@ -10158,7 +10105,6 @@ Glucagonoma;C04.588.322.475.500.249
 Somatostatinoma;C04.588.322.475.500.500
 Vipoma;C04.588.322.475.500.750
 Carcinoma, Pancreatic Ductal;C04.588.322.475.750
-Pancreatic Intraductal Neoplasms;C04.588.322.475.875
 Paraneoplastic Endocrine Syndromes;C04.588.322.490
 Parathyroid Neoplasms;C04.588.322.525
 Pituitary Neoplasms;C04.588.322.609
@@ -10171,7 +10117,6 @@ Sertoli-Leydig Cell Tumor;C04.588.322.762.500
 Leydig Cell Tumor;C04.588.322.762.500.249
 Sertoli Cell Tumor;C04.588.322.762.500.500
 Thyroid Neoplasms;C04.588.322.894
-Thyroid Cancer, Papillary;C04.588.322.894.400
 Thyroid Nodule;C04.588.322.894.800
 Eye Neoplasms;C04.588.364
 Conjunctival Neoplasms;C04.588.364.235
@@ -10184,9 +10129,7 @@ Uveal Neoplasms;C04.588.364.978
 Choroid Neoplasms;C04.588.364.978.223
 Iris Neoplasms;C04.588.364.978.400
 Head and Neck Neoplasms;C04.588.443
-Squamous Cell Carcinoma of Head and Neck;C04.588.443.177
 Esophageal Neoplasms;C04.588.443.353
-Esophageal Squamous Cell Carcinoma;C04.588.443.353.500
 Facial Neoplasms;C04.588.443.392
 Eyelid Neoplasms;C04.588.443.392.500
 Mouth Neoplasms;C04.588.443.591
@@ -10209,12 +10152,10 @@ Maxillary Sinus Neoplasms;C04.588.443.665.650.693.575
 Pharyngeal Neoplasms;C04.588.443.665.710
 Hypopharyngeal Neoplasms;C04.588.443.665.710.485
 Nasopharyngeal Neoplasms;C04.588.443.665.710.650
-Nasopharyngeal Carcinoma;C04.588.443.665.710.650.500
 Oropharyngeal Neoplasms;C04.588.443.665.710.684
 Tonsillar Neoplasms;C04.588.443.665.710.684.800
 Parathyroid Neoplasms;C04.588.443.680
 Thyroid Neoplasms;C04.588.443.915
-Thyroid Cancer, Papillary;C04.588.443.915.400
 Thyroid Nodule;C04.588.443.915.800
 Tracheal Neoplasms;C04.588.443.925
 Hematologic Neoplasms;C04.588.448
@@ -10278,8 +10219,6 @@ Carney Complex;C04.588.894.309.500
 Mediastinal Neoplasms;C04.588.894.479
 Respiratory Tract Neoplasms;C04.588.894.797
 Lung Neoplasms;C04.588.894.797.520
-Adenocarcinoma of Lung;C04.588.894.797.520.055
-Adenocarcinoma, Bronchiolo-Alveolar;C04.588.894.797.520.055.500
 Bronchial Neoplasms;C04.588.894.797.520.109
 Carcinoma, Bronchogenic;C04.588.894.797.520.109.220
 Carcinoma, Non-Small-Cell Lung;C04.588.894.797.520.109.220.249
@@ -10390,14 +10329,14 @@ Multiple Endocrine Neoplasia;C04.700.630
 Multiple Endocrine Neoplasia Type 1;C04.700.630.500
 Multiple Endocrine Neoplasia Type 2a;C04.700.630.505
 Multiple Endocrine Neoplasia Type 2b;C04.700.630.510
-Neurofibromatoses;C04.700.631
-Neurofibromatosis 1;C04.700.631.650
-Neurofibromatosis 2;C04.700.631.655
-Peutz-Jeghers Syndrome;C04.700.633
-Tuberous Sclerosis;C04.700.700
-Wilms Tumor;C04.700.900
-Denys-Drash Syndrome;C04.700.900.220
-WAGR Syndrome;C04.700.900.950
+Tuberous Sclerosis;C04.700.632
+Wilms Tumor;C04.700.635
+Denys-Drash Syndrome;C04.700.635.220
+WAGR Syndrome;C04.700.635.950
+Neurofibromatoses;C04.700.645
+Neurofibromatosis 1;C04.700.645.650
+Neurofibromatosis 2;C04.700.645.655
+Peutz-Jeghers Syndrome;C04.700.705
 Paraneoplastic Syndromes;C04.730
 Paraneoplastic Endocrine Syndromes;C04.730.713
 ACTH Syndrome, Ectopic;C04.730.713.317
@@ -10486,7 +10425,6 @@ Ellis-Van Creveld Syndrome;C05.116.099.708.327
 Enchondromatosis;C05.116.099.708.338
 Fibrous Dysplasia of Bone;C05.116.099.708.375
 Cherubism;C05.116.099.708.375.199
-Craniofacial Fibrous Dysplasia;C05.116.099.708.375.286
 Fibrous Dysplasia, Monostotic;C05.116.099.708.375.372
 Fibrous Dysplasia, Polyostotic;C05.116.099.708.375.381
 Hyperostosis, Cortical, Congenital;C05.116.099.708.479
@@ -11018,7 +10956,6 @@ Common Bile Duct Neoplasms;C06.301.120.250.250
 Gallbladder Neoplasms;C06.301.120.401
 Gastrointestinal Neoplasms;C06.301.371
 Esophageal Neoplasms;C06.301.371.205
-Esophageal Squamous Cell Carcinoma;C06.301.371.205.500
 Gastrointestinal Stromal Tumors;C06.301.371.308
 Intestinal Neoplasms;C06.301.371.411
 Cecal Neoplasms;C06.301.371.411.184
@@ -11051,7 +10988,6 @@ Glucagonoma;C06.301.761.500.249
 Somatostatinoma;C06.301.761.500.500
 Vipoma;C06.301.761.500.750
 Carcinoma, Pancreatic Ductal;C06.301.761.750
-Pancreatic Intraductal Neoplasms;C06.301.761.875
 Peritoneal Neoplasms;C06.301.780
 Gastrointestinal Diseases;C06.405
 Esophageal Diseases;C06.405.117
@@ -11072,7 +11008,6 @@ Esophageal Cyst;C06.405.117.316
 Esophageal Fistula;C06.405.117.367
 Tracheoesophageal Fistula;C06.405.117.367.725
 Esophageal Neoplasms;C06.405.117.430
-Esophageal Squamous Cell Carcinoma;C06.405.117.430.500
 Esophageal Perforation;C06.405.117.468
 Mallory-Weiss Syndrome;C06.405.117.468.524
 Esophageal Stenosis;C06.405.117.544
@@ -11130,7 +11065,6 @@ Melena;C06.405.227.600
 Peptic Ulcer Hemorrhage;C06.405.227.700
 Gastrointestinal Neoplasms;C06.405.249
 Esophageal Neoplasms;C06.405.249.205
-Esophageal Squamous Cell Carcinoma;C06.405.249.205.500
 Gastrointestinal Stromal Tumors;C06.405.249.308
 Intestinal Neoplasms;C06.405.249.411
 Cecal Neoplasms;C06.405.249.411.184
@@ -11321,11 +11255,11 @@ Tuberculosis, Gastrointestinal;C06.405.874
 Visceral Prolapse;C06.405.937
 Liver Diseases;C06.552
 alpha 1-Antitrypsin Deficiency;C06.552.074
-Chemical and Drug Induced Liver Injury;C06.552.100
-Chemical and Drug Induced Liver Injury, Chronic;C06.552.100.200
 Cholestasis, Intrahepatic;C06.552.150
 Alagille Syndrome;C06.552.150.125
 Liver Cirrhosis, Biliary;C06.552.150.250
+Chemical and Drug Induced Liver Injury;C06.552.195
+Chemical and Drug Induced Liver Injury, Chronic;C06.552.195.200
 Fatty Liver;C06.552.241
 Fatty Liver, Alcoholic;C06.552.241.390
 Non-alcoholic Fatty Liver Disease;C06.552.241.519
@@ -11347,10 +11281,10 @@ Hepatitis, Viral, Animal;C06.552.380.315.430
 Hepatitis, Infectious Canine;C06.552.380.315.430.440
 Rift Valley Fever;C06.552.380.315.430.812
 Hepatitis, Chronic;C06.552.380.350
+Hepatitis, Autoimmune;C06.552.380.350.050
 Hepatitis B, Chronic;C06.552.380.350.100
 Hepatitis C, Chronic;C06.552.380.350.120
 Hepatitis D, Chronic;C06.552.380.350.220
-Hepatitis, Autoimmune;C06.552.380.350.300
 Hepatitis, Viral, Human;C06.552.380.705
 Hepatitis A;C06.552.380.705.422
 Hepatitis B;C06.552.380.705.437
@@ -11388,8 +11322,8 @@ Liver Neoplasms, Experimental;C06.552.697.580
 Peliosis Hepatis;C06.552.802
 Porphyrias, Hepatic;C06.552.830
 Coproporphyria, Hereditary;C06.552.830.074
-Porphyria Cutanea Tarda;C06.552.830.100
 Porphyria, Acute Intermittent;C06.552.830.150
+Porphyria Cutanea Tarda;C06.552.830.250
 Porphyria, Hepatoerythropoietic;C06.552.830.437
 Porphyria, Variegate;C06.552.830.625
 Protoporphyria, Erythropoietic;C06.552.830.812
@@ -11412,7 +11346,6 @@ Glucagonoma;C06.689.667.500.249
 Somatostatinoma;C06.689.667.500.500
 Vipoma;C06.689.667.500.750
 Carcinoma, Pancreatic Ductal;C06.689.667.625
-Pancreatic Intraductal Neoplasms;C06.689.667.812
 Pancreatitis;C06.689.750
 Pancreatitis, Acute Necrotizing;C06.689.750.650
 Pancreatitis, Alcoholic;C06.689.750.660
@@ -11452,12 +11385,12 @@ Dentigerous Cyst;C07.320.450.670.275
 Odontogenic Cyst, Calcifying;C07.320.450.670.495
 Periodontal Cyst;C07.320.450.670.513
 Radicular Cyst;C07.320.450.670.513.811
+Jaw, Edentulous;C07.320.480
+Jaw, Edentulous, Partially;C07.320.480.450
 Jaw Neoplasms;C07.320.515
 Mandibular Neoplasms;C07.320.515.583
 Maxillary Neoplasms;C07.320.515.601
 Palatal Neoplasms;C07.320.515.692
-Jaw, Edentulous;C07.320.550
-Jaw, Edentulous, Partially;C07.320.550.450
 Mandibular Diseases;C07.320.610
 Craniomandibular Disorders;C07.320.610.291
 Temporomandibular Joint Disorders;C07.320.610.291.897
@@ -11511,20 +11444,20 @@ Fibromatosis, Gingival;C07.465.525.304
 Macrostomia;C07.465.525.480
 Microstomia;C07.465.525.520
 Velopharyngeal Insufficiency;C07.465.525.955
-Mouth Neoplasms;C07.465.530
-Gingival Neoplasms;C07.465.530.402
-Leukoplakia, Oral;C07.465.530.545
-Leukoplakia, Hairy;C07.465.530.545.500
-Lip Neoplasms;C07.465.530.550
-Palatal Neoplasms;C07.465.530.692
-Salivary Gland Neoplasms;C07.465.530.824
-Parotid Neoplasms;C07.465.530.824.695
-Sublingual Gland Neoplasms;C07.465.530.824.882
-Submandibular Gland Neoplasms;C07.465.530.824.885
-Tongue Neoplasms;C07.465.530.925
 Mouth, Edentulous;C07.465.550
 Jaw, Edentulous;C07.465.550.425
 Jaw, Edentulous, Partially;C07.465.550.425.450
+Mouth Neoplasms;C07.465.565
+Gingival Neoplasms;C07.465.565.402
+Leukoplakia, Oral;C07.465.565.545
+Leukoplakia, Hairy;C07.465.565.545.500
+Lip Neoplasms;C07.465.565.550
+Palatal Neoplasms;C07.465.565.692
+Salivary Gland Neoplasms;C07.465.565.824
+Parotid Neoplasms;C07.465.565.824.695
+Sublingual Gland Neoplasms;C07.465.565.824.882
+Submandibular Gland Neoplasms;C07.465.565.824.885
+Tongue Neoplasms;C07.465.565.925
 Mucositis;C07.465.584
 Noma;C07.465.604
 Oral Fistula;C07.465.614
@@ -11609,20 +11542,18 @@ Glossitis;C07.465.910.363
 Glossitis, Benign Migratory;C07.465.910.363.447
 Glossoptosis;C07.465.910.411
 Macroglossia;C07.465.910.460
-Tongue Neoplasms;C07.465.910.470
 Tongue, Fissured;C07.465.910.708
 Tongue, Hairy;C07.465.910.791
+Tongue Neoplasms;C07.465.910.874
 Tuberculosis, Oral;C07.465.943
 Pharyngeal Diseases;C07.550
 Lemierre Syndrome;C07.550.174
 Nasopharyngeal Diseases;C07.550.350
 Nasopharyngeal Neoplasms;C07.550.350.650
-Nasopharyngeal Carcinoma;C07.550.350.650.500
 Nasopharyngitis;C07.550.350.700
 Pharyngeal Neoplasms;C07.550.745
 Hypopharyngeal Neoplasms;C07.550.745.436
 Nasopharyngeal Neoplasms;C07.550.745.650
-Nasopharyngeal Carcinoma;C07.550.745.650.500
 Oropharyngeal Neoplasms;C07.550.745.671
 Tonsillar Neoplasms;C07.550.745.671.800
 Pharyngitis;C07.550.781
@@ -11711,6 +11642,7 @@ Tooth Wear;C07.793.818
 Tooth Abrasion;C07.793.818.124
 Tooth Attrition;C07.793.818.249
 Tooth Erosion;C07.793.818.500
+Tooth, Impacted;C07.793.846
 Tooth Injuries;C07.793.850
 Tooth Avulsion;C07.793.850.725
 Tooth Fractures;C07.793.850.750
@@ -11718,7 +11650,6 @@ Cracked Tooth Syndrome;C07.793.850.750.300
 Tooth Loss;C07.793.870
 Tooth Resorption;C07.793.901
 Root Resorption;C07.793.901.653
-Tooth, Impacted;C07.793.905
 Tooth, Unerupted;C07.793.915
 Toothache;C07.793.929
 Respiratory Tract Diseases;C08
@@ -11778,8 +11709,8 @@ Cystic Fibrosis;C08.381.187
 Hemoptysis;C08.381.348
 Hepatopulmonary Syndrome;C08.381.385
 Hypertension, Pulmonary;C08.381.423
-Familial Primary Pulmonary Hypertension;C08.381.423.300
 Persistent Fetal Circulation Syndrome;C08.381.423.694
+Familial Primary Pulmonary Hypertension;C08.381.423.847
 Lung Abscess;C08.381.450
 Lung Diseases, Fungal;C08.381.472
 Blastomycosis;C08.381.472.350
@@ -11844,6 +11775,7 @@ Silicotuberculosis;C08.381.520.702.760.750
 Radiation Pneumonitis;C08.381.520.734
 Ventilator-Induced Lung Injury;C08.381.520.750
 Bronchopulmonary Dysplasia;C08.381.520.750.500
+Pneumonia, Ventilator-Associated;C08.381.520.750.750
 Lung Neoplasms;C08.381.540
 Carcinoma, Bronchogenic;C08.381.540.140
 Carcinoma, Non-Small-Cell Lung;C08.381.540.140.500
@@ -11855,15 +11787,14 @@ Lung, Hyperlucent;C08.381.570
 Plasma Cell Granuloma, Pulmonary;C08.381.600
 Pneumonia;C08.381.677
 Bronchopneumonia;C08.381.677.127
-Healthcare-Associated Pneumonia;C08.381.677.300
 Pleuropneumonia;C08.381.677.473
 Pneumonia, Aspiration;C08.381.677.529
 Pneumonia, Lipid;C08.381.677.529.612
 Pneumonia, Bacterial;C08.381.677.540
 Chlamydial Pneumonia;C08.381.677.540.249
-Pneumonia of Calves, Enzootic;C08.381.677.540.300
-Pneumonia of Swine, Mycoplasmal;C08.381.677.540.400
 Pneumonia, Mycoplasma;C08.381.677.540.500
+Pneumonia of Calves, Enzootic;C08.381.677.540.530
+Pneumonia of Swine, Mycoplasmal;C08.381.677.540.540
 Pneumonia, Pneumococcal;C08.381.677.540.550
 Pneumonia, Rickettsial;C08.381.677.540.600
 Pneumonia, Staphylococcal;C08.381.677.540.620
@@ -12001,8 +11932,8 @@ Tracheoesophageal Fistula;C08.702.750
 Respiratory Tract Infections;C08.730
 Bovine Respiratory Disease Complex;C08.730.085
 Pasteurellosis, Pneumonic;C08.730.085.600
-Pneumonia of Calves, Enzootic;C08.730.085.630
 Pneumonia, Atypical Interstitial, of Cattle;C08.730.085.660
+Pneumonia of Calves, Enzootic;C08.730.085.675
 Bronchitis;C08.730.099
 Bronchiolitis;C08.730.099.135
 Bronchiolitis, Viral;C08.730.099.135.321
@@ -12030,15 +11961,14 @@ Pleurisy;C08.730.582
 Pleuropneumonia;C08.730.582.473
 Pneumonia;C08.730.610
 Bronchopneumonia;C08.730.610.127
-Healthcare-Associated Pneumonia;C08.730.610.300
 Pleuropneumonia;C08.730.610.473
 Pneumonia, Aspiration;C08.730.610.529
 Pneumonia, Lipid;C08.730.610.529.612
 Pneumonia, Bacterial;C08.730.610.540
 Chlamydial Pneumonia;C08.730.610.540.249
+Pneumonia, Mycoplasma;C08.730.610.540.500
 Pneumonia of Calves, Enzootic;C08.730.610.540.530
 Pneumonia of Swine, Mycoplasmal;C08.730.610.540.540
-Pneumonia, Mycoplasma;C08.730.610.540.545
 Pneumonia, Pneumococcal;C08.730.610.540.550
 Pneumonia, Rickettsial;C08.730.610.540.600
 Pneumonia, Staphylococcal;C08.730.610.540.620
@@ -12138,8 +12068,8 @@ Labyrinthitis;C09.218.705.371
 Otitis Externa;C09.218.705.496
 Otitis Media;C09.218.705.663
 Mastoiditis;C09.218.705.663.652
-Otitis Media with Effusion;C09.218.705.663.670
 Otitis Media, Suppurative;C09.218.705.663.680
+Otitis Media with Effusion;C09.218.705.663.683
 Petrositis;C09.218.705.663.841
 Otomycosis;C09.218.736
 Otosclerosis;C09.218.768
@@ -12211,7 +12141,6 @@ Maxillary Sinus Neoplasms;C09.647.685.693.575
 Pharyngeal Neoplasms;C09.647.710
 Hypopharyngeal Neoplasms;C09.647.710.485
 Nasopharyngeal Neoplasms;C09.647.710.650
-Nasopharyngeal Carcinoma;C09.647.710.650.500
 Oropharyngeal Neoplasms;C09.647.710.685
 Tonsillar Neoplasms;C09.647.710.685.800
 Pharyngeal Diseases;C09.775
@@ -12219,12 +12148,10 @@ Deglutition Disorders;C09.775.174
 Lemierre Syndrome;C09.775.262
 Nasopharyngeal Diseases;C09.775.350
 Nasopharyngeal Neoplasms;C09.775.350.650
-Nasopharyngeal Carcinoma;C09.775.350.650.500
 Nasopharyngitis;C09.775.350.700
 Pharyngeal Neoplasms;C09.775.549
 Hypopharyngeal Neoplasms;C09.775.549.485
 Nasopharyngeal Neoplasms;C09.775.549.650
-Nasopharyngeal Carcinoma;C09.775.549.650.500
 Oropharyngeal Neoplasms;C09.775.549.685
 Tonsillar Neoplasms;C09.775.549.685.800
 Pharyngitis;C09.775.649
@@ -12852,10 +12779,10 @@ Poliomyelitis, Bulbar;C10.228.854.525.850.500
 Postpoliomyelitis Syndrome;C10.228.854.525.850.750
 Pneumorrhachis;C10.228.854.583
 Spinal Cord Compression;C10.228.854.761
-Spinal Cord Injuries;C10.228.854.763
-Central Cord Syndrome;C10.228.854.763.500
 Spinal Cord Neoplasms;C10.228.854.765
 Epidural Neoplasms;C10.228.854.765.342
+Spinal Cord Injuries;C10.228.854.770
+Central Cord Syndrome;C10.228.854.770.500
 Spinal Cord Vascular Diseases;C10.228.854.785
 Spinal Cord Ischemia;C10.228.854.785.650
 Anterior Spinal Artery Syndrome;C10.228.854.785.650.100
@@ -12878,27 +12805,27 @@ Abducens Nerve Diseases;C10.292.150
 Abducens Nerve Injury;C10.292.150.100
 Accessory Nerve Diseases;C10.292.175
 Accessory Nerve Injuries;C10.292.175.500
-Cranial Nerve Injuries;C10.292.200
-Abducens Nerve Injury;C10.292.200.200
-Accessory Nerve Injuries;C10.292.200.350
-Facial Nerve Injuries;C10.292.200.500
-Glossopharyngeal Nerve Injuries;C10.292.200.531
-Hypoglossal Nerve Injuries;C10.292.200.562
-Oculomotor Nerve Injuries;C10.292.200.656
-Olfactory Nerve Injuries;C10.292.200.687
-Optic Nerve Injuries;C10.292.200.750
-Trigeminal Nerve Injuries;C10.292.200.875
-Lingual Nerve Injuries;C10.292.200.875.500
-Trochlear Nerve Injuries;C10.292.200.906
-Vagus Nerve Injuries;C10.292.200.937
-Laryngeal Nerve Injuries;C10.292.200.937.750
-Recurrent Laryngeal Nerve Injuries;C10.292.200.937.750.500
-Vestibulocochlear Nerve Injuries;C10.292.200.968
 Cranial Nerve Neoplasms;C10.292.225
 Neuroma, Acoustic;C10.292.225.750
 Neurofibromatosis 2;C10.292.225.750.500
 Optic Nerve Neoplasms;C10.292.225.800
 Optic Nerve Glioma;C10.292.225.800.500
+Cranial Nerve Injuries;C10.292.262
+Abducens Nerve Injury;C10.292.262.200
+Accessory Nerve Injuries;C10.292.262.350
+Facial Nerve Injuries;C10.292.262.500
+Glossopharyngeal Nerve Injuries;C10.292.262.531
+Hypoglossal Nerve Injuries;C10.292.262.562
+Oculomotor Nerve Injuries;C10.292.262.656
+Olfactory Nerve Injuries;C10.292.262.687
+Optic Nerve Injuries;C10.292.262.750
+Trigeminal Nerve Injuries;C10.292.262.875
+Lingual Nerve Injuries;C10.292.262.875.500
+Trochlear Nerve Injuries;C10.292.262.906
+Vagus Nerve Injuries;C10.292.262.937
+Laryngeal Nerve Injuries;C10.292.262.937.750
+Recurrent Laryngeal Nerve Injuries;C10.292.262.937.750.500
+Vestibulocochlear Nerve Injuries;C10.292.262.968
 Facial Nerve Diseases;C10.292.319
 Bell Palsy;C10.292.319.250
 Facial Hemiatrophy;C10.292.319.375
@@ -13005,14 +12932,14 @@ Intracranial Arteriovenous Malformations;C10.500.190.500
 Vein of Galen Malformations;C10.500.190.500.500
 Sinus Pericranii;C10.500.190.800
 Dandy-Walker Syndrome;C10.500.205
-Hereditary Sensory and Autonomic Neuropathies;C10.500.250
-Dysautonomia, Familial;C10.500.250.309
 Hereditary Sensory and Motor Neuropathy;C10.500.300
 Alstrom Syndrome;C10.500.300.099
 Charcot-Marie-Tooth Disease;C10.500.300.200
 Giant Axonal Neuropathy;C10.500.300.490
 Refsum Disease;C10.500.300.780
 Spastic Paraplegia, Hereditary;C10.500.300.820
+Hereditary Sensory and Autonomic Neuropathies;C10.500.310
+Dysautonomia, Familial;C10.500.310.309
 Hydranencephaly;C10.500.450
 Malformations of Cortical Development;C10.500.507
 Malformations of Cortical Development, Group I;C10.500.507.400
@@ -13069,7 +12996,6 @@ Epidural Neoplasms;C10.551.240.750.200
 Cranial Nerve Neoplasms;C10.551.360
 Optic Nerve Neoplasms;C10.551.360.500
 Optic Nerve Glioma;C10.551.360.500.500
-Neurolymphomatosis;C10.551.568
 Peripheral Nervous System Neoplasms;C10.551.775
 Cranial Nerve Neoplasms;C10.551.775.250
 Optic Nerve Neoplasms;C10.551.775.250.500
@@ -13098,15 +13024,15 @@ Cockayne Syndrome;C10.574.500.362
 Dystonia Musculorum Deformans;C10.574.500.393
 Gerstmann-Straussler-Scheinker Disease;C10.574.500.425
 Hepatolenticular Degeneration;C10.574.500.487
-Hereditary Central Nervous System Demyelinating Diseases;C10.574.500.490
-Hereditary Sensory and Autonomic Neuropathies;C10.574.500.493
-Dysautonomia, Familial;C10.574.500.493.250
+Hereditary Central Nervous System Demyelinating Diseases;C10.574.500.494
 Hereditary Sensory and Motor Neuropathy;C10.574.500.495
 Alstrom Syndrome;C10.574.500.495.099
 Charcot-Marie-Tooth Disease;C10.574.500.495.200
 Giant Axonal Neuropathy;C10.574.500.495.490
 Refsum Disease;C10.574.500.495.780
 Spastic Paraplegia, Hereditary;C10.574.500.495.820
+Hereditary Sensory and Autonomic Neuropathies;C10.574.500.496
+Dysautonomia, Familial;C10.574.500.496.250
 Huntington Disease;C10.574.500.497
 Lafora Disease;C10.574.500.529
 Myotonia Congenita;C10.574.500.545
@@ -13240,25 +13166,6 @@ Persistent Vegetative State;C10.597.606.358.800.400
 Stupor;C10.597.606.358.800.500
 Syncope;C10.597.606.358.800.600
 Syncope, Vasovagal;C10.597.606.358.800.600.500
-Intellectual Disability;C10.597.606.360
-Cri-du-Chat Syndrome;C10.597.606.360.180
-De Lange Syndrome;C10.597.606.360.210
-Down Syndrome;C10.597.606.360.220
-Mental Retardation, X-Linked;C10.597.606.360.455
-Adrenoleukodystrophy;C10.597.606.360.455.124
-Coffin-Lowry Syndrome;C10.597.606.360.455.249
-Fragile X Syndrome;C10.597.606.360.455.500
-Glycogen Storage Disease Type IIb;C10.597.606.360.455.562
-Lesch-Nyhan Syndrome;C10.597.606.360.455.625
-Menkes Kinky Hair Syndrome;C10.597.606.360.455.687
-Mucopolysaccharidosis II;C10.597.606.360.455.750
-Pyruvate Dehydrogenase Complex Deficiency Disease;C10.597.606.360.455.875
-Rett Syndrome;C10.597.606.360.455.937
-Prader-Willi Syndrome;C10.597.606.360.690
-Rubinstein-Taybi Syndrome;C10.597.606.360.700
-Trisomy 13 Syndrome;C10.597.606.360.835
-WAGR Syndrome;C10.597.606.360.969
-Williams Syndrome;C10.597.606.360.970
 Lethargy;C10.597.606.441
 Memory Disorders;C10.597.606.525
 Amnesia;C10.597.606.525.100
@@ -13267,6 +13174,25 @@ Amnesia, Retrograde;C10.597.606.525.100.150
 Amnesia, Transient Global;C10.597.606.525.100.800
 Korsakoff Syndrome;C10.597.606.525.400
 Alcoholic Korsakoff Syndrome;C10.597.606.525.400.500
+Intellectual Disability;C10.597.606.643
+Cri-du-Chat Syndrome;C10.597.606.643.180
+De Lange Syndrome;C10.597.606.643.210
+Down Syndrome;C10.597.606.643.220
+Mental Retardation, X-Linked;C10.597.606.643.455
+Adrenoleukodystrophy;C10.597.606.643.455.124
+Coffin-Lowry Syndrome;C10.597.606.643.455.249
+Fragile X Syndrome;C10.597.606.643.455.500
+Glycogen Storage Disease Type IIb;C10.597.606.643.455.562
+Lesch-Nyhan Syndrome;C10.597.606.643.455.625
+Menkes Kinky Hair Syndrome;C10.597.606.643.455.687
+Mucopolysaccharidosis II;C10.597.606.643.455.750
+Pyruvate Dehydrogenase Complex Deficiency Disease;C10.597.606.643.455.875
+Rett Syndrome;C10.597.606.643.455.937
+Prader-Willi Syndrome;C10.597.606.643.690
+Rubinstein-Taybi Syndrome;C10.597.606.643.700
+Trisomy 13 Syndrome;C10.597.606.643.835
+WAGR Syndrome;C10.597.606.643.969
+Williams Syndrome;C10.597.606.643.970
 Perceptual Disorders;C10.597.606.762
 Agnosia;C10.597.606.762.100
 Gerstmann Syndrome;C10.597.606.762.100.300
@@ -13391,7 +13317,6 @@ Muscular Atrophy, Spinal;C10.668.467.500
 Bulbo-Spinal Atrophy, X-Linked;C10.668.467.500.186
 Spinal Muscular Atrophies of Childhood;C10.668.467.500.750
 Muscular Diseases;C10.668.491
-Eosinophilia-Myalgia Syndrome;C10.668.491.050
 Medial Tibial Stress Syndrome;C10.668.491.087
 Muscular Disorders, Atrophic;C10.668.491.175
 Muscular Dystrophies;C10.668.491.175.500
@@ -13405,6 +13330,7 @@ Muscular Dystrophy, Facioscapulohumeral;C10.668.491.175.500.400
 Muscular Dystrophy, Oculopharyngeal;C10.668.491.175.500.450
 Myotonic Dystrophy;C10.668.491.175.500.500
 Postpoliomyelitis Syndrome;C10.668.491.175.750
+Eosinophilia-Myalgia Syndrome;C10.668.491.387
 Fibromyalgia;C10.668.491.425
 Mitochondrial Myopathies;C10.668.491.500
 Mitochondrial Encephalomyopathies;C10.668.491.500.500
@@ -13441,7 +13367,6 @@ Amyloid Neuropathies;C10.668.829.050
 Amyloid Neuropathies, Familial;C10.668.829.050.050
 Brachial Plexus Neuropathies;C10.668.829.100
 Brachial Plexus Neuritis;C10.668.829.100.500
-Neonatal Brachial Plexus Palsy;C10.668.829.100.750
 Complex Regional Pain Syndromes;C10.668.829.250
 Causalgia;C10.668.829.250.200
 Reflex Sympathetic Dystrophy;C10.668.829.250.800
@@ -13467,7 +13392,6 @@ Cubital Tunnel Syndrome;C10.668.829.500.850.200
 Ulnar Nerve Compression Syndromes;C10.668.829.500.850.600
 Nerve Compression Syndromes;C10.668.829.550
 Carpal Tunnel Syndrome;C10.668.829.550.200
-Cauda Equina Syndrome;C10.668.829.550.350
 Piriformis Muscle Syndrome;C10.668.829.550.500
 Pudendal Neuralgia;C10.668.829.550.650
 Tarsal Tunnel Syndrome;C10.668.829.550.800
@@ -13506,7 +13430,6 @@ Spastic Paraplegia, Hereditary;C10.668.829.800.300.820
 Paraneoplastic Polyneuropathy;C10.668.829.800.662
 POEMS Syndrome;C10.668.829.800.700
 Polyradiculoneuropathy;C10.668.829.800.750
-Cauda Equina Syndrome;C10.668.829.800.750.150
 Guillain-Barre Syndrome;C10.668.829.800.750.300
 Miller Fisher Syndrome;C10.668.829.800.750.300.500
 Polyradiculoneuropathy, Chronic Inflammatory Demyelinating;C10.668.829.800.750.600
@@ -13663,8 +13586,8 @@ Trachoma;C11.187.183.220.889
 Conjunctivitis, Viral;C11.187.183.240
 Conjunctivitis, Acute Hemorrhagic;C11.187.183.240.216
 Keratoconjunctivitis;C11.187.183.394
-Keratoconjunctivitis Sicca;C11.187.183.394.500
 Keratoconjunctivitis, Infectious;C11.187.183.394.520
+Keratoconjunctivitis Sicca;C11.187.183.394.550
 Pemphigoid, Benign Mucous Membrane;C11.187.482
 Pinguecula;C11.187.631
 Pterygium;C11.187.781
@@ -13710,34 +13633,24 @@ Albinism;C11.270.040
 Albinism, Ocular;C11.270.040.090
 Albinism, Oculocutaneous;C11.270.040.545
 Hermanski-Pudlak Syndrome;C11.270.040.545.400
-Chediak-Higashi Syndrome;C11.270.040.772
-Aleutian Mink Disease;C11.270.040.772.270
 Aniridia;C11.270.060
 WAGR Syndrome;C11.270.060.950
 Choroideremia;C11.270.142
-Coloboma;C11.270.147
-CHARGE Syndrome;C11.270.147.500
-Mandibulofacial Dysostosis;C11.270.147.750
-Cone Dystrophy;C11.270.151
-Color Vision Defects;C11.270.151.500
 Cone-Rod Dystrophies;C11.270.152
 Corneal Dystrophies, Hereditary;C11.270.162
 Corneal Dystrophy, Juvenile Epithelial of Meesmann;C11.270.162.218
 Fuchs' Endothelial Dystrophy;C11.270.162.438
 Duane Retraction Syndrome;C11.270.235
-Graves Ophthalmopathy;C11.270.240
 Gyrate Atrophy;C11.270.468
 Leber Congenital Amaurosis;C11.270.516
 Optic Atrophies, Hereditary;C11.270.564
 Optic Atrophy, Autosomal Dominant;C11.270.564.100
 Optic Atrophy, Hereditary, Leber;C11.270.564.400
 Wolfram Syndrome;C11.270.564.980
-Retinal Degeneration;C11.270.612
 Retinal Dysplasia;C11.270.660
 Retinitis Pigmentosa;C11.270.684
 Alstrom Syndrome;C11.270.684.249
-Bardet-Biedl Syndrome;C11.270.684.624
-Retinoblastoma;C11.270.862
+Graves Ophthalmopathy;C11.270.842
 Walker-Warburg Syndrome;C11.270.881
 Weill-Marchesani Syndrome;C11.270.921
 Eye Hemorrhage;C11.290
@@ -13888,7 +13801,6 @@ Presbyopia;C11.744.786
 Retinal Diseases;C11.768
 Angioid Streaks;C11.768.094
 Central Serous Chorioretinopathy;C11.768.175
-Cone Dystrophy;C11.768.216
 Diabetic Retinopathy;C11.768.257
 Epiretinal Membrane;C11.768.328
 Hypertensive Retinopathy;C11.768.346
@@ -14051,10 +13963,7 @@ Disorders of Sex Development;C12.706.316
 46, XX Testicular Disorders of Sex Development;C12.706.316.064.124
 Gonadal Dysgenesis, 46,XX;C12.706.316.064.249
 Hyperandrogenism;C12.706.316.064.500
-Adrenogenital Syndrome;C12.706.316.090
-Adrenal Hyperplasia, Congenital;C12.706.316.090.500
-Hyperandrogenism;C12.706.316.090.750
-Disorder of Sex Development, 46,XY;C12.706.316.096
+46, XY Disorders of Sex Development;C12.706.316.096
 Androgen-Insensitivity Syndrome;C12.706.316.096.500
 Denys-Drash Syndrome;C12.706.316.096.562
 Frasier Syndrome;C12.706.316.096.624
@@ -14062,6 +13971,9 @@ Gonadal Dysgenesis, 46,XY;C12.706.316.096.687
 Gonadoblastoma;C12.706.316.096.687.500
 Kallmann Syndrome;C12.706.316.096.750
 WAGR Syndrome;C12.706.316.096.875
+Adrenogenital Syndrome;C12.706.316.129
+Adrenal Hyperplasia, Congenital;C12.706.316.129.500
+Hyperandrogenism;C12.706.316.129.750
 Gonadal Dysgenesis;C12.706.316.309
 Gonadal Dysgenesis, 46,XX;C12.706.316.309.193
 Gonadal Dysgenesis, 46,XY;C12.706.316.309.388
@@ -14108,7 +14020,6 @@ Urologic Diseases;C12.777
 Kidney Diseases;C12.777.419
 AIDS-Associated Nephropathy;C12.777.419.050
 Anuria;C12.777.419.078
-Chronic Kidney Disease-Mineral and Bone Disorder;C12.777.419.080
 Diabetes Insipidus;C12.777.419.135
 Diabetes Insipidus, Nephrogenic;C12.777.419.135.500
 Diabetes Insipidus, Neurogenic;C12.777.419.135.750
@@ -14170,6 +14081,7 @@ Renal Insufficiency, Chronic;C12.777.419.780.750
 Kidney Failure, Chronic;C12.777.419.780.750.500
 Frasier Syndrome;C12.777.419.780.750.500.500
 Renal Nutcracker Syndrome;C12.777.419.787
+Chronic Kidney Disease-Mineral and Bone Disorder;C12.777.419.795
 Renal Tubular Transport, Inborn Errors;C12.777.419.815
 Acidosis, Renal Tubular;C12.777.419.815.093
 Bartter Syndrome;C12.777.419.815.279
@@ -14216,7 +14128,6 @@ Urinary Bladder Neck Obstruction;C12.777.829.760
 Urinary Bladder Neoplasms;C12.777.829.813
 Urinary Bladder, Neurogenic;C12.777.829.839
 Urinary Bladder, Overactive;C12.777.829.866
-Urinary Bladder, Underactive;C12.777.829.893
 Vesico-Ureteral Reflux;C12.777.829.920
 Urinary Tract Infections;C12.777.892
 Bacteriuria;C12.777.892.219
@@ -14267,7 +14178,6 @@ Ovarian Hyperstimulation Syndrome;C13.351.500.056.630.642
 Ovarian Neoplasms;C13.351.500.056.630.705
 Brenner Tumor;C13.351.500.056.630.705.265
 Carcinoma, Endometrioid;C13.351.500.056.630.705.331
-Carcinoma, Ovarian Epithelial;C13.351.500.056.630.705.350
 Granulosa Cell Tumor;C13.351.500.056.630.705.398
 Hereditary Breast and Ovarian Cancer Syndrome;C13.351.500.056.630.705.431
 Luteoma;C13.351.500.056.630.705.464
@@ -14322,9 +14232,9 @@ Endometrial Stromal Tumors;C13.351.500.852.762.200.500
 Sarcoma, Endometrial Stromal;C13.351.500.852.762.200.500.500
 Uterine Cervical Neoplasms;C13.351.500.852.762.850
 Uterine Prolapse;C13.351.500.852.833
-Uterine Retroversion;C13.351.500.852.900
 Uterine Rupture;C13.351.500.852.904
 Uterine Perforation;C13.351.500.852.904.500
+Uterine Retroversion;C13.351.500.852.952
 Vaginal Diseases;C13.351.500.894
 Hematocolpos;C13.351.500.894.300
 Hydrocolpos;C13.351.500.894.500
@@ -14361,10 +14271,7 @@ Disorders of Sex Development;C13.351.875.253
 46, XX Testicular Disorders of Sex Development;C13.351.875.253.064.124
 Gonadal Dysgenesis, 46,XX;C13.351.875.253.064.249
 Hyperandrogenism;C13.351.875.253.064.500
-Adrenogenital Syndrome;C13.351.875.253.090
-Adrenal Hyperplasia, Congenital;C13.351.875.253.090.500
-Hyperandrogenism;C13.351.875.253.090.750
-Disorder of Sex Development, 46,XY;C13.351.875.253.096
+46, XY Disorders of Sex Development;C13.351.875.253.096
 Androgen-Insensitivity Syndrome;C13.351.875.253.096.500
 Denys-Drash Syndrome;C13.351.875.253.096.562
 Frasier Syndrome;C13.351.875.253.096.624
@@ -14372,6 +14279,9 @@ Gonadal Dysgenesis, 46,XY;C13.351.875.253.096.687
 Gonadoblastoma;C13.351.875.253.096.687.500
 Kallmann Syndrome;C13.351.875.253.096.750
 WAGR Syndrome;C13.351.875.253.096.875
+Adrenogenital Syndrome;C13.351.875.253.129
+Adrenal Hyperplasia, Congenital;C13.351.875.253.129.500
+Hyperandrogenism;C13.351.875.253.129.750
 Gonadal Dysgenesis;C13.351.875.253.309
 Gonadal Dysgenesis, 46,XX;C13.351.875.253.309.193
 Gonadal Dysgenesis, 46,XY;C13.351.875.253.309.388
@@ -14402,7 +14312,6 @@ Fallopian Tube Neoplasms;C13.351.937.418.365
 Ovarian Neoplasms;C13.351.937.418.685
 Brenner Tumor;C13.351.937.418.685.265
 Carcinoma, Endometrioid;C13.351.937.418.685.331
-Carcinoma, Ovarian Epithelial;C13.351.937.418.685.350
 Granulosa Cell Tumor;C13.351.937.418.685.398
 Hereditary Breast and Ovarian Cancer Syndrome;C13.351.937.418.685.431
 Luteoma;C13.351.937.418.685.464
@@ -14540,7 +14449,6 @@ Urinary Bladder Neck Obstruction;C13.351.968.829.601
 Urinary Bladder Neoplasms;C13.351.968.829.707
 Urinary Bladder, Neurogenic;C13.351.968.829.760
 Urinary Bladder, Overactive;C13.351.968.829.813
-Urinary Bladder, Underactive;C13.351.968.829.867
 Vesico-Ureteral Reflux;C13.351.968.829.920
 Urinary Tract Infections;C13.351.968.892
 Bacteriuria;C13.351.968.892.219
@@ -15721,7 +15629,6 @@ Bardet-Biedl Syndrome;C16.131.077.245.125
 Caroli Disease;C16.131.077.245.250
 Ciliary Motility Disorders;C16.131.077.245.500
 Kartagener Syndrome;C16.131.077.245.500.531
-von Hippel-Lindau Disease;C16.131.077.245.750
 Cockayne Syndrome;C16.131.077.250
 Costello Syndrome;C16.131.077.256
 Cri-du-Chat Syndrome;C16.131.077.262
@@ -15738,7 +15645,6 @@ Ectodermal Dysplasia, Hypohidrotic, Autosomal Recessive;C16.131.077.350.348
 Ellis-Van Creveld Syndrome;C16.131.077.350.398
 Focal Dermal Hypoplasia;C16.131.077.350.424
 Neurocutaneous Syndromes;C16.131.077.350.712
-Pachyonychia Congenita;C16.131.077.350.856
 Fraser Syndrome;C16.131.077.371
 Gardner Syndrome;C16.131.077.393
 Heterotaxy Syndrome;C16.131.077.401
@@ -16126,7 +16032,7 @@ Disorders of Sex Development;C16.131.939.316
 46, XX Testicular Disorders of Sex Development;C16.131.939.316.064.124
 Gonadal Dysgenesis, 46,XX;C16.131.939.316.064.249
 Hyperandrogenism;C16.131.939.316.064.500
-Disorder of Sex Development, 46,XY;C16.131.939.316.096
+46, XY Disorders of Sex Development;C16.131.939.316.096
 Androgen-Insensitivity Syndrome;C16.131.939.316.096.500
 Denys-Drash Syndrome;C16.131.939.316.096.562
 Frasier Syndrome;C16.131.939.316.096.624
@@ -16259,10 +16165,6 @@ Bardet-Biedl Syndrome;C16.320.184.125
 Caroli Disease;C16.320.184.250
 Ciliary Motility Disorders;C16.320.184.500
 Kartagener Syndrome;C16.320.184.500.531
-Polycystic Kidney Diseases;C16.320.184.625
-Polycystic Kidney, Autosomal Dominant;C16.320.184.625.500
-Polycystic Kidney, Autosomal Recessive;C16.320.184.625.510
-von Hippel-Lindau Disease;C16.320.184.750
 Costello Syndrome;C16.320.185
 Cystic Fibrosis;C16.320.190
 Donohue Syndrome;C16.320.215
@@ -16302,7 +16204,6 @@ Vitelliform Macular Dystrophy;C16.320.290.763
 Weill-Marchesani Syndrome;C16.320.290.842
 Familial Multiple Lipomatosis;C16.320.298
 Frasier Syndrome;C16.320.306
-GATA2 Deficiency;C16.320.314
 Genetic Diseases, X-Linked;C16.320.322
 Aicardi Syndrome;C16.320.322.030
 Androgen-Insensitivity Syndrome;C16.320.322.061
@@ -16339,7 +16240,6 @@ Pelizaeus-Merzbacher Disease;C16.320.322.906
 Wiskott-Aldrich Syndrome;C16.320.322.937
 X-Linked Combined Immunodeficiency Diseases;C16.320.322.968
 Genetic Diseases, Y-Linked;C16.320.338
-Graves Ophthalmopathy;C16.320.347
 Hajdu-Cheney Syndrome;C16.320.355
 Hemoglobinopathies;C16.320.365
 Anemia, Sickle Cell;C16.320.365.155
@@ -16360,7 +16260,6 @@ Mevalonate Kinase Deficiency;C16.320.382.750
 Heredodegenerative Disorders, Nervous System;C16.320.400
 Alexander Disease;C16.320.400.024
 Amyloid Neuropathies, Familial;C16.320.400.050
-Bulbo-Spinal Atrophy, X-Linked;C16.320.400.100
 Canavan Disease;C16.320.400.150
 Cockayne Syndrome;C16.320.400.200
 Dystonia Musculorum Deformans;C16.320.400.330
@@ -16711,14 +16610,14 @@ Multiple Endocrine Neoplasia;C16.320.700.630
 Multiple Endocrine Neoplasia Type 1;C16.320.700.630.500
 Multiple Endocrine Neoplasia Type 2a;C16.320.700.630.505
 Multiple Endocrine Neoplasia Type 2b;C16.320.700.630.510
-Neurofibromatoses;C16.320.700.633
-Neurofibromatosis 1;C16.320.700.633.650
-Neurofibromatosis 2;C16.320.700.633.655
-Peutz-Jeghers Syndrome;C16.320.700.667
-Tuberous Sclerosis;C16.320.700.700
-Wilms Tumor;C16.320.700.900
-Denys-Drash Syndrome;C16.320.700.900.220
-WAGR Syndrome;C16.320.700.900.950
+Tuberous Sclerosis;C16.320.700.636
+Wilms Tumor;C16.320.700.642
+Denys-Drash Syndrome;C16.320.700.642.220
+WAGR Syndrome;C16.320.700.642.950
+Neurofibromatoses;C16.320.700.645
+Neurofibromatosis 1;C16.320.700.645.650
+Neurofibromatosis 2;C16.320.700.645.655
+Peutz-Jeghers Syndrome;C16.320.700.705
 Oculocerebrorenal Syndrome;C16.320.709
 Orofaciodigital Syndromes;C16.320.714
 Osteoarthropathy, Primary Hypertrophic;C16.320.718
@@ -16726,6 +16625,9 @@ Osteochondrodysplasias;C16.320.728
 Osteogenesis Imperfecta;C16.320.737
 Pain Insensitivity, Congenital;C16.320.775
 Pelger-Huet Anomaly;C16.320.784
+Polycystic Kidney Diseases;C16.320.798
+Polycystic Kidney, Autosomal Dominant;C16.320.798.500
+Polycystic Kidney, Autosomal Recessive;C16.320.798.510
 Pycnodysostosis;C16.320.812
 Skin Diseases, Genetic;C16.320.850
 Albinism;C16.320.850.080
@@ -16793,7 +16695,6 @@ Fetofetal Transfusion;C16.614.053.344
 Fetomaternal Transfusion;C16.614.053.511
 Asphyxia Neonatorum;C16.614.092
 Birth Injuries;C16.614.131
-Neonatal Brachial Plexus Palsy;C16.614.131.294
 Paralysis, Obstetric;C16.614.131.587
 Colic;C16.614.166
 Congenital Hyperinsulinism;C16.614.200
@@ -16895,7 +16796,6 @@ Scleredema Adultorum;C17.300.550.750
 Scleromyxedema;C17.300.550.875
 Neoplasms, Connective Tissue;C17.300.680
 Myofibroma;C17.300.680.540
-Myopericytoma;C17.300.680.770
 Noonan Syndrome;C17.300.690
 Osteopoikilosis;C17.300.705
 Panniculitis;C17.300.710
@@ -18041,7 +17941,6 @@ Multiple Endocrine Neoplasia Type 1;C19.344.400.500
 Multiple Endocrine Neoplasia Type 2a;C19.344.400.505
 Multiple Endocrine Neoplasia Type 2b;C19.344.400.510
 Ovarian Neoplasms;C19.344.410
-Carcinoma, Ovarian Epithelial;C19.344.410.199
 Granulosa Cell Tumor;C19.344.410.398
 Hereditary Breast and Ovarian Cancer Syndrome;C19.344.410.431
 Luteoma;C19.344.410.464
@@ -18057,7 +17956,6 @@ Glucagonoma;C19.344.421.500.249
 Somatostatinoma;C19.344.421.500.500
 Vipoma;C19.344.421.500.750
 Carcinoma, Pancreatic Ductal;C19.344.421.750
-Pancreatic Intraductal Neoplasms;C19.344.421.875
 Paraneoplastic Endocrine Syndromes;C19.344.473
 Parathyroid Neoplasms;C19.344.525
 Pituitary Neoplasms;C19.344.609
@@ -18070,7 +17968,6 @@ Sertoli-Leydig Cell Tumor;C19.344.762.500
 Leydig Cell Tumor;C19.344.762.500.249
 Sertoli Cell Tumor;C19.344.762.500.500
 Thyroid Neoplasms;C19.344.894
-Thyroid Cancer, Papillary;C19.344.894.400
 Thyroid Nodule;C19.344.894.800
 Female Athlete Triad Syndrome;C19.368
 Gonadal Disorders;C19.391
@@ -18079,10 +17976,7 @@ Disorders of Sex Development;C19.391.119
 46, XX Testicular Disorders of Sex Development;C19.391.119.064.124
 Gonadal Dysgenesis, 46,XX;C19.391.119.064.249
 Hyperandrogenism;C19.391.119.064.500
-Adrenogenital Syndrome;C19.391.119.090
-Adrenal Hyperplasia, Congenital;C19.391.119.090.500
-Hyperandrogenism;C19.391.119.090.750
-Disorder of Sex Development, 46,XY;C19.391.119.096
+46, XY Disorders of Sex Development;C19.391.119.096
 Androgen-Insensitivity Syndrome;C19.391.119.096.500
 Denys-Drash Syndrome;C19.391.119.096.562
 Frasier Syndrome;C19.391.119.096.624
@@ -18090,6 +17984,9 @@ Gonadal Dysgenesis, 46,XY;C19.391.119.096.687
 Gonadoblastoma;C19.391.119.096.687.500
 Kallmann Syndrome;C19.391.119.096.750
 WAGR Syndrome;C19.391.119.096.875
+Adrenogenital Syndrome;C19.391.119.129
+Adrenal Hyperplasia, Congenital;C19.391.119.129.500
+Hyperandrogenism;C19.391.119.129.750
 Gonadal Dysgenesis;C19.391.119.309
 Gonadal Dysgenesis, 46,XX;C19.391.119.309.193
 Gonadal Dysgenesis, 46,XY;C19.391.119.309.388
@@ -18117,7 +18014,6 @@ Ovarian Hyperstimulation Syndrome;C19.391.630.642
 Ovarian Neoplasms;C19.391.630.705
 Brenner Tumor;C19.391.630.705.265
 Carcinoma, Endometrioid;C19.391.630.705.331
-Carcinoma, Ovarian Epithelial;C19.391.630.705.350
 Granulosa Cell Tumor;C19.391.630.705.398
 Hereditary Breast and Ovarian Cancer Syndrome;C19.391.630.705.431
 Luteoma;C19.391.630.705.464
@@ -18189,7 +18085,6 @@ Thyroid Dysgenesis;C19.874.689
 Lingual Thyroid;C19.874.689.500
 Lingual Goiter;C19.874.689.500.500
 Thyroid Neoplasms;C19.874.788
-Thyroid Cancer, Papillary;C19.874.788.400
 Thyroid Nodule;C19.874.788.800
 Thyroiditis;C19.874.871
 Thyroiditis, Autoimmune;C19.874.871.102
@@ -18253,7 +18148,6 @@ Glomerulonephritis, Membranous;C20.111.535
 Graves Disease;C20.111.555
 Graves Ophthalmopathy;C20.111.555.500
 Hepatitis, Autoimmune;C20.111.567
-Immunoglobulin G4-Related Disease;C20.111.572
 Latent Autoimmune Diabetes in Adults;C20.111.576
 Linear IgA Bullous Dermatosis;C20.111.585
 Lupus Erythematosus, Systemic;C20.111.590
@@ -18834,7 +18728,6 @@ Emergencies;C23.550.291.781
 Facies;C23.550.291.812
 Iatrogenic Disease;C23.550.291.875
 Cross Infection;C23.550.291.875.500
-Healthcare-Associated Pneumonia;C23.550.291.875.500.500
 Late Onset Disorders;C23.550.291.883
 Neglected Diseases;C23.550.291.890
 Rare Diseases;C23.550.291.906
@@ -18932,7 +18825,6 @@ Waterhouse-Friderichsen Syndrome;C23.550.414.950.843
 Retrobulbar Hemorrhage;C23.550.414.960
 Shock, Hemorrhagic;C23.550.414.980
 Uterine Hemorrhage;C23.550.414.993
-Menorrhagia;C23.550.414.993.350
 Metrorrhagia;C23.550.414.993.700
 Postpartum Hemorrhage;C23.550.414.993.850
 Hyperammonemia;C23.550.421
@@ -19096,9 +18988,7 @@ Body Weight;C23.888.144
 Birth Weight;C23.888.144.186
 Fetal Macrosomia;C23.888.144.186.500
 Body Weight Changes;C23.888.144.243
-Body-Weight Trajectory;C23.888.144.243.463
 Weight Gain;C23.888.144.243.926
-Gestational Weight Gain;C23.888.144.243.926.500
 Weight Loss;C23.888.144.243.963
 Emaciation;C23.888.144.243.963.500
 Cachexia;C23.888.144.243.963.500.500
@@ -19138,6 +19028,8 @@ Intermittent Claudication;C23.888.531
 Medically Unexplained Symptoms;C23.888.541
 Mobility Limitation;C23.888.550
 Motion Sickness;C23.888.571
+Expeditions;C23.888.571.420
+Medical Tourism;C23.888.571.710
 Space Motion Sickness;C23.888.571.800
 Myocardial Stunning;C23.888.582
 Neurologic Manifestations;C23.888.592
@@ -19463,7 +19355,6 @@ Purpura, Thrombocytopenic, Idiopathic;C23.888.885.687.687.600
 Purpura, Thrombotic Thrombocytopenic;C23.888.885.687.687.680
 Waterhouse-Friderichsen Syndrome;C23.888.885.687.843
 Striae Distensae;C23.888.885.800
-Sleepiness;C23.888.900
 Travel-Related Illness;C23.888.914
 Jet Lag Syndrome;C23.888.914.500
 Urological Manifestations;C23.888.942
@@ -19473,7 +19364,6 @@ Dysuria;C23.888.942.343.274
 Nocturia;C23.888.942.343.550
 Prostatism;C23.888.942.343.600
 Urinary Bladder, Overactive;C23.888.942.343.780
-Urinary Bladder, Underactive;C23.888.942.343.790
 Urinary Incontinence;C23.888.942.343.800
 Urinary Incontinence, Stress;C23.888.942.343.800.500
 Urinary Incontinence, Urge;C23.888.942.343.800.750
@@ -19613,6 +19503,7 @@ Wernicke Encephalopathy;C25.775.100.625
 Amphetamine-Related Disorders;C25.775.225
 Cocaine-Related Disorders;C25.775.300
 Drug Overdose;C25.775.383
+Heroin Dependence;C25.775.425
 Inhalant Abuse;C25.775.467
 Marijuana Abuse;C25.775.635
 Neonatal Abstinence Syndrome;C25.775.650
@@ -19652,7 +19543,6 @@ Blast Injuries;C26.120.126
 Decompression Sickness;C26.120.248
 Battered Child Syndrome;C26.130
 Birth Injuries;C26.141
-Neonatal Brachial Plexus Palsy;C26.141.294
 Paralysis, Obstetric;C26.141.587
 Bites and Stings;C26.176
 Bites, Human;C26.176.071
@@ -19995,17 +19885,14 @@ Steam;D01.045.250.875.800
 Lewis Bases;D01.045.625
 Aluminum Compounds;D01.056
 Alum Compounds;D01.056.025
-Aluminum Chloride;D01.056.031
 Aluminum Hydroxide;D01.056.037
 Aluminum Oxide;D01.056.050
 Aluminum Silicates;D01.056.050.075
 Bentonite;D01.056.050.075.100
-Calcium Aluminosilicate;D01.056.050.075.225
 Kaolin;D01.056.050.075.350
 Zeolites;D01.056.050.075.975
 Arsenicals;D01.075
 Arsenates;D01.075.025
-Arsenic Trioxide;D01.075.038
 Arsenites;D01.075.050
 Barium Compounds;D01.103
 Barium Sulfate;D01.103.075
@@ -20029,6 +19916,7 @@ Calcium Carbonate;D01.146.275
 Nacre;D01.146.275.500
 Calcium Chloride;D01.146.300
 Calcium Citrate;D01.146.307
+Calcium, Dietary;D01.146.315
 Calcium Fluoride;D01.146.325
 Calcium Hydroxide;D01.146.335
 Calcium Phosphates;D01.146.360
@@ -20037,7 +19925,6 @@ Hydroxyapatites;D01.146.360.050.300
 Durapatite;D01.146.360.050.300.200
 Calcium Pyrophosphate;D01.146.360.150
 Calcium Sulfate;D01.146.375
-Calcium, Dietary;D01.146.395
 Carbon Compounds, Inorganic;D01.200
 Carbon Dioxide;D01.200.200
 Dry Ice;D01.200.200.250
@@ -20056,7 +19943,6 @@ Chlorates;D01.210.300
 Cisplatin;D01.210.375
 Hydrochloric Acid;D01.210.450
 Chlorides;D01.210.450.150
-Aluminum Chloride;D01.210.450.150.025
 Ammonium Chloride;D01.210.450.150.050
 Cadmium Chloride;D01.210.450.150.125
 Calcium Chloride;D01.210.450.150.150
@@ -20076,6 +19962,7 @@ Chromium Alloys;D01.220.175
 Vitallium;D01.220.175.950
 Coordination Complexes;D01.234
 Electrolytes;D01.248
+Polyelectrolytes;D01.248.249
 Ions;D01.248.497
 Anions;D01.248.497.158
 Arsenates;D01.248.497.158.050
@@ -20115,10 +20002,6 @@ Nitrites;D01.248.497.158.635
 Oxides;D01.248.497.158.685
 Peroxides;D01.248.497.158.685.750
 Artemisinins;D01.248.497.158.685.750.212
-Artemether;D01.248.497.158.685.750.212.250
-Artemether, Lumefantrine Drug Combination;D01.248.497.158.685.750.212.250.500
-Artesunate;D01.248.497.158.685.750.212.500
-Carbamide Peroxide;D01.248.497.158.685.750.318
 Hydrogen Peroxide;D01.248.497.158.685.750.424
 Lipid Peroxides;D01.248.497.158.685.750.637
 Prostaglandin Endoperoxides;D01.248.497.158.685.750.744
@@ -20145,10 +20028,8 @@ Cations;D01.248.497.300
 Cations, Divalent;D01.248.497.300.333
 Cations, Monovalent;D01.248.497.300.459
 Protons;D01.248.497.300.459.700
-Polyelectrolytes;D01.248.700
 Elements;D01.268
 Carbon;D01.268.150
-Carbon Fiber;D01.268.150.038
 Carbon Isotopes;D01.268.150.075
 Carbon Radioisotopes;D01.268.150.075.328
 Charcoal;D01.268.150.150
@@ -20428,10 +20309,6 @@ Hydroxyl Radical;D01.339.431.249
 Hypochlorous Acid;D01.339.431.311
 Peroxides;D01.339.431.374
 Artemisinins;D01.339.431.374.212
-Artemether;D01.339.431.374.212.250
-Artemether, Lumefantrine Drug Combination;D01.339.431.374.212.250.500
-Artesunate;D01.339.431.374.212.500
-Carbamide Peroxide;D01.339.431.374.318
 Hydrogen Peroxide;D01.339.431.374.424
 Lipid Peroxides;D01.339.431.374.637
 Prostaglandin Endoperoxides;D01.339.431.374.744
@@ -20495,7 +20372,6 @@ Povidone-Iodine;D01.475.557.500
 Periodic Acid;D01.475.705
 Iron Compounds;D01.490
 Ferric Compounds;D01.490.100
-Ferric Oxide, Saccharated;D01.490.100.150
 Ferricyanides;D01.490.100.300
 Nitroprusside;D01.490.100.300.550
 Ferrosoferric Oxide;D01.490.100.375
@@ -20808,7 +20684,6 @@ Selenium;D01.578.700
 Silicates;D01.578.725
 Aluminum Silicates;D01.578.725.025
 Bentonite;D01.578.725.025.100
-Calcium Aluminosilicate;D01.578.725.025.225
 Kaolin;D01.578.725.025.350
 Zeolites;D01.578.725.025.975
 Asbestos;D01.578.725.050
@@ -20866,10 +20741,8 @@ Oxides;D01.650.550
 Aluminum Oxide;D01.650.550.050
 Aluminum Silicates;D01.650.550.050.075
 Bentonite;D01.650.550.050.075.100
-Calcium Aluminosilicate;D01.650.550.050.075.225
 Kaolin;D01.650.550.050.075.350
 Zeolites;D01.650.550.050.075.975
-Arsenic Trioxide;D01.650.550.125
 Carbon Dioxide;D01.650.550.200
 Dry Ice;D01.650.550.200.250
 Carbon Monoxide;D01.650.550.250
@@ -20883,10 +20756,6 @@ Nitrous Oxide;D01.650.550.587.650
 Osmium Tetroxide;D01.650.550.600
 Peroxides;D01.650.550.750
 Artemisinins;D01.650.550.750.200
-Artemether;D01.650.550.750.200.250
-Artemether, Lumefantrine Drug Combination;D01.650.550.750.200.250.500
-Artesunate;D01.650.550.750.200.500
-Carbamide Peroxide;D01.650.550.750.300
 Hydrogen Peroxide;D01.650.550.750.400
 Lipid Peroxides;D01.650.550.750.600
 Prostaglandin Endoperoxides;D01.650.550.750.700
@@ -20942,9 +20811,9 @@ Potassium Acetate;D01.745.312
 Potassium Chloride;D01.745.625
 Potassium Cyanide;D01.745.635
 Potassium Dichromate;D01.745.650
+Potassium, Dietary;D01.745.660
 Potassium Iodide;D01.745.680
 Potassium Permanganate;D01.745.750
-Potassium, Dietary;D01.745.775
 Ruthenium Compounds;D01.765
 Ruthenium Red;D01.765.765
 Salts;D01.786
@@ -20963,7 +20832,6 @@ Silica Gel;D01.837.725.700.379
 Silicates;D01.837.725.700.760
 Aluminum Silicates;D01.837.725.700.760.050
 Bentonite;D01.837.725.700.760.050.100
-Calcium Aluminosilicate;D01.837.725.700.760.050.250
 Kaolin;D01.837.725.700.760.050.400
 Zeolites;D01.837.725.700.760.050.950
 Asbestos;D01.837.725.700.760.070
@@ -20985,6 +20853,8 @@ Sodium Bicarbonate;D01.857.625
 Sodium Chloride;D01.857.650
 Sodium Chloride, Dietary;D01.857.650.705
 Sodium Cyanide;D01.857.660
+Sodium, Dietary;D01.857.700
+Sodium Chloride, Dietary;D01.857.700.705
 Sodium Fluoride;D01.857.725
 Acidulated Phosphate Fluoride;D01.857.725.050
 Sodium Hydroxide;D01.857.745
@@ -20992,8 +20862,6 @@ Sodium Hypochlorite;D01.857.750
 Sodium Iodide;D01.857.760
 Sodium Nitrite;D01.857.775
 Sodium Selenite;D01.857.850
-Sodium, Dietary;D01.857.875
-Sodium Chloride, Dietary;D01.857.875.705
 Sulfur Compounds;D01.875
 Hydrogen Sulfide;D01.875.350
 Sulfides;D01.875.350.850
@@ -21079,7 +20947,6 @@ Terbutaline;D02.033.100.291.905
 Heptaminol;D02.033.100.350
 Isoetharine;D02.033.100.400
 Propanolamines;D02.033.100.624
-Carvedilol;D02.033.100.624.151
 Ephedrine;D02.033.100.624.302
 Histidinol;D02.033.100.624.380
 Isoxsuprine;D02.033.100.624.427
@@ -21152,7 +21019,6 @@ Heptanol;D02.033.415.500
 Hexanols;D02.033.415.510
 Cyclohexanols;D02.033.415.510.500
 Desvenlafaxine Succinate;D02.033.415.510.500.303
-Eucalyptol;D02.033.415.510.500.454
 Menthol;D02.033.415.510.500.605
 Tramadol;D02.033.415.510.500.802
 Venlafaxine Hydrochloride;D02.033.415.510.500.901
@@ -21173,7 +21039,6 @@ Cetomacrogol;D02.033.455.250.700.150
 Hydrogel, Polyethylene Glycol Dimethacrylate;D02.033.455.250.700.485
 Nonoxynol;D02.033.455.250.700.620
 Octoxynol;D02.033.455.250.700.660
-Polidocanol;D02.033.455.250.700.670
 Poloxalene;D02.033.455.250.700.680
 Poloxamer;D02.033.455.250.700.682
 Polyhydroxyethyl Methacrylate;D02.033.455.250.700.685
@@ -21183,7 +21048,6 @@ alpha-Chlorohydrin;D02.033.455.706.100
 Chloramphenicol;D02.033.455.706.300
 Thiamphenicol;D02.033.455.706.300.850
 Chlorphenesin;D02.033.455.706.345
-Felbamate;D02.033.455.706.388
 Fingolimod Hydrochloride;D02.033.455.706.431
 Mephenesin;D02.033.455.706.517
 Pentaerythritol Tetranitrate;D02.033.455.706.690
@@ -21196,7 +21060,6 @@ Propanols;D02.033.755
 1-Propanol;D02.033.755.600
 2-Propanol;D02.033.755.615
 Propanolamines;D02.033.755.624
-Carvedilol;D02.033.755.624.151
 Ephedrine;D02.033.755.624.302
 Histidinol;D02.033.755.624.380
 Isoxsuprine;D02.033.755.624.427
@@ -21257,7 +21120,6 @@ Isosorbide Dinitrate;D02.033.800.813.480.500
 Meglumine;D02.033.800.813.550
 Diatrizoate Meglumine;D02.033.800.813.550.500
 Iothalamate Meglumine;D02.033.800.813.550.600
-Meglumine Antimoniate;D02.033.800.813.550.800
 Triose Sugar Alcohols;D02.033.800.875
 Glycerol;D02.033.800.875.500
 Glycerophosphates;D02.033.800.875.750
@@ -21292,16 +21154,15 @@ Allylisopropylacetamide;D02.065.064.189
 Benzeneacetamides;D02.065.064.294
 Bufexamac;D02.065.064.294.088
 Iodoacetamide;D02.065.064.400
-Lacosamide;D02.065.064.416
-Levetiracetam;D02.065.064.432
 Linezolid;D02.065.064.463
 Oseltamivir;D02.065.064.525
 Piracetam;D02.065.064.650
 Thioacetamide;D02.065.064.786
 Acrylamides;D02.065.122
 Acrylamide;D02.065.122.015
-Afatinib;D02.065.132
 Bimatoprost;D02.065.141
+Polyunsaturated Alkamides;D02.065.160
+Capsaicin;D02.065.160.500
 Anilides;D02.065.199
 Acetanilides;D02.065.199.092
 Acetaminophen;D02.065.199.092.040
@@ -21309,14 +21170,12 @@ Diamfenetide;D02.065.199.092.250
 Etidocaine;D02.065.199.092.325
 Inosine Pranobex;D02.065.199.092.450
 Lidocaine;D02.065.199.092.500
-Lidocaine, Prilocaine Drug Combination;D02.065.199.092.500.500
 Phenacetin;D02.065.199.092.700
 Practolol;D02.065.199.092.800
 Ranolazine;D02.065.199.092.850
 Trimecaine;D02.065.199.092.900
 Benzoylarginine Nitroanilide;D02.065.199.200
 Bupivacaine;D02.065.199.239
-Levobupivacaine;D02.065.199.239.500
 Carbanilides;D02.065.199.326
 Imidocarb;D02.065.199.326.400
 Nicarbazin;D02.065.199.326.550
@@ -21324,18 +21183,13 @@ Carboxin;D02.065.199.350
 Encainide;D02.065.199.385
 Flutamide;D02.065.199.420
 Prilocaine;D02.065.199.750
-Lidocaine, Prilocaine Drug Combination;D02.065.199.750.500
 Propanil;D02.065.199.789
-Ropivacaine;D02.065.199.825
 Salicylanilides;D02.065.199.860
 Niclosamide;D02.065.199.860.470
 Oxyclozanide;D02.065.199.860.500
 Rafoxanide;D02.065.199.860.600
 Tocainide;D02.065.199.920
-Vorinostat;D02.065.199.960
 Benzamides;D02.065.277
-Amisulpride;D02.065.277.034
-Axitinib;D02.065.277.051
 Bezafibrate;D02.065.277.067
 Cisapride;D02.065.277.135
 DEET;D02.065.277.194
@@ -21368,22 +21222,14 @@ Dimethylformamide;D02.065.463.387
 Lactams;D02.065.589
 beta-Lactams;D02.065.589.099
 Carbapenems;D02.065.589.099.124
-Doripenem;D02.065.589.099.124.150
-Ertapenem;D02.065.589.099.124.225
 Thienamycins;D02.065.589.099.124.300
 Imipenem;D02.065.589.099.124.300.500
-Cilastatin, Imipenem Drug Combination;D02.065.589.099.124.300.500.500
-Meropenem;D02.065.589.099.124.300.750
 Cephalosporins;D02.065.589.099.249
 Cefamandole;D02.065.589.099.249.150
 Cefoperazone;D02.065.589.099.249.150.160
 Cefazolin;D02.065.589.099.249.160
-Cefdinir;D02.065.589.099.249.169
-Cefepime;D02.065.589.099.249.173
 Cefonicid;D02.065.589.099.249.177
 Cefsulodin;D02.065.589.099.249.185
-Ceftibuten;D02.065.589.099.249.187
-Cefuroxime;D02.065.589.099.249.188
 Cephacetrile;D02.065.589.099.249.190
 Cefotaxime;D02.065.589.099.249.190.190
 Cefixime;D02.065.589.099.249.190.190.115
@@ -21391,6 +21237,7 @@ Cefmenoxime;D02.065.589.099.249.190.190.125
 Cefotiam;D02.065.589.099.249.190.190.135
 Ceftizoxime;D02.065.589.099.249.190.190.145
 Ceftriaxone;D02.065.589.099.249.190.190.155
+Cefuroxime;D02.065.589.099.249.190.190.165
 Cephalothin;D02.065.589.099.249.190.210
 Cephapirin;D02.065.589.099.249.190.230
 Cephalexin;D02.065.589.099.249.200
@@ -21422,8 +21269,6 @@ Cloxacillin;D02.065.589.099.750.625.150
 Dicloxacillin;D02.065.589.099.750.625.150.205
 Floxacillin;D02.065.589.099.750.625.150.250
 Penicillanic Acid;D02.065.589.099.750.687
-Tazobactam;D02.065.589.099.750.687.750
-Piperacillin, Tazobactam Drug Combination;D02.065.589.099.750.687.750.500
 Penicillin G;D02.065.589.099.750.750
 Ampicillin;D02.065.589.099.750.750.050
 Amoxicillin;D02.065.589.099.750.750.050.050
@@ -21431,7 +21276,6 @@ Amoxicillin-Potassium Clavulanate Combination;D02.065.589.099.750.750.050.050.06
 Azlocillin;D02.065.589.099.750.750.050.075
 Mezlocillin;D02.065.589.099.750.750.050.500
 Piperacillin;D02.065.589.099.750.750.050.650
-Piperacillin, Tazobactam Drug Combination;D02.065.589.099.750.750.050.650.500
 Pivampicillin;D02.065.589.099.750.750.050.700
 Talampicillin;D02.065.589.099.750.750.050.900
 Carbenicillin;D02.065.589.099.750.750.170
@@ -21444,8 +21288,6 @@ Sulbactam;D02.065.589.099.750.812
 Ticarcillin;D02.065.589.099.750.875
 Caprolactam;D02.065.589.200
 Lactams, Macrocyclic;D02.065.589.327
-Polyunsaturated Alkamides;D02.065.690
-Capsaicin;D02.065.690.500
 Salicylamides;D02.065.793
 Labetalol;D02.065.793.324
 Salicylanilides;D02.065.793.650
@@ -21454,7 +21296,6 @@ Oxyclozanide;D02.065.793.650.500
 Rafoxanide;D02.065.793.650.600
 Sulfonamides;D02.065.884
 Benzolamide;D02.065.884.120
-Bosentan;D02.065.884.135
 Bumetanide;D02.065.884.150
 Celecoxib;D02.065.884.247
 Chlorthalidone;D02.065.884.365
@@ -21487,22 +21328,16 @@ Trimethoprim, Sulfamethoxazole Drug Combination;D02.065.884.725.867.500
 Sulfamethoxypyridazine;D02.065.884.725.872
 Sulfamonomethoxine;D02.065.884.725.877
 Sulfamoxole;D02.065.884.725.882
-Sulfanilamide;D02.065.884.725.885
 Sulfaphenazole;D02.065.884.725.887
 Sulfapyridine;D02.065.884.725.900
 Sulfaquinoxaline;D02.065.884.725.925
 Sulfathiazoles;D02.065.884.725.935
 Sulfamethizole;D02.065.884.725.935.813
-Sulfathiazole;D02.065.884.725.935.906
 Sulfisomidine;D02.065.884.725.940
 Sulfisoxazole;D02.065.884.725.945
 Sulfasalazine;D02.065.884.730
 Sumatriptan;D02.065.884.750
-Tamsulosin;D02.065.884.863
-Torsemide;D02.065.884.891
-Vemurafenib;D02.065.884.919
 Xipamide;D02.065.884.975
-Zonisamide;D02.065.884.987
 Thioamides;D02.065.900
 Thioacetamide;D02.065.900.890
 Amidines;D02.078
@@ -21577,7 +21412,6 @@ Isoetharine;D02.092.063.400
 Norepinephrine;D02.092.063.480
 Normetanephrine;D02.092.063.480.651
 Propanolamines;D02.092.063.624
-Carvedilol;D02.092.063.624.151
 Ephedrine;D02.092.063.624.302
 Histidinol;D02.092.063.624.380
 Methoxamine;D02.092.063.624.536
@@ -21620,7 +21454,6 @@ Fingolimod Hydrochloride;D02.092.063.700.350
 Psychosine;D02.092.063.700.700
 Aminopyridines;D02.092.080
 4-Aminopyridine;D02.092.080.060
-Amifampridine;D02.092.080.060.500
 Amrinone;D02.092.080.085
 Milrinone;D02.092.080.085.543
 Aniline Compounds;D02.092.146
@@ -21633,14 +21466,12 @@ Diamfenetide;D02.092.146.113.092.250
 Etidocaine;D02.092.146.113.092.325
 Inosine Pranobex;D02.092.146.113.092.450
 Lidocaine;D02.092.146.113.092.500
-Lidocaine, Prilocaine Drug Combination;D02.092.146.113.092.500.500
 Phenacetin;D02.092.146.113.092.700
 Practolol;D02.092.146.113.092.800
 Ranolazine;D02.092.146.113.092.850
 Trimecaine;D02.092.146.113.092.900
 Benzoylarginine Nitroanilide;D02.092.146.113.200
 Bupivacaine;D02.092.146.113.239
-Levobupivacaine;D02.092.146.113.239.500
 Carbanilides;D02.092.146.113.326
 Imidocarb;D02.092.146.113.326.400
 Nicarbazin;D02.092.146.113.326.550
@@ -21648,20 +21479,17 @@ Carboxin;D02.092.146.113.350
 Encainide;D02.092.146.113.385
 Flutamide;D02.092.146.113.420
 Prilocaine;D02.092.146.113.750
-Lidocaine, Prilocaine Drug Combination;D02.092.146.113.750.500
 Propanil;D02.092.146.113.789
-Ropivacaine;D02.092.146.113.825
 Salicylanilides;D02.092.146.113.860
 Niclosamide;D02.092.146.113.860.470
 Oxyclozanide;D02.092.146.113.860.500
 Rafoxanide;D02.092.146.113.860.600
 Tocainide;D02.092.146.113.920
-Vorinostat;D02.092.146.113.960
 Anilino Naphthalenesulfonates;D02.092.146.125
 Benzophenoneidum;D02.092.146.215
+Bromhexine;D02.092.146.271
+Ambroxol;D02.092.146.271.100
 Benzenaminium, 4,4'-(3-oxo-1,5-pentanediyl)bis(N,N-dimethyl-N-2-propenyl-), Dibromide;D02.092.146.290
-Bromhexine;D02.092.146.300
-Ambroxol;D02.092.146.300.100
 Fenamates;D02.092.146.307
 Kynuramine;D02.092.146.312
 p-Aminoazobenzene;D02.092.146.316
@@ -21692,13 +21520,11 @@ Trimethoprim, Sulfamethoxazole Drug Combination;D02.092.146.807.867.500
 Sulfamethoxypyridazine;D02.092.146.807.872
 Sulfamonomethoxine;D02.092.146.807.877
 Sulfamoxole;D02.092.146.807.882
-Sulfanilamide;D02.092.146.807.885
 Sulfaphenazole;D02.092.146.807.887
 Sulfapyridine;D02.092.146.807.900
 Sulfaquinoxaline;D02.092.146.807.925
 Sulfathiazoles;D02.092.146.807.935
 Sulfamethizole;D02.092.146.807.935.813
-Sulfathiazole;D02.092.146.807.935.906
 Sulfisomidine;D02.092.146.807.940
 Sulfisoxazole;D02.092.146.807.945
 Toluidines;D02.092.146.859
@@ -21708,15 +21534,19 @@ Pargyline;D02.092.200.650
 Biogenic Amines;D02.092.211
 Acetylcholine;D02.092.211.111
 Biogenic Monoamines;D02.092.211.215
-Dopamine;D02.092.211.215.406
-Epinephrine;D02.092.211.215.454
-Metanephrine;D02.092.211.215.454.400
-Racepinephrine;D02.092.211.215.454.700
+Catecholamines;D02.092.211.215.311
+Dopamine;D02.092.211.215.311.342
+Epinephrine;D02.092.211.215.311.461
+Metanephrine;D02.092.211.215.311.461.400
+Racepinephrine;D02.092.211.215.311.461.700
+Metaproterenol;D02.092.211.215.311.465
+Fenoterol;D02.092.211.215.311.465.300
+Norepinephrine;D02.092.211.215.311.560
+Droxidopa;D02.092.211.215.311.560.220
+Normetanephrine;D02.092.211.215.311.560.651
 Histamine;D02.092.211.215.501
 Methylhistamines;D02.092.211.215.501.621
 2-Hydroxyphenethylamine;D02.092.211.215.581
-Norepinephrine;D02.092.211.215.746
-Normetanephrine;D02.092.211.215.746.651
 Tryptamines;D02.092.211.215.801
 N,N-Dimethyltryptamine;D02.092.211.215.801.451
 Methoxydimethyltryptamines;D02.092.211.215.801.451.601
@@ -21745,6 +21575,7 @@ Oxidopamine;D02.092.311.342.478.650
 Epinephrine;D02.092.311.461
 Deoxyepinephrine;D02.092.311.461.200
 Metanephrine;D02.092.311.461.400
+Normetanephrine;D02.092.311.461.651
 Racepinephrine;D02.092.311.461.825
 Isoproterenol;D02.092.311.649
 Metaproterenol;D02.092.311.660
@@ -21752,7 +21583,6 @@ Fenoterol;D02.092.311.660.300
 Norepinephrine;D02.092.311.830
 Droxidopa;D02.092.311.830.220
 Nordefrin;D02.092.311.830.400
-Normetanephrine;D02.092.311.830.700
 Chloramines;D02.092.348
 Cyclohexylamines;D02.092.384
 Bromhexine;D02.092.384.175
@@ -21819,15 +21649,12 @@ Verapamil;D02.092.471.683.953
 Gallopamil;D02.092.471.683.953.395
 Phenoxybenzamine;D02.092.471.739
 Tiapride Hydrochloride;D02.092.471.869
-Gabapentin;D02.092.521
 Hydroxylamines;D02.092.570
 Aminooxyacetic Acid;D02.092.570.050
 Hydroxamic Acids;D02.092.570.394
 Bufexamac;D02.092.570.394.150
 Deferoxamine;D02.092.570.394.265
 Ferrichrome;D02.092.570.394.380
-Panobinostat;D02.092.570.394.535
-Vorinostat;D02.092.570.394.690
 4-Hydroxyaminoquinoline-1-oxide;D02.092.570.450
 Oximes;D02.092.570.665
 Fluvoxamine;D02.092.570.665.250
@@ -21895,7 +21722,6 @@ Gallamine Triethiodide;D02.092.877.400
 Glycopyrrolate;D02.092.877.425
 Hemicholinium 3;D02.092.877.435
 Lissamine Green Dyes;D02.092.877.475
-Methantheline;D02.092.877.562
 Oxyphenonium;D02.092.877.648
 Phenylammonium Compounds;D02.092.877.674
 (4-(m-Chlorophenylcarbamoyloxy)-2-butynyl)trimethylammonium Chloride;D02.092.877.674.033
@@ -21914,7 +21740,6 @@ Carnitine;D02.092.877.883.099
 Acetylcarnitine;D02.092.877.883.099.090
 Palmitoylcarnitine;D02.092.877.883.099.700
 Cetrimonium Compounds;D02.092.877.883.111
-Cetrimonium;D02.092.877.883.111.500
 Chlorisondamine;D02.092.877.883.222
 Chlormequat;D02.092.877.883.277
 Choline;D02.092.877.883.333
@@ -21955,10 +21780,9 @@ Nortropanes;D02.145.074.722.744
 Scopolamine Derivatives;D02.145.074.722.822
 Butylscopolammonium Bromide;D02.145.074.722.822.200
 N-Methylscopolamine;D02.145.074.722.822.550
-Scopolamine;D02.145.074.722.822.775
+Scopolamine Hydrobromide;D02.145.074.722.822.775
 Tiotropium Bromide;D02.145.074.722.822.887
 Azacitidine;D02.145.150
-Decitabine;D02.145.150.500
 Azaguanine;D02.145.250
 Azauridine;D02.145.451
 Azides;D02.159
@@ -21999,8 +21823,6 @@ Acetoxyacetylaminofluorene;D02.241.081.018.110.080.070
 Hydroxyacetylaminofluorene;D02.241.081.018.110.080.400
 Allylisopropylacetamide;D02.241.081.018.110.189
 Iodoacetamide;D02.241.081.018.110.400
-Lacosamide;D02.241.081.018.110.432
-Levetiracetam;D02.241.081.018.110.463
 Linezolid;D02.241.081.018.110.525
 Piracetam;D02.241.081.018.110.650
 Thioacetamide;D02.241.081.018.110.786
@@ -22058,7 +21880,6 @@ Butyrates;D02.241.081.114
 Aminobutyrates;D02.241.081.114.500
 gamma-Aminobutyric Acid;D02.241.081.114.500.350
 Baclofen;D02.241.081.114.500.350.100
-Gabapentin;D02.241.081.114.500.350.300
 Pregabalin;D02.241.081.114.500.350.500
 Vigabatrin;D02.241.081.114.500.350.900
 Bendamustine Hydrochloride;D02.241.081.114.625
@@ -22103,7 +21924,6 @@ Methomyl;D02.241.081.251.525
 Phenylcarbamates;D02.241.081.251.583
 Carbofuran;D02.241.081.251.583.166
 Chlorpropham;D02.241.081.251.583.177
-Felbamate;D02.241.081.251.583.366
 Methiocarb;D02.241.081.251.583.555
 Methocarbamol;D02.241.081.251.583.577
 Physostigmine;D02.241.081.251.583.682
@@ -22178,14 +21998,11 @@ Dextropropoxyphene;D02.241.081.751.120
 Flurbiprofen;D02.241.081.751.161
 Levopropoxyphene;D02.241.081.751.324
 Nafenopin;D02.241.081.751.512
-Oxaprozin;D02.241.081.751.634
-Remifentanil;D02.241.081.751.756
 Sugar Acids;D02.241.081.844
 Ascorbic Acid;D02.241.081.844.107
 Dehydroascorbic Acid;D02.241.081.844.107.260
 2,3-Diketogulonic Acid;D02.241.081.844.200
 Glucaric Acid;D02.241.081.844.300
-Ferric Oxide, Saccharated;D02.241.081.844.300.500
 Gluconates;D02.241.081.844.322
 Antimony Sodium Gluconate;D02.241.081.844.322.060
 Calcium Gluconate;D02.241.081.844.322.200
@@ -22203,10 +22020,8 @@ Tartronates;D02.241.081.844.821
 Uronic Acids;D02.241.081.844.915
 Glucuronates;D02.241.081.844.915.162
 Glucuronic Acid;D02.241.081.844.915.162.249
-Alginic Acid;D02.241.081.844.915.162.249.500
 Glucuronides;D02.241.081.844.915.162.500
 Hexuronic Acids;D02.241.081.844.915.400
-Alginic Acid;D02.241.081.844.915.400.250
 Iduronic Acid;D02.241.081.844.915.400.500
 Tricarboxylic Acids;D02.241.081.901
 Aconitic Acid;D02.241.081.901.177
@@ -22215,7 +22030,6 @@ Citrates;D02.241.081.901.434
 Citric Acid;D02.241.081.901.434.249
 Calcium Citrate;D02.241.081.901.434.249.500
 Potassium Citrate;D02.241.081.901.434.249.750
-Sodium Citrate;D02.241.081.901.434.249.875
 Isocitrates;D02.241.081.901.434.498
 Valerates;D02.241.081.944
 Pentanoic Acids;D02.241.081.944.509
@@ -22228,10 +22042,8 @@ Oxamic Acid;D02.241.152.367.600
 Uronic Acids;D02.241.152.811
 Glucuronates;D02.241.152.811.162
 Glucuronic Acid;D02.241.152.811.162.500
-Alginic Acid;D02.241.152.811.162.500.500
 Glucuronides;D02.241.152.811.162.750
 Hexuronic Acids;D02.241.152.811.400
-Alginic Acid;D02.241.152.811.400.250
 Iduronic Acid;D02.241.152.811.400.500
 Acids, Carbocyclic;D02.241.223
 Benzoates;D02.241.223.100
@@ -22252,11 +22064,11 @@ para-Aminobenzoates;D02.241.223.100.050.500
 Acecainide;D02.241.223.100.050.500.625
 4-Aminobenzoic Acid;D02.241.223.100.050.500.640
 Aminosalicylic Acid;D02.241.223.100.050.500.642
-Benzocaine;D02.241.223.100.050.500.643
-Cisapride;D02.241.223.100.050.500.644
 Ethopabate;D02.241.223.100.050.500.645
 Metoclopramide;D02.241.223.100.050.500.647
 p-Aminohippuric Acid;D02.241.223.100.050.500.650
+Benzocaine;D02.241.223.100.050.500.687
+Cisapride;D02.241.223.100.050.500.700
 Procainamide;D02.241.223.100.050.500.875
 Procaine;D02.241.223.100.050.500.906
 Penicillin G Procaine;D02.241.223.100.050.500.906.666
@@ -22266,8 +22078,6 @@ Benzamides;D02.241.223.100.100
 Acecainide;D02.241.223.100.100.033
 Aminohippuric Acids;D02.241.223.100.100.100
 p-Aminohippuric Acid;D02.241.223.100.100.100.100
-Amisulpride;D02.241.223.100.100.110
-Axitinib;D02.241.223.100.100.115
 Bezafibrate;D02.241.223.100.100.120
 Cisapride;D02.241.223.100.100.135
 DEET;D02.241.223.100.100.230
@@ -22300,7 +22110,6 @@ Dicamba;D02.241.223.100.200.500
 Metoclopramide;D02.241.223.100.200.750
 Moclobemide;D02.241.223.100.200.875
 Raclopride;D02.241.223.100.200.937
-Deferasirox;D02.241.223.100.250
 Hydroxybenzoates;D02.241.223.100.300
 Depsides;D02.241.223.100.300.100
 Gallic Acid;D02.241.223.100.300.200
@@ -22359,7 +22168,6 @@ Aurintricarboxylic Acid;D02.241.223.268.070
 Chlorogenic Acid;D02.241.223.268.220
 Chorismic Acid;D02.241.223.268.250
 Dicyclomine;D02.241.223.268.300
-Gabapentin;D02.241.223.268.469
 Quinic Acid;D02.241.223.268.637
 Shikimic Acid;D02.241.223.268.792
 Tilidine;D02.241.223.268.825
@@ -22396,7 +22204,6 @@ Diethylhexyl Phthalate;D02.241.223.805.250
 o-Phthalaldehyde;D02.241.223.805.780
 Phthalic Anhydrides;D02.241.223.805.800
 Phthalimides;D02.241.223.805.810
-Lenalidomide;D02.241.223.805.810.400
 Thalidomide;D02.241.223.805.810.800
 Esters;D02.241.400
 Humic Substances;D02.241.444
@@ -22419,8 +22226,6 @@ Hydroxamic Acids;D02.241.511.372
 Bufexamac;D02.241.511.372.150
 Deferoxamine;D02.241.511.372.265
 Ferrichrome;D02.241.511.372.380
-Panobinostat;D02.241.511.372.535
-Vorinostat;D02.241.511.372.690
 Hydroxybenzoates;D02.241.511.390
 Depsides;D02.241.511.390.100
 Gallic Acid;D02.241.511.390.200
@@ -22449,7 +22254,6 @@ Hydroxybutyrates;D02.241.511.429
 Sodium Oxybate;D02.241.511.429.700
 Lactates;D02.241.511.459
 Lactic Acid;D02.241.511.459.450
-Polylactic Acid-Polyglycolic Acid Copolymer;D02.241.511.459.450.500
 Sodium Lactate;D02.241.511.459.800
 Malates;D02.241.511.505
 Mandelic Acids;D02.241.511.536
@@ -22465,7 +22269,6 @@ Ascorbic Acid;D02.241.511.902.107
 Dehydroascorbic Acid;D02.241.511.902.107.260
 2,3-Diketogulonic Acid;D02.241.511.902.200
 Glucaric Acid;D02.241.511.902.300
-Ferric Oxide, Saccharated;D02.241.511.902.300.500
 Gluconates;D02.241.511.902.322
 Antimony Sodium Gluconate;D02.241.511.902.322.060
 Calcium Gluconate;D02.241.511.902.322.200
@@ -22483,10 +22286,8 @@ Tartronates;D02.241.511.902.821
 Uronic Acids;D02.241.511.902.915
 Glucuronates;D02.241.511.902.915.162
 Glucuronic Acid;D02.241.511.902.915.162.500
-Alginic Acid;D02.241.511.902.915.162.500.500
 Glucuronides;D02.241.511.902.915.162.750
 Hexuronic Acids;D02.241.511.902.915.400
-Alginic Acid;D02.241.511.902.915.400.250
 Iduronic Acid;D02.241.511.902.915.400.500
 Keto Acids;D02.241.755
 Acetoacetates;D02.241.755.080
@@ -22532,7 +22333,6 @@ Doxepin;D02.355.291.852.500
 Oxocins;D02.355.291.866
 Ethoglucid;D02.355.354
 Ethyl Ethers;D02.355.417
-Desflurane;D02.355.417.166
 Ether;D02.355.417.332
 Flurothyl;D02.355.417.515
 Methoxyflurane;D02.355.417.600
@@ -22544,14 +22344,12 @@ Anisoles;D02.355.601.200
 Anethole Trithione;D02.355.601.200.100
 Butylated Hydroxyanisole;D02.355.601.200.324
 Bis(Chloromethyl) Ether;D02.355.601.250
-Desflurane;D02.355.601.325
 Enflurane;D02.355.601.400
 Guaiacol;D02.355.601.536
 Guaifenesin;D02.355.601.536.400
 Methocarbamol;D02.355.601.536.400.500
 Isoflurane;D02.355.601.570
 Methoxyflurane;D02.355.601.620
-Sevoflurane;D02.355.601.810
 Phenyl Ethers;D02.355.726
 Anisoles;D02.355.726.158
 Anethole Trithione;D02.355.726.158.100
@@ -22574,10 +22372,6 @@ Triclosan;D02.355.726.900
 Free Radicals;D02.389
 Peroxides;D02.389.338
 Artemisinins;D02.389.338.055
-Artemether;D02.389.338.055.250
-Artemether, Lumefantrine Drug Combination;D02.389.338.055.250.500
-Artesunate;D02.389.338.055.500
-Carbamide Peroxide;D02.389.338.154
 Hydrogen Peroxide;D02.389.338.253
 Lipid Peroxides;D02.389.338.450
 Prostaglandin Endoperoxides;D02.389.338.638
@@ -22596,7 +22390,6 @@ Carbidopa;D02.442.200
 Hydrazones;D02.442.288
 Carbonyl Cyanide m-Chlorophenyl Hydrazone;D02.442.288.200
 Carbonyl Cyanide p-Trifluoromethoxyphenylhydrazone;D02.442.288.220
-Simendan;D02.442.288.610
 Iproniazid;D02.442.372
 Isoniazid;D02.442.436
 Methylhydrazines;D02.442.600
@@ -22621,7 +22414,6 @@ Methyl Methanesulfonate;D02.455.326.146.100.050.500.500
 HEPES;D02.455.326.146.100.250
 Isethionic Acid;D02.455.326.146.100.300
 Taurine;D02.455.326.146.100.850
-Acamprosate;D02.455.326.146.100.850.438
 Taurocholic Acid;D02.455.326.146.100.850.875
 Taurodeoxycholic Acid;D02.455.326.146.100.850.875.900
 Taurochenodeoxycholic Acid;D02.455.326.146.100.850.875.900.875
@@ -22643,6 +22435,8 @@ Octanes;D02.455.326.146.720
 Pentanes;D02.455.326.146.770
 Propane;D02.455.326.146.800
 Alkenes;D02.455.326.271
+Polyunsaturated Alkamides;D02.455.326.271.060
+Capsaicin;D02.455.326.271.060.222
 Allyl Compounds;D02.455.326.271.122
 Allylamine;D02.455.326.271.122.100
 Colesevelam Hydrochloride;D02.455.326.271.122.100.500
@@ -22660,18 +22454,15 @@ Aurodox;D02.455.326.271.665.155
 Carotenoids;D02.455.326.271.665.202
 Abscisic Acid;D02.455.326.271.665.202.061
 beta Carotene;D02.455.326.271.665.202.123
-Lycopene;D02.455.326.271.665.202.216
 Norisoprenoids;D02.455.326.271.665.202.309
 Retinoids;D02.455.326.271.665.202.495
 Acitretin;D02.455.326.271.665.202.495.050
-Bexarotene;D02.455.326.271.665.202.495.150
 Etretinate;D02.455.326.271.665.202.495.250
 Fenretinide;D02.455.326.271.665.202.495.270
 Isotretinoin;D02.455.326.271.665.202.495.325
 Retinaldehyde;D02.455.326.271.665.202.495.690
 Vitamin A;D02.455.326.271.665.202.495.818
 Tretinoin;D02.455.326.271.665.202.495.818.500
-Alitretinoin;D02.455.326.271.665.202.495.818.500.500
 Xanthophylls;D02.455.326.271.665.202.868
 Canthaxanthin;D02.455.326.271.665.202.868.249
 Cryptoxanthins;D02.455.326.271.665.202.868.374
@@ -22683,15 +22474,12 @@ Diphenylhexatriene;D02.455.326.271.665.250
 Filipin;D02.455.326.271.665.325
 Mepartricin;D02.455.326.271.665.400
 Neoprene;D02.455.326.271.665.480
-Polyacetylene Polymer;D02.455.326.271.665.515
 Polyethylenes;D02.455.326.271.665.550
 Polyethylene;D02.455.326.271.665.550.500
 Polyethyleneimine;D02.455.326.271.665.550.600
 Polypropylenes;D02.455.326.271.665.590
 Polyvinyls;D02.455.326.271.665.616
 Squalene;D02.455.326.271.665.806
-Polyunsaturated Alkamides;D02.455.326.271.690
-Capsaicin;D02.455.326.271.690.222
 Vinyl Compounds;D02.455.326.271.884
 Polyvinyls;D02.455.326.271.884.533
 Polyvinyl Alcohol;D02.455.326.271.884.533.532
@@ -22704,11 +22492,11 @@ Alkynes;D02.455.326.397
 Acetylene;D02.455.326.397.259
 Carbocyanines;D02.455.326.397.300
 (4-(m-Chlorophenylcarbamoyloxy)-2-butynyl)trimethylammonium Chloride;D02.455.326.397.325
+Polyacetylenes;D02.455.326.397.662
+Diynes;D02.455.326.397.662.500
+Enediynes;D02.455.326.397.662.500.500
+Zinostatin;D02.455.326.397.662.500.500.500
 Polyunsaturated Alkamides;D02.455.326.397.675
-Polyynes;D02.455.326.397.680
-Diynes;D02.455.326.397.680.500
-Enediynes;D02.455.326.397.680.500.500
-Zinostatin;D02.455.326.397.680.500.500.500
 Hydrocarbons, Cyclic;D02.455.426
 Bridged-Ring Compounds;D02.455.426.100
 Adamantane;D02.455.426.100.050
@@ -22726,7 +22514,6 @@ Cyclitols;D02.455.426.392.368.138
 Cyclobutanes;D02.455.426.392.368.201
 Cyclodecanes;D02.455.426.392.368.242
 Taxoids;D02.455.426.392.368.242.888
-Docetaxel;D02.455.426.392.368.242.888.389
 Paclitaxel;D02.455.426.392.368.242.888.777
 Albumin-Bound Paclitaxel;D02.455.426.392.368.242.888.777.500
 Cycloheptanes;D02.455.426.392.368.284
@@ -22736,30 +22523,24 @@ Sesquiterpenes, Guaiane;D02.455.426.392.368.284.500
 Thapsigargin;D02.455.426.392.368.284.500.888
 Tropolone;D02.455.426.392.368.284.900
 Cyclohexanes;D02.455.426.392.368.367
-Ciclopirox;D02.455.426.392.368.367.095
 Cuprizone;D02.455.426.392.368.367.190
 Cyclamates;D02.455.426.392.368.367.204
 Cyclohexanecarboxylic Acids;D02.455.426.392.368.367.218
-Gabapentin;D02.455.426.392.368.367.218.500
 Cyclohexanols;D02.455.426.392.368.367.318
 Desvenlafaxine Succinate;D02.455.426.392.368.367.318.500
-Eucalyptol;D02.455.426.392.368.367.318.625
 Venlafaxine Hydrochloride;D02.455.426.392.368.367.318.750
 Cyclohexanones;D02.455.426.392.368.367.340
 Cyclohexenes;D02.455.426.392.368.367.379
 Carotenoids;D02.455.426.392.368.367.379.249
 Abscisic Acid;D02.455.426.392.368.367.379.249.024
 beta Carotene;D02.455.426.392.368.367.379.249.050
-Lycopene;D02.455.426.392.368.367.379.249.213
 Norisoprenoids;D02.455.426.392.368.367.379.249.375
 Retinoids;D02.455.426.392.368.367.379.249.700
-Bexarotene;D02.455.426.392.368.367.379.249.700.135
 Fenretinide;D02.455.426.392.368.367.379.249.700.270
 Isotretinoin;D02.455.426.392.368.367.379.249.700.325
 Retinaldehyde;D02.455.426.392.368.367.379.249.700.690
 Vitamin A;D02.455.426.392.368.367.379.249.700.860
 Tretinoin;D02.455.426.392.368.367.379.249.700.860.500
-Alitretinoin;D02.455.426.392.368.367.379.249.700.860.500.500
 Xanthophylls;D02.455.426.392.368.367.379.249.887
 Canthaxanthin;D02.455.426.392.368.367.379.249.887.249
 Cryptoxanthins;D02.455.426.392.368.367.379.249.887.374
@@ -22768,15 +22549,11 @@ Lutein;D02.455.426.392.368.367.379.249.887.500
 Zeaxanthins;D02.455.426.392.368.367.379.249.887.750
 zeta Carotene;D02.455.426.392.368.367.379.249.925
 Chorismic Acid;D02.455.426.392.368.367.379.374
-Limonene;D02.455.426.392.368.367.379.437
 Oseltamivir;D02.455.426.392.368.367.379.500
 Shikimic Acid;D02.455.426.392.368.367.379.750
 Cyclohexylamines;D02.455.426.392.368.367.418
 Dicyclomine;D02.455.426.392.368.367.440
 Ketamine;D02.455.426.392.368.367.652
-Maraviroc;D02.455.426.392.368.367.726
-Nateglinide;D02.455.426.392.368.367.745
-O-(Chloroacetylcarbamoyl)fumagillol;D02.455.426.392.368.367.763
 Picrotoxin;D02.455.426.392.368.367.800
 Tiletamine;D02.455.426.392.368.367.850
 trans-1,4-Bis(2-chlorobenzaminomethyl)cyclohexane Dihydrochloride;D02.455.426.392.368.367.900
@@ -22786,10 +22563,7 @@ Cyclopentanes;D02.455.426.392.368.450
 Cycloleucine;D02.455.426.392.368.450.350
 Cyclopropanes;D02.455.426.392.368.533
 Cilastatin;D02.455.426.392.368.533.200
-Cilastatin, Imipenem Drug Combination;D02.455.426.392.368.533.200.500
 Hypoglycins;D02.455.426.392.368.533.450
-Milnacipran;D02.455.426.392.368.533.725
-Levomilnacipran;D02.455.426.392.368.533.725.500
 Hydrocarbons, Aromatic;D02.455.426.559
 Benzene Derivatives;D02.455.426.559.389
 Benzene;D02.455.426.559.389.023
@@ -22807,7 +22581,6 @@ Diphenhydramine;D02.455.426.559.389.115.250
 Dimenhydrinate;D02.455.426.559.389.115.250.250
 Meclizine;D02.455.426.559.389.115.475
 Methylenebis(chloroaniline);D02.455.426.559.389.115.500
-Modafinil;D02.455.426.559.389.115.550
 Orphenadrine;D02.455.426.559.389.115.600
 Terfenadine;D02.455.426.559.389.115.800
 Tolterodine Tartrate;D02.455.426.559.389.115.900
@@ -22843,8 +22616,6 @@ Benzamides;D02.455.426.559.389.127.085
 Acecainide;D02.455.426.559.389.127.085.033
 Aminohippuric Acids;D02.455.426.559.389.127.085.067
 p-Aminohippuric Acid;D02.455.426.559.389.127.085.067.100
-Amisulpride;D02.455.426.559.389.127.085.084
-Axitinib;D02.455.426.559.389.127.085.093
 Bezafibrate;D02.455.426.559.389.127.085.101
 Cisapride;D02.455.426.559.389.127.085.135
 DEET;D02.455.426.559.389.127.085.230
@@ -22877,7 +22648,6 @@ Dicamba;D02.455.426.559.389.127.250.500
 Metoclopramide;D02.455.426.559.389.127.250.750
 Moclobemide;D02.455.426.559.389.127.250.875
 Raclopride;D02.455.426.559.389.127.250.937
-Deferasirox;D02.455.426.559.389.127.266
 Hydroxybenzoates;D02.455.426.559.389.127.281
 Depsides;D02.455.426.559.389.127.281.100
 Gallic Acid;D02.455.426.559.389.127.281.200
@@ -22924,7 +22694,6 @@ Dithionitrobenzoic Acid;D02.455.426.559.389.127.650.300
 Benzophenones;D02.455.426.559.389.134
 Chlorthalidone;D02.455.426.559.389.134.500
 Fenofibrate;D02.455.426.559.389.134.750
-Tolcapone;D02.455.426.559.389.134.875
 Benzyl Compounds;D02.455.426.559.389.140
 Benzyl Alcohols;D02.455.426.559.389.140.200
 Benzyl Alcohol;D02.455.426.559.389.140.200.100
@@ -22947,7 +22716,6 @@ Zuclomiphene;D02.455.426.559.389.150.700.125.750
 Diethylstilbestrol;D02.455.426.559.389.150.700.175
 Hexestrol;D02.455.426.559.389.150.700.175.450
 4,4'-Diisothiocyanostilbene-2,2'-Disulfonic Acid;D02.455.426.559.389.150.700.200
-Resveratrol;D02.455.426.559.389.150.700.375
 Stilbamidines;D02.455.426.559.389.150.700.550
 Tamoxifen;D02.455.426.559.389.150.700.900
 Raloxifene Hydrochloride;D02.455.426.559.389.150.700.900.775
@@ -22964,12 +22732,10 @@ Clofenapate;D02.455.426.559.389.185.210
 Dianisidine;D02.455.426.559.389.185.220
 3,3'-Dichlorobenzidine;D02.455.426.559.389.185.226
 Flurbiprofen;D02.455.426.559.389.185.350
-Irbesartan;D02.455.426.559.389.185.413
 Losartan;D02.455.426.559.389.185.475
 Niclofolan;D02.455.426.559.389.185.600
 Polybrominated Biphenyls;D02.455.426.559.389.185.680
 Polychlorinated Biphenyls;D02.455.426.559.389.185.698
-Telmisartan;D02.455.426.559.389.185.849
 Bromobenzenes;D02.455.426.559.389.220
 Chlorobenzenes;D02.455.426.559.389.261
 Chlorophenols;D02.455.426.559.389.261.190
@@ -22999,28 +22765,6 @@ Bithionol;D02.455.426.559.389.657.120
 Bromphenol Blue;D02.455.426.559.389.657.150
 Catechols;D02.455.426.559.389.657.166
 Capsaicin;D02.455.426.559.389.657.166.099
-Catecholamines;D02.455.426.559.389.657.166.175
-Dihydroxyphenylalanine;D02.455.426.559.389.657.166.175.200
-Cysteinyldopa;D02.455.426.559.389.657.166.175.200.180
-Levodopa;D02.455.426.559.389.657.166.175.200.480
-Methyldopa;D02.455.426.559.389.657.166.175.200.538
-Carbidopa;D02.455.426.559.389.657.166.175.200.538.200
-Dobutamine;D02.455.426.559.389.657.166.175.220
-Dopamine;D02.455.426.559.389.657.166.175.342
-Deoxyepinephrine;D02.455.426.559.389.657.166.175.342.300
-Hydroxydopamines;D02.455.426.559.389.657.166.175.342.478
-Oxidopamine;D02.455.426.559.389.657.166.175.342.478.650
-Epinephrine;D02.455.426.559.389.657.166.175.461
-Deoxyepinephrine;D02.455.426.559.389.657.166.175.461.200
-Metanephrine;D02.455.426.559.389.657.166.175.461.400
-Racepinephrine;D02.455.426.559.389.657.166.175.461.825
-Isoproterenol;D02.455.426.559.389.657.166.175.649
-Metaproterenol;D02.455.426.559.389.657.166.175.660
-Fenoterol;D02.455.426.559.389.657.166.175.660.300
-Norepinephrine;D02.455.426.559.389.657.166.175.830
-Droxidopa;D02.455.426.559.389.657.166.175.830.220
-Nordefrin;D02.455.426.559.389.657.166.175.830.400
-Normetanephrine;D02.455.426.559.389.657.166.175.830.700
 Curcumin;D02.455.426.559.389.657.166.200
 1,2-Dihydroxybenzene-3,5-Disulfonic Acid Disodium Salt;D02.455.426.559.389.657.166.210
 Estrogens, Catechol;D02.455.426.559.389.657.166.350
@@ -23079,7 +22823,6 @@ Niclofolan;D02.455.426.559.389.657.566.600
 Nitrohydroxyiodophenylacetate;D02.455.426.559.389.657.566.610
 Nitroxinil;D02.455.426.559.389.657.566.620
 Picrates;D02.455.426.559.389.657.566.690
-Tolcapone;D02.455.426.559.389.657.566.845
 Phenol;D02.455.426.559.389.657.595
 Phenolphthaleins;D02.455.426.559.389.657.625
 Phenolphthalein;D02.455.426.559.389.657.625.555
@@ -23113,7 +22856,6 @@ Phloroglucinol;D02.455.426.559.389.657.684
 Phloretin;D02.455.426.559.389.657.684.602
 Polyphloretin Phosphate;D02.455.426.559.389.657.684.602.615
 Polyphenols;D02.455.426.559.389.657.715
-Resveratrol;D02.455.426.559.389.657.715.500
 Probucol;D02.455.426.559.389.657.746
 Propofol;D02.455.426.559.389.657.773
 Pyrogallol;D02.455.426.559.389.657.800
@@ -23121,7 +22863,6 @@ Resorcinols;D02.455.426.559.389.657.852
 Hexylresorcinol;D02.455.426.559.389.657.852.467
 Zearalenone;D02.455.426.559.389.657.852.900
 Zeranol;D02.455.426.559.389.657.852.900.975
-Tapentadol;D02.455.426.559.389.657.926
 Phenylurea Compounds;D02.455.426.559.389.703
 Carbanilides;D02.455.426.559.389.703.202
 Imidocarb;D02.455.426.559.389.703.202.400
@@ -23130,7 +22871,6 @@ Celiprolol;D02.455.426.559.389.703.241
 Diflubenzuron;D02.455.426.559.389.703.280
 Diuron;D02.455.426.559.389.703.397
 Linuron;D02.455.426.559.389.703.515
-Sorafenib;D02.455.426.559.389.703.757
 Sulfanilic Acids;D02.455.426.559.389.750
 Terphenyl Compounds;D02.455.426.559.389.805
 Polychloroterphenyl Compounds;D02.455.426.559.389.805.700
@@ -23180,14 +22920,11 @@ Fluorenes;D02.455.426.559.847.389
 2-Acetylaminofluorene;D02.455.426.559.847.389.050
 Acetoxyacetylaminofluorene;D02.455.426.559.847.389.050.060
 Hydroxyacetylaminofluorene;D02.455.426.559.847.389.050.400
-Lumefantrine;D02.455.426.559.847.389.650
-Artemether, Lumefantrine Drug Combination;D02.455.426.559.847.389.650.500
 Tilorone;D02.455.426.559.847.389.850
 Indenes;D02.455.426.559.847.486
 Dimethindene;D02.455.426.559.847.486.250
 Indans;D02.455.426.559.847.486.487
 Aprindine;D02.455.426.559.847.486.487.060
-Donepezil;D02.455.426.559.847.486.487.280
 Ninhydrin;D02.455.426.559.847.486.487.500
 Phenindione;D02.455.426.559.847.486.487.750
 Sulindac;D02.455.426.559.847.486.875
@@ -23212,14 +22949,13 @@ Minocycline;D02.455.426.559.847.562.900.550
 Oxytetracycline;D02.455.426.559.847.562.900.600
 Rolitetracycline;D02.455.426.559.847.562.900.720
 Tetracycline;D02.455.426.559.847.562.900.875
-Tigecycline;D02.455.426.559.847.562.900.937
 Naphthalenes;D02.455.426.559.847.638
 Acenaphthenes;D02.455.426.559.847.638.059
 Adapalene;D02.455.426.559.847.638.090
 Adapalene, Benzoyl Peroxide Drug Combination;D02.455.426.559.847.638.090.500
 Bunaftine;D02.455.426.559.847.638.120
 Carbaryl;D02.455.426.559.847.638.162
-Cinacalcet;D02.455.426.559.847.638.183
+Cinacalcet Hydrochloride;D02.455.426.559.847.638.183
 Dansyl Compounds;D02.455.426.559.847.638.204
 Lovastatin;D02.455.426.559.847.638.400
 Simvastatin;D02.455.426.559.847.638.400.900
@@ -23247,10 +22983,8 @@ Sertraline;D02.455.426.559.847.638.845.800
 Naphthylvinylpyridine;D02.455.426.559.847.638.900
 Pravastatin;D02.455.426.559.847.638.930
 Propranolol;D02.455.426.559.847.638.945
-Terbinafine;D02.455.426.559.847.638.953
 Tetrahydronaphthalenes;D02.455.426.559.847.638.960
 8-Hydroxy-2-(di-n-propylamino)tetralin;D02.455.426.559.847.638.960.400
-Bexarotene;D02.455.426.559.847.638.960.423
 Bunolol;D02.455.426.559.847.638.960.446
 Levobunolol;D02.455.426.559.847.638.960.446.500
 Mibefradil;D02.455.426.559.847.638.960.585
@@ -23280,7 +23014,6 @@ Fluorescein;D02.455.426.779.347.390
 Fluorescein-5-isothiocyanate;D02.455.426.779.347.400
 Rose Bengal;D02.455.426.779.347.700
 Fluspirilene;D02.455.426.779.350
-Irbesartan;D02.455.426.779.431
 Leucogenenol;D02.455.426.779.511
 Spiperone;D02.455.426.779.800
 Hydrocarbons, Halogenated;D02.455.526
@@ -23319,7 +23052,7 @@ Ethyl Chloride;D02.455.526.439.447
 Ethylene Dichlorides;D02.455.526.439.458
 Heptachlor;D02.455.526.439.516
 Heptachlor Epoxide;D02.455.526.439.516.350
-Hexachlorocyclohexane;D02.455.526.439.600
+Lindane;D02.455.526.439.600
 Methoxychlor;D02.455.526.439.610
 Methyl Chloride;D02.455.526.439.632
 Methylene Chloride;D02.455.526.439.642
@@ -23343,13 +23076,11 @@ Chlorofluorocarbons;D02.455.526.510.140
 Bromochlorofluorocarbons;D02.455.526.510.140.149
 Chlorofluorocarbons, Ethane;D02.455.526.510.140.224
 Chlorofluorocarbons, Methane;D02.455.526.510.140.300
-Desflurane;D02.455.526.510.213
 Fluoroacetates;D02.455.526.510.286
 Trifluoroacetic Acid;D02.455.526.510.286.500
 Fluorobenzenes;D02.455.526.510.432
 Rosuvastatin Calcium;D02.455.526.510.432.500
 Fluorocarbons;D02.455.526.510.435
-Sevoflurane;D02.455.526.510.717
 Hydrocarbons, Iodinated;D02.455.526.581
 Iodoacetates;D02.455.526.581.247
 Iodoacetamide;D02.455.526.581.247.249
@@ -23391,18 +23122,15 @@ Dronabinol;D02.455.849.090.810
 Carotenoids;D02.455.849.131
 Abscisic Acid;D02.455.849.131.061
 beta Carotene;D02.455.849.131.123
-Lycopene;D02.455.849.131.216
 Norisoprenoids;D02.455.849.131.309
 Retinoids;D02.455.849.131.495
 Acitretin;D02.455.849.131.495.050
-Bexarotene;D02.455.849.131.495.150
 Etretinate;D02.455.849.131.495.250
 Fenretinide;D02.455.849.131.495.270
 Isotretinoin;D02.455.849.131.495.325
 Retinaldehyde;D02.455.849.131.495.690
 Vitamin A;D02.455.849.131.495.818
 Tretinoin;D02.455.849.131.495.818.800
-Alitretinoin;D02.455.849.131.495.818.800.500
 Xanthophylls;D02.455.849.131.868
 Canthaxanthin;D02.455.849.131.868.249
 Cryptoxanthins;D02.455.849.131.868.374
@@ -23414,7 +23142,6 @@ Diterpenes;D02.455.849.291
 Aconitine;D02.455.849.291.037
 Aphidicolin;D02.455.849.291.075
 Atractyloside;D02.455.849.291.162
-Diterpene Alkaloids;D02.455.849.291.184
 Diterpenes, Abietane;D02.455.849.291.206
 Diterpenes, Clerodane;D02.455.849.291.228
 Diterpenes, Kaurane;D02.455.849.291.239
@@ -23434,7 +23161,6 @@ Vitamin K 2;D02.455.849.291.523.500.844
 Vitamin K 3;D02.455.849.291.523.500.922
 Ryanodine;D02.455.849.291.686
 Taxoids;D02.455.849.291.850
-Docetaxel;D02.455.849.291.850.389
 Paclitaxel;D02.455.849.291.850.777
 Albumin-Bound Paclitaxel;D02.455.849.291.850.777.500
 Dolichol;D02.455.849.365
@@ -23442,11 +23168,9 @@ Dolichol Phosphates;D02.455.849.365.250
 Gefarnate;D02.455.849.440
 Hemiterpenes;D02.455.849.486
 Monoterpenes;D02.455.849.575
-Eucalyptol;D02.455.849.575.250
 Iridoids;D02.455.849.575.500
 Iridoid Glycosides;D02.455.849.575.500.500
 Iridoid Glucosides;D02.455.849.575.500.500.500
-Limonene;D02.455.849.575.625
 Menthol;D02.455.849.575.750
 Norbornanes;D02.455.849.575.781
 Bornanes;D02.455.849.575.781.234
@@ -23467,12 +23191,8 @@ Polyisoprenyl Phosphate Oligosaccharides;D02.455.849.690.700.710
 Sesquiterpenes;D02.455.849.765
 Abscisic Acid;D02.455.849.765.033
 Artemisinins;D02.455.849.765.211
-Artemether;D02.455.849.765.211.250
-Artemether, Lumefantrine Drug Combination;D02.455.849.765.211.250.500
-Artesunate;D02.455.849.765.211.500
 Farnesol;D02.455.849.765.424
 Gossypol;D02.455.849.765.444
-O-(Chloroacetylcarbamoyl)fumagillol;D02.455.849.765.597
 Santonin;D02.455.849.765.750
 Sesquiterpenes, Eudesmane;D02.455.849.765.775
 Sesquiterpenes, Germacrane;D02.455.849.765.787
@@ -23543,11 +23263,9 @@ omega-Chloroacetophenone;D02.522.120.575
 Benzophenones;D02.522.223
 Chlorthalidone;D02.522.223.500
 Fenofibrate;D02.522.223.750
-Tolcapone;D02.522.223.875
 Butanones;D02.522.296
 Acetoin;D02.522.296.100
 Diacetyl;D02.522.296.400
-Nabumetone;D02.522.296.650
 Thenoyltrifluoroacetone;D02.522.296.900
 Butyrophenones;D02.522.352
 Azaperone;D02.522.352.110
@@ -23585,9 +23303,7 @@ Lactones;D02.540
 Acetogenins;D02.540.205
 Acyl-Butyrolactones;D02.540.232
 Dehydroascorbic Acid;D02.540.260
-Eplerenone;D02.540.383
 Macrolides;D02.540.505
-Fidaxomicin;D02.540.505.225
 Lucensomycin;D02.540.505.450
 Maytansine;D02.540.505.495
 Mepartricin;D02.540.505.497
@@ -23602,7 +23318,6 @@ Sirolimus;D02.540.505.760
 Everolimus;D02.540.505.760.500
 Tacrolimus;D02.540.505.810
 Tylosin;D02.540.505.905
-Orlistat;D02.540.529
 Picrotoxin;D02.540.552
 Polyketides;D02.540.576
 Macrolides;D02.540.576.500
@@ -23619,7 +23334,6 @@ Erythromycin Estolate;D02.540.576.500.992.250
 Erythromycin Ethylsuccinate;D02.540.576.500.992.260
 Ketolides;D02.540.576.500.992.445
 Roxithromycin;D02.540.576.500.992.630
-Fidaxomicin;D02.540.576.500.994
 Filipin;D02.540.576.500.996
 Ivermectin;D02.540.576.500.997
 Josamycin;D02.540.576.500.998
@@ -23642,13 +23356,11 @@ Aminoacetonitrile;D02.626.080.085
 Acrylonitrile;D02.626.095
 Aminopropionitrile;D02.626.151
 Amygdalin;D02.626.175
-Anastrozole;D02.626.218
 Carbonyl Cyanide m-Chlorophenyl Hydrazone;D02.626.260
 Carbonyl Cyanide p-Trifluoromethoxyphenylhydrazone;D02.626.270
 Cyanoacrylates;D02.626.290
 Bucrylate;D02.626.290.200
 Enbucrilate;D02.626.290.350
-Letrozole;D02.626.300
 o-Chlorobenzylidenemalonitrile;D02.626.310
 Citalopram;D02.626.320
 Fadrozole;D02.626.400
@@ -23657,7 +23369,6 @@ Rilpivirine;D02.626.809
 Emtricitabine, Rilpivirine, Tenofovir Drug Combination;D02.626.809.500
 Technetium Tc 99m Sestamibi;D02.626.872
 Tyrphostins;D02.626.886
-Vildagliptin;D02.626.943
 Nitrites;D02.633
 Amyl Nitrite;D02.633.025
 Nitro Compounds;D02.640
@@ -23704,10 +23415,8 @@ Niclofolan;D02.640.743.600
 Nitrohydroxyiodophenylacetate;D02.640.743.610
 Nitroxinil;D02.640.743.620
 Picrates;D02.640.743.690
-Tolcapone;D02.640.743.845
 Nitroquinolines;D02.640.820
 4-Nitroquinoline-1-oxide;D02.640.820.600
-Thiamethoxam;D02.640.910
 Nitroso Compounds;D02.654
 Nitrosamines;D02.654.442
 Butylhydroxybutylnitrosamine;D02.654.442.100
@@ -23742,7 +23451,6 @@ Betaxanthins;D02.675.276.136.555
 Bethanechol Compounds;D02.675.276.148
 Bethanechol;D02.675.276.148.100
 Cetrimonium Compounds;D02.675.276.190
-Cetrimonium;D02.675.276.190.500
 Chlorisondamine;D02.675.276.200
 Chlormequat;D02.675.276.207
 (4-(m-Chlorophenylcarbamoyloxy)-2-butynyl)trimethylammonium Chloride;D02.675.276.210
@@ -23769,7 +23477,6 @@ Bis-Trimethylammonium Compounds;D02.675.276.558
 Decamethonium Compounds;D02.675.276.558.372
 Hexamethonium Compounds;D02.675.276.558.592
 Hexamethonium;D02.675.276.558.592.500
-Methantheline;D02.675.276.569
 Muscarine;D02.675.276.580
 Neostigmine;D02.675.276.602
 Oxyphenonium;D02.675.276.648
@@ -23795,11 +23502,9 @@ Cacodylic Acid;D02.691.088.100
 Melarsoprol;D02.691.088.500
 Roxarsone;D02.691.088.700
 Coordination Complexes;D02.691.214
-Oxaliplatin;D02.691.214.500
 Gadolinium DTPA;D02.691.400
 Iron Compounds;D02.691.550
 Ferric Compounds;D02.691.550.100
-Ferric Oxide, Saccharated;D02.691.550.100.250
 Iron-Dextran Complex;D02.691.550.100.500
 Ferrous Compounds;D02.691.550.200
 Iron Carbonyl Compounds;D02.691.550.500
@@ -23886,16 +23591,12 @@ Tritolyl Phosphates;D02.705.400.875
 Organophosphonates;D02.705.429
 Aminoethylphosphonic Acid;D02.705.429.249
 Armin;D02.705.429.374
-Cidofovir;D02.705.429.437
 Diphosphonates;D02.705.429.500
 Alendronate;D02.705.429.500.100
 Clodronic Acid;D02.705.429.500.200
 Etidronic Acid;D02.705.429.500.830
-Ibandronic Acid;D02.705.429.500.844
-Pamidronate;D02.705.429.500.858
-Risedronic Acid;D02.705.429.500.872
+Risedronate Sodium;D02.705.429.500.830.500
 Technetium Tc 99m Medronate;D02.705.429.500.885
-Zoledronic Acid;D02.705.429.500.942
 Fosfomycin;D02.705.429.625
 Organofluorophosphonates;D02.705.429.750
 Isoflurophate;D02.705.429.750.249
@@ -24034,8 +23735,6 @@ Cloxacillin;D02.886.108.750.625.150
 Dicloxacillin;D02.886.108.750.625.150.205
 Floxacillin;D02.886.108.750.625.150.250
 Penicillanic Acid;D02.886.108.750.687
-Tazobactam;D02.886.108.750.687.750
-Piperacillin, Tazobactam Drug Combination;D02.886.108.750.687.750.500
 Penicillin G;D02.886.108.750.750
 Ampicillin;D02.886.108.750.750.050
 Amoxicillin;D02.886.108.750.750.050.050
@@ -24043,7 +23742,6 @@ Amoxicillin-Potassium Clavulanate Combination;D02.886.108.750.750.050.050.060
 Azlocillin;D02.886.108.750.750.050.075
 Mezlocillin;D02.886.108.750.750.050.500
 Piperacillin;D02.886.108.750.750.050.650
-Piperacillin, Tazobactam Drug Combination;D02.886.108.750.750.050.650.500
 Pivampicillin;D02.886.108.750.750.050.700
 Talampicillin;D02.886.108.750.750.050.900
 Carbenicillin;D02.886.108.750.750.170
@@ -24137,7 +23835,6 @@ Sulfones;D02.886.590
 Dansyl Compounds;D02.886.590.192
 Dapsone;D02.886.590.263
 Acedapsone;D02.886.590.263.050
-Etoricoxib;D02.886.590.444
 Phenylmethylsulfonyl Fluoride;D02.886.590.625
 Sulfonamides;D02.886.590.700
 Benzolamide;D02.886.590.700.120
@@ -24151,7 +23848,6 @@ Diazoxide;D02.886.590.700.135.300
 Hydroflumethiazide;D02.886.590.700.135.475
 Methyclothiazide;D02.886.590.700.135.620
 Polythiazide;D02.886.590.700.135.781
-Bosentan;D02.886.590.700.143
 Bumetanide;D02.886.590.700.150
 Celecoxib;D02.886.590.700.247
 Chlorthalidone;D02.886.590.700.365
@@ -24186,22 +23882,16 @@ Trimethoprim, Sulfamethoxazole Drug Combination;D02.886.590.700.725.867.500
 Sulfamethoxypyridazine;D02.886.590.700.725.872
 Sulfamonomethoxine;D02.886.590.700.725.877
 Sulfamoxole;D02.886.590.700.725.882
-Sulfanilamide;D02.886.590.700.725.885
 Sulfaphenazole;D02.886.590.700.725.887
 Sulfapyridine;D02.886.590.700.725.900
 Sulfaquinoxaline;D02.886.590.700.725.925
 Sulfathiazoles;D02.886.590.700.725.935
 Sulfamethizole;D02.886.590.700.725.935.813
-Sulfathiazole;D02.886.590.700.725.935.906
 Sulfisomidine;D02.886.590.700.725.940
 Sulfisoxazole;D02.886.590.700.725.945
 Sulfasalazine;D02.886.590.700.730
 Sumatriptan;D02.886.590.700.750
-Tamsulosin;D02.886.590.700.863
-Torsemide;D02.886.590.700.891
-Vemurafenib;D02.886.590.700.919
 Xipamide;D02.886.590.700.975
-Zonisamide;D02.886.590.700.987
 Sulfonylurea Compounds;D02.886.590.795
 Acetohexamide;D02.886.590.795.071
 Carbutamide;D02.886.590.795.204
@@ -24211,8 +23901,6 @@ Glipizide;D02.886.590.795.500
 Glyburide;D02.886.590.795.575
 Tolazamide;D02.886.590.795.834
 Tolbutamide;D02.886.590.795.896
-Tazobactam;D02.886.590.841
-Piperacillin, Tazobactam Drug Combination;D02.886.590.841.500
 Tosyl Compounds;D02.886.590.887
 Bromcresol Green;D02.886.590.887.140
 Bromcresol Purple;D02.886.590.887.150
@@ -24228,7 +23916,6 @@ Lansoprazole;D02.886.640.074.249
 Dexlansoprazole;D02.886.640.074.249.500
 Omeprazole;D02.886.640.074.500
 Esomeprazole;D02.886.640.074.500.500
-Pantoprazole;D02.886.640.074.625
 Rabeprazole;D02.886.640.074.750
 Dimethyl Sulfoxide;D02.886.640.150
 Sulfur Acids;D02.886.645
@@ -24247,7 +23934,6 @@ Sodium Tetradecyl Sulfate;D02.886.645.600.055.050.755
 HEPES;D02.886.645.600.055.250
 Isethionic Acid;D02.886.645.600.055.300
 Taurine;D02.886.645.600.055.850
-Acamprosate;D02.886.645.600.055.850.400
 Taurocholic Acid;D02.886.645.600.055.850.800
 Taurodeoxycholic Acid;D02.886.645.600.055.850.800.900
 Taurochenodeoxycholic Acid;D02.886.645.600.055.850.800.900.875
@@ -24292,12 +23978,8 @@ Cephalosporins;D02.886.665.074
 Cefamandole;D02.886.665.074.150
 Cefoperazone;D02.886.665.074.150.160
 Cefazolin;D02.886.665.074.160
-Cefdinir;D02.886.665.074.169
-Cefepime;D02.886.665.074.173
 Cefonicid;D02.886.665.074.177
 Cefsulodin;D02.886.665.074.185
-Ceftibuten;D02.886.665.074.187
-Cefuroxime;D02.886.665.074.188
 Cephacetrile;D02.886.665.074.190
 Cefotaxime;D02.886.665.074.190.190
 Cefixime;D02.886.665.074.190.190.115
@@ -24305,6 +23987,7 @@ Cefmenoxime;D02.886.665.074.190.190.125
 Cefotiam;D02.886.665.074.190.190.135
 Ceftizoxime;D02.886.665.074.190.190.145
 Ceftriaxone;D02.886.665.074.190.190.155
+Cefuroxime;D02.886.665.074.190.190.165
 Cephalothin;D02.886.665.074.190.210
 Cephapirin;D02.886.665.074.190.230
 Cephalexin;D02.886.665.074.200
@@ -24320,7 +24003,6 @@ Cefmetazole;D02.886.665.074.250.177
 Cefotetan;D02.886.665.074.250.199
 Cefoxitin;D02.886.665.074.250.222
 Chlormezanone;D02.886.665.150
-Meloxicam;D02.886.665.275
 Nifurtimox;D02.886.665.400
 Piroxicam;D02.886.665.500
 Thiadiazines;D02.886.665.785
@@ -24338,7 +24020,6 @@ Febuxostat;D02.886.675.274
 Firefly Luciferin;D02.886.675.298
 Levamisole;D02.886.675.346
 Lurasidone Hydrochloride;D02.886.675.414
-Meloxicam;D02.886.675.448
 Niridazole;D02.886.675.482
 Nizatidine;D02.886.675.500
 Oxythiamine;D02.886.675.540
@@ -24347,7 +24028,6 @@ Riluzole;D02.886.675.651
 Ritonavir;D02.886.675.653
 Saccharin;D02.886.675.687
 Sulfathiazoles;D02.886.675.725
-Sulfathiazole;D02.886.675.725.500
 Tetramisole;D02.886.675.782
 Thiabendazole;D02.886.675.840
 Thiadiazoles;D02.886.675.867
@@ -24356,16 +24036,12 @@ Benzolamide;D02.886.675.867.120
 Methazolamide;D02.886.675.867.537
 Timolol;D02.886.675.867.768
 Brimonidine Tartrate, Timolol Maleate Drug Combination;D02.886.675.867.768.500
-Thiamethoxam;D02.886.675.884
 Thiamine;D02.886.675.900
 Fursultiamin;D02.886.675.900.300
 Thiamine Monophosphate;D02.886.675.900.600
 Thiamine Pyrophosphate;D02.886.675.900.702
 Thiamine Triphosphate;D02.886.675.900.900
 Thiazolidinediones;D02.886.675.933
-Pioglitazone;D02.886.675.933.250
-Rosiglitazone;D02.886.675.933.500
-Troglitazone;D02.886.675.933.750
 Thiazolidines;D02.886.675.966
 Thiepins;D02.886.680
 Dibenzothiepins;D02.886.680.350
@@ -24410,10 +24086,10 @@ Thiophenes;D02.886.778
 Canagliflozin;D02.886.778.075
 Carticaine;D02.886.778.150
 Duloxetine Hydrochloride;D02.886.778.260
+Prasugrel Hydrochloride;D02.886.778.315
 Ketotifen;D02.886.778.370
 Morantel;D02.886.778.440
 Pizotyline;D02.886.778.580
-Prasugrel Hydrochloride;D02.886.778.600
 Pyrantel;D02.886.778.634
 Pyrantel Pamoate;D02.886.778.634.600
 Pyrantel Tartrate;D02.886.778.634.670
@@ -24421,7 +24097,6 @@ Rivaroxaban;D02.886.778.727
 Thenoyltrifluoroacetone;D02.886.778.820
 Thienopyridines;D02.886.778.823
 Ticlopidine;D02.886.778.823.500
-Clopidogrel;D02.886.778.823.500.500
 Thioctic Acid;D02.886.778.827
 Ticrynafen;D02.886.778.840
 Tiletamine;D02.886.778.850
@@ -24449,14 +24124,12 @@ Lucanthone;D02.886.952.500
 Thiothixene;D02.886.952.787
 Triazenes;D02.925
 Dacarbazine;D02.925.200
-Temozolomide;D02.925.200.500
 Diminazene;D02.925.240
 Urea;D02.948
 Allantoin;D02.948.058
 Biureas;D02.948.117
 Biuret;D02.948.130
 Bromisovalum;D02.948.160
-Carbamide Peroxide;D02.948.278
 Hydroxyurea;D02.948.395
 Methylurea Compounds;D02.948.511
 Nitrosourea Compounds;D02.948.594
@@ -24475,7 +24148,6 @@ Celiprolol;D02.948.681.241
 Diflubenzuron;D02.948.681.280
 Diuron;D02.948.681.397
 Linuron;D02.948.681.515
-Sorafenib;D02.948.681.757
 Sulfonylurea Compounds;D02.948.828
 Acetohexamide;D02.948.828.071
 Carbutamide;D02.948.828.204
@@ -24526,14 +24198,12 @@ Niacinamide;D03.066.515.530
 6-Aminonicotinamide;D03.066.515.530.248
 Nicorandil;D03.066.515.530.498
 Nikethamide;D03.066.515.530.500
-Sorafenib;D03.066.515.530.750
 Niceritrol;D03.066.515.540
 Niflumic Acid;D03.066.515.550
 Pipemidic Acid;D03.066.515.635
 Piromidic Acid;D03.066.515.650
 Xanthinol Niacinate;D03.066.515.950
 Nipecotic Acids;D03.066.566
-Tiagabine;D03.066.566.500
 Orotic Acid;D03.066.627
 Picolinic Acids;D03.066.707
 Fusaric Acid;D03.066.707.200
@@ -24567,7 +24237,6 @@ Betalains;D03.132.124
 Betacyanins;D03.132.124.500
 Betaxanthins;D03.132.124.750
 Camptothecin;D03.132.151
-Irinotecan;D03.132.151.425
 Topotecan;D03.132.151.850
 Cinchona Alkaloids;D03.132.206
 Quinidine;D03.132.206.636
@@ -24576,11 +24245,9 @@ Colchicine;D03.132.225
 Demecolcine;D03.132.225.374
 Lumicolchicines;D03.132.225.500
 Dihydro-beta-Erythroidine;D03.132.285
-Diterpene Alkaloids;D03.132.301
 Emetine;D03.132.316
 Ergot Alkaloids;D03.132.327
 Ergolines;D03.132.327.287
-Cabergoline;D03.132.327.287.131
 Ergonovine;D03.132.327.287.262
 Methylergonovine;D03.132.327.287.262.455
 Lisuride;D03.132.327.287.417
@@ -24600,9 +24267,9 @@ Dihydroergotoxine;D03.132.327.412.250
 Ergoloid Mesylates;D03.132.327.412.250.500
 Ergotamine;D03.132.327.412.400
 Harringtonines;D03.132.420
-Homoharringtonine;D03.132.420.500
 Indole Alkaloids;D03.132.436
-Oxindoles;D03.132.436.511
+Harmaline;D03.132.436.444
+Harmine;D03.132.436.477
 Physostigmine;D03.132.436.545
 Psilocybin;D03.132.436.613
 Secologanin Tryptamine Alkaloids;D03.132.436.681
@@ -24617,7 +24284,6 @@ Vinblastine;D03.132.436.681.827.650
 Vincamine;D03.132.436.681.827.750
 Vincristine;D03.132.436.681.827.817
 Vindesine;D03.132.436.681.827.830
-Vinorelbine;D03.132.436.681.827.915
 Yohimbine;D03.132.436.681.933
 Reserpine;D03.132.436.681.933.500
 Staurosporine;D03.132.436.750
@@ -24668,7 +24334,7 @@ Atropine;D03.132.760.180.572.199
 Hyoscyamine;D03.132.760.180.572.199.500
 Ipratropium;D03.132.760.180.572.400
 Albuterol, Ipratropium Drug Combination;D03.132.760.180.572.400.500
-Scopolamine;D03.132.760.180.848
+Scopolamine Hydrobromide;D03.132.760.180.848
 Capsaicin;D03.132.760.200
 Nicotine;D03.132.760.570
 Solanine;D03.132.760.769
@@ -24688,7 +24354,7 @@ Crack Cocaine;D03.132.889.354.250
 Scopolamine Derivatives;D03.132.889.601
 Butylscopolammonium Bromide;D03.132.889.601.200
 N-Methylscopolamine;D03.132.889.601.550
-Scopolamine;D03.132.889.601.775
+Scopolamine Hydrobromide;D03.132.889.601.775
 Tiotropium Bromide;D03.132.889.601.887
 Veratrum Alkaloids;D03.132.920
 Cevanes;D03.132.920.256
@@ -24742,7 +24408,6 @@ Cimetidine;D03.383.129.308.130
 Clotrimazole;D03.383.129.308.175
 Creatinine;D03.383.129.308.207
 Dacarbazine;D03.383.129.308.240
-Temozolomide;D03.383.129.308.240.500
 Dexmedetomidine;D03.383.129.308.245
 Econazole;D03.383.129.308.250
 Enoximone;D03.383.129.308.253
@@ -24793,15 +24458,12 @@ Tetramisole;D03.383.129.308.884
 Trimethaphan;D03.383.129.308.935
 Urocanic Acid;D03.383.129.308.960
 Vardenafil Dihydrochloride;D03.383.129.308.980
-Zoledronic Acid;D03.383.129.308.990
 Isoxazoles;D03.383.129.385
 alpha-Amino-3-hydroxy-5-methyl-4-isoxazolepropionic Acid;D03.383.129.385.025
 Cycloserine;D03.383.129.385.162
 Ibotenic Acid;D03.383.129.385.231
 Isocarboxazid;D03.383.129.385.300
-Leflunomide;D03.383.129.385.475
 Paliperidone Palmitate;D03.383.129.385.650
-Zonisamide;D03.383.129.385.825
 Oxazoles;D03.383.129.462
 Aminorex;D03.383.129.462.050
 Dimethadione;D03.383.129.462.175
@@ -24813,7 +24475,6 @@ Oxadiazoles;D03.383.129.462.580
 Quisqualic Acid;D03.383.129.462.580.600
 Sydnones;D03.383.129.462.580.693
 Molsidomine;D03.383.129.462.580.693.450
-Oxaprozin;D03.383.129.462.590
 Oxazolidinones;D03.383.129.462.600
 Cycloserine;D03.383.129.462.600.162
 Furazolidone;D03.383.129.462.600.500
@@ -24821,16 +24482,13 @@ Linezolid;D03.383.129.462.600.550
 Nifuratel;D03.383.129.462.600.600
 Oxazolone;D03.383.129.462.620
 Pemoline;D03.383.129.462.673
-Rilmenidine;D03.383.129.462.778
 Trimethadione;D03.383.129.462.883
 Pyrazoles;D03.383.129.539
 Betazole;D03.383.129.539.100
+4,5-Dihydro-1-(3-(trifluoromethyl)phenyl)-1H-pyrazol-3-amine;D03.383.129.539.120
 Celecoxib;D03.383.129.539.160
-4,5-Dihydro-1-(3-(trifluoromethyl)phenyl)-1H-pyrazol-3-amine;D03.383.129.539.180
 Epirizole;D03.383.129.539.200
-Fomepizole;D03.383.129.539.344
 Indazoles;D03.383.129.539.487
-Axitinib;D03.383.129.539.487.065
 Benzydamine;D03.383.129.539.487.130
 Granisetron;D03.383.129.539.487.350
 Muzolimine;D03.383.129.539.550
@@ -24840,15 +24498,13 @@ Aminopyrine;D03.383.129.539.850.077
 Ampyrone;D03.383.129.539.850.077.025
 Dipyrone;D03.383.129.539.850.077.150
 Antipyrine;D03.383.129.539.850.088
-Edaravone;D03.383.129.539.850.088.500
 Phenylbutazone;D03.383.129.539.850.777
 Feprazone;D03.383.129.539.850.777.670
 Oxyphenbutazone;D03.383.129.539.850.777.700
 Sulfinpyrazone;D03.383.129.539.850.777.800
-Rimonabant;D03.383.129.539.888
 Sulfaphenazole;D03.383.129.539.925
 Pyrroles;D03.383.129.578
-Atorvastatin;D03.383.129.578.075
+Atorvastatin Calcium;D03.383.129.578.075
 Cromakalim;D03.383.129.578.150
 Maleimides;D03.383.129.578.399
 Ethylmaleimide;D03.383.129.578.399.418
@@ -24856,7 +24512,6 @@ Porphobilinogen;D03.383.129.578.617
 Prodigiosin;D03.383.129.578.748
 Pyrrolnitrin;D03.383.129.578.770
 Ryanodine;D03.383.129.578.805
-Sunitinib;D03.383.129.578.823
 Tetrapyrroles;D03.383.129.578.840
 Bile Pigments;D03.383.129.578.840.249
 Bilirubin;D03.383.129.578.840.249.184
@@ -24865,7 +24520,6 @@ Urobilin;D03.383.129.578.840.249.727
 Urobilinogen;D03.383.129.578.840.249.852
 Chlorophyll;D03.383.129.578.840.374
 Bacteriochlorophylls;D03.383.129.578.840.374.100
-Chlorophyll A;D03.383.129.578.840.374.140
 Chlorophyllides;D03.383.129.578.840.374.180
 Pheophytins;D03.383.129.578.840.374.700
 Protochlorophyllide;D03.383.129.578.840.374.725
@@ -24885,7 +24539,6 @@ Mesoporphyrins;D03.383.129.578.840.500.620
 Metalloporphyrins;D03.383.129.578.840.500.640
 Chlorophyll;D03.383.129.578.840.500.640.220
 Bacteriochlorophylls;D03.383.129.578.840.500.640.220.100
-Chlorophyll A;D03.383.129.578.840.500.640.220.140
 Chlorophyllides;D03.383.129.578.840.500.640.220.180
 Pheophytins;D03.383.129.578.840.500.640.220.453
 Protochlorophyllide;D03.383.129.578.840.500.640.220.725
@@ -24896,12 +24549,9 @@ Coproporphyrinogens;D03.383.129.578.840.500.700.250
 Uroporphyrinogens;D03.383.129.578.840.500.700.900
 Protoporphyrins;D03.383.129.578.840.500.725
 Uroporphyrins;D03.383.129.578.840.500.880
-Verteporfin;D03.383.129.578.840.500.940
 Tolmetin;D03.383.129.578.910
 Tetrazoles;D03.383.129.617
 Cefotetan;D03.383.129.617.235
-Cilostazol;D03.383.129.617.293
-Irbesartan;D03.383.129.617.351
 Losartan;D03.383.129.617.467
 Olmesartan Medoxomil;D03.383.129.617.584
 Amlodipine Besylate, Olmesartan Medoxomil Drug Combination;D03.383.129.617.584.500
@@ -24913,7 +24563,6 @@ Thiazoles;D03.383.129.708
 Benzothiazoles;D03.383.129.708.089
 Dithiazanine;D03.383.129.708.089.222
 Ethoxzolamide;D03.383.129.708.089.416
-Pramipexole;D03.383.129.708.089.514
 Riluzole;D03.383.129.708.089.611
 Saccharin;D03.383.129.708.089.708
 Chlormethiazole;D03.383.129.708.180
@@ -24926,14 +24575,12 @@ Febuxostat;D03.383.129.708.274
 Firefly Luciferin;D03.383.129.708.298
 Levamisole;D03.383.129.708.346
 Lurasidone Hydrochloride;D03.383.129.708.414
-Meloxicam;D03.383.129.708.448
 Niridazole;D03.383.129.708.482
 Nizatidine;D03.383.129.708.500
 Oxythiamine;D03.383.129.708.540
 Rhodanine;D03.383.129.708.649
 Ritonavir;D03.383.129.708.653
 Sulfathiazoles;D03.383.129.708.725
-Sulfathiazole;D03.383.129.708.725.500
 Tetramisole;D03.383.129.708.782
 Thiabendazole;D03.383.129.708.824
 Thiadiazoles;D03.383.129.708.867
@@ -24942,25 +24589,17 @@ Benzolamide;D03.383.129.708.867.120
 Methazolamide;D03.383.129.708.867.537
 Timolol;D03.383.129.708.867.768
 Brimonidine Tartrate, Timolol Maleate Drug Combination;D03.383.129.708.867.768.500
-Thiamethoxam;D03.383.129.708.884
 Thiamine;D03.383.129.708.900
 Fursultiamin;D03.383.129.708.900.300
 Thiamine Monophosphate;D03.383.129.708.900.600
 Thiamine Pyrophosphate;D03.383.129.708.900.702
 Thiamine Triphosphate;D03.383.129.708.900.900
 Thiazolidinediones;D03.383.129.708.933
-Pioglitazone;D03.383.129.708.933.250
-Rosiglitazone;D03.383.129.708.933.500
-Troglitazone;D03.383.129.708.933.750
 Triazoles;D03.383.129.799
 Amitrole;D03.383.129.799.100
-Anastrozole;D03.383.129.799.275
-Deferasirox;D03.383.129.799.363
 Fluconazole;D03.383.129.799.450
 Guanazole;D03.383.129.799.500
 Itraconazole;D03.383.129.799.550
-Letrozole;D03.383.129.799.638
-Maraviroc;D03.383.129.799.682
 Sitagliptin Phosphate;D03.383.129.799.725
 Sitagliptin Phosphate, Metformin Hydrochloride Drug Combination;D03.383.129.799.725.500
 Trapidil;D03.383.129.799.900
@@ -24972,11 +24611,9 @@ Spectinomycin;D03.383.188.712
 Dioxins;D03.383.231
 Dioxoles;D03.383.246
 Benzodioxoles;D03.383.246.118
-Atrasentan;D03.383.246.118.300
 Piperonyl Butoxide;D03.383.246.118.600
 Safrole;D03.383.246.118.750
 Dioxolanes;D03.383.246.238
-Trabectedin;D03.383.246.619
 Furans;D03.383.312
 4-Butyrolactone;D03.383.312.150
 Acetogenins;D03.383.312.200
@@ -25005,7 +24642,6 @@ Caprolactam;D03.383.411.200
 Monobactams;D03.383.411.350
 Aztreonam;D03.383.411.350.044
 Neonicotinoids;D03.383.464
-Thiamethoxam;D03.383.464.500
 Oxathiins;D03.383.517
 Carboxin;D03.383.517.200
 Oxazines;D03.383.533
@@ -25013,18 +24649,15 @@ Benzoxazines;D03.383.533.249
 Efavirenz, Emtricitabine, Tenofovir Disoproxil Fumarate Drug Combination;D03.383.533.375
 Ifosfamide;D03.383.533.500
 Morpholines;D03.383.533.640
-Aprepitant;D03.383.533.640.125
 Dextromoramide;D03.383.533.640.250
 Molsidomine;D03.383.533.640.362
 Moricizine;D03.383.533.640.475
 Morpholinos;D03.383.533.640.562
 Phenmetrazine;D03.383.533.640.650
-Reboxetine;D03.383.533.640.682
 Rivaroxaban;D03.383.533.640.713
 Timolol;D03.383.533.640.775
 Viloxazine;D03.383.533.640.900
 Xamoterol;D03.383.533.640.950
-Thiamethoxam;D03.383.533.820
 Oxepins;D03.383.564
 Oxocins;D03.383.585
 Piperazines;D03.383.606
@@ -25041,7 +24674,7 @@ Dexrazoxane;D03.383.606.385.500.500
 Dimethylphenylpiperazinium Iodide;D03.383.606.390
 Eszopiclone;D03.383.606.398
 Imatinib Mesylate;D03.383.606.405
-Piperazine;D03.383.606.413
+Prasugrel Hydrochloride;D03.383.606.420
 Flunarizine;D03.383.606.450
 Flupenthixol;D03.383.606.460
 HEPES;D03.383.606.500
@@ -25056,7 +24689,6 @@ Pipecuronium;D03.383.606.760
 Pipemidic Acid;D03.383.606.765
 Pipobroman;D03.383.606.773
 Piribedil;D03.383.606.790
-Prasugrel Hydrochloride;D03.383.606.800
 Prospidium;D03.383.606.810
 Quipazine;D03.383.606.827
 Ranolazine;D03.383.606.841
@@ -25066,7 +24698,6 @@ Trazodone;D03.383.606.900
 Trimetazidine;D03.383.606.920
 Vardenafil Dihydrochloride;D03.383.606.960
 Vilazodone Hydrochloride;D03.383.606.980
-Vortioxetine;D03.383.606.990
 Piperidines;D03.383.621
 Alphaprodine;D03.383.621.040
 Anabasine;D03.383.621.050
@@ -25076,11 +24707,9 @@ Betaxanthins;D03.383.621.080.750
 Biperiden;D03.383.621.110
 Cisapride;D03.383.621.135
 Clopamide;D03.383.621.147
-Crizotinib;D03.383.621.154
 Cyproheptadine;D03.383.621.160
 Loratadine;D03.383.621.160.500
 Domperidone;D03.383.621.210
-Donepezil;D03.383.621.238
 Fentanyl;D03.383.621.265
 Alfentanil;D03.383.621.265.100
 Sufentanil;D03.383.621.265.900
@@ -25104,25 +24733,22 @@ Methylphenidate;D03.383.621.460
 Dexmethylphenidate Hydrochloride;D03.383.621.460.500
 Minoxidil;D03.383.621.493
 Nipecotic Acids;D03.383.621.566
-Tiagabine;D03.383.621.566.500
 Paroxetine;D03.383.621.600
 Pempidine;D03.383.621.610
 Penfluridol;D03.383.621.620
 Perhexiline;D03.383.621.644
 Phencyclidine;D03.383.621.699
 Pipecolic Acids;D03.383.621.758
+Bupivacaine;D03.383.621.758.323
 Piperidones;D03.383.621.808
 Cycloheximide;D03.383.621.808.240
 Dexetimide;D03.383.621.808.250
 Glutethimide;D03.383.621.808.425
 Aminoglutethimide;D03.383.621.808.425.100
-Lenalidomide;D03.383.621.808.519
 Naphthalimides;D03.383.621.808.612
 Thalidomide;D03.383.621.808.800
 Triacetoneamine-N-Oxyl;D03.383.621.808.930
 Piperoxan;D03.383.621.815
-Remifentanil;D03.383.621.828
-Rimonabant;D03.383.621.834
 Ritanserin;D03.383.621.840
 Terfenadine;D03.383.621.855
 Trihexyphenidyl;D03.383.621.900
@@ -25135,7 +24761,6 @@ Aflatoxin M1;D03.383.663.283.119.100
 Chromans;D03.383.663.283.240
 Catechin;D03.383.663.283.240.190
 Centchroman;D03.383.663.283.240.225
-Troglitazone;D03.383.663.283.240.612
 Chromones;D03.383.663.283.266
 Cromolyn Sodium;D03.383.663.283.266.300
 Flavonoids;D03.383.663.283.266.450
@@ -25154,7 +24779,6 @@ Flavoxate;D03.383.663.283.266.450.260.444
 Luteolin;D03.383.663.283.266.450.260.555
 Flavonolignans;D03.383.663.283.266.450.268
 Silymarin;D03.383.663.283.266.450.268.777
-Silybin;D03.383.663.283.266.450.268.777.500
 Flavonols;D03.383.663.283.266.450.284
 Kaempferols;D03.383.663.283.266.450.284.388
 Quercetin;D03.383.663.283.266.450.284.777
@@ -25181,14 +24805,13 @@ Dicumarol;D03.383.663.283.446.520.203
 Ethyl Biscoumacetate;D03.383.663.283.446.520.451
 Phenprocoumon;D03.383.663.283.446.520.750
 Warfarin;D03.383.663.283.446.520.914
+Isocoumarins;D03.383.663.283.446.598
+Ochratoxins;D03.383.663.283.446.598.500
 Furocoumarins;D03.383.663.283.446.794
 Ficusin;D03.383.663.283.446.794.200
 Khellin;D03.383.663.283.446.794.300
 Methoxsalen;D03.383.663.283.446.794.500
-5-Methoxypsoralen;D03.383.663.283.446.794.688
 Trioxsalen;D03.383.663.283.446.794.875
-Isocoumarins;D03.383.663.283.446.800
-Ochratoxins;D03.383.663.283.446.800.500
 Pyranocoumarins;D03.383.663.283.446.853
 Umbelliferones;D03.383.663.283.446.912
 Coumaphos;D03.383.663.283.446.912.326
@@ -25230,21 +24853,17 @@ Phthalazines;D03.383.710.605
 Hydralazine;D03.383.710.605.500
 Dihydralazine;D03.383.710.605.500.250
 Todralazine;D03.383.710.605.925
-Simendan;D03.383.710.802
 Pyridines;D03.383.725
 2-Pyridinylmethylsulfinylbenzimidazoles;D03.383.725.024
 Lansoprazole;D03.383.725.024.249
 Dexlansoprazole;D03.383.725.024.249.500
 Omeprazole;D03.383.725.024.500
 Esomeprazole;D03.383.725.024.500.500
-Pantoprazole;D03.383.725.024.625
 Rabeprazole;D03.383.725.024.750
 Aminopyridines;D03.383.725.050
 4-Aminopyridine;D03.383.725.050.060
-Amifampridine;D03.383.725.050.060.500
 Amrinone;D03.383.725.050.085
 Milrinone;D03.383.725.050.085.543
-Crizotinib;D03.383.725.050.263
 Methapyrilene;D03.383.725.050.440
 Phenazopyridine;D03.383.725.050.610
 Pyrilamine;D03.383.725.050.805
@@ -25273,7 +24892,6 @@ Dimethindene;D03.383.725.210
 Disopyramide;D03.383.725.227
 Doxylamine;D03.383.725.259
 Eszopiclone;D03.383.725.322
-Etoricoxib;D03.383.725.354
 Indinavir;D03.383.725.385
 Isonicotinic Acids;D03.383.725.394
 Ethionamide;D03.383.725.394.220
@@ -25296,7 +24914,6 @@ Niacinamide;D03.383.725.547.530
 6-Aminonicotinamide;D03.383.725.547.530.248
 Nicorandil;D03.383.725.547.530.498
 Nikethamide;D03.383.725.547.530.500
-Sorafenib;D03.383.725.547.530.750
 Niceritrol;D03.383.725.547.540
 Niflumic Acid;D03.383.725.547.550
 Nimodipine;D03.383.725.547.570
@@ -25337,8 +24954,6 @@ Viologens;D03.383.725.762.925
 Benzyl Viologen;D03.383.725.762.925.100
 Pyridones;D03.383.725.791
 Bemegride;D03.383.725.791.100
-Ciclopirox;D03.383.725.791.199
-Deferiprone;D03.383.725.791.298
 Iodopyridones;D03.383.725.791.496
 Iodopyracet;D03.383.725.791.496.371
 Propyliodone;D03.383.725.791.496.750
@@ -25347,17 +24962,12 @@ Trazodone;D03.383.725.791.900
 Pyrithioxin;D03.383.725.812
 Quinolinic Acids;D03.383.725.822
 Quinolinic Acid;D03.383.725.822.700
-Risedronic Acid;D03.383.725.836
 Thienopyridines;D03.383.725.849
 Ticlopidine;D03.383.725.849.500
-Clopidogrel;D03.383.725.849.500.500
 Tolperisone;D03.383.725.877
-Torsemide;D03.383.725.905
 Triprolidine;D03.383.725.932
 Tropicamide;D03.383.725.942
-Zolpidem;D03.383.725.971
 Pyrimidines;D03.383.742
-Bosentan;D03.383.742.060
 Buspirone;D03.383.742.120
 Dasatinib;D03.383.742.148
 Dipyridamole;D03.383.742.175
@@ -25378,7 +24988,6 @@ Pyrimethamine;D03.383.742.675
 Pyrimidine Nucleosides;D03.383.742.680
 Cytidine;D03.383.742.680.245
 Azacitidine;D03.383.742.680.245.217
-Decitabine;D03.383.742.680.245.217.500
 Cytarabine;D03.383.742.680.245.453
 Ancitabine;D03.383.742.680.245.453.050
 Deoxycytidine;D03.383.742.680.245.500
@@ -25396,7 +25005,6 @@ Coformycin;D03.383.742.680.350.200
 Pentostatin;D03.383.742.680.350.200.700
 Thymidine;D03.383.742.680.705
 Stavudine;D03.383.742.680.705.875
-Telbivudine;D03.383.742.680.705.888
 Trifluridine;D03.383.742.680.705.900
 Zidovudine;D03.383.742.680.705.950
 Tunicamycin;D03.383.742.680.725
@@ -25459,7 +25067,6 @@ Thiobarbiturates;D03.383.742.698.253.800
 Thiamylal;D03.383.742.698.253.800.750
 Thiopental;D03.383.742.698.253.800.810
 Cytosine;D03.383.742.698.421
-Cidofovir;D03.383.742.698.421.216
 Flucytosine;D03.383.742.698.421.431
 5-Methylcytosine;D03.383.742.698.421.500
 Lopinavir;D03.383.742.698.553
@@ -25493,7 +25100,6 @@ Trimethoprim;D03.383.742.906
 Trimethoprim, Sulfamethoxazole Drug Combination;D03.383.742.906.500
 Pyrrolidines;D03.383.773
 Anisomycin;D03.383.773.050
-Atrasentan;D03.383.773.079
 Bepridil;D03.383.773.107
 Clemastine;D03.383.773.165
 3,4-Dichloro-N-methyl-N-(2-(1-pyrrolidinyl)-cyclohexyl)-benzeneacetamide, (trans)-Isomer;D03.383.773.170
@@ -25511,7 +25117,6 @@ Procyclidine;D03.383.773.728
 Pyrrolidinones;D03.383.773.812
 Cotinine;D03.383.773.812.180
 Doxapram;D03.383.773.812.226
-Levetiracetam;D03.383.773.812.362
 Oxotremorine;D03.383.773.812.498
 Piracetam;D03.383.773.812.555
 Povidone;D03.383.773.812.615
@@ -25524,10 +25129,8 @@ Bromosuccinimide;D03.383.773.812.852.150
 Ethosuximide;D03.383.773.812.852.333
 Tenuazonic Acid;D03.383.773.812.900
 Tremorine;D03.383.773.906
-Vildagliptin;D03.383.773.953
 Thiazines;D03.383.855
 Chlormezanone;D03.383.855.150
-Meloxicam;D03.383.855.275
 Nifurtimox;D03.383.855.400
 Piroxicam;D03.383.855.500
 Thiadiazines;D03.383.855.785
@@ -25538,10 +25141,10 @@ Thiophenes;D03.383.903
 Canagliflozin;D03.383.903.075
 Carticaine;D03.383.903.150
 Duloxetine Hydrochloride;D03.383.903.260
+Prasugrel Hydrochloride;D03.383.903.315
 Ketotifen;D03.383.903.370
 Morantel;D03.383.903.440
 Pizotyline;D03.383.903.580
-Prasugrel Hydrochloride;D03.383.903.600
 Pyrantel;D03.383.903.634
 Pyrantel Pamoate;D03.383.903.634.600
 Pyrantel Tartrate;D03.383.903.634.670
@@ -25549,7 +25152,6 @@ Rivaroxaban;D03.383.903.727
 Thenoyltrifluoroacetone;D03.383.903.820
 Thienopyridines;D03.383.903.830
 Ticlopidine;D03.383.903.830.500
-Clopidogrel;D03.383.903.830.500.500
 Ticrynafen;D03.383.903.840
 Tiletamine;D03.383.903.850
 Triazines;D03.383.931
@@ -25558,11 +25160,9 @@ Altretamine;D03.383.931.135
 Apazone;D03.383.931.190
 Atrazine;D03.383.931.247
 Ferrozine;D03.383.931.320
-Lamotrigine;D03.383.931.480
 Oxonic Acid;D03.383.931.640
 Prometryne;D03.383.931.674
 Simazine;D03.383.931.819
-Tirapazamine;D03.383.931.867
 Triethylenemelamine;D03.383.931.915
 Heterocyclic Compounds, Bridged-Ring;D03.605
 Bridged Bicyclo Compounds, Heterocyclic;D03.605.084
@@ -25582,7 +25182,7 @@ Nortropanes;D03.605.084.500.722.744
 Scopolamine Derivatives;D03.605.084.500.722.822
 Butylscopolammonium Bromide;D03.605.084.500.722.822.200
 N-Methylscopolamine;D03.605.084.500.722.822.550
-Scopolamine;D03.605.084.500.722.822.775
+Scopolamine Hydrobromide;D03.605.084.500.722.822.775
 Tiotropium Bromide;D03.605.084.500.722.822.887
 Cyclazocine;D03.605.168
 Ethylketocyclazocine;D03.605.168.350
@@ -25613,7 +25213,6 @@ Naloxone;D03.605.497.750
 Buprenorphine, Naloxone Drug Combination;D03.605.497.750.275
 Naltrexone;D03.605.497.750.550
 Quinuclidines;D03.605.687
-Palonosetron;D03.605.687.319
 Quinidine;D03.605.687.637
 Quinine;D03.605.687.762
 Quinuclidinyl Benzilate;D03.605.687.800
@@ -25631,7 +25230,7 @@ Nortropanes;D03.605.869.744
 Scopolamine Derivatives;D03.605.869.822
 Butylscopolammonium Bromide;D03.605.869.822.200
 N-Methylscopolamine;D03.605.869.822.550
-Scopolamine;D03.605.869.822.775
+Scopolamine Hydrobromide;D03.605.869.822.775
 Tiotropium Bromide;D03.605.869.822.887
 Heterocyclic Compounds, Fused-Ring;D03.633
 Heterocyclic Compounds, 2-Ring;D03.633.100
@@ -25655,21 +25254,16 @@ Pirenzepine;D03.633.100.079.080.070.750
 Prazepam;D03.633.100.079.080.070.784
 Temazepam;D03.633.100.079.080.070.880
 Chlordiazepoxide;D03.633.100.079.080.150
-Clobazam;D03.633.100.079.080.165
 Clorazepate Dipotassium;D03.633.100.079.080.180
 Estazolam;D03.633.100.079.080.250
 Medazepam;D03.633.100.079.080.550
 Midazolam;D03.633.100.079.080.575
-Olanzapine;D03.633.100.079.080.738
 Triazolam;D03.633.100.079.080.900
 Diltiazem;D03.633.100.079.150
 Fenoldopam;D03.633.100.079.300
 Galantamine;D03.633.100.079.525
 Harringtonines;D03.633.100.079.533
-Homoharringtonine;D03.633.100.079.533.500
-Ivabradine;D03.633.100.079.801
-2,3,4,5-Tetrahydro-7,8-dihydroxy-1-phenyl-1H-3-benzazepine;D03.633.100.079.838
-Tolvaptan;D03.633.100.079.875
+2,3,4,5-Tetrahydro-7,8-dihydroxy-1-phenyl-1H-3-benzazepine;D03.633.100.079.800
 Varenicline;D03.633.100.079.900
 Benzimidazoles;D03.633.100.103
 2-Pyridinylmethylsulfinylbenzimidazoles;D03.633.100.103.034
@@ -25677,7 +25271,6 @@ Lansoprazole;D03.633.100.103.034.249
 Dexlansoprazole;D03.633.100.103.034.249.500
 Omeprazole;D03.633.100.103.034.500
 Esomeprazole;D03.633.100.103.034.500.500
-Pantoprazole;D03.633.100.103.034.625
 Rabeprazole;D03.633.100.103.034.750
 Albendazole;D03.633.100.103.070
 Astemizole;D03.633.100.103.105
@@ -25693,16 +25286,12 @@ Mebendazole;D03.633.100.103.600
 Mibefradil;D03.633.100.103.618
 Nocodazole;D03.633.100.103.637
 Pimozide;D03.633.100.103.732
-Telmisartan;D03.633.100.103.791
 Thiabendazole;D03.633.100.103.850
-Triclabendazole;D03.633.100.103.925
 Benzodioxoles;D03.633.100.115
-Atrasentan;D03.633.100.115.300
 Piperonyl Butoxide;D03.633.100.115.600
 Safrole;D03.633.100.115.750
 Benzofurans;D03.633.100.127
 Amiodarone;D03.633.100.127.075
-Dronedarone;D03.633.100.127.075.500
 Benzbromarone;D03.633.100.127.110
 Cantharidin;D03.633.100.127.125
 Citalopram;D03.633.100.127.187
@@ -25718,7 +25307,6 @@ Aflatoxin M1;D03.633.100.150.119.100
 Chromans;D03.633.100.150.240
 Catechin;D03.633.100.150.240.190
 Centchroman;D03.633.100.150.240.225
-Troglitazone;D03.633.100.150.240.612
 Chromones;D03.633.100.150.266
 Cromolyn Sodium;D03.633.100.150.266.300
 Flavonoids;D03.633.100.150.266.450
@@ -25737,10 +25325,8 @@ Diosmin;D03.633.100.150.266.450.260.222
 Flavoxate;D03.633.100.150.266.450.260.444
 Luteolin;D03.633.100.150.266.450.260.555
 Polyphenols;D03.633.100.150.266.450.260.777
-Resveratrol;D03.633.100.150.266.450.260.777.500
 Flavonolignans;D03.633.100.150.266.450.268
 Silymarin;D03.633.100.150.266.450.268.777
-Silybin;D03.633.100.150.266.450.268.777.500
 Flavonols;D03.633.100.150.266.450.284
 Kaempferols;D03.633.100.150.266.450.284.388
 Quercetin;D03.633.100.150.266.450.284.777
@@ -25766,14 +25352,13 @@ Dicumarol;D03.633.100.150.446.520.203
 Ethyl Biscoumacetate;D03.633.100.150.446.520.451
 Phenprocoumon;D03.633.100.150.446.520.750
 Warfarin;D03.633.100.150.446.520.914
+Isocoumarins;D03.633.100.150.446.598
+Ochratoxins;D03.633.100.150.446.598.500
 Furocoumarins;D03.633.100.150.446.794
 Ficusin;D03.633.100.150.446.794.200
 Khellin;D03.633.100.150.446.794.300
 Methoxsalen;D03.633.100.150.446.794.500
-5-Methoxypsoralen;D03.633.100.150.446.794.688
 Trioxsalen;D03.633.100.150.446.794.875
-Isocoumarins;D03.633.100.150.446.800
-Ochratoxins;D03.633.100.150.446.800.500
 Pyranocoumarins;D03.633.100.150.446.853
 Umbelliferones;D03.633.100.150.446.912
 Coumaphos;D03.633.100.150.446.912.326
@@ -25802,7 +25387,6 @@ Polythiazide;D03.633.100.174.781
 Benzothiazoles;D03.633.100.185
 Dithiazanine;D03.633.100.185.222
 Ethoxzolamide;D03.633.100.185.416
-Pramipexole;D03.633.100.185.514
 Riluzole;D03.633.100.185.611
 Saccharin;D03.633.100.185.708
 Benzothiepins;D03.633.100.197
@@ -25816,22 +25400,14 @@ Zoxazolamine;D03.633.100.221.950
 Benzoxepins;D03.633.100.245
 beta-Lactams;D03.633.100.300
 Carbapenems;D03.633.100.300.124
-Doripenem;D03.633.100.300.124.150
-Ertapenem;D03.633.100.300.124.225
 Thienamycins;D03.633.100.300.124.300
 Imipenem;D03.633.100.300.124.300.500
-Cilastatin, Imipenem Drug Combination;D03.633.100.300.124.300.500.500
-Meropenem;D03.633.100.300.124.300.750
 Cephalosporins;D03.633.100.300.249
 Cefamandole;D03.633.100.300.249.150
 Cefoperazone;D03.633.100.300.249.150.160
 Cefazolin;D03.633.100.300.249.160
-Cefdinir;D03.633.100.300.249.169
-Cefepime;D03.633.100.300.249.173
 Cefonicid;D03.633.100.300.249.177
 Cefsulodin;D03.633.100.300.249.185
-Ceftibuten;D03.633.100.300.249.187
-Cefuroxime;D03.633.100.300.249.188
 Cephacetrile;D03.633.100.300.249.190
 Cefotaxime;D03.633.100.300.249.190.190
 Cefixime;D03.633.100.300.249.190.190.115
@@ -25839,6 +25415,7 @@ Cefmenoxime;D03.633.100.300.249.190.190.125
 Cefotiam;D03.633.100.300.249.190.190.135
 Ceftizoxime;D03.633.100.300.249.190.190.145
 Ceftriaxone;D03.633.100.300.249.190.190.155
+Cefuroxime;D03.633.100.300.249.190.190.165
 Cephalothin;D03.633.100.300.249.190.210
 Cephapirin;D03.633.100.300.249.190.230
 Cephalexin;D03.633.100.300.249.200
@@ -25870,8 +25447,6 @@ Cloxacillin;D03.633.100.300.750.625.150
 Dicloxacillin;D03.633.100.300.750.625.150.205
 Floxacillin;D03.633.100.300.750.625.150.250
 Penicillanic Acid;D03.633.100.300.750.687
-Tazobactam;D03.633.100.300.750.687.750
-Piperacillin, Tazobactam Drug Combination;D03.633.100.300.750.687.750.500
 Penicillin G;D03.633.100.300.750.750
 Ampicillin;D03.633.100.300.750.750.050
 Amoxicillin;D03.633.100.300.750.750.050.050
@@ -25879,7 +25454,6 @@ Amoxicillin-Potassium Clavulanate Combination;D03.633.100.300.750.750.050.050.50
 Azlocillin;D03.633.100.300.750.750.050.075
 Mezlocillin;D03.633.100.300.750.750.050.500
 Piperacillin;D03.633.100.300.750.750.050.650
-Piperacillin, Tazobactam Drug Combination;D03.633.100.300.750.750.050.650.500
 Pivampicillin;D03.633.100.300.750.750.050.700
 Talampicillin;D03.633.100.300.750.750.050.900
 Carbenicillin;D03.633.100.300.750.750.170
@@ -25892,14 +25466,12 @@ Sulbactam;D03.633.100.300.750.812
 Ticarcillin;D03.633.100.300.750.875
 Idazoxan;D03.633.100.355
 Indazoles;D03.633.100.449
-Axitinib;D03.633.100.449.065
 Benzydamine;D03.633.100.449.130
 Granisetron;D03.633.100.449.350
 Indoles;D03.633.100.473
 Adrenochrome;D03.633.100.473.025
 Alcian Blue;D03.633.100.473.050
 Carbazoles;D03.633.100.473.144
-Carvedilol;D03.633.100.473.144.125
 Ellipticines;D03.633.100.473.144.249
 Ondansetron;D03.633.100.473.144.500
 Staurosporine;D03.633.100.473.144.750
@@ -25909,7 +25481,6 @@ Cytochalasins;D03.633.100.473.231
 Cytochalasin B;D03.633.100.473.231.370
 Cytochalasin D;D03.633.100.473.231.450
 Delavirdine;D03.633.100.473.250
-Fluvastatin;D03.633.100.473.305
 Gliotoxin;D03.633.100.473.360
 Hydroxytryptophol;D03.633.100.473.385
 Ibogaine;D03.633.100.473.390
@@ -25918,11 +25489,9 @@ Indican;D03.633.100.473.393
 Indigo Carmine;D03.633.100.473.396
 Indocyanine Green;D03.633.100.473.400
 Indole Alkaloids;D03.633.100.473.402
-Harmala Alkaloids;D03.633.100.473.402.222
-Harmaline;D03.633.100.473.402.222.250
-Harmine;D03.633.100.473.402.222.500
+Harmaline;D03.633.100.473.402.444
+Harmine;D03.633.100.473.402.477
 Lyngbya Toxins;D03.633.100.473.402.511
-Oxindoles;D03.633.100.473.402.528
 Physostigmine;D03.633.100.473.402.545
 Psilocybin;D03.633.100.473.402.613
 Secologanin Tryptamine Alkaloids;D03.633.100.473.402.681
@@ -25937,7 +25506,6 @@ Vinblastine;D03.633.100.473.402.681.827.650
 Vincamine;D03.633.100.473.402.681.827.750
 Vincristine;D03.633.100.473.402.681.827.817
 Vindesine;D03.633.100.473.402.681.827.830
-Vinorelbine;D03.633.100.473.402.681.827.915
 Yohimbine;D03.633.100.473.402.681.933
 Reserpine;D03.633.100.473.402.681.933.500
 Staurosporine;D03.633.100.473.402.750
@@ -25958,12 +25526,9 @@ Isatin;D03.633.100.473.525
 Methisazone;D03.633.100.473.615
 Molindone;D03.633.100.473.629
 Oxyphenisatin Acetate;D03.633.100.473.725
-Panobinostat;D03.633.100.473.746
 Perindopril;D03.633.100.473.766
 Skatole;D03.633.100.473.808
 Sporidesmins;D03.633.100.473.840
-Sunitinib;D03.633.100.473.877
-Tropisetron;D03.633.100.473.896
 Tryptamines;D03.633.100.473.914
 Dihydroxytryptamines;D03.633.100.473.914.201
 5,6-Dihydroxytryptamine;D03.633.100.473.914.201.259
@@ -25978,7 +25543,6 @@ Bufotenin;D03.633.100.473.914.814.150
 Methoxydimethyltryptamines;D03.633.100.473.914.814.150.500
 5-Methoxytryptamine;D03.633.100.473.914.814.400
 Sumatriptan;D03.633.100.473.914.907
-Vemurafenib;D03.633.100.473.936
 Vilazodone Hydrochloride;D03.633.100.473.957
 Indolizines;D03.633.100.496
 Indolizidines;D03.633.100.496.500
@@ -25990,7 +25554,6 @@ Lurasidone Hydrochloride;D03.633.100.513.437
 Mazindol;D03.633.100.513.500
 Phthalimides;D03.633.100.513.750
 Chlorthalidone;D03.633.100.513.750.500
-Lenalidomide;D03.633.100.513.750.563
 Phosmet;D03.633.100.513.750.625
 Thalidomide;D03.633.100.513.750.750
 Isoquinolines;D03.633.100.531
@@ -26008,24 +25571,19 @@ Tubocurarine;D03.633.100.531.085.944
 Debrisoquin;D03.633.100.531.205
 Emetine;D03.633.100.531.321
 1-(5-Isoquinolinesulfonyl)-2-Methylpiperazine;D03.633.100.531.400
-Mivacurium;D03.633.100.531.430
 Naphthalimides;D03.633.100.531.460
 Nelfinavir;D03.633.100.531.520
 Nomifensine;D03.633.100.531.535
 Noscapine;D03.633.100.531.567
-Palonosetron;D03.633.100.531.629
 Praziquantel;D03.633.100.531.690
 Saquinavir;D03.633.100.531.770
 Tetrahydroisoquinolines;D03.633.100.531.820
-Quinapril;D03.633.100.531.820.250
 Salsoline Alkaloids;D03.633.100.531.820.500
 Solifenacin Succinate;D03.633.100.531.820.594
 Toxiferine;D03.633.100.531.820.687
 Alcuronium;D03.633.100.531.820.687.050
-Trabectedin;D03.633.100.531.820.781
 Tubocurarine;D03.633.100.531.820.875
 Naphthyridines;D03.633.100.612
-Gemifloxacin;D03.633.100.612.250
 Nalidixic Acid;D03.633.100.612.500
 Piperoxan;D03.633.100.673
 Pteridines;D03.633.100.733
@@ -26053,16 +25611,15 @@ Cytokinins;D03.633.100.759.138.525
 Isopentenyladenosine;D03.633.100.759.138.525.350
 Kinetin;D03.633.100.759.138.525.400
 Zeatin;D03.633.100.759.138.525.700
-Famciclovir;D03.633.100.759.138.703
 Tenofovir;D03.633.100.759.138.881
 Efavirenz, Emtricitabine, Tenofovir Disoproxil Fumarate Drug Combination;D03.633.100.759.138.881.125
 Elvitegravir, Cobicistat, Emtricitabine, Tenofovir Disoproxil Fumarate Drug Combination;D03.633.100.759.138.881.250
 Emtricitabine, Rilpivirine, Tenofovir Drug Combination;D03.633.100.759.138.881.500
 Emtricitabine, Tenofovir Disoproxil Fumarate Drug Combination;D03.633.100.759.138.881.750
 Allopurinol;D03.633.100.759.160
+Mercaptopurine;D03.633.100.759.534
+Azathioprine;D03.633.100.759.534.090
 Linagliptin;D03.633.100.759.562
-Mercaptopurine;D03.633.100.759.570
-Azathioprine;D03.633.100.759.570.090
 Purine Nucleosides;D03.633.100.759.590
 Adenosine;D03.633.100.759.590.138
 Adenosine-5'-(N-ethylcarboxamide);D03.633.100.759.590.138.025
@@ -26078,7 +25635,6 @@ Isopentenyladenosine;D03.633.100.759.590.138.500
 Phenylisopropyladenosine;D03.633.100.759.590.138.630
 Puromycin;D03.633.100.759.590.138.711
 Puromycin Aminonucleoside;D03.633.100.759.590.138.711.650
-Ticagrelor;D03.633.100.759.590.138.806
 Vidarabine;D03.633.100.759.590.138.900
 Guanosine;D03.633.100.759.590.454
 Deoxyguanosine;D03.633.100.759.590.454.240
@@ -26102,7 +25658,6 @@ Adenosine Phosphosulfate;D03.633.100.759.646.138.180.080
 Adenosine Triphosphate;D03.633.100.759.646.138.236
 Adenylyl Imidodiphosphate;D03.633.100.759.646.138.236.050
 Ethenoadenosine Triphosphate;D03.633.100.759.646.138.236.250
-Clofarabine;D03.633.100.759.646.138.309
 Coenzyme A;D03.633.100.759.646.138.382
 Acyl Coenzyme A;D03.633.100.759.646.138.382.300
 Acetyl Coenzyme A;D03.633.100.759.646.138.382.300.020
@@ -26125,11 +25680,11 @@ Guanosine Diphosphate;D03.633.100.759.646.454.340
 Guanosine Diphosphate Sugars;D03.633.100.759.646.454.340.350
 Guanosine Diphosphate Fucose;D03.633.100.759.646.454.340.350.400
 Guanosine Diphosphate Mannose;D03.633.100.759.646.454.340.350.500
-Guanosine Monophosphate;D03.633.100.759.646.454.400
 Guanosine Pentaphosphate;D03.633.100.759.646.454.440
 Guanosine Tetraphosphate;D03.633.100.759.646.454.480
 Guanosine Triphosphate;D03.633.100.759.646.454.504
 Guanylyl Imidodiphosphate;D03.633.100.759.646.454.504.400
+Guanosine Monophosphate;D03.633.100.759.646.454.525
 RNA Caps;D03.633.100.759.646.454.700
 RNA Cap Analogs;D03.633.100.759.646.454.700.710
 Inosine Nucleotides;D03.633.100.759.646.616
@@ -26142,8 +25697,6 @@ Hypoxanthines;D03.633.100.759.758.399
 Guanine;D03.633.100.759.758.399.454
 Acyclovir;D03.633.100.759.758.399.454.250
 Ganciclovir;D03.633.100.759.758.399.454.250.300
-Valganciclovir;D03.633.100.759.758.399.454.250.300.500
-Valacyclovir;D03.633.100.759.758.399.454.250.650
 Azaguanine;D03.633.100.759.758.399.454.300
 Pemetrexed;D03.633.100.759.758.399.454.650
 Hypoxanthine;D03.633.100.759.758.399.475
@@ -26159,17 +25712,13 @@ Dyphylline;D03.633.100.759.758.824.751.250
 Xanthinol Niacinate;D03.633.100.759.758.824.751.950
 Uric Acid;D03.633.100.759.758.824.877
 Xanthine;D03.633.100.759.758.824.938
-Roscovitine;D03.633.100.759.776
 Saxitoxin;D03.633.100.759.794
 Sildenafil Citrate;D03.633.100.759.824
 Thioguanine;D03.633.100.759.854
 Pyrrolizidine Alkaloids;D03.633.100.772
 Monocrotaline;D03.633.100.772.500
 Quinazolines;D03.633.100.786
-Afatinib;D03.633.100.786.188
 Erlotinib Hydrochloride;D03.633.100.786.375
-Gefitinib;D03.633.100.786.469
-Lapatinib;D03.633.100.786.516
 Linagliptin;D03.633.100.786.563
 Prazosin;D03.633.100.786.750
 Doxazosin;D03.633.100.786.750.200
@@ -26185,9 +25734,7 @@ Amodiaquine;D03.633.100.810.050.060
 Chloroquine;D03.633.100.810.050.180
 Hydroxychloroquine;D03.633.100.810.050.180.350
 4-Hydroxyaminoquinoline-1-oxide;D03.633.100.810.050.440
-Imiquimod;D03.633.100.810.050.545
 Primaquine;D03.633.100.810.050.650
-Cilostazol;D03.633.100.810.069
 Diarylquinolines;D03.633.100.810.087
 Dibucaine;D03.633.100.810.125
 Ethoxyquin;D03.633.100.810.200
@@ -26213,25 +25760,21 @@ Quinolinium Compounds;D03.633.100.810.824
 Dequalinium;D03.633.100.810.824.200
 Pyrvinium Compounds;D03.633.100.810.824.700
 Quinolones;D03.633.100.810.835
+4-Quinolones;D03.633.100.810.835.055
+Nalidixic Acid;D03.633.100.810.835.055.500
+Nedocromil;D03.633.100.810.835.055.550
+Oxolinic Acid;D03.633.100.810.835.055.580
 Aripiprazole;D03.633.100.810.835.122
 Carteolol;D03.633.100.810.835.188
 Fluoroquinolones;D03.633.100.810.835.322
 Ciprofloxacin;D03.633.100.810.835.322.186
 Fleroxacin;D03.633.100.810.835.322.186.400
 Enoxacin;D03.633.100.810.835.322.280
-Enrofloxacin;D03.633.100.810.835.322.304
-Gatifloxacin;D03.633.100.810.835.322.316
-Gemifloxacin;D03.633.100.810.835.322.322
-Moxifloxacin;D03.633.100.810.835.322.327
 Norfloxacin;D03.633.100.810.835.322.374
 Ofloxacin;D03.633.100.810.835.322.500
 Levofloxacin;D03.633.100.810.835.322.500.500
 Pefloxacin;D03.633.100.810.835.322.750
 PQQ Cofactor;D03.633.100.810.835.661
-4-Quinolones;D03.633.100.810.835.830
-Nalidixic Acid;D03.633.100.810.835.830.500
-Nedocromil;D03.633.100.810.835.830.550
-Oxolinic Acid;D03.633.100.810.835.830.580
 Quinpirole;D03.633.100.810.842
 Quipazine;D03.633.100.810.850
 Saquinavir;D03.633.100.810.900
@@ -26251,7 +25794,6 @@ Varenicline;D03.633.100.857.942
 Ramipril;D03.633.100.893
 Thienopyridines;D03.633.100.928
 Ticlopidine;D03.633.100.928.500
-Clopidogrel;D03.633.100.928.500.500
 Zolazepam;D03.633.100.964
 Heterocyclic Compounds, 3-Ring;D03.633.300
 Acridines;D03.633.300.046
@@ -26270,7 +25812,6 @@ Quinacrine Mustard;D03.633.300.046.250.760.750
 Tacrine;D03.633.300.046.250.900
 Anthramycin;D03.633.300.060
 Carbazoles;D03.633.300.148
-Carvedilol;D03.633.300.148.125
 Ellipticines;D03.633.300.148.249
 Ondansetron;D03.633.300.148.500
 Staurosporine;D03.633.300.148.750
@@ -26282,14 +25823,12 @@ Cinoxacin;D03.633.300.160
 Dactinomycin;D03.633.300.200
 Dibenzazepines;D03.633.300.240
 Carbamazepine;D03.633.300.240.127
-Oxcarbazepine;D03.633.300.240.127.500
 Clomipramine;D03.633.300.240.194
 Clozapine;D03.633.300.240.220
 Desipramine;D03.633.300.240.281
 Imipramine;D03.633.300.240.485
 Lofepramine;D03.633.300.240.520
 Mianserin;D03.633.300.240.550
-Mirtazapine;D03.633.300.240.588
 Opipramol;D03.633.300.240.625
 Trimipramine;D03.633.300.240.918
 Dibenzofurans;D03.633.300.258
@@ -26320,33 +25859,32 @@ Clofazimine;D03.633.300.704.353
 Methylphenazonium Methosulfate;D03.633.300.704.550
 Neutral Red;D03.633.300.704.600
 Pyocyanine;D03.633.300.704.700
+Phenothiazines;D03.633.300.741
+Acepromazine;D03.633.300.741.029
+Azure Stains;D03.633.300.741.080
+Chlorpromazine;D03.633.300.741.198
+Fluphenazine;D03.633.300.741.326
+Mesoridazine;D03.633.300.741.470
+Methotrimeprazine;D03.633.300.741.513
+Methylene Blue;D03.633.300.741.517
+Moricizine;D03.633.300.741.533
+Nonachlazine;D03.633.300.741.550
+Perazine;D03.633.300.741.575
+Perphenazine;D03.633.300.741.593
+Prochlorperazine;D03.633.300.741.639
+Promazine;D03.633.300.741.661
+Promethazine;D03.633.300.741.670
+Thiethylperazine;D03.633.300.741.780
+Thioridazine;D03.633.300.741.843
+Tolonium Chloride;D03.633.300.741.869
+Trifluoperazine;D03.633.300.741.898
+Triflupromazine;D03.633.300.741.918
+Trimeprazine;D03.633.300.741.939
 Furocoumarins;D03.633.300.770
 Ficusin;D03.633.300.770.200
 Khellin;D03.633.300.770.300
 Methoxsalen;D03.633.300.770.500
-5-Methoxypsoralen;D03.633.300.770.688
 Trioxsalen;D03.633.300.770.875
-Phenothiazines;D03.633.300.783
-Acepromazine;D03.633.300.783.029
-Azure Stains;D03.633.300.783.080
-Chlorpromazine;D03.633.300.783.198
-Fluphenazine;D03.633.300.783.326
-Mesoridazine;D03.633.300.783.470
-Methotrimeprazine;D03.633.300.783.513
-Methylene Blue;D03.633.300.783.517
-Moricizine;D03.633.300.783.533
-Nonachlazine;D03.633.300.783.550
-Perazine;D03.633.300.783.575
-Perphenazine;D03.633.300.783.593
-Prochlorperazine;D03.633.300.783.639
-Promazine;D03.633.300.783.661
-Promethazine;D03.633.300.783.670
-Thiethylperazine;D03.633.300.783.780
-Thioridazine;D03.633.300.783.843
-Tolonium Chloride;D03.633.300.783.869
-Trifluoperazine;D03.633.300.783.898
-Triflupromazine;D03.633.300.783.918
-Trimeprazine;D03.633.300.783.939
 Polychlorinated Dibenzodioxins;D03.633.300.786
 Agent Orange;D03.633.300.786.500
 Quinpirole;D03.633.300.802
@@ -26388,7 +25926,6 @@ Veratrine;D03.633.400.256.815
 Dihydro-beta-Erythroidine;D03.633.400.380
 Ergolines;D03.633.400.439
 Bromocriptine;D03.633.400.439.131
-Cabergoline;D03.633.400.439.197
 Ergonovine;D03.633.400.439.262
 Methylergonovine;D03.633.400.439.262.538
 Lisuride;D03.633.400.439.560
@@ -26408,7 +25945,6 @@ Dihydroergotoxine;D03.633.400.562.400
 Ergoloid Mesylates;D03.633.400.562.400.500
 Ergotamine;D03.633.400.562.500
 Harringtonines;D03.633.400.624
-Homoharringtonine;D03.633.400.624.500
 Morphinans;D03.633.400.686
 Buprenorphine;D03.633.400.686.150
 Buprenorphine, Naloxone Drug Combination;D03.633.400.686.150.500
@@ -26440,7 +25976,6 @@ Rifamycins;D03.633.400.811
 Rifabutin;D03.633.400.811.650
 Streptovaricin;D03.633.400.811.650.700
 Rifampin;D03.633.400.811.700
-Rifaximin;D03.633.400.811.850
 Rotenone;D03.633.400.825
 Tetrapyrroles;D03.633.400.909
 Bile Pigments;D03.633.400.909.249
@@ -26450,7 +25985,6 @@ Urobilin;D03.633.400.909.249.727
 Urobilinogen;D03.633.400.909.249.852
 Chlorophyll;D03.633.400.909.374
 Bacteriochlorophylls;D03.633.400.909.374.100
-Chlorophyll A;D03.633.400.909.374.140
 Chlorophyllides;D03.633.400.909.374.180
 Pheophytins;D03.633.400.909.374.700
 Protochlorophyllide;D03.633.400.909.374.725
@@ -26470,7 +26004,6 @@ Mesoporphyrins;D03.633.400.909.500.620
 Metalloporphyrins;D03.633.400.909.500.640
 Chlorophyll;D03.633.400.909.500.640.220
 Bacteriochlorophylls;D03.633.400.909.500.640.220.100
-Chlorophyll A;D03.633.400.909.500.640.220.140
 Chlorophyllides;D03.633.400.909.500.640.220.180
 Pheophytins;D03.633.400.909.500.640.220.453
 Protochlorophyllide;D03.633.400.909.500.640.220.725
@@ -26481,7 +26014,6 @@ Coproporphyrinogens;D03.633.400.909.500.700.250
 Uroporphyrinogens;D03.633.400.909.500.700.900
 Protoporphyrins;D03.633.400.909.500.725
 Uroporphyrins;D03.633.400.909.500.880
-Verteporfin;D03.633.400.909.500.940
 Heterocyclic Oxides;D03.661
 Cyclic N-Oxides;D03.661.243
 4-Hydroxyaminoquinoline-1-oxide;D03.661.243.320
@@ -26504,7 +26036,6 @@ Etiocholanolone;D04.210.500.054.040.368
 Oxandrolone;D04.210.500.054.040.581
 Oxymetholone;D04.210.500.054.040.632
 Pancuronium;D04.210.500.054.040.685
-Rocuronium;D04.210.500.054.040.783
 Stanozolol;D04.210.500.054.040.881
 Vecuronium Bromide;D04.210.500.054.040.920
 Androstenes;D04.210.500.054.079
@@ -26515,7 +26046,6 @@ Fluticasone-Salmeterol Drug Combination;D04.210.500.054.079.129.114.500
 Loteprednol Etabonate;D04.210.500.054.079.129.284
 Methandrostenolone;D04.210.500.054.079.129.453
 Testolactone;D04.210.500.054.079.129.782
-Wortmannin;D04.210.500.054.079.129.891
 Androstatrienes;D04.210.500.054.079.229
 Androstenedione;D04.210.500.054.079.329
 Androstenols;D04.210.500.054.079.429
@@ -26689,8 +26219,6 @@ Equilenin;D04.210.500.365.415.215
 Equilin;D04.210.500.365.415.220
 Estradiol;D04.210.500.365.415.248
 Estramustine;D04.210.500.365.415.248.320
-Fulvestrant;D04.210.500.365.415.248.660
-2-Methoxyestradiol;D04.210.500.365.415.248.830
 Estriol;D04.210.500.365.415.331
 Estetrol;D04.210.500.365.415.331.320
 Estrone;D04.210.500.365.415.414
@@ -26698,7 +26226,6 @@ Hydroxyestrones;D04.210.500.365.415.414.400
 Metribolone;D04.210.500.365.415.550
 Mifepristone;D04.210.500.365.415.580
 Nandrolone;D04.210.500.365.415.638
-Nandrolone Decanoate;D04.210.500.365.415.638.500
 Trenbolone Acetate;D04.210.500.365.415.930
 Gonanes;D04.210.500.451
 Homosteroids;D04.210.500.496
@@ -26735,7 +26262,6 @@ Gestonorone Caproate;D04.210.500.668.651.693.362
 Lynestrenol;D04.210.500.668.651.693.494
 Norethandrolone;D04.210.500.668.651.693.595
 Norethindrone;D04.210.500.668.651.693.651
-Norethindrone Acetate;D04.210.500.668.651.693.651.500
 Norethynodrel;D04.210.500.668.651.693.706
 Norgestrel;D04.210.500.668.651.693.762
 Ethinyl Estradiol-Norgestrel Combination;D04.210.500.668.651.693.762.225
@@ -26771,13 +26297,11 @@ Betamethasone Valerate;D04.210.500.745.432.769.199.150
 Desonide;D04.210.500.745.432.769.325
 Dexamethasone;D04.210.500.745.432.769.344
 Dexamethasone Isonicotinate;D04.210.500.745.432.769.344.300
-Tobramycin, Dexamethasone Drug Combination;D04.210.500.745.432.769.344.650
 Flumethasone;D04.210.500.745.432.769.465
 Paramethasone;D04.210.500.745.432.769.692
 Prednisolone;D04.210.500.745.432.769.795
 Fluprednisolone;D04.210.500.745.432.769.795.307
 Methylprednisolone;D04.210.500.745.432.769.795.539
-Methylprednisolone Acetate;D04.210.500.745.432.769.795.539.250
 Methylprednisolone Hemisuccinate;D04.210.500.745.432.769.795.539.500
 Prednimustine;D04.210.500.745.432.769.795.700
 Triamcinolone;D04.210.500.745.432.915
@@ -26793,7 +26317,6 @@ Pregnatrienes;D04.210.500.745.683
 Pregnenes;D04.210.500.745.745
 Cortisone;D04.210.500.745.745.183
 Dimethisterone;D04.210.500.745.745.279
-Eplerenone;D04.210.500.745.745.329
 Ethisterone;D04.210.500.745.745.379
 Pregnenediones;D04.210.500.745.745.654
 Aldosterone;D04.210.500.745.745.654.062
@@ -26817,7 +26340,6 @@ Algestone Acetophenide;D04.210.500.745.745.654.829.025.025
 20-alpha-Dihydroprogesterone;D04.210.500.745.745.654.829.100
 Hydroxyprogesterones;D04.210.500.745.745.654.829.395
 17-alpha-Hydroxyprogesterone;D04.210.500.745.745.654.829.395.400
-17 alpha-Hydroxyprogesterone Caproate;D04.210.500.745.745.654.829.395.400.500
 Medroxyprogesterone;D04.210.500.745.745.654.829.395.700
 Medroxyprogesterone Acetate;D04.210.500.745.745.654.829.395.700.500
 Pregnenolone;D04.210.500.745.745.725
@@ -26850,7 +26372,6 @@ Clobetasol;D04.210.500.908.093.250
 Dexamethasone;D04.210.500.908.238
 Desoximetasone;D04.210.500.908.238.250
 Dexamethasone Isonicotinate;D04.210.500.908.238.300
-Tobramycin, Dexamethasone Drug Combination;D04.210.500.908.238.650
 Flumethasone;D04.210.500.908.359
 Fluocinolone Acetonide;D04.210.500.908.394
 Fluocinonide;D04.210.500.908.394.300
@@ -26877,7 +26398,6 @@ alpha-Cyclodextrins;D04.345.103.222
 beta-Cyclodextrins;D04.345.103.333
 2-Hydroxypropyl-beta-cyclodextrin;D04.345.103.333.500
 gamma-Cyclodextrins;D04.345.103.444
-Sugammadex;D04.345.103.444.500
 Cycloparaffins;D04.345.133
 Ethers, Cyclic;D04.345.241
 Crown Ethers;D04.345.241.308
@@ -26887,7 +26407,6 @@ Rifamycins;D04.345.295.750
 Rifabutin;D04.345.295.750.650
 Streptovaricin;D04.345.295.750.650.700
 Rifampin;D04.345.295.750.700
-Rifaximin;D04.345.295.750.850
 Peptides, Cyclic;D04.345.566
 Alamethicin;D04.345.566.040
 Amanitins;D04.345.566.050
@@ -26929,7 +26448,6 @@ Viomycin;D04.345.566.875
 Enviomycin;D04.345.566.875.250
 Polyketides;D04.345.674
 Macrolides;D04.345.674.500
-Fidaxomicin;D04.345.674.500.500
 Tetrapyrroles;D04.345.783
 Bile Pigments;D04.345.783.249
 Bilirubin;D04.345.783.249.184
@@ -26938,7 +26456,6 @@ Urobilin;D04.345.783.249.727
 Urobilinogen;D04.345.783.249.852
 Chlorophyll;D04.345.783.374
 Bacteriochlorophylls;D04.345.783.374.100
-Chlorophyll A;D04.345.783.374.140
 Chlorophyllides;D04.345.783.374.180
 Pheophytins;D04.345.783.374.700
 Protochlorophyllide;D04.345.783.374.725
@@ -26958,7 +26475,6 @@ Mesoporphyrins;D04.345.783.500.620
 Metalloporphyrins;D04.345.783.500.640
 Chlorophyll;D04.345.783.500.640.220
 Bacteriochlorophylls;D04.345.783.500.640.220.100
-Chlorophyll A;D04.345.783.500.640.220.140
 Chlorophyllides;D04.345.783.500.640.220.180
 Pheophytins;D04.345.783.500.640.220.453
 Protochlorophyllide;D04.345.783.500.640.220.725
@@ -26969,7 +26485,6 @@ Coproporphyrinogens;D04.345.783.500.700.250
 Uroporphyrinogens;D04.345.783.500.700.900
 Protoporphyrins;D04.345.783.500.725
 Uroporphyrins;D04.345.783.500.880
-Verteporfin;D04.345.783.500.940
 Trichothecenes;D04.345.891
 T-2 Toxin;D04.345.891.870
 Trichodermin;D04.345.891.900
@@ -27000,14 +26515,11 @@ Fluorenes;D04.615.389
 2-Acetylaminofluorene;D04.615.389.050
 Acetoxyacetylaminofluorene;D04.615.389.050.060
 Hydroxyacetylaminofluorene;D04.615.389.050.400
-Lumefantrine;D04.615.389.650
-Artemether, Lumefantrine Drug Combination;D04.615.389.650.500
 Tilorone;D04.615.389.850
 Indenes;D04.615.486
 Dimethindene;D04.615.486.250
 Indans;D04.615.486.487
 Aprindine;D04.615.486.487.060
-Donepezil;D04.615.486.487.280
 Ninhydrin;D04.615.486.487.500
 Phenindione;D04.615.486.487.750
 Sulindac;D04.615.486.875
@@ -27032,14 +26544,13 @@ Minocycline;D04.615.562.900.550
 Oxytetracycline;D04.615.562.900.600
 Rolitetracycline;D04.615.562.900.720
 Tetracycline;D04.615.562.900.875
-Tigecycline;D04.615.562.900.937
 Naphthalenes;D04.615.638
 Acenaphthenes;D04.615.638.059
 Adapalene;D04.615.638.090
 Adapalene, Benzoyl Peroxide Drug Combination;D04.615.638.090.500
 Bunaftine;D04.615.638.120
 Carbaryl;D04.615.638.162
-Cinacalcet;D04.615.638.183
+Cinacalcet Hydrochloride;D04.615.638.183
 Dansyl Compounds;D04.615.638.204
 Lovastatin;D04.615.638.400
 Simvastatin;D04.615.638.400.900
@@ -27069,10 +26580,8 @@ Sertraline;D04.615.638.845.800
 Naphthylvinylpyridine;D04.615.638.900
 Pravastatin;D04.615.638.930
 Propranolol;D04.615.638.945
-Terbinafine;D04.615.638.953
 Tetrahydronaphthalenes;D04.615.638.960
 8-Hydroxy-2-(di-n-propylamino)tetralin;D04.615.638.960.400
-Bexarotene;D04.615.638.960.423
 Bunolol;D04.615.638.960.446
 Levobunolol;D04.615.638.960.446.500
 Mibefradil;D04.615.638.960.585
@@ -27131,7 +26640,6 @@ Fluorescein;D04.711.347.390
 Fluorescein-5-isothiocyanate;D04.711.347.400
 Rose Bengal;D04.711.347.700
 Fluspirilene;D04.711.350
-Irbesartan;D04.711.431
 Leucogenenol;D04.711.511
 Prospidium;D04.711.656
 Spiperone;D04.711.800
@@ -27244,9 +26752,7 @@ Lignin;D05.750.078.562.180.515
 Dextrans;D05.750.078.562.272
 Glycogen;D05.750.078.562.388
 Liver Glycogen;D05.750.078.562.388.518
-Icodextrin;D05.750.078.562.622
 Starch;D05.750.078.562.855
-Dextrins;D05.750.078.562.855.375
 Inulin;D05.750.078.562.855.750
 Intermediate Filament Proteins;D05.750.078.593
 Desmin;D05.750.078.593.200
@@ -27346,10 +26852,8 @@ Sericins;D05.750.078.875.750
 Tannins;D05.750.078.937
 Hydrolyzable Tannins;D05.750.078.937.214
 Proanthocyanidins;D05.750.078.937.429
-Carbon Fiber;D05.750.139
 Colestipol;D05.750.200
 Metal-Organic Frameworks;D05.750.215
-Polyacetylene Polymer;D05.750.223
 Polyelectrolytes;D05.750.230
 Cyanoacrylates;D05.750.259
 Enbucrilate;D05.750.259.341
@@ -27396,7 +26900,6 @@ Polydioxanone;D05.750.728.700
 Polyethylene Terephthalates;D05.750.728.764
 Polyglactin 910;D05.750.728.772
 Polyglycolic Acid;D05.750.728.780
-Polylactic Acid-Polyglycolic Acid Copolymer;D05.750.728.780.500
 Polyhydroxyalkanoates;D05.750.728.890
 Polyethylene Glycols;D05.750.741
 Certolizumab Pegol;D05.750.741.125
@@ -27404,7 +26907,6 @@ Cetomacrogol;D05.750.741.250
 Hydrogel, Polyethylene Glycol Dimethacrylate;D05.750.741.485
 Nonoxynol;D05.750.741.575
 Octoxynol;D05.750.741.610
-Polidocanol;D05.750.741.630
 Poloxalene;D05.750.741.650
 Poloxamer;D05.750.741.667
 Polyhydroxyethyl Methacrylate;D05.750.741.685
@@ -27473,15 +26975,15 @@ Gastrin-Releasing Peptide;D06.472.317.410
 Gastrins;D06.472.317.413
 Pentagastrin;D06.472.317.413.593
 Tetragastrin;D06.472.317.413.800
+Proglucagon;D06.472.317.469
+Glicentin;D06.472.317.469.249
+Glucagon-Like Peptides;D06.472.317.469.500
+Glucagon-Like Peptide 1;D06.472.317.469.500.500
+Liraglutide;D06.472.317.469.500.500.500
+Glucagon-Like Peptide 2;D06.472.317.469.500.750
+Oxyntomodulin;D06.472.317.469.750
 Motilin;D06.472.317.525
 Peptide YY;D06.472.317.662
-Proglucagon;D06.472.317.680
-Glicentin;D06.472.317.680.249
-Glucagon-Like Peptides;D06.472.317.680.500
-Glucagon-Like Peptide 1;D06.472.317.680.500.500
-Liraglutide;D06.472.317.680.500.500.500
-Glucagon-Like Peptide 2;D06.472.317.680.500.750
-Oxyntomodulin;D06.472.317.680.750
 Secretin;D06.472.317.800
 Vasoactive Intestinal Peptide;D06.472.317.950
 Gonadal Hormones;D06.472.334
@@ -27495,8 +26997,6 @@ Estradiol Congeners;D06.472.334.851.437
 Equilenin;D06.472.334.851.437.249
 Equilin;D06.472.334.851.437.374
 Estradiol;D06.472.334.851.437.500
-Fulvestrant;D06.472.334.851.437.500.500
-2-Methoxyestradiol;D06.472.334.851.437.500.750
 Estriol;D06.472.334.851.437.750
 Estetrol;D06.472.334.851.437.750.320
 Estrogenic Steroids, Alkylated;D06.472.334.851.437.968
@@ -27517,7 +27017,6 @@ Progesterone;D06.472.334.851.687.750
 20-alpha-Dihydroprogesterone;D06.472.334.851.687.750.074
 Hydroxyprogesterones;D06.472.334.851.687.750.478
 17-alpha-Hydroxyprogesterone;D06.472.334.851.687.750.478.400
-17 alpha-Hydroxyprogesterone Caproate;D06.472.334.851.687.750.478.400.250
 Pregnanetriol;D06.472.334.851.687.750.478.400.500
 Pregnanediol;D06.472.334.851.687.750.739
 Testosterone Congeners;D06.472.334.851.968
@@ -27530,7 +27029,6 @@ Dehydroepiandrosterone Sulfate;D06.472.334.851.968.952.300
 Dihydrotestosterone;D06.472.334.851.968.964
 Etiocholanolone;D06.472.334.851.968.968
 Nandrolone;D06.472.334.851.968.976
-Nandrolone Decanoate;D06.472.334.851.968.976.500
 Testosterone;D06.472.334.851.968.984
 Epitestosterone;D06.472.334.851.968.984.500
 Testosterone Propionate;D06.472.334.851.968.984.750
@@ -27642,9 +27140,9 @@ Insulin, Regular, Human;D06.472.699.587.200.500.625.500
 Isophane Insulin, Human;D06.472.699.587.200.500.625.500.500
 Insulin, Regular, Pork;D06.472.699.587.200.500.625.700
 Islet Amyloid Polypeptide;D06.472.699.587.334
+Proglucagon;D06.472.699.587.469
+Glucagon;D06.472.699.587.469.500
 Pancreatic Polypeptide;D06.472.699.587.700
-Proglucagon;D06.472.699.587.730
-Glucagon;D06.472.699.587.730.500
 Somatostatin;D06.472.699.587.780
 Somatostatin-28;D06.472.699.587.780.500
 Parathyroid Hormone;D06.472.699.590
@@ -27695,7 +27193,6 @@ Arginine Vasopressin;D06.472.699.631.692.781.100
 Deamino Arginine Vasopressin;D06.472.699.631.692.781.100.250
 Lypressin;D06.472.699.631.692.781.400
 Felypressin;D06.472.699.631.692.781.400.350
-Terlipressin;D06.472.699.631.692.781.400.675
 Ornipressin;D06.472.699.631.692.781.700
 Vasotocin;D06.472.699.631.692.881
 Placental Hormones;D06.472.699.649
@@ -27704,9 +27201,6 @@ Chorionic Gonadotropin, beta Subunit, Human;D06.472.699.649.367.125
 Glycoprotein Hormones, alpha Subunit;D06.472.699.649.367.562
 Gonadotropins, Equine;D06.472.699.649.451
 Placental Lactogen;D06.472.699.649.692
-Procalcitonin;D06.472.699.666
-Progranulins;D06.472.699.682
-Granulins;D06.472.699.682.500
 Relaxin;D06.472.699.715
 Secretin;D06.472.699.810
 Urocortins;D06.472.699.857
@@ -27717,9 +27211,7 @@ Thymic Factor, Circulating;D06.472.910.750
 Thymopoietins;D06.472.910.800
 Thymopentin;D06.472.910.800.850
 Thymosin;D06.472.910.850
-Thymalfasin;D06.472.910.850.500
 Thyroid Hormones;D06.472.931
-Calcitonin;D06.472.931.052
 Dextrothyroxine;D06.472.931.103
 Diiodotyrosine;D06.472.931.208
 Monoiodotyrosine;D06.472.931.388
@@ -28166,7 +27658,6 @@ MRE11 Homologue Protein;D08.811.277.352.335.375.813
 Werner Syndrome Helicase;D08.811.277.352.335.375.875
 Endonucleases;D08.811.277.352.355
 Endodeoxyribonucleases;D08.811.277.352.355.325
-CRISPR-Associated Protein 9;D08.811.277.352.355.325.150
 DNA Restriction Enzymes;D08.811.277.352.355.325.300
 Deoxyribonucleases, Type I Site-Specific;D08.811.277.352.355.325.300.250
 Deoxyribonucleases, Type II Site-Specific;D08.811.277.352.355.325.300.260
@@ -28374,7 +27865,6 @@ ADP-ribosyl Cyclase;D08.811.277.450.430.400.060
 ADP-ribosyl Cyclase 1;D08.811.277.450.430.400.060.500
 Ribosome Inactivating Proteins;D08.811.277.450.430.700
 Ribosome Inactivating Proteins, Type 1;D08.811.277.450.430.700.500
-Saporins;D08.811.277.450.430.700.500.500
 Ribosome Inactivating Proteins, Type 2;D08.811.277.450.430.700.750
 Abrin;D08.811.277.450.430.700.750.111
 Ricin;D08.811.277.450.430.700.750.666
@@ -28589,7 +28079,6 @@ Subtilisins;D08.811.277.656.300.760.787
 Subtilisin;D08.811.277.656.300.760.787.805
 Thrombin;D08.811.277.656.300.760.855
 Tissue Plasminogen Activator;D08.811.277.656.300.760.875
-Tenecteplase;D08.811.277.656.300.760.875.500
 Trypsin;D08.811.277.656.300.760.895
 Tryptases;D08.811.277.656.300.760.902
 Urokinase-Type Plasminogen Activator;D08.811.277.656.300.760.910
@@ -28760,7 +28249,6 @@ Subtilisins;D08.811.277.656.959.350.787
 Subtilisin;D08.811.277.656.959.350.787.805
 Thrombin;D08.811.277.656.959.350.855
 Tissue Plasminogen Activator;D08.811.277.656.959.350.875
-Tenecteplase;D08.811.277.656.959.350.875.500
 Trypsin;D08.811.277.656.959.350.895
 Tryptases;D08.811.277.656.959.350.902
 Urokinase-Type Plasminogen Activator;D08.811.277.656.959.350.910
@@ -29701,10 +29189,9 @@ Phenylethanolamine N-Methyltransferase;D08.811.913.555.500.700
 Phosphatidyl-N-Methylethanolamine N-Methyltransferase;D08.811.913.555.500.710
 Phosphatidylethanolamine N-Methyltransferase;D08.811.913.555.500.712
 Protein Methyltransferases;D08.811.913.555.500.800
-Histone Methyltransferases;D08.811.913.555.500.800.200
-Histone-Lysine N-Methyltransferase;D08.811.913.555.500.800.200.500
-Polycomb Repressive Complex 2;D08.811.913.555.500.800.200.500.500
-Enhancer of Zeste Homolog 2 Protein;D08.811.913.555.500.800.200.500.500.500
+Histone-Lysine N-Methyltransferase;D08.811.913.555.500.800.400
+Polycomb Repressive Complex 2;D08.811.913.555.500.800.400.500
+Enhancer of Zeste Homolog 2 Protein;D08.811.913.555.500.800.400.500.500
 O(6)-Methylguanine-DNA Methyltransferase;D08.811.913.555.500.800.650
 Positive Regulatory Domain I-Binding Factor 1;D08.811.913.555.500.800.700
 Protein-Arginine N-Methyltransferases;D08.811.913.555.500.800.750
@@ -29800,8 +29287,8 @@ Phosphoenolpyruvate Sugar Phosphotransferase System;D08.811.913.696.620.650
 Polynucleotide 5'-Hydroxyl-Kinase;D08.811.913.696.620.680
 Protein Kinases;D08.811.913.696.620.682
 Connectin;D08.811.913.696.620.682.324
-Histidine Kinase;D08.811.913.696.620.682.424
 Phosphorylase Kinase;D08.811.913.696.620.682.650
+Histidine Kinase;D08.811.913.696.620.682.675
 Protein-Serine-Threonine Kinases;D08.811.913.696.620.682.700
 Activin Receptors;D08.811.913.696.620.682.700.062
 Activin Receptors, Type I;D08.811.913.696.620.682.700.062.500
@@ -29929,8 +29416,6 @@ Protein Kinase C-epsilon;D08.811.913.696.620.682.700.725.750
 Proto-Oncogene Proteins c-akt;D08.811.913.696.620.682.700.755
 Proto-Oncogene Proteins c-bcr;D08.811.913.696.620.682.700.759
 Proto-Oncogene Proteins c-pim-1;D08.811.913.696.620.682.700.776
-Receptor, Transforming Growth Factor-beta Type I;D08.811.913.696.620.682.700.789
-Receptor, Transforming Growth Factor-beta Type II;D08.811.913.696.620.682.700.795
 Receptor-Interacting Protein Serine-Threonine Kinases;D08.811.913.696.620.682.700.801
 Receptor-Interacting Protein Serine-Threonine Kinase 2;D08.811.913.696.620.682.700.801.500
 rho-Associated Kinases;D08.811.913.696.620.682.700.814
@@ -29946,7 +29431,6 @@ Rapamycin-Insensitive Companion of mTOR Protein;D08.811.913.696.620.682.700.931.
 Vacuolar Sorting Protein VPS15;D08.811.913.696.620.682.700.965
 WNK Lysine-Deficient Protein Kinase 1;D08.811.913.696.620.682.700.982
 Protein-Tyrosine Kinases;D08.811.913.696.620.682.725
-Agammaglobulinaemia Tyrosine Kinase;D08.811.913.696.620.682.725.025
 Focal Adhesion Protein-Tyrosine Kinases;D08.811.913.696.620.682.725.049
 Focal Adhesion Kinase 1;D08.811.913.696.620.682.725.049.500
 Focal Adhesion Kinase 2;D08.811.913.696.620.682.725.049.750
@@ -29965,12 +29449,12 @@ MAP Kinase Kinase 6;D08.811.913.696.620.682.725.200.600
 MAP Kinase Kinase 7;D08.811.913.696.620.682.725.200.700
 Proto-Oncogene Proteins c-fes;D08.811.913.696.620.682.725.300
 Receptor Protein-Tyrosine Kinases;D08.811.913.696.620.682.725.400
-Anaplastic Lymphoma Kinase;D08.811.913.696.620.682.725.400.002
 c-Mer Tyrosine Kinase;D08.811.913.696.620.682.725.400.003
 Discoidin Domain Receptors;D08.811.913.696.620.682.725.400.005
 Discoidin Domain Receptor 1;D08.811.913.696.620.682.725.400.005.500
 Discoidin Domain Receptor 2;D08.811.913.696.620.682.725.400.005.750
 ErbB Receptors;D08.811.913.696.620.682.725.400.009
+Receptor, Epidermal Growth Factor;D08.811.913.696.620.682.725.400.009.300
 Receptor, ErbB-2;D08.811.913.696.620.682.725.400.009.400
 Receptor, ErbB-3;D08.811.913.696.620.682.725.400.009.500
 Receptor, ErbB-4;D08.811.913.696.620.682.725.400.009.600
@@ -30079,7 +29563,6 @@ Acetylglucosamine;D09.067.342.531.050
 Meglumine;D09.067.342.600
 Diatrizoate Meglumine;D09.067.342.600.500
 Iothalamate Meglumine;D09.067.342.600.600
-Meglumine Antimoniate;D09.067.342.600.800
 Muramic Acids;D09.067.550
 Acetylmuramyl-Alanyl-Isoglutamine;D09.067.550.050
 Neuraminic Acids;D09.067.687
@@ -30136,10 +29619,9 @@ Glycopeptides;D09.400.420
 Bleomycin;D09.400.420.110
 Peplomycin;D09.400.420.110.690
 Phleomycins;D09.400.420.110.710
-Lipoglycopeptides;D09.400.420.405
-Teicoplanin;D09.400.420.405.500
 Peptidoglycan;D09.400.420.700
 Ristocetin;D09.400.420.800
+Teicoplanin;D09.400.420.900
 Vancomycin;D09.400.420.925
 Glycoproteins;D09.400.430
 ADAM Proteins;D09.400.430.500
@@ -30154,7 +29636,6 @@ ADAMTS5 Protein;D09.400.430.500.500.875
 ADAMTS7 Protein;D09.400.430.500.500.937
 ADAMTS9 Protein;D09.400.430.500.500.968
 Fertilins;D09.400.430.500.750
-Anti-Mullerian Hormone;D09.400.430.625
 Cholesterol Ester Transfer Proteins;D09.400.430.750
 Fibrillins;D09.400.430.875
 Fibrillin-1;D09.400.430.875.500
@@ -30183,12 +29664,11 @@ Amikacin;D09.408.051.476.060
 Dibekacin;D09.408.051.476.200
 Nebramycin;D09.408.051.476.600
 Tobramycin;D09.408.051.476.600.800
-Tobramycin, Dexamethasone Drug Combination;D09.408.051.476.600.800.500
 Metrizamide;D09.408.051.545
 Neomycin;D09.408.051.623
 Framycetin;D09.408.051.623.300
+Paromomycin;D09.408.051.623.635
 Ribostamycin;D09.408.051.623.800
-Paromomycin;D09.408.051.706
 Puromycin;D09.408.051.788
 Puromycin Aminonucleoside;D09.408.051.788.650
 Spectinomycin;D09.408.051.836
@@ -30287,7 +29767,6 @@ Imino Pyranoses;D09.553.500
 1-Deoxynojirimycin;D09.553.500.033
 Polysaccharides;D09.698
 Alginates;D09.698.068
-Alginic Acid;D09.698.068.500
 Carrageenan;D09.698.152
 Chitin;D09.698.211
 Chitosan;D09.698.211.500
@@ -30315,7 +29794,6 @@ Dextran Sulfate;D09.698.365.272.300
 Iron-Dextran Complex;D09.698.365.272.400
 Glycogen;D09.698.365.388
 Liver Glycogen;D09.698.365.388.518
-Icodextrin;D09.698.365.399
 Isomaltose;D09.698.365.410
 Maltose;D09.698.365.450
 Starch;D09.698.365.855
@@ -30327,7 +29805,6 @@ alpha-Cyclodextrins;D09.698.365.855.400.375.222
 beta-Cyclodextrins;D09.698.365.855.400.375.333
 2-Hydroxypropyl-beta-cyclodextrin;D09.698.365.855.400.375.333.500
 gamma-Cyclodextrins;D09.698.365.855.400.375.444
-Sugammadex;D09.698.365.855.400.375.444.500
 Hydroxyethyl Starch Derivatives;D09.698.365.855.500
 Inulin;D09.698.365.855.750
 Trehalose;D09.698.365.900
@@ -30340,7 +29817,6 @@ Heparin, Low-Molecular-Weight;D09.698.373.400.300
 Dalteparin;D09.698.373.400.300.150
 Enoxaparin;D09.698.373.400.300.200
 Nadroparin;D09.698.373.400.300.600
-Tinzaparin;D09.698.373.400.300.800
 Heparinoids;D09.698.373.400.320
 Heparitin Sulfate;D09.698.373.425
 Heparan Sulfate Proteoglycans;D09.698.373.425.500
@@ -30359,7 +29835,6 @@ Sucrose;D09.698.629.305.770
 Dietary Sucrose;D09.698.629.305.770.200
 Sucralfate;D09.698.629.305.770.850
 Trehalose;D09.698.629.305.880
-Fondaparinux;D09.698.629.429
 Oligosaccharides, Branched-Chain;D09.698.629.553
 Trisaccharides;D09.698.629.802
 Acarbose;D09.698.629.802.100
@@ -30400,7 +29875,6 @@ Ascorbic Acid;D09.811.100
 Dehydroascorbic Acid;D09.811.100.260
 2,3-Diketogulonic Acid;D09.811.200
 Glucaric Acid;D09.811.295
-Ferric Oxide, Saccharated;D09.811.295.500
 Gluconates;D09.811.308
 Antimony Sodium Gluconate;D09.811.308.060
 Calcium Gluconate;D09.811.308.200
@@ -30419,10 +29893,8 @@ Tartronates;D09.811.835
 Uronic Acids;D09.811.922
 Glucuronates;D09.811.922.162
 Glucuronic Acid;D09.811.922.162.500
-Alginic Acid;D09.811.922.162.500.500
 Glucuronides;D09.811.922.162.750
 Hexuronic Acids;D09.811.922.400
-Alginic Acid;D09.811.922.400.250
 Iduronic Acid;D09.811.922.400.500
 Sugar Alcohols;D09.853
 Dithioerythritol;D09.853.175
@@ -30446,7 +29918,6 @@ Isosorbide Dinitrate;D09.853.813.480.500
 Meglumine;D09.853.813.550
 Diatrizoate Meglumine;D09.853.813.550.500
 Iothalamate Meglumine;D09.853.813.550.600
-Meglumine Antimoniate;D09.853.813.550.800
 Triose Sugar Alcohols;D09.853.875
 Glycerol;D09.853.875.500
 Glycerophosphates;D09.853.875.750
@@ -30497,7 +29968,6 @@ Heptoses;D09.947.875.286
 Mannoheptulose;D09.947.875.286.500
 Hexoses;D09.947.875.359
 Fructose;D09.947.875.359.250
-Topiramate;D09.947.875.359.250.500
 Galactose;D09.947.875.359.377
 Glucose;D09.947.875.359.448
 Blood Glucose;D09.947.875.359.448.500
@@ -30506,7 +29976,6 @@ Sorbose;D09.947.875.359.862
 Ketoses;D09.947.875.465
 Dihydroxyacetone;D09.947.875.465.200
 Fructose;D09.947.875.465.354
-Topiramate;D09.947.875.465.354.500
 Mannoheptulose;D09.947.875.465.500
 Sorbose;D09.947.875.465.758
 Xylulose;D09.947.875.465.920
@@ -30616,7 +30085,6 @@ Carboprost;D10.251.355.255.550.775.500.150
 Cloprostenol;D10.251.355.255.550.775.500.175
 Bimatoprost;D10.251.355.255.550.775.500.175.250
 Travoprost;D10.251.355.255.550.775.500.175.500
-Latanoprost;D10.251.355.255.550.775.500.587
 Fatty Acids, Essential;D10.251.355.310
 Arachidonic Acids;D10.251.355.310.166
 Arachidonic Acid;D10.251.355.310.166.100
@@ -30645,7 +30113,6 @@ Alprostadil;D10.251.355.325.050
 Lubiprostone;D10.251.355.325.050.500
 Capsaicin;D10.251.355.325.190
 Cilastatin;D10.251.355.325.200
-Cilastatin, Imipenem Drug Combination;D10.251.355.325.200.500
 Erucic Acids;D10.251.355.325.300
 6-Ketoprostaglandin F1 alpha;D10.251.355.325.450
 Oleic Acids;D10.251.355.325.600
@@ -30686,8 +30153,7 @@ Pentanoic Acids;D10.251.400.895.593
 Gemfibrozil;D10.251.400.895.593.350
 Valproic Acid;D10.251.400.895.593.900
 Heptanoic Acids;D10.251.450
-Atorvastatin;D10.251.450.200
-Fluvastatin;D10.251.450.300
+Atorvastatin Calcium;D10.251.450.200
 Heptanoates;D10.251.450.400
 Lauric Acids;D10.251.500
 Laurates;D10.251.500.410
@@ -30721,7 +30187,6 @@ Heptanol;D10.289.500
 Hexanols;D10.289.510
 Cyclohexanols;D10.289.510.500
 Desvenlafaxine Succinate;D10.289.510.500.303
-Eucalyptol;D10.289.510.500.454
 Menthol;D10.289.510.500.605
 Tramadol;D10.289.510.500.802
 Venlafaxine Hydrochloride;D10.289.510.500.901
@@ -30763,9 +30228,7 @@ Polyisoprenyl Phosphate Oligosaccharides;D10.390.700.710
 Lipid Peroxides;D10.440
 Lipofuscin;D10.460
 Lipopeptides;D10.477
-Caspofungin;D10.477.250
 Daptomycin;D10.477.500
-Micafungin;D10.477.625
 Polymyxins;D10.477.750
 Colistin;D10.477.750.110
 Polymyxin B;D10.477.750.750
@@ -30793,8 +30256,8 @@ Apolipoprotein E3;D10.532.091.500.500
 Apolipoprotein E4;D10.532.091.500.750
 Apolipoproteins L;D10.532.091.750
 Apolipoprotein L1;D10.532.091.750.500
-ATP Binding Cassette Transporter, Subfamily G, Member 5;D10.532.137
-ATP Binding Cassette Transporter, Subfamily G, Member 8;D10.532.160
+ATP Binding Cassette Transporter, Sub-Family G, Member 5;D10.532.137
+ATP Binding Cassette Transporter, Sub-Family G, Member 8;D10.532.160
 Chylomicrons;D10.532.183
 Chylomicron Remnants;D10.532.183.500
 Lipoprotein(a);D10.532.350
@@ -30901,8 +30364,7 @@ Oils, Volatile;D10.627.675
 Tea Tree Oil;D10.627.675.775
 Turpentine;D10.627.675.800
 Plant Oils;D10.627.700
-Eucalyptus Oil;D10.627.700.033
-Rapeseed Oil;D10.627.700.066
+Canola Oil;D10.627.700.066
 Castor Oil;D10.627.700.132
 Coconut Oil;D10.627.700.186
 Corn Oil;D10.627.700.240
@@ -30982,7 +30444,6 @@ Levodopa;D12.125.072.050.685.400.500
 Methyldopa;D12.125.072.050.685.400.600
 Fenclonine;D12.125.072.050.685.440
 N-Formylmethionine Leucyl-Phenylalanine;D12.125.072.050.685.445
-Nateglinide;D12.125.072.050.685.448
 p-Fluorophenylalanine;D12.125.072.050.685.450
 Melphalan;D12.125.072.050.685.500
 Thyroxine;D12.125.072.050.767
@@ -31005,7 +30466,6 @@ Methyltyrosines;D12.125.072.050.875.485
 alpha-Methyltyrosine;D12.125.072.050.875.485.050
 Monoiodotyrosine;D12.125.072.050.875.496
 Phosphotyrosine;D12.125.072.050.875.750
-Tirofiban;D12.125.072.050.875.875
 Cycloleucine;D12.125.072.170
 Desmosine;D12.125.072.200
 Histidine;D12.125.072.329
@@ -31123,7 +30583,6 @@ Tiopronin;D12.125.166.896
 Aminobutyrates;D12.125.190
 Aminoisobutyric Acids;D12.125.190.055
 gamma-Aminobutyric Acid;D12.125.190.350
-Gabapentin;D12.125.190.350.225
 Pregabalin;D12.125.190.350.450
 Vigabatrin;D12.125.190.350.900
 Aminocaproates;D12.125.213
@@ -31178,13 +30637,17 @@ Cell-Penetrating Peptides;D12.644.098
 Charybdotoxin;D12.644.115
 Cholecystokinin;D12.644.120
 Sincalide;D12.644.120.500
+Circadian Rhythm Signaling Peptides and Proteins;D12.644.128
+ARNTL Transcription Factors;D12.644.128.049
+CLOCK Proteins;D12.644.128.100
+Cryptochromes;D12.644.128.150
+Period Circadian Proteins;D12.644.128.575
 Cystine-Knot Miniproteins;D12.644.132
 Diazepam Binding Inhibitor;D12.644.136
 Disintegrins;D12.644.138
 Distamycins;D12.644.140
 Edeine;D12.644.146
 Erabutoxins;D12.644.173
-Exenatide;D12.644.187
 Fibrinopeptide A;D12.644.200
 Fibrinopeptide B;D12.644.205
 Glatiramer Acetate;D12.644.219
@@ -31193,13 +30656,12 @@ Acetylmuramyl-Alanyl-Isoglutamine;D12.644.233.050
 Bleomycin;D12.644.233.110
 Peplomycin;D12.644.233.110.690
 Phleomycins;D12.644.233.110.710
-Lipoglycopeptides;D12.644.233.352
-Teicoplanin;D12.644.233.352.500
 Peptidoglycan;D12.644.233.594
 Ristocetin;D12.644.233.697
 Sialoglycoproteins;D12.644.233.800
 Leukosialin;D12.644.233.800.174
 Glycophorin;D12.644.233.800.350
+Teicoplanin;D12.644.233.900
 Vancomycin;D12.644.233.925
 Intercellular Signaling Peptides and Proteins;D12.644.276
 Adipokines;D12.644.276.024
@@ -31281,7 +30743,6 @@ Erythropoietin;D12.644.276.374.410.240.150
 Epoetin Alfa;D12.644.276.374.410.240.150.500
 Granulocyte Colony-Stimulating Factor;D12.644.276.374.410.240.350
 Filgrastim;D12.644.276.374.410.240.350.500
-Lenograstim;D12.644.276.374.410.240.350.750
 Granulocyte-Macrophage Colony-Stimulating Factor;D12.644.276.374.410.240.375
 Interleukin-3;D12.644.276.374.410.240.400
 Macrophage Colony-Stimulating Factor;D12.644.276.374.410.240.500
@@ -31291,7 +30752,6 @@ Hepatocyte Growth Factor;D12.644.276.374.420
 Interferons;D12.644.276.374.440
 Interferon Type I;D12.644.276.374.440.890
 Interferon-alpha;D12.644.276.374.440.890.250
-Interferon alpha-2;D12.644.276.374.440.890.250.500
 Interferon-beta;D12.644.276.374.440.890.275
 Interferon beta-1a;D12.644.276.374.440.890.275.500
 Interferon beta-1b;D12.644.276.374.440.890.275.750
@@ -31425,7 +30885,6 @@ Matrix Metalloproteinase 11;D12.644.276.848.450
 Matrix Metalloproteinase 12;D12.644.276.848.500
 Matrix Metalloproteinase 13;D12.644.276.848.550
 Matrix Metalloproteinase 20;D12.644.276.848.800
-Midkine;D12.644.276.854
 Nerve Growth Factors;D12.644.276.860
 Brain-Derived Neurotrophic Factor;D12.644.276.860.100
 Ciliary Neurotrophic Factor;D12.644.276.860.212
@@ -31443,9 +30902,6 @@ Pituitary Adenylate Cyclase-Activating Polypeptide;D12.644.276.860.887
 Parathyroid Hormone-Related Protein;D12.644.276.908
 Platelet-Derived Growth Factor;D12.644.276.910
 Proto-Oncogene Proteins c-sis;D12.644.276.910.650
-Becaplermin;D12.644.276.910.650.500
-Progranulins;D12.644.276.917
-Granulins;D12.644.276.917.500
 Semaphorins;D12.644.276.923
 Semaphorin-3A;D12.644.276.923.374
 Serrate-Jagged Proteins;D12.644.276.930
@@ -31566,7 +31022,6 @@ Nuclear Receptor Coactivator 1;D12.644.360.024.314.100
 Nuclear Receptor Coactivator 2;D12.644.360.024.314.200
 Nuclear Receptor Coactivator 3;D12.644.360.024.314.300
 Peroxisome Proliferator-Activated Receptor Gamma Coactivator 1-alpha;D12.644.360.024.314.650
-Nuclear Receptor Interacting Protein 1;D12.644.360.024.315
 Paxillin;D12.644.360.024.316
 PII Nitrogen Regulatory Proteins;D12.644.360.024.318
 Protein Inhibitors of Activated STAT;D12.644.360.024.319
@@ -31662,7 +31117,6 @@ High-Temperature Requirement A Serine Peptidase 2;D12.644.360.075.429
 Inhibitor of Apoptosis Proteins;D12.644.360.075.437
 Baculoviral IAP Repeat-Containing 3 Protein;D12.644.360.075.437.250
 Neuronal Apoptosis-Inhibitory Protein;D12.644.360.075.437.500
-Survivin;D12.644.360.075.437.625
 X-Linked Inhibitor of Apoptosis Protein;D12.644.360.075.437.750
 Proto-Oncogene Proteins c-bcl-2;D12.644.360.075.718
 bcl-Associated Death Protein;D12.644.360.075.718.100
@@ -31681,11 +31135,6 @@ Calcium-Calmodulin-Dependent Protein Kinase Type 4;D12.644.360.100.350
 Death-Associated Protein Kinases;D12.644.360.100.387
 Elongation Factor 2 Kinase;D12.644.360.100.425
 Myosin-Light-Chain Kinase;D12.644.360.100.500
-Circadian Rhythm Signaling Peptides and Proteins;D12.644.360.138
-ARNTL Transcription Factors;D12.644.360.138.049
-CLOCK Proteins;D12.644.360.138.100
-Cryptochromes;D12.644.360.138.150
-Period Circadian Proteins;D12.644.360.138.575
 Cold Shock Proteins and Peptides;D12.644.360.175
 Cyclic Nucleotide-Regulated Protein Kinases;D12.644.360.200
 Cyclic AMP-Dependent Protein Kinases;D12.644.360.200.125
@@ -31926,15 +31375,10 @@ SAP90-PSD95 Associated Proteins;D12.644.360.700
 SH2 Domain-Containing Protein Tyrosine Phosphatases;D12.644.360.800
 Protein Tyrosine Phosphatase, Non-Receptor Type 6;D12.644.360.800.200
 Syk Kinase;D12.644.360.900
-Tuberous Sclerosis Complex 1 Protein;D12.644.360.925
-Tuberous Sclerosis Complex 2 Protein;D12.644.360.938
 Tumor Necrosis Factor alpha-Induced Protein 3;D12.644.360.950
 WNK Lysine-Deficient Protein Kinase 1;D12.644.360.975
 Lipopeptides;D12.644.365
-Caspofungin;D12.644.365.250
 Daptomycin;D12.644.365.500
-Lipoglycopeptides;D12.644.365.625
-Micafungin;D12.644.365.750
 Mating Factor;D12.644.368
 Myocardial Depressant Factor;D12.644.370
 Neuropeptides;D12.644.400
@@ -32031,7 +31475,6 @@ Arginine Vasopressin;D12.644.400.900.100
 Deamino Arginine Vasopressin;D12.644.400.900.100.250
 Lypressin;D12.644.400.900.400
 Felypressin;D12.644.400.900.400.350
-Terlipressin;D12.644.400.900.400.675
 Ornipressin;D12.644.400.900.700
 Oligopeptides;D12.644.456
 Amanitins;D12.644.456.050
@@ -32095,15 +31538,12 @@ Arginine Vasopressin;D12.644.456.925.100
 Deamino Arginine Vasopressin;D12.644.456.925.100.250
 Lypressin;D12.644.456.925.480
 Felypressin;D12.644.456.925.480.500
-Terlipressin;D12.644.456.925.480.750
 Ornipressin;D12.644.456.925.700
 Peptaibols;D12.644.504
 Alamethicin;D12.644.504.111
 Peptide Fragments;D12.644.541
-Enfuvirtide;D12.644.541.250
 Immunoglobulin Fragments;D12.644.541.500
 Immunoglobulin Fab Fragments;D12.644.541.500.650
-Abciximab;D12.644.541.500.650.125
 Certolizumab Pegol;D12.644.541.500.650.250
 Immunoglobulin Variable Region;D12.644.541.500.650.500
 Complementarity Determining Regions;D12.644.541.500.650.500.180
@@ -32113,7 +31553,6 @@ Single-Domain Antibodies;D12.644.541.500.650.500.900
 Tuftsin;D12.644.541.500.650.750
 Immunoglobulin Fc Fragments;D12.644.541.500.697
 CD4 Immunoadhesins;D12.644.541.500.697.249
-Etanercept;D12.644.541.500.697.624
 Immunoglobulin Idiotypes;D12.644.541.500.745
 Peptide Hormones;D12.644.548
 Activins;D12.644.548.009
@@ -32194,9 +31633,9 @@ Insulin, Regular, Human;D12.644.548.586.200.500.625.500
 Isophane Insulin, Human;D12.644.548.586.200.500.625.500.500
 Insulin, Regular, Pork;D12.644.548.586.200.500.625.700
 Islet Amyloid Polypeptide;D12.644.548.586.234
+Proglucagon;D12.644.548.586.469
+Glucagon;D12.644.548.586.469.500
 Pancreatic Polypeptide;D12.644.548.586.700
-Proglucagon;D12.644.548.586.730
-Glucagon;D12.644.548.586.730.500
 Somatostatin;D12.644.548.586.780
 Somatostatin-28;D12.644.548.586.780.500
 Parathyroid Hormone;D12.644.548.587
@@ -32245,7 +31684,6 @@ Arginine Vasopressin;D12.644.548.691.692.781.100
 Deamino Arginine Vasopressin;D12.644.548.691.692.781.100.250
 Lypressin;D12.644.548.691.692.781.400
 Felypressin;D12.644.548.691.692.781.400.350
-Terlipressin;D12.644.548.691.692.781.400.675
 Ornipressin;D12.644.548.691.692.781.700
 Vasotocin;D12.644.548.691.692.881
 Placental Hormones;D12.644.548.726
@@ -32254,11 +31692,9 @@ Chorionic Gonadotropin, beta Subunit, Human;D12.644.548.726.367.125
 Glycoprotein Hormones, alpha Subunit;D12.644.548.726.367.562
 Gonadotropins, Equine;D12.644.548.726.451
 Placental Lactogen;D12.644.548.726.692
-Procalcitonin;D12.644.548.744
 Relaxin;D12.644.548.762
 Secretin;D12.644.548.810
 Thymosin;D12.644.548.869
-Thymalfasin;D12.644.548.869.500
 Urocortins;D12.644.548.887
 Urotensins;D12.644.548.905
 Vasoactive Intestinal Peptide;D12.644.548.952
@@ -32277,12 +31713,8 @@ Daptomycin;D12.644.641.270
 Depsipeptides;D12.644.641.297
 Valinomycin;D12.644.641.297.500
 Echinocandins;D12.644.641.311
-Anidulafungin;D12.644.641.311.250
-Caspofungin;D12.644.641.311.500
-Micafungin;D12.644.641.311.750
 Echinomycin;D12.644.641.325
 Enterobactin;D12.644.641.352
-Eptifibatide;D12.644.641.366
 Ferrichrome;D12.644.641.380
 Microcystins;D12.644.641.447
 Mycobacillin;D12.644.641.515
@@ -32468,7 +31900,6 @@ Botulinum Toxins, Type A;D12.776.097.156.100
 Cell Wall Skeleton;D12.776.097.162
 Coagulase;D12.776.097.181
 Colicins;D12.776.097.200
-CRISPR-Associated Protein 9;D12.776.097.219
 DNA Gyrase;D12.776.097.237
 DNA Topoisomerase IV;D12.776.097.256
 Escherichia coli Proteins;D12.776.097.275
@@ -32551,7 +31982,6 @@ Streptokinase;D12.776.124.125.662.537
 Anistreplase;D12.776.124.125.662.537.075
 Streptodornase and Streptokinase;D12.776.124.125.662.537.900
 Tissue Plasminogen Activator;D12.776.124.125.662.768
-Tenecteplase;D12.776.124.125.662.768.500
 Urokinase-Type Plasminogen Activator;D12.776.124.125.662.884
 Platelet Factor 3;D12.776.124.125.691
 Platelet Factor 4;D12.776.124.125.720
@@ -32665,21 +32095,16 @@ Antibodies, Heterophile;D12.776.124.486.485.114.191
 Antibodies, Immobilized;D12.776.124.486.485.114.207
 Antibodies, Monoclonal;D12.776.124.486.485.114.224
 Antibodies, Monoclonal, Humanized;D12.776.124.486.485.114.224.060
-Abciximab;D12.776.124.486.485.114.224.060.125
 Adalimumab;D12.776.124.486.485.114.224.060.250
 Alemtuzumab;D12.776.124.486.485.114.224.060.313
-Basiliximab;D12.776.124.486.485.114.224.060.344
 Bevacizumab;D12.776.124.486.485.114.224.060.375
 Certolizumab Pegol;D12.776.124.486.485.114.224.060.500
 Cetuximab;D12.776.124.486.485.114.224.060.750
-Daclizumab;D12.776.124.486.485.114.224.060.766
 Denosumab;D12.776.124.486.485.114.224.060.782
 Ipilimumab;D12.776.124.486.485.114.224.060.798
 Natalizumab;D12.776.124.486.485.114.224.060.813
-Nivolumab;D12.776.124.486.485.114.224.060.829
 Omalizumab;D12.776.124.486.485.114.224.060.844
 Palivizumab;D12.776.124.486.485.114.224.060.860
-Panitumumab;D12.776.124.486.485.114.224.060.864
 Ranibizumab;D12.776.124.486.485.114.224.060.868
 Trastuzumab;D12.776.124.486.485.114.224.060.875
 Ustekinumab;D12.776.124.486.485.114.224.060.937
@@ -32734,7 +32159,7 @@ Immunoglobulin delta-Chains;D12.776.124.486.485.114.619.251.500
 Immunoglobulin E;D12.776.124.486.485.114.619.312
 Immunoglobulin epsilon-Chains;D12.776.124.486.485.114.619.312.500
 Immunoglobulin G;D12.776.124.486.485.114.619.393
-Alefacept;D12.776.124.486.485.114.619.393.131
+Etanercept;D12.776.124.486.485.114.619.393.261
 Immunoglobulin gamma-Chains;D12.776.124.486.485.114.619.393.522
 Immunoglobulin Gm Allotypes;D12.776.124.486.485.114.619.393.522.400
 Immunoglobulins, Intravenous;D12.776.124.486.485.114.619.393.536
@@ -32756,10 +32181,8 @@ Tuftsin;D12.776.124.486.485.397.500
 Immunoglobulin Constant Regions;D12.776.124.486.485.538
 Immunoglobulin Fc Fragments;D12.776.124.486.485.538.500
 CD4 Immunoadhesins;D12.776.124.486.485.538.500.249
-Etanercept;D12.776.124.486.485.538.500.624
 Immunoglobulin Fragments;D12.776.124.486.485.680
 Immunoglobulin Fab Fragments;D12.776.124.486.485.680.650
-Abciximab;D12.776.124.486.485.680.650.125
 Certolizumab Pegol;D12.776.124.486.485.680.650.250
 Immunoglobulin Variable Region;D12.776.124.486.485.680.650.500
 Complementarity Determining Regions;D12.776.124.486.485.680.650.500.180
@@ -32769,7 +32192,6 @@ Single-Domain Antibodies;D12.776.124.486.485.680.650.500.900
 Tuftsin;D12.776.124.486.485.680.650.750
 Immunoglobulin Fc Fragments;D12.776.124.486.485.680.697
 CD4 Immunoadhesins;D12.776.124.486.485.680.697.249
-Etanercept;D12.776.124.486.485.680.697.624
 Immunoglobulin Idiotypes;D12.776.124.486.485.680.745
 Immunoglobulin Subunits;D12.776.124.486.485.705
 Immunoglobulin Heavy Chains;D12.776.124.486.485.705.500
@@ -32850,21 +32272,16 @@ Antibodies, Heterophile;D12.776.124.790.651.114.191
 Antibodies, Immobilized;D12.776.124.790.651.114.207
 Antibodies, Monoclonal;D12.776.124.790.651.114.224
 Antibodies, Monoclonal, Humanized;D12.776.124.790.651.114.224.060
-Abciximab;D12.776.124.790.651.114.224.060.125
 Adalimumab;D12.776.124.790.651.114.224.060.250
 Alemtuzumab;D12.776.124.790.651.114.224.060.375
-Basiliximab;D12.776.124.790.651.114.224.060.407
 Bevacizumab;D12.776.124.790.651.114.224.060.438
 Certolizumab Pegol;D12.776.124.790.651.114.224.060.500
 Cetuximab;D12.776.124.790.651.114.224.060.750
-Daclizumab;D12.776.124.790.651.114.224.060.766
 Denosumab;D12.776.124.790.651.114.224.060.782
 Ipilimumab;D12.776.124.790.651.114.224.060.798
 Natalizumab;D12.776.124.790.651.114.224.060.813
-Nivolumab;D12.776.124.790.651.114.224.060.829
 Omalizumab;D12.776.124.790.651.114.224.060.844
 Palivizumab;D12.776.124.790.651.114.224.060.860
-Panitumumab;D12.776.124.790.651.114.224.060.864
 Ranibizumab;D12.776.124.790.651.114.224.060.868
 Trastuzumab;D12.776.124.790.651.114.224.060.875
 Ustekinumab;D12.776.124.790.651.114.224.060.937
@@ -32921,7 +32338,7 @@ Immunoglobulin delta-Chains;D12.776.124.790.651.114.619.251.500
 Immunoglobulin E;D12.776.124.790.651.114.619.312
 Immunoglobulin epsilon-Chains;D12.776.124.790.651.114.619.312.500
 Immunoglobulin G;D12.776.124.790.651.114.619.393
-Alefacept;D12.776.124.790.651.114.619.393.131
+Etanercept;D12.776.124.790.651.114.619.393.261
 Immunoglobulin gamma-Chains;D12.776.124.790.651.114.619.393.522
 Immunoglobulin Gm Allotypes;D12.776.124.790.651.114.619.393.522.400
 Long-Acting Thyroid Stimulator;D12.776.124.790.651.114.619.393.550
@@ -32942,10 +32359,8 @@ Tuftsin;D12.776.124.790.651.397.500
 Immunoglobulin Constant Regions;D12.776.124.790.651.538
 Immunoglobulin Fc Fragments;D12.776.124.790.651.538.500
 CD4 Immunoadhesins;D12.776.124.790.651.538.500.249
-Etanercept;D12.776.124.790.651.538.500.624
 Immunoglobulin Fragments;D12.776.124.790.651.680
 Immunoglobulin Fab Fragments;D12.776.124.790.651.680.650
-Abciximab;D12.776.124.790.651.680.650.125
 Certolizumab Pegol;D12.776.124.790.651.680.650.250
 Immunoglobulin Variable Region;D12.776.124.790.651.680.650.500
 Complementarity Determining Regions;D12.776.124.790.651.680.650.500.180
@@ -32955,7 +32370,6 @@ Single-Domain Antibodies;D12.776.124.790.651.680.650.500.900
 Tuftsin;D12.776.124.790.651.680.650.750
 Immunoglobulin Fc Fragments;D12.776.124.790.651.680.660
 CD4 Immunoadhesins;D12.776.124.790.651.680.660.249
-Etanercept;D12.776.124.790.651.680.660.624
 Immunoglobulin Idiotypes;D12.776.124.790.651.680.745
 Immunoglobulin Subunits;D12.776.124.790.651.705
 Immunoglobulin Heavy Chains;D12.776.124.790.651.705.500
@@ -33073,7 +32487,6 @@ Nuclear Receptor Coactivator 1;D12.776.157.057.080.100
 Nuclear Receptor Coactivator 2;D12.776.157.057.080.200
 Nuclear Receptor Coactivator 3;D12.776.157.057.080.300
 Peroxisome Proliferator-Activated Receptor Gamma Coactivator 1-alpha;D12.776.157.057.080.650
-Nuclear Receptor Interacting Protein 1;D12.776.157.057.086
 Paxillin;D12.776.157.057.092
 PII Nitrogen Regulatory Proteins;D12.776.157.057.110
 Protein Inhibitors of Activated STAT;D12.776.157.057.124
@@ -33289,23 +32702,23 @@ Retinol-Binding Proteins, Plasma;D12.776.157.469.550
 Lymphocyte Antigen 96;D12.776.157.478
 Membrane Transport Proteins;D12.776.157.530
 ATP-Binding Cassette Transporters;D12.776.157.530.100
-ATP Binding Cassette Transporter, Subfamily A;D12.776.157.530.100.050
-ATP Binding Cassette Transporter 1;D12.776.157.530.100.050.500
-ATP Binding Cassette Transporter, Subfamily A, Member 4;D12.776.157.530.100.050.750
-ATP Binding Cassette Transporter, Subfamily B;D12.776.157.530.100.075
-ATP Binding Cassette Transporter, Subfamily B, Member 1;D12.776.157.530.100.075.063
-ATP Binding Cassette Transporter, Subfamily B, Member 11;D12.776.157.530.100.075.125
-ATP Binding Cassette Transporter, Subfamily B, Member 2;D12.776.157.530.100.075.250
-ATP Binding Cassette Transporter, Subfamily B, Member 3;D12.776.157.530.100.075.500
-ATP Binding Cassette Transporter, Subfamily D;D12.776.157.530.100.209
-ATP Binding Cassette Transporter, Subfamily D, Member 1;D12.776.157.530.100.209.500
-ATP Binding Cassette Transporter, Subfamily G;D12.776.157.530.100.228
-ATP Binding Cassette Transporter, Subfamily G, Member 1;D12.776.157.530.100.228.250
-ATP Binding Cassette Transporter, Subfamily G, Member 2;D12.776.157.530.100.228.500
-ATP Binding Cassette Transporter, Subfamily G, Member 5;D12.776.157.530.100.228.750
-ATP Binding Cassette Transporter, Subfamily G, Member 8;D12.776.157.530.100.228.875
+ATP Binding Cassette Transporter, Sub-Family A;D12.776.157.530.100.190
+ATP Binding Cassette Transporter 1;D12.776.157.530.100.190.500
+ATP Binding Cassette Transporter, Sub-Family A, Member 4;D12.776.157.530.100.190.750
+ATP Binding Cassette Transporter, Sub-Family D;D12.776.157.530.100.209
+ATP Binding Cassette Transporter, Sub-Family D, Member 1;D12.776.157.530.100.209.500
+ATP Binding Cassette Transporter, Sub-Family G;D12.776.157.530.100.228
+ATP Binding Cassette Transporter, Sub-Family G, Member 1;D12.776.157.530.100.228.250
+ATP Binding Cassette Transporter, Sub-Family G, Member 2;D12.776.157.530.100.228.500
+ATP Binding Cassette Transporter, Sub-Family G, Member 5;D12.776.157.530.100.228.750
+ATP Binding Cassette Transporter, Sub-Family G, Member 8;D12.776.157.530.100.228.875
 Multidrug Resistance-Associated Proteins;D12.776.157.530.100.304
 Cystic Fibrosis Transmembrane Conductance Regulator;D12.776.157.530.100.304.500
+ATP Binding Cassette Transporter, Sub-Family B;D12.776.157.530.100.652
+ATP-Binding Cassette Sub-Family B Member 2;D12.776.157.530.100.652.250
+ATP-Binding Cassette, Sub-Family B, Member 3;D12.776.157.530.100.652.375
+ATP Binding Cassette Subfamily B Member 11;D12.776.157.530.100.652.438
+ATP-Binding Cassette, Sub-Family B, Member 1;D12.776.157.530.100.652.500
 Amino Acid Transport Systems;D12.776.157.530.200
 Amino Acid Transport Systems, Acidic;D12.776.157.530.200.249
 Amino Acid Transport System X-AG;D12.776.157.530.200.249.500
@@ -33459,17 +32872,17 @@ Proton-Coupled Folate Transporter;D12.776.157.530.450.074.500.299.625
 Reduced Folate Carrier Protein;D12.776.157.530.450.074.500.299.750
 Monocarboxylic Acid Transporters;D12.776.157.530.450.074.500.400
 Organic Anion Transporters, ATP-Dependent;D12.776.157.530.450.074.500.500
-ATP Binding Cassette Transporter, Subfamily B;D12.776.157.530.450.074.500.500.250
-ATP Binding Cassette Transporter, Subfamily B, Member 1;D12.776.157.530.450.074.500.500.250.125
-ATP Binding Cassette Transporter, Subfamily B, Member 2;D12.776.157.530.450.074.500.500.250.250
-ATP Binding Cassette Transporter, Subfamily B, Member 3;D12.776.157.530.450.074.500.500.250.375
-ATP Binding Cassette Transporter, Subfamily B, Member 11;D12.776.157.530.450.074.500.500.250.438
 Multidrug Resistance-Associated Proteins;D12.776.157.530.450.074.500.500.500
 Cystic Fibrosis Transmembrane Conductance Regulator;D12.776.157.530.450.074.500.500.500.500
+ATP Binding Cassette Transporter, Sub-Family B;D12.776.157.530.450.074.500.500.875
+ATP-Binding Cassette Sub-Family B Member 2;D12.776.157.530.450.074.500.500.875.250
+ATP-Binding Cassette, Sub-Family B, Member 3;D12.776.157.530.450.074.500.500.875.375
+ATP Binding Cassette Subfamily B Member 11;D12.776.157.530.450.074.500.500.875.438
+ATP-Binding Cassette, Sub-Family B, Member 1;D12.776.157.530.450.074.500.500.875.500
 Organic Anion Transporters, Sodium-Dependent;D12.776.157.530.450.074.500.687
 Sodium-Coupled Vitamin C Transporters;D12.776.157.530.450.074.500.687.500
 Organic Anion Transporters, Sodium-Independent;D12.776.157.530.450.074.500.781
-Liver-Specific Organic Anion Transporter 1;D12.776.157.530.450.074.500.781.500
+Solute Carrier Organic Anion Transporter Family Member 1b1;D12.776.157.530.450.074.500.781.500
 Organic Anion Transport Protein 1;D12.776.157.530.450.074.500.781.750
 Solute Carrier Organic Anion Transporter Family Member 1B3;D12.776.157.530.450.074.500.781.875
 Phosphate Transport Proteins;D12.776.157.530.450.074.750
@@ -33481,8 +32894,6 @@ Sodium-Phosphate Cotransporter Proteins, Type IIa;D12.776.157.530.450.074.750.75
 Sodium-Phosphate Cotransporter Proteins, Type IIb;D12.776.157.530.450.074.750.750.750.249
 Sodium-Phosphate Cotransporter Proteins, Type IIc;D12.776.157.530.450.074.750.750.750.500
 Sodium-Phosphate Cotransporter Proteins, Type III;D12.776.157.530.450.074.750.750.875
-Sulfate Transporters;D12.776.157.530.450.074.875
-Sodium Sulfate Cotransporter;D12.776.157.530.450.074.875.500
 Antiporters;D12.776.157.530.450.162
 Chloride-Bicarbonate Antiporters;D12.776.157.530.450.162.193
 Anion Exchange Protein 1, Erythrocyte;D12.776.157.530.450.162.193.500
@@ -33524,7 +32935,6 @@ Chloroplast Proton-Translocating ATPases;D12.776.157.530.450.250.875.500.500
 H(+)-K(+)-Exchanging ATPase;D12.776.157.530.450.250.875.500.625
 Mitochondrial Proton-Translocating ATPases;D12.776.157.530.450.250.875.500.750
 Vacuolar Proton-Translocating ATPases;D12.776.157.530.450.250.875.500.875
-Sodium Sulfate Cotransporter;D12.776.157.530.450.250.878
 Sodium-Potassium-Exchanging ATPase;D12.776.157.530.450.250.880
 Zinc Transporter 8;D12.776.157.530.450.250.940
 SLC4A Proteins;D12.776.157.530.450.437
@@ -33548,7 +32958,6 @@ Proton-Phosphate Symporters;D12.776.157.530.450.625.249
 Serotonin Plasma Membrane Transport Proteins;D12.776.157.530.450.625.311
 Sodium Chloride Symporters;D12.776.157.530.450.625.374
 Solute Carrier Family 12, Member 3;D12.776.157.530.450.625.374.500
-Sodium Sulfate Cotransporter;D12.776.157.530.450.625.390
 Sodium-Coupled Vitamin C Transporters;D12.776.157.530.450.625.405
 Sodium-Glucose Transport Proteins;D12.776.157.530.450.625.437
 Sodium-Glucose Transporter 1;D12.776.157.530.450.625.437.500
@@ -33597,7 +33006,6 @@ Vesicular Glutamate Transport Proteins;D12.776.157.530.562.750.625
 Vesicular Glutamate Transport Protein 1;D12.776.157.530.562.750.625.500
 Vesicular Glutamate Transport Protein 2;D12.776.157.530.562.750.625.750
 Vesicular Inhibitory Amino Acid Transport Proteins;D12.776.157.530.562.750.750
-Niemann-Pick C1 Protein;D12.776.157.530.594
 Nucleobase, Nucleoside, Nucleotide, and Nucleic Acid Transport Proteins;D12.776.157.530.625
 Nucleobase Transport Proteins;D12.776.157.530.625.500
 Nucleoside Transport Proteins;D12.776.157.530.625.750
@@ -33652,7 +33060,6 @@ Glucose Transporter Type 2;D12.776.157.530.937.563.750
 Glucose Transporter Type 3;D12.776.157.530.937.563.875
 Glucose Transporter Type 4;D12.776.157.530.937.563.937
 Glucose Transporter Type 5;D12.776.157.530.937.563.968
-Liver-Specific Organic Anion Transporter 1;D12.776.157.530.937.580
 Mitochondrial ADP, ATP Translocases;D12.776.157.530.937.594
 Adenine Nucleotide Translocator 1;D12.776.157.530.937.594.100
 Adenine Nucleotide Translocator 2;D12.776.157.530.937.594.200
@@ -33691,9 +33098,8 @@ Solute Carrier Family 12, Member 1;D12.776.157.530.937.750.500
 Solute Carrier Family 12, Member 2;D12.776.157.530.937.750.625
 Solute Carrier Family 12, Member 3;D12.776.157.530.937.750.750
 Solute Carrier Family 12, Member 4;D12.776.157.530.937.750.875
+Solute Carrier Organic Anion Transporter Family Member 1b1;D12.776.157.530.937.810
 Solute Carrier Organic Anion Transporter Family Member 1B3;D12.776.157.530.937.905
-Sulfate Transporters;D12.776.157.530.937.929
-Sodium Sulfate Cotransporter;D12.776.157.530.937.929.500
 Zinc Transporter 8;D12.776.157.530.937.952
 Neurophysins;D12.776.157.597
 Periplasmic Binding Proteins;D12.776.157.622
@@ -33904,10 +33310,17 @@ NIMA-Related Kinase 1;D12.776.167.457.500
 S100 Calcium Binding Protein A6;D12.776.167.481
 Securin;D12.776.167.504
 Separase;D12.776.167.552
-Survivin;D12.776.167.576
 Tumor Suppressor Protein p14ARF;D12.776.167.600
 Valosin Containing Protein;D12.776.167.800
 Cerebrospinal Fluid Proteins;D12.776.178
+Circadian Rhythm Signaling Peptides and Proteins;D12.776.189
+ARNTL Transcription Factors;D12.776.189.100
+CLOCK Proteins;D12.776.189.200
+Cryptochromes;D12.776.189.250
+Nuclear Receptor Subfamily 1, Group D, Member 1;D12.776.189.300
+Nuclear Receptor Subfamily 1, Group F, Member 1;D12.776.189.437
+Nuclear Receptor Subfamily 1, Group F, Member 2;D12.776.189.531
+Period Circadian Proteins;D12.776.189.625
 Colipases;D12.776.200
 Contractile Proteins;D12.776.210
 Filamins;D12.776.210.249
@@ -33956,7 +33369,6 @@ Troponin C;D12.776.210.500.910.900
 Troponin I;D12.776.210.500.910.925
 Troponin T;D12.776.210.500.910.962
 CRISPR-Associated Proteins;D12.776.212
-CRISPR-Associated Protein 9;D12.776.212.500
 Cystatins;D12.776.215
 Cystatin A;D12.776.215.100
 Cystatin B;D12.776.215.200
@@ -34065,7 +33477,6 @@ Kinesin;D12.776.220.600.450.450
 KRIT1 Protein;D12.776.220.600.450.458
 Spastin;D12.776.220.600.450.465
 Stathmin;D12.776.220.600.450.480
-Survivin;D12.776.220.600.450.495
 tau Proteins;D12.776.220.600.450.510
 Tubulin;D12.776.220.600.800
 Plakins;D12.776.220.790
@@ -34089,21 +33500,13 @@ Ovalbumin;D12.776.256.317.663
 Avidin;D12.776.256.317.663.300
 Ovomucin;D12.776.256.317.675
 Phosvitin;D12.776.256.317.700
-Fruit Proteins;D12.776.256.356
-Nut Proteins;D12.776.256.356.500
-Grain Proteins;D12.776.256.395
-Meat Proteins;D12.776.256.472
-Fish Proteins, Dietary;D12.776.256.472.250
-Poultry Proteins;D12.776.256.472.500
-Shellfish Proteins;D12.776.256.472.750
 Milk Proteins;D12.776.256.626
 Caseins;D12.776.256.626.207
 Whey Proteins;D12.776.256.626.816
 Lactalbumin;D12.776.256.626.816.250
 Lactoglobulins;D12.776.256.626.816.500
 Lactoferrin;D12.776.256.626.816.500.507
-Plant Proteins, Dietary;D12.776.256.920
-Pea Proteins;D12.776.256.920.500
+Vegetable Proteins;D12.776.256.920
 DNA-Binding Proteins;D12.776.260
 Adenovirus E2 Proteins;D12.776.260.060
 Basic Helix-Loop-Helix Transcription Factors;D12.776.260.103
@@ -34356,7 +33759,6 @@ ets-Domain Protein Elk-4;D12.776.260.665.600.300
 Proto-Oncogene Proteins c-myb;D12.776.260.675
 Proto-Oncogene Proteins c-rel;D12.776.260.682
 Proto-Oncogene Proteins c-sis;D12.776.260.690
-Becaplermin;D12.776.260.690.500
 PTB-Associated Splicing Factor;D12.776.260.693
 Rad51 Recombinase;D12.776.260.695
 Rad52 DNA Repair and Recombination Protein;D12.776.260.696
@@ -34493,7 +33895,6 @@ Fetal Proteins;D12.776.320
 Fetal Globulins;D12.776.320.525
 alpha-Fetoproteins;D12.776.320.525.500
 Fish Proteins;D12.776.325
-Fish Proteins, Dietary;D12.776.325.250
 Zebrafish Proteins;D12.776.325.500
 Flavoproteins;D12.776.331
 Acetolactate Synthase;D12.776.331.049
@@ -34583,21 +33984,16 @@ Antibodies, Heterophile;D12.776.377.715.548.114.191
 Antibodies, Immobilized;D12.776.377.715.548.114.207
 Antibodies, Monoclonal;D12.776.377.715.548.114.224
 Antibodies, Monoclonal, Humanized;D12.776.377.715.548.114.224.200
-Abciximab;D12.776.377.715.548.114.224.200.125
 Adalimumab;D12.776.377.715.548.114.224.200.250
 Alemtuzumab;D12.776.377.715.548.114.224.200.375
-Basiliximab;D12.776.377.715.548.114.224.200.407
 Bevacizumab;D12.776.377.715.548.114.224.200.438
 Certolizumab Pegol;D12.776.377.715.548.114.224.200.500
 Cetuximab;D12.776.377.715.548.114.224.200.750
-Daclizumab;D12.776.377.715.548.114.224.200.766
 Denosumab;D12.776.377.715.548.114.224.200.782
 Ipilimumab;D12.776.377.715.548.114.224.200.798
 Natalizumab;D12.776.377.715.548.114.224.200.813
-Nivolumab;D12.776.377.715.548.114.224.200.829
 Omalizumab;D12.776.377.715.548.114.224.200.844
 Palivizumab;D12.776.377.715.548.114.224.200.860
-Panitumumab;D12.776.377.715.548.114.224.200.864
 Ranibizumab;D12.776.377.715.548.114.224.200.868
 Trastuzumab;D12.776.377.715.548.114.224.200.875
 Ustekinumab;D12.776.377.715.548.114.224.200.937
@@ -34654,7 +34050,7 @@ Immunoglobulin delta-Chains;D12.776.377.715.548.114.619.251.500
 Immunoglobulin E;D12.776.377.715.548.114.619.312
 Immunoglobulin epsilon-Chains;D12.776.377.715.548.114.619.312.500
 Immunoglobulin G;D12.776.377.715.548.114.619.393
-Alefacept;D12.776.377.715.548.114.619.393.131
+Etanercept;D12.776.377.715.548.114.619.393.261
 Immunoglobulin gamma-Chains;D12.776.377.715.548.114.619.393.522
 Immunoglobulin Gm Allotypes;D12.776.377.715.548.114.619.393.522.400
 Long-Acting Thyroid Stimulator;D12.776.377.715.548.114.619.393.550
@@ -34675,10 +34071,8 @@ Tuftsin;D12.776.377.715.548.397.500
 Immunoglobulin Constant Regions;D12.776.377.715.548.538
 Immunoglobulin Fc Fragments;D12.776.377.715.548.538.500
 CD4 Immunoadhesins;D12.776.377.715.548.538.500.249
-Etanercept;D12.776.377.715.548.538.500.624
 Immunoglobulin Fragments;D12.776.377.715.548.680
 Immunoglobulin Fab Fragments;D12.776.377.715.548.680.650
-Abciximab;D12.776.377.715.548.680.650.125
 Certolizumab Pegol;D12.776.377.715.548.680.650.250
 Immunoglobulin Variable Region;D12.776.377.715.548.680.650.500
 Complementarity Determining Regions;D12.776.377.715.548.680.650.500.180
@@ -34688,7 +34082,6 @@ Single-Domain Antibodies;D12.776.377.715.548.680.650.500.897
 Tuftsin;D12.776.377.715.548.680.650.750
 Immunoglobulin Fc Fragments;D12.776.377.715.548.680.660
 CD4 Immunoadhesins;D12.776.377.715.548.680.660.249
-Etanercept;D12.776.377.715.548.680.660.624
 Immunoglobulin Idiotypes;D12.776.377.715.548.680.745
 Immunoglobulin Subunits;D12.776.377.715.548.705
 Immunoglobulin Heavy Chains;D12.776.377.715.548.705.500
@@ -34740,7 +34133,6 @@ alpha 1-Antichymotrypsin;D12.776.395.045
 alpha 1-Antitrypsin;D12.776.395.068
 alpha-2-Antiplasmin;D12.776.395.080
 alpha-2-HS-Glycoprotein;D12.776.395.086
-Anti-Mullerian Hormone;D12.776.395.089
 CD27 Ligand;D12.776.395.092
 Asialoglycoproteins;D12.776.395.140
 Avidin;D12.776.395.175
@@ -34755,7 +34147,6 @@ Darbepoetin alfa;D12.776.395.240.150.500
 Epoetin Alfa;D12.776.395.240.150.750
 Granulocyte Colony-Stimulating Factor;D12.776.395.240.200
 Filgrastim;D12.776.395.240.200.500
-Lenograstim;D12.776.395.240.200.750
 Granulocyte-Macrophage Colony-Stimulating Factor;D12.776.395.240.300
 Interleukin-3;D12.776.395.240.400
 Macrophage Colony-Stimulating Factor;D12.776.395.240.500
@@ -34775,25 +34166,24 @@ Membrane Glycoproteins;D12.776.395.550
 AC133 Antigen;D12.776.395.550.007
 CD47 Antigen;D12.776.395.550.014
 Kangai-1 Protein;D12.776.395.550.016
-Tetraspanin 29;D12.776.395.550.018
+Tetraspanin-29;D12.776.395.550.018
 ATP-Binding Cassette Transporters;D12.776.395.550.020
-ATP Binding Cassette Transporter, Subfamily A;D12.776.395.550.020.381
+ATP Binding Cassette Transporter, Sub-Family A;D12.776.395.550.020.381
 ATP Binding Cassette Transporter 1;D12.776.395.550.020.381.500
-ATP Binding Cassette Transporter, Subfamily A, Member 4;D12.776.395.550.020.381.750
-ATP Binding Cassette Transporter, Subfamily B;D12.776.395.550.020.400
-ATP Binding Cassette Transporter, Subfamily B, Member 1;D12.776.395.550.020.400.153
-ATP Binding Cassette Transporter, Subfamily B, Member 2;D12.776.395.550.020.400.305
-ATP Binding Cassette Transporter, Subfamily B, Member 3;D12.776.395.550.020.400.458
-ATP Binding Cassette Transporter, Subfamily B, Member 11;D12.776.395.550.020.400.534
-ATP Binding Cassette Transporter, Subfamily D;D12.776.395.550.020.419
-ATP Binding Cassette Transporter, Subfamily D, Member 1;D12.776.395.550.020.419.500
-ATP Binding Cassette Transporter, Subfamily G;D12.776.395.550.020.457
-ATP Binding Cassette Transporter, Subfamily G, Member 1;D12.776.395.550.020.457.250
-ATP Binding Cassette Transporter, Subfamily G, Member 2;D12.776.395.550.020.457.500
-ATP Binding Cassette Transporter, Subfamily G, Member 5;D12.776.395.550.020.457.750
-ATP Binding Cassette Transporter, Subfamily G, Member 8;D12.776.395.550.020.457.875
+ATP Binding Cassette Transporter, Sub-Family A, Member 4;D12.776.395.550.020.381.750
+ATP Binding Cassette Transporter, Sub-Family D;D12.776.395.550.020.419
+ATP Binding Cassette Transporter, Sub-Family D, Member 1;D12.776.395.550.020.419.500
+ATP Binding Cassette Transporter, Sub-Family G;D12.776.395.550.020.457
+ATP Binding Cassette Transporter, Sub-Family G, Member 1;D12.776.395.550.020.457.250
+ATP Binding Cassette Transporter, Sub-Family G, Member 2;D12.776.395.550.020.457.500
+ATP Binding Cassette Transporter, Sub-Family G, Member 5;D12.776.395.550.020.457.750
+ATP Binding Cassette Transporter, Sub-Family G, Member 8;D12.776.395.550.020.457.875
+ATP Binding Cassette Transporter, Sub-Family B;D12.776.395.550.020.610
+ATP-Binding Cassette Sub-Family B Member 2;D12.776.395.550.020.610.305
+ATP-Binding Cassette, Sub-Family B, Member 3;D12.776.395.550.020.610.458
+ATP Binding Cassette Subfamily B Member 11;D12.776.395.550.020.610.534
+ATP-Binding Cassette, Sub-Family B, Member 1;D12.776.395.550.020.610.610
 CD58 Antigens;D12.776.395.550.034
-Alefacept;D12.776.395.550.034.500
 Basigin;D12.776.395.550.045
 Thy-1 Antigens;D12.776.395.550.050
 Butyrophilins;D12.776.395.550.114
@@ -34897,7 +34287,6 @@ Uromodulin;D12.776.395.550.448.850
 Hepatitis A Virus Cellular Receptor 1;D12.776.395.550.469
 Hepatitis A Virus Cellular Receptor 2;D12.776.395.550.479
 Histocompatibility Antigens Class I;D12.776.395.550.489
-beta 2-Microglobulin;D12.776.395.550.489.100
 Hemochromatosis Protein;D12.776.395.550.489.200
 HLA-A Antigens;D12.776.395.550.489.400
 HLA-A1 Antigen;D12.776.395.550.489.400.010
@@ -35048,7 +34437,6 @@ Thyroxine-Binding Globulin;D12.776.395.832.500
 Transcortin;D12.776.395.901
 Tumor Necrosis Factor-alpha;D12.776.395.930
 Vitronectin;D12.776.395.970
-Golgi Matrix Proteins;D12.776.407
 Helminth Proteins;D12.776.419
 Caenorhabditis elegans Proteins;D12.776.419.500
 Hemeproteins;D12.776.422
@@ -35141,7 +34529,6 @@ Steroid 21-Hydroxylase;D12.776.422.220.453.915.760
 Sterol 14-Demethylase;D12.776.422.220.453.915.880
 Cytochromes f;D12.776.422.220.726
 Globins;D12.776.422.316
-Cytoglobin;D12.776.422.316.381
 Hemoglobins;D12.776.422.316.762
 Carboxyhemoglobin;D12.776.422.316.762.149
 Erythrocruorins;D12.776.422.316.762.260
@@ -35170,7 +34557,6 @@ Truncated Hemoglobins;D12.776.422.316.762.932
 Leghemoglobin;D12.776.422.316.881
 Myoglobin;D12.776.422.316.940
 Metmyoglobin;D12.776.422.316.940.500
-Neuroglobin;D12.776.422.316.970
 Methemalbumin;D12.776.422.680
 Huntingtin Protein;D12.776.441
 Immediate-Early Proteins;D12.776.460
@@ -35271,7 +34657,6 @@ Erythropoietin;D12.776.467.374.410.240.150
 Epoetin Alfa;D12.776.467.374.410.240.150.500
 Granulocyte Colony-Stimulating Factor;D12.776.467.374.410.240.350
 Filgrastim;D12.776.467.374.410.240.350.500
-Lenograstim;D12.776.467.374.410.240.350.750
 Granulocyte-Macrophage Colony-Stimulating Factor;D12.776.467.374.410.240.375
 Interleukin-3;D12.776.467.374.410.240.400
 Macrophage Colony-Stimulating Factor;D12.776.467.374.410.240.500
@@ -35281,7 +34666,6 @@ Hepatocyte Growth Factor;D12.776.467.374.420
 Interferons;D12.776.467.374.440
 Interferon Type I;D12.776.467.374.440.890
 Interferon-alpha;D12.776.467.374.440.890.250
-Interferon alpha-2;D12.776.467.374.440.890.250.500
 Interferon-beta;D12.776.467.374.440.890.275
 Interferon beta-1a;D12.776.467.374.440.890.275.500
 Interferon beta-1b;D12.776.467.374.440.890.275.750
@@ -35414,7 +34798,6 @@ Matrix Metalloproteinase 11;D12.776.467.836.450
 Matrix Metalloproteinase 12;D12.776.467.836.500
 Matrix Metalloproteinase 13;D12.776.467.836.550
 Matrix Metalloproteinase 20;D12.776.467.836.800
-Midkine;D12.776.467.848
 Nerve Growth Factors;D12.776.467.860
 Brain-Derived Neurotrophic Factor;D12.776.467.860.100
 Ciliary Neurotrophic Factor;D12.776.467.860.212
@@ -35432,9 +34815,6 @@ Pituitary Adenylate Cyclase-Activating Polypeptide;D12.776.467.860.887
 Parathyroid Hormone-Related Protein;D12.776.467.890
 Platelet-Derived Growth Factor;D12.776.467.910
 Proto-Oncogene Proteins c-sis;D12.776.467.910.650
-Becaplermin;D12.776.467.910.650.500
-Progranulins;D12.776.467.917
-Granulins;D12.776.467.917.500
 Semaphorins;D12.776.467.923
 Semaphorin-3A;D12.776.467.923.374
 Somatomedins;D12.776.467.937
@@ -35560,7 +34940,6 @@ Nuclear Receptor Coactivator 1;D12.776.476.024.394.100
 Nuclear Receptor Coactivator 2;D12.776.476.024.394.200
 Nuclear Receptor Coactivator 3;D12.776.476.024.394.300
 Peroxisome Proliferator-Activated Receptor Gamma Coactivator 1-alpha;D12.776.476.024.394.650
-Nuclear Receptor Interacting Protein 1;D12.776.476.024.396
 Paxillin;D12.776.476.024.397
 PII Nitrogen Regulatory Proteins;D12.776.476.024.400
 Protein Inhibitors of Activated STAT;D12.776.476.024.402
@@ -35659,7 +35038,6 @@ High-Temperature Requirement A Serine Peptidase 2;D12.776.476.075.429
 Inhibitor of Apoptosis Proteins;D12.776.476.075.437
 Baculoviral IAP Repeat-Containing 3 Protein;D12.776.476.075.437.250
 Neuronal Apoptosis-Inhibitory Protein;D12.776.476.075.437.500
-Survivin;D12.776.476.075.437.625
 X-Linked Inhibitor of Apoptosis Protein;D12.776.476.075.437.750
 Proto-Oncogene Proteins c-bcl-2;D12.776.476.075.718
 bcl-Associated Death Protein;D12.776.476.075.718.100
@@ -35693,14 +35071,6 @@ Casein Kinase Ialpha;D12.776.476.150.299.100
 Casein Kinase Idelta;D12.776.476.150.299.200
 Casein Kinase Iepsilon;D12.776.476.150.299.300
 Casein Kinase II;D12.776.476.150.600
-Circadian Rhythm Signaling Peptides and Proteins;D12.776.476.156
-ARNTL Transcription Factors;D12.776.476.156.100
-CLOCK Proteins;D12.776.476.156.200
-Cryptochromes;D12.776.476.156.250
-Nuclear Receptor Subfamily 1, Group D, Member 1;D12.776.476.156.300
-Nuclear Receptor Subfamily 1, Group F, Member 1;D12.776.476.156.437
-Nuclear Receptor Subfamily 1, Group F, Member 2;D12.776.476.156.531
-Period Circadian Proteins;D12.776.476.156.625
 Class I Phosphatidylinositol 3-Kinases;D12.776.476.162
 Class Ia Phosphatidylinositol 3-Kinase;D12.776.476.162.100
 Class Ib Phosphatidylinositol 3-Kinase;D12.776.476.162.200
@@ -35962,8 +35332,6 @@ MTOR Associated Protein, LST8 Homolog;D12.776.476.925.500.250
 Regulatory-Associated Protein of mTOR;D12.776.476.925.500.500
 Mechanistic Target of Rapamycin Complex 2;D12.776.476.925.750
 Rapamycin-Insensitive Companion of mTOR Protein;D12.776.476.925.750.500
-Tuberous Sclerosis Complex 1 Protein;D12.776.476.932
-Tuberous Sclerosis Complex 2 Protein;D12.776.476.935
 Tumor Necrosis Factor alpha-Induced Protein 3;D12.776.476.938
 WNK Lysine-Deficient Protein Kinase 1;D12.776.476.944
 ZAP-70 Protein-Tyrosine Kinase;D12.776.476.950
@@ -36046,8 +35414,8 @@ Apolipoprotein E3;D12.776.521.120.500.500
 Apolipoprotein E4;D12.776.521.120.500.750
 Apolipoproteins L;D12.776.521.120.750
 Apolipoprotein L1;D12.776.521.120.750.500
-ATP Binding Cassette Transporter, Subfamily G, Member 5;D12.776.521.181
-ATP Binding Cassette Transporter, Subfamily G, Member 8;D12.776.521.212
+ATP Binding Cassette Transporter, Sub-Family G, Member 5;D12.776.521.181
+ATP Binding Cassette Transporter, Sub-Family G, Member 8;D12.776.521.212
 Chylomicrons;D12.776.521.242
 Chylomicron Remnants;D12.776.521.242.500
 Lipoprotein(a);D12.776.521.400
@@ -36198,15 +35566,13 @@ Vesicle-Associated Membrane Protein 2;D12.776.543.512.249.750.750
 Vesicle-Associated Membrane Protein 3;D12.776.543.512.249.750.875
 Viral Fusion Proteins;D12.776.543.512.500
 HIV Envelope Protein gp41;D12.776.543.512.500.330
-Enfuvirtide;D12.776.543.512.500.330.500
 Spike Glycoprotein, Coronavirus;D12.776.543.512.500.665
 Membrane Glycoproteins;D12.776.543.550
 AC133 Antigen;D12.776.543.550.023
 ADP-ribosyl Cyclase 1;D12.776.543.550.045
-Tetraspanin 29;D12.776.543.550.090
+Tetraspanin-29;D12.776.543.550.090
 CD47 Antigen;D12.776.543.550.147
 CD58 Antigens;D12.776.543.550.158
-Alefacept;D12.776.543.550.158.500
 CD27 Ligand;D12.776.543.550.170
 Kangai-1 Protein;D12.776.543.550.182
 Basigin;D12.776.543.550.187
@@ -36220,21 +35586,21 @@ Sodium-Hydrogen Exchangers;D12.776.543.550.190.775
 Sodium-Hydrogen Exchanger 1;D12.776.543.550.190.775.500
 Sodium-Hydrogen Exchanger 3;D12.776.543.550.190.775.750
 ATP-Binding Cassette Transporters;D12.776.543.550.192
-ATP Binding Cassette Transporter, Subfamily A;D12.776.543.550.192.381
+ATP Binding Cassette Transporter, Sub-Family A;D12.776.543.550.192.381
 ATP Binding Cassette Transporter 1;D12.776.543.550.192.381.500
-ATP Binding Cassette Transporter, Subfamily A, Member 4;D12.776.543.550.192.381.750
-ATP Binding Cassette Transporter, Subfamily B;D12.776.543.550.192.400
-ATP Binding Cassette Transporter, Subfamily B, Member 1;D12.776.543.550.192.400.153
-ATP Binding Cassette Transporter, Subfamily B, Member 2;D12.776.543.550.192.400.305
-ATP Binding Cassette Transporter, Subfamily B, Member 3;D12.776.543.550.192.400.458
-ATP Binding Cassette Transporter, Subfamily B, Member 11;D12.776.543.550.192.400.534
-ATP Binding Cassette Transporter, Subfamily D;D12.776.543.550.192.419
-ATP Binding Cassette Transporter, Subfamily D, Member 1;D12.776.543.550.192.419.500
-ATP Binding Cassette Transporter, Subfamily G;D12.776.543.550.192.457
-ATP Binding Cassette Transporter, Subfamily G, Member 1;D12.776.543.550.192.457.250
-ATP Binding Cassette Transporter, Subfamily G, Member 2;D12.776.543.550.192.457.500
-ATP Binding Cassette Transporter, Subfamily G, Member 5;D12.776.543.550.192.457.750
-ATP Binding Cassette Transporter, Subfamily G, Member 8;D12.776.543.550.192.457.875
+ATP Binding Cassette Transporter, Sub-Family A, Member 4;D12.776.543.550.192.381.750
+ATP Binding Cassette Transporter, Sub-Family D;D12.776.543.550.192.419
+ATP Binding Cassette Transporter, Sub-Family D, Member 1;D12.776.543.550.192.419.500
+ATP Binding Cassette Transporter, Sub-Family G;D12.776.543.550.192.457
+ATP Binding Cassette Transporter, Sub-Family G, Member 1;D12.776.543.550.192.457.250
+ATP Binding Cassette Transporter, Sub-Family G, Member 2;D12.776.543.550.192.457.500
+ATP Binding Cassette Transporter, Sub-Family G, Member 5;D12.776.543.550.192.457.750
+ATP Binding Cassette Transporter, Sub-Family G, Member 8;D12.776.543.550.192.457.875
+ATP Binding Cassette Transporter, Sub-Family B;D12.776.543.550.192.610
+ATP-Binding Cassette Sub-Family B Member 2;D12.776.543.550.192.610.305
+ATP-Binding Cassette, Sub-Family B, Member 3;D12.776.543.550.192.610.458
+ATP Binding Cassette Subfamily B Member 11;D12.776.543.550.192.610.534
+ATP-Binding Cassette, Sub-Family B, Member 1;D12.776.543.550.192.610.610
 B-Cell Activating Factor;D12.776.543.550.193
 4-1BB Ligand;D12.776.543.550.194
 Butyrophilins;D12.776.543.550.195
@@ -36335,7 +35701,6 @@ Uromodulin;D12.776.543.550.418.850
 Hepatitis A Virus Cellular Receptor 1;D12.776.543.550.435
 Hepatitis A Virus Cellular Receptor 2;D12.776.543.550.437
 Histocompatibility Antigens Class I;D12.776.543.550.439
-beta 2-Microglobulin;D12.776.543.550.439.100
 Hemochromatosis Protein;D12.776.543.550.439.200
 HLA-A Antigens;D12.776.543.550.439.400
 HLA-A1 Antigen;D12.776.543.550.439.400.010
@@ -36540,23 +35905,23 @@ Variant Surface Glycoproteins, Trypanosoma;D12.776.543.550.990
 Zona Pellucida Glycoproteins;D12.776.543.550.995
 Membrane Transport Proteins;D12.776.543.585
 ATP-Binding Cassette Transporters;D12.776.543.585.100
-ATP Binding Cassette Transporter, Subfamily A;D12.776.543.585.100.190
+ATP Binding Cassette Transporter, Sub-Family A;D12.776.543.585.100.190
 ATP Binding Cassette Transporter 1;D12.776.543.585.100.190.500
-ATP Binding Cassette Transporter, Subfamily A, Member 4;D12.776.543.585.100.190.750
-ATP Binding Cassette Transporter, Subfamily B;D12.776.543.585.100.200
-ATP Binding Cassette Transporter, Subfamily B, Member 1;D12.776.543.585.100.200.125
-ATP Binding Cassette Transporter, Subfamily B, Member 2;D12.776.543.585.100.200.250
-ATP Binding Cassette Transporter, Subfamily B, Member 3;D12.776.543.585.100.200.375
-ATP Binding Cassette Transporter, Subfamily B, Member 11;D12.776.543.585.100.200.438
-ATP Binding Cassette Transporter, Subfamily D;D12.776.543.585.100.209
-ATP Binding Cassette Transporter, Subfamily D, Member 1;D12.776.543.585.100.209.500
-ATP Binding Cassette Transporter, Subfamily G;D12.776.543.585.100.228
-ATP Binding Cassette Transporter, Subfamily G, Member 1;D12.776.543.585.100.228.250
-ATP Binding Cassette Transporter, Subfamily G, Member 2;D12.776.543.585.100.228.500
-ATP Binding Cassette Transporter, Subfamily G, Member 5;D12.776.543.585.100.228.750
-ATP Binding Cassette Transporter, Subfamily G, Member 8;D12.776.543.585.100.228.875
+ATP Binding Cassette Transporter, Sub-Family A, Member 4;D12.776.543.585.100.190.750
+ATP Binding Cassette Transporter, Sub-Family D;D12.776.543.585.100.209
+ATP Binding Cassette Transporter, Sub-Family D, Member 1;D12.776.543.585.100.209.500
+ATP Binding Cassette Transporter, Sub-Family G;D12.776.543.585.100.228
+ATP Binding Cassette Transporter, Sub-Family G, Member 1;D12.776.543.585.100.228.250
+ATP Binding Cassette Transporter, Sub-Family G, Member 2;D12.776.543.585.100.228.500
+ATP Binding Cassette Transporter, Sub-Family G, Member 5;D12.776.543.585.100.228.750
+ATP Binding Cassette Transporter, Sub-Family G, Member 8;D12.776.543.585.100.228.875
 Multidrug Resistance-Associated Proteins;D12.776.543.585.100.304
 Cystic Fibrosis Transmembrane Conductance Regulator;D12.776.543.585.100.304.500
+ATP Binding Cassette Transporter, Sub-Family B;D12.776.543.585.100.610
+ATP-Binding Cassette Sub-Family B Member 2;D12.776.543.585.100.610.250
+ATP-Binding Cassette, Sub-Family B, Member 3;D12.776.543.585.100.610.375
+ATP Binding Cassette Subfamily B Member 11;D12.776.543.585.100.610.438
+ATP-Binding Cassette, Sub-Family B, Member 1;D12.776.543.585.100.610.500
 Sulfonylurea Receptors;D12.776.543.585.100.805
 Amino Acid Transport Systems;D12.776.543.585.200
 Amino Acid Transport Systems, Acidic;D12.776.543.585.200.249
@@ -36715,17 +36080,17 @@ Proton-Coupled Folate Transporter;D12.776.543.585.450.074.500.224.625
 Reduced Folate Carrier Protein;D12.776.543.585.450.074.500.224.750
 Monocarboxylic Acid Transporters;D12.776.543.585.450.074.500.300
 Organic Anion Transporters, ATP-Dependent;D12.776.543.585.450.074.500.500
-ATP Binding Cassette Transporter, Subfamily B;D12.776.543.585.450.074.500.500.250
-ATP Binding Cassette Transporter, Subfamily B, Member 1;D12.776.543.585.450.074.500.500.250.125
-ATP Binding Cassette Transporter, Subfamily B, Member 2;D12.776.543.585.450.074.500.500.250.250
-ATP Binding Cassette Transporter, Subfamily B, Member 3;D12.776.543.585.450.074.500.500.250.375
-ATP Binding Cassette Transporter, Subfamily B, Member 11;D12.776.543.585.450.074.500.500.250.438
 Multidrug Resistance-Associated Proteins;D12.776.543.585.450.074.500.500.500
 Cystic Fibrosis Transmembrane Conductance Regulator;D12.776.543.585.450.074.500.500.500.500
+ATP Binding Cassette Transporter, Sub-Family B;D12.776.543.585.450.074.500.500.875
+ATP-Binding Cassette Sub-Family B Member 2;D12.776.543.585.450.074.500.500.875.250
+ATP-Binding Cassette, Sub-Family B, Member 3;D12.776.543.585.450.074.500.500.875.375
+ATP Binding Cassette Subfamily B Member 11;D12.776.543.585.450.074.500.500.875.438
+ATP-Binding Cassette, Sub-Family B, Member 1;D12.776.543.585.450.074.500.500.875.500
 Organic Anion Transporters, Sodium-Dependent;D12.776.543.585.450.074.500.812
 Sodium-Coupled Vitamin C Transporters;D12.776.543.585.450.074.500.812.500
 Organic Anion Transporters, Sodium-Independent;D12.776.543.585.450.074.500.875
-Liver-Specific Organic Anion Transporter 1;D12.776.543.585.450.074.500.875.500
+Solute Carrier Organic Anion Transporter Family Member 1b1;D12.776.543.585.450.074.500.875.500
 Organic Anion Transport Protein 1;D12.776.543.585.450.074.500.875.750
 Solute Carrier Organic Anion Transporter Family Member 1B3;D12.776.543.585.450.074.500.875.875
 Phosphate Transport Proteins;D12.776.543.585.450.074.750
@@ -36737,8 +36102,6 @@ Sodium-Phosphate Cotransporter Proteins, Type IIa;D12.776.543.585.450.074.750.75
 Sodium-Phosphate Cotransporter Proteins, Type IIb;D12.776.543.585.450.074.750.750.750.249
 Sodium-Phosphate Cotransporter Proteins, Type IIc;D12.776.543.585.450.074.750.750.750.500
 Sodium-Phosphate Cotransporter Proteins, Type III;D12.776.543.585.450.074.750.750.875
-Sulfate Transporters;D12.776.543.585.450.074.875
-Sodium Sulfate Cotransporter;D12.776.543.585.450.074.875.500
 Antiporters;D12.776.543.585.450.162
 Chloride-Bicarbonate Antiporters;D12.776.543.585.450.162.193
 Anion Exchange Protein 1, Erythrocyte;D12.776.543.585.450.162.193.500
@@ -36789,7 +36152,6 @@ Chloroplast Proton-Translocating ATPases;D12.776.543.585.450.250.875.500.500
 H(+)-K(+)-Exchanging ATPase;D12.776.543.585.450.250.875.500.625
 Mitochondrial Proton-Translocating ATPases;D12.776.543.585.450.250.875.500.750
 Vacuolar Proton-Translocating ATPases;D12.776.543.585.450.250.875.500.875
-Sodium Sulfate Cotransporter;D12.776.543.585.450.250.883
 Sodium-Potassium-Exchanging ATPase;D12.776.543.585.450.250.890
 Zinc Transporter 8;D12.776.543.585.450.250.945
 SLC4A Proteins;D12.776.543.585.450.437
@@ -36811,7 +36173,6 @@ Peptide Transporter 1;D12.776.543.585.450.625.202
 Proton-Coupled Folate Transporter;D12.776.543.585.450.625.217
 Proton-Phosphate Symporters;D12.776.543.585.450.625.249
 Serotonin Plasma Membrane Transport Proteins;D12.776.543.585.450.625.374
-Sodium Sulfate Cotransporter;D12.776.543.585.450.625.437
 Sodium-Bicarbonate Symporters;D12.776.543.585.450.625.500
 Sodium-Coupled Vitamin C Transporters;D12.776.543.585.450.625.531
 Sodium-Glucose Transport Proteins;D12.776.543.585.450.625.562
@@ -36872,7 +36233,6 @@ Vesicular Glutamate Transport Proteins;D12.776.543.585.562.750.625
 Vesicular Glutamate Transport Protein 1;D12.776.543.585.562.750.625.500
 Vesicular Glutamate Transport Protein 2;D12.776.543.585.562.750.625.750
 Vesicular Inhibitory Amino Acid Transport Proteins;D12.776.543.585.562.750.750
-Niemann-Pick C1 Protein;D12.776.543.585.594
 Nucleobase, Nucleoside, Nucleotide, and Nucleic Acid Transport Proteins;D12.776.543.585.625
 Nucleobase Transport Proteins;D12.776.543.585.625.500
 Nucleoside Transport Proteins;D12.776.543.585.625.750
@@ -36965,10 +36325,8 @@ Solute Carrier Family 12, Member 1;D12.776.543.585.937.875.500
 Solute Carrier Family 12, Member 2;D12.776.543.585.937.875.625
 Solute Carrier Family 12, Member 3;D12.776.543.585.937.875.750
 Solute Carrier Family 12, Member 4;D12.776.543.585.937.875.875
-Liver-Specific Organic Anion Transporter 1;D12.776.543.585.937.901
+Solute Carrier Organic Anion Transporter Family Member 1b1;D12.776.543.585.937.901
 Solute Carrier Organic Anion Transporter Family Member 1B3;D12.776.543.585.937.950
-Sulfate Transporters;D12.776.543.585.937.963
-Sodium Sulfate Cotransporter;D12.776.543.585.937.963.500
 Zinc Transporter 8;D12.776.543.585.937.975
 Mitochondrial Trifunctional Protein;D12.776.543.602
 Mitochondrial Trifunctional Protein, alpha Subunit;D12.776.543.602.200
@@ -37039,7 +36397,6 @@ Autoreceptors;D12.776.543.750.035
 Endothelial Protein C Receptor;D12.776.543.750.045
 Methyl-Accepting Chemotaxis Proteins;D12.776.543.750.054
 Patched Receptors;D12.776.543.750.058
-Niemann-Pick C1 Protein;D12.776.543.750.058.250
 Patched-1 Receptor;D12.776.543.750.058.500
 Patched-2 Receptor;D12.776.543.750.058.750
 Cysteine Loop Ligand-Gated Ion Channel Receptors;D12.776.543.750.130
@@ -37061,12 +36418,12 @@ Nogo Receptor 2;D12.776.543.750.600.250
 Nogo Receptor 1;D12.776.543.750.600.500
 Receptor for Advanced Glycation End Products;D12.776.543.750.615
 Receptor Protein-Tyrosine Kinases;D12.776.543.750.630
-Anaplastic Lymphoma Kinase;D12.776.543.750.630.002
 c-Mer Tyrosine Kinase;D12.776.543.750.630.003
 Discoidin Domain Receptors;D12.776.543.750.630.005
 Discoidin Domain Receptor 1;D12.776.543.750.630.005.500
 Discoidin Domain Receptor 2;D12.776.543.750.630.005.750
 ErbB Receptors;D12.776.543.750.630.009
+Receptor, Epidermal Growth Factor;D12.776.543.750.630.009.300
 Receptor, ErbB-2;D12.776.543.750.630.009.400
 Receptor, ErbB-3;D12.776.543.750.630.009.500
 Receptor, ErbB-4;D12.776.543.750.630.009.600
@@ -37114,7 +36471,6 @@ Receptors, Adipokine;D12.776.543.750.650
 Receptors, Adiponectin;D12.776.543.750.650.249
 Receptors, Leptin;D12.776.543.750.650.500
 Receptors, Artificial;D12.776.543.750.655
-Receptors, Chimeric Antigen;D12.776.543.750.655.500
 Receptors, Autocrine Motility Factor;D12.776.543.750.660
 Receptors, Biogenic Amine;D12.776.543.750.670
 Receptors, Catecholamine;D12.776.543.750.670.300
@@ -37412,7 +36768,6 @@ CD79 Antigens;D12.776.543.750.705.816.821.500
 Pre-B Cell Receptors;D12.776.543.750.705.816.821.750
 Immunoglobulin Light Chains, Surrogate;D12.776.543.750.705.816.821.750.500
 Receptors, Antigen, T-Cell;D12.776.543.750.705.816.824
-Receptors, Chimeric Antigen;D12.776.543.750.705.816.824.150
 Complementarity Determining Regions;D12.776.543.750.705.816.824.300
 Receptor-CD3 Complex, Antigen, T-Cell;D12.776.543.750.705.816.824.800
 Receptors, Antigen, T-Cell, alpha-beta;D12.776.543.750.705.816.824.825
@@ -37528,8 +36883,6 @@ Cytokine Receptor gp130;D12.776.543.750.705.852.583.500
 Leukemia Inhibitory Factor Receptor alpha Subunit;D12.776.543.750.705.852.583.750
 Receptors, Thrombopoietin;D12.776.543.750.705.852.610
 Receptors, Transforming Growth Factor beta;D12.776.543.750.705.852.720
-Receptor, Transforming Growth Factor-beta Type I;D12.776.543.750.705.852.720.500
-Receptor, Transforming Growth Factor-beta Type II;D12.776.543.750.705.852.720.750
 Receptors, Tumor Necrosis Factor;D12.776.543.750.705.852.760
 Tumor Necrosis Factor Receptor Superfamily, Member 7;D12.776.543.750.705.852.760.048
 Ki-1 Antigen;D12.776.543.750.705.852.760.072
@@ -37766,6 +37119,8 @@ Receptor, Notch2;D12.776.543.750.725.750
 Receptor, Notch3;D12.776.543.750.725.875
 Receptor, Notch4;D12.776.543.750.725.937
 Receptors, Peptide;D12.776.543.750.750
+Receptors, Kisspeptin-1;D12.776.543.750.750.013
+Receptors, Enterotoxin;D12.776.543.750.750.025
 Receptors, Adrenomedullin;D12.776.543.750.750.049
 Receptors, Albumin;D12.776.543.750.750.100
 Receptors, Angiotensin;D12.776.543.750.750.130
@@ -37776,7 +37131,6 @@ Receptors, Calcitonin;D12.776.543.750.750.200
 Receptors, Endothelin;D12.776.543.750.750.320
 Receptor, Endothelin A;D12.776.543.750.750.320.100
 Receptor, Endothelin B;D12.776.543.750.750.320.200
-Receptors, Enterotoxin;D12.776.543.750.750.330
 Receptors, Formyl Peptide;D12.776.543.750.750.340
 Receptors, Gastrointestinal Hormone;D12.776.543.750.750.360
 Glucagon-Like Peptide Receptors;D12.776.543.750.750.360.100
@@ -37785,12 +37139,14 @@ Glucagon-Like Peptide-2 Receptor;D12.776.543.750.750.360.100.600
 Receptors, Cholecystokinin;D12.776.543.750.750.360.200
 Receptor, Cholecystokinin A;D12.776.543.750.750.360.200.100
 Receptor, Cholecystokinin B;D12.776.543.750.750.360.200.200
+Receptor, Epidermal Growth Factor;D12.776.543.750.750.360.300
 Receptors, Vasoactive Intestinal Peptide;D12.776.543.750.750.360.900
 Receptors, Growth Factor;D12.776.543.750.750.400
 Bone Morphogenetic Protein Receptors;D12.776.543.750.750.400.049
 Bone Morphogenetic Protein Receptors, Type I;D12.776.543.750.750.400.049.500
 Bone Morphogenetic Protein Receptors, Type II;D12.776.543.750.750.400.049.750
 ErbB Receptors;D12.776.543.750.750.400.074
+Receptor, Epidermal Growth Factor;D12.776.543.750.750.400.074.300
 Receptor, ErbB-2;D12.776.543.750.750.400.074.400
 Receptor, ErbB-3;D12.776.543.750.750.400.074.500
 Receptor, ErbB-4;D12.776.543.750.750.400.074.600
@@ -37829,14 +37185,11 @@ Receptors, Transforming Growth Factor beta;D12.776.543.750.750.400.820
 Activin Receptors;D12.776.543.750.750.400.820.500
 Activin Receptors, Type I;D12.776.543.750.750.400.820.500.500
 Activin Receptors, Type II;D12.776.543.750.750.400.820.500.750
-Receptor, Transforming Growth Factor-beta Type I;D12.776.543.750.750.400.820.750
-Receptor, Transforming Growth Factor-beta Type II;D12.776.543.750.750.400.820.875
 Receptors, Vascular Endothelial Growth Factor;D12.776.543.750.750.400.910
 Vascular Endothelial Growth Factor Receptor-1;D12.776.543.750.750.400.910.100
 Vascular Endothelial Growth Factor Receptor-2;D12.776.543.750.750.400.910.200
 Vascular Endothelial Growth Factor Receptor-3;D12.776.543.750.750.400.910.300
 Receptors, Invertebrate Peptide;D12.776.543.750.750.460
-Receptors, Kisspeptin-1;D12.776.543.750.750.500
 Receptors, Neuropeptide;D12.776.543.750.750.555
 Orexin Receptors;D12.776.543.750.750.555.074
 Receptors, Bombesin;D12.776.543.750.750.555.200
@@ -37921,7 +37274,6 @@ Receptors, Virus;D12.776.543.750.830
 Coxsackie and Adenovirus Receptor-Like Membrane Protein;D12.776.543.750.830.124
 Hepatitis A Virus Cellular Receptor 1;D12.776.543.750.830.187
 Hepatitis A Virus Cellular Receptor 2;D12.776.543.750.830.219
-Niemann-Pick C1 Protein;D12.776.543.750.830.235
 Receptors, Complement 3d;D12.776.543.750.830.250
 Receptors, CXCR6;D12.776.543.750.830.475
 Receptors, HIV;D12.776.543.750.830.700
@@ -37944,12 +37296,12 @@ Stromal Interaction Molecules;D12.776.543.875
 Stromal Interaction Molecule 1;D12.776.543.875.500
 Stromal Interaction Molecule 2;D12.776.543.875.750
 Tetraspanins;D12.776.543.900
-Tetraspanin 24;D12.776.543.900.028
-Tetraspanin 25;D12.776.543.900.055
-Tetraspanin 28;D12.776.543.900.070
-Tetraspanin 29;D12.776.543.900.109
+Tetraspanin-29;D12.776.543.900.109
+Tetraspanin-25;D12.776.543.900.153
 Tetraspanin 30;D12.776.543.900.163
+Tetraspanin 28;D12.776.543.900.181
 Kangai-1 Protein;D12.776.543.900.182
+Tetraspanin 24;D12.776.543.900.251
 Uroplakin Ia;D12.776.543.900.750
 Uroplakin Ib;D12.776.543.900.875
 Thylakoid Membrane Proteins;D12.776.543.930
@@ -38287,7 +37639,6 @@ Kisspeptins;D12.776.624.776.546
 Neurofibromin 1;D12.776.624.776.610
 Neurofibromin 2;D12.776.624.776.612
 Patched Receptors;D12.776.624.776.633
-Niemann-Pick C1 Protein;D12.776.624.776.633.250
 Patched-1 Receptor;D12.776.624.776.633.500
 Patched-2 Receptor;D12.776.624.776.633.750
 Promyelocytic Leukemia Protein;D12.776.624.776.654
@@ -38296,8 +37647,6 @@ Retinoblastoma-Like Protein p107;D12.776.624.776.717
 Retinoblastoma-Like Protein p130;D12.776.624.776.735
 Retinoblastoma Protein;D12.776.624.776.745
 Smad4 Protein;D12.776.624.776.760
-Tuberous Sclerosis Complex 1 Protein;D12.776.624.776.766
-Tuberous Sclerosis Complex 2 Protein;D12.776.624.776.769
 Tumor Suppressor Protein p14ARF;D12.776.624.776.772
 Tumor Suppressor Protein p53;D12.776.624.776.775
 Tumor Protein p73;D12.776.624.776.820
@@ -38367,7 +37716,6 @@ Pituitary Adenylate Cyclase-Activating Polypeptide;D12.776.631.600.887
 Nestin;D12.776.631.607
 Neuroendocrine Secretory Protein 7B2;D12.776.631.615
 Neurofilament Proteins;D12.776.631.630
-Neuroglobin;D12.776.631.635
 Neurogranin;D12.776.631.640
 Neuronal Apoptosis-Inhibitory Protein;D12.776.631.642
 Neuronal Calcium-Sensor Proteins;D12.776.631.645
@@ -38468,7 +37816,6 @@ Arginine Vasopressin;D12.776.631.650.937.100
 Deamino Arginine Vasopressin;D12.776.631.650.937.100.250
 Lypressin;D12.776.631.650.937.400
 Felypressin;D12.776.631.650.937.400.350
-Terlipressin;D12.776.631.650.937.400.675
 Ornipressin;D12.776.631.650.937.700
 Nogo Receptors;D12.776.631.651
 Nogo Receptor 2;D12.776.631.651.250
@@ -38643,7 +37990,6 @@ Nuclear Receptor Coactivator 1;D12.776.660.675.100
 Nuclear Receptor Coactivator 2;D12.776.660.675.200
 Nuclear Receptor Coactivator 3;D12.776.660.675.300
 Peroxisome Proliferator-Activated Receptor Gamma Coactivator 1-alpha;D12.776.660.675.650
-Nuclear Receptor Interacting Protein 1;D12.776.660.688
 Oncogene Protein p55(v-myc);D12.776.660.700
 Poly-ADP-Ribose Binding Proteins;D12.776.660.720
 Apoptosis Inducing Factor;D12.776.660.720.063
@@ -38886,14 +38232,7 @@ Photosystem II Protein Complex;D12.776.765.199.750.750.750
 DEFICIENS Protein;D12.776.765.249
 Ferredoxins;D12.776.765.319
 Florigen;D12.776.765.342
-Fruit Proteins;D12.776.765.354
-Nut Proteins;D12.776.765.354.500
 G-Box Binding Factors;D12.776.765.365
-Grain Proteins;D12.776.765.433
-Prolamins;D12.776.765.433.500
-Glutens;D12.776.765.433.500.500
-Gliadin;D12.776.765.433.500.500.400
-Zein;D12.776.765.433.500.750
 Leghemoglobin;D12.776.765.500
 Periplasmic Proteins;D12.776.765.537
 Photoreceptors, Plant;D12.776.765.593
@@ -38918,7 +38257,6 @@ Wheat Germ Agglutinin-Horseradish Peroxidase Conjugate;D12.776.765.678.968.900
 Plastocyanin;D12.776.765.680
 Ribosome Inactivating Proteins;D12.776.765.710
 Ribosome Inactivating Proteins, Type 1;D12.776.765.710.500
-Saporins;D12.776.765.710.500.250
 Trichosanthin;D12.776.765.710.500.500
 Ribosome Inactivating Proteins, Type 2;D12.776.765.710.750
 Seed Storage Proteins;D12.776.765.725
@@ -38930,8 +38268,7 @@ Zein;D12.776.765.725.500.750
 Soybean Proteins;D12.776.765.741
 Trypsin Inhibitor, Bowman-Birk Soybean;D12.776.765.741.500
 Trypsin Inhibitor, Kunitz Soybean;D12.776.765.741.750
-Plant Proteins, Dietary;D12.776.765.836
-Pea Proteins;D12.776.765.836.500
+Vegetable Proteins;D12.776.765.836
 Polyproteins;D12.776.775
 Gene Products, env;D12.776.775.320
 Gene Products, gag;D12.776.775.330
@@ -38969,10 +38306,8 @@ Fibrinopeptide B;D12.776.811.300.320
 Kininogens;D12.776.811.420
 Kininogen, High-Molecular-Weight;D12.776.811.420.350
 Kininogen, Low-Molecular-Weight;D12.776.811.420.400
-Procalcitonin;D12.776.811.555
 Procollagen;D12.776.811.690
 Proglucagon;D12.776.811.700
-Progranulins;D12.776.811.703
 Proinsulin;D12.776.811.706
 Pro-Opiomelanocortin;D12.776.811.800
 Tropoelastin;D12.776.811.850
@@ -39017,7 +38352,6 @@ PPAR delta;D12.776.826.239.555
 PPAR gamma;D12.776.826.239.588
 Receptors for Activated C Kinase;D12.776.826.313
 Receptors, Artificial;D12.776.826.387
-Receptors, Chimeric Antigen;D12.776.826.387.500
 Receptors, Calcitriol;D12.776.826.535
 Receptors, Melatonin;D12.776.826.590
 Receptors, Retinoic Acid;D12.776.826.701
@@ -39027,7 +38361,6 @@ Retinoid X Receptor alpha;D12.776.826.701.500.500
 Retinoid X Receptor beta;D12.776.826.701.500.625
 Retinoid X Receptor gamma;D12.776.826.701.500.750
 Receptors, Steroid;D12.776.826.750
-Pregnane X Receptor;D12.776.826.750.075
 Receptors, Androgen;D12.776.826.750.150
 Receptors, Estrogen;D12.776.826.750.350
 Estrogen Receptor alpha;D12.776.826.750.350.174
@@ -39050,7 +38383,6 @@ Receptors, Phencyclidine;D12.776.827.550
 Sulfonylurea Receptors;D12.776.827.775
 Recombinant Proteins;D12.776.828
 Recombinant Fusion Proteins;D12.776.828.300
-Alefacept;D12.776.828.300.100
 CD4 Immunoadhesins;D12.776.828.300.200
 Transcription Activator-Like Effector Nucleases;D12.776.828.300.850
 Zinc Finger Nucleases;D12.776.828.300.990
@@ -39216,7 +38548,6 @@ Thioredoxins;D12.776.915
 Chloroplast Thioredoxins;D12.776.915.249
 Thioredoxin h;D12.776.915.624
 Thymosin;D12.776.922
-Thymalfasin;D12.776.922.500
 Transcription Factors;D12.776.930
 Adenovirus E1A Proteins;D12.776.930.100
 Adenovirus E1B Proteins;D12.776.930.110
@@ -39460,7 +38791,6 @@ Receptors, Retinoic Acid;D12.776.930.775
 Retinoic Acid Receptor alpha;D12.776.930.775.250
 Retinoid X Receptors;D12.776.930.775.500
 Receptors, Steroid;D12.776.930.778
-Pregnane X Receptor;D12.776.930.778.175
 Receptors, Estrogen;D12.776.930.778.350
 Repressor Proteins;D12.776.930.780
 AraC Transcription Factor;D12.776.930.780.500
@@ -39609,7 +38939,6 @@ Retroviridae Proteins;D12.776.964.775
 Gene Products, env;D12.776.964.775.325
 env Gene Products, Human Immunodeficiency Virus;D12.776.964.775.325.164
 HIV Envelope Protein gp41;D12.776.964.775.325.164.200
-Enfuvirtide;D12.776.964.775.325.164.200.500
 HIV Envelope Protein gp120;D12.776.964.775.325.164.249
 HIV Envelope Protein gp160;D12.776.964.775.325.164.374
 Gene Products, gag;D12.776.964.775.350
@@ -39634,7 +38963,6 @@ vif Gene Products, Human Immunodeficiency Virus;D12.776.964.775.468.500
 Human Immunodeficiency Virus Proteins;D12.776.964.775.562
 env Gene Products, Human Immunodeficiency Virus;D12.776.964.775.562.500
 HIV Envelope Protein gp41;D12.776.964.775.562.500.200
-Enfuvirtide;D12.776.964.775.562.500.200.500
 HIV Envelope Protein gp120;D12.776.964.775.562.500.500
 HIV Envelope Protein gp160;D12.776.964.775.562.500.750
 gag Gene Products, Human Immunodeficiency Virus;D12.776.964.775.562.750
@@ -39701,13 +39029,11 @@ Ribonuclease H, Human Immunodeficiency Virus;D12.776.964.970.600.850.375.545.875
 RNA-Directed DNA Polymerase;D12.776.964.970.600.850.375.750
 HIV Reverse Transcriptase;D12.776.964.970.600.850.375.750.187
 Ribonuclease H, Human Immunodeficiency Virus;D12.776.964.970.600.850.375.750.187.500
-Occlusion Body Matrix Proteins;D12.776.964.970.650
 Plant Viral Movement Proteins;D12.776.964.970.700
 Viral Envelope Proteins;D12.776.964.970.880
 Gene Products, env;D12.776.964.970.880.325
 env Gene Products, Human Immunodeficiency Virus;D12.776.964.970.880.325.164
 HIV Envelope Protein gp41;D12.776.964.970.880.325.164.200
-Enfuvirtide;D12.776.964.970.880.325.164.200.500
 HIV Envelope Protein gp120;D12.776.964.970.880.325.164.249
 HIV Envelope Protein gp160;D12.776.964.970.880.325.164.374
 Hemagglutinins, Viral;D12.776.964.970.880.345
@@ -39715,7 +39041,6 @@ Hemagglutinin Glycoproteins, Influenza Virus;D12.776.964.970.880.345.500
 HN Protein;D12.776.964.970.880.350
 Viral Fusion Proteins;D12.776.964.970.880.910
 HIV Envelope Protein gp41;D12.776.964.970.880.910.330
-Enfuvirtide;D12.776.964.970.880.910.330.500
 Spike Glycoprotein, Coronavirus;D12.776.964.970.880.910.665
 Viral Matrix Proteins;D12.776.964.970.880.940
 Viral Tail Proteins;D12.776.964.970.910
@@ -39823,7 +39148,6 @@ RNA Splice Sites;D13.444.735.544.550
 Untranslated Regions;D13.444.735.544.875
 3' Untranslated Regions;D13.444.735.544.875.880
 5' Untranslated Regions;D13.444.735.544.875.885
-RNA, Mitochondrial;D13.444.735.580
 RNA, Neoplasm;D13.444.735.615
 RNA, Nuclear;D13.444.735.628
 RNA, Heterogeneous Nuclear;D13.444.735.628.806
@@ -39889,7 +39213,6 @@ RNA, Viral;D13.444.735.828
 Nucleosides;D13.570
 Arabinonucleosides;D13.570.065
 Arabinofuranosyluracil;D13.570.065.090
-Clofarabine;D13.570.065.195
 Cytarabine;D13.570.065.300
 Ancitabine;D13.570.065.300.050
 Vidarabine;D13.570.065.950
@@ -39921,7 +39244,6 @@ Zidovudine;D13.570.230.500.950
 Pentostatin;D13.570.230.677
 Thymidine;D13.570.230.855
 Stavudine;D13.570.230.855.875
-Telbivudine;D13.570.230.855.888
 Trifluridine;D13.570.230.855.900
 Zidovudine;D13.570.230.855.950
 Purine Nucleosides;D13.570.583
@@ -39939,7 +39261,6 @@ Isopentenyladenosine;D13.570.583.138.500
 Phenylisopropyladenosine;D13.570.583.138.630
 Puromycin;D13.570.583.138.711
 Puromycin Aminonucleoside;D13.570.583.138.711.650
-Ticagrelor;D13.570.583.138.806
 Vidarabine;D13.570.583.138.900
 Guanosine;D13.570.583.454
 Deoxyguanosine;D13.570.583.454.240
@@ -39953,7 +39274,6 @@ Tubercidin;D13.570.583.910
 Pyrimidine Nucleosides;D13.570.685
 Cytidine;D13.570.685.245
 Azacitidine;D13.570.685.245.217
-Decitabine;D13.570.685.245.217.500
 Cytarabine;D13.570.685.245.453
 Ancitabine;D13.570.685.245.453.050
 Deoxycytidine;D13.570.685.245.500
@@ -39969,7 +39289,6 @@ Coformycin;D13.570.685.350.200
 Pentostatin;D13.570.685.350.200.700
 Thymidine;D13.570.685.705
 Stavudine;D13.570.685.705.875
-Telbivudine;D13.570.685.705.888
 Trifluridine;D13.570.685.705.900
 Zidovudine;D13.570.685.705.950
 Tunicamycin;D13.570.685.725
@@ -39993,10 +39312,8 @@ S-Adenosylmethionine;D13.570.800.096.264
 Cladribine;D13.570.800.096.300.200
 Isopentenyladenosine;D13.570.800.096.500
 Phenylisopropyladenosine;D13.570.800.096.630
-Ticagrelor;D13.570.800.096.815
 Cytidine;D13.570.800.286
 Azacitidine;D13.570.800.286.300
-Decitabine;D13.570.800.286.300.500
 Dichlororibofuranosylbenzimidazole;D13.570.800.330
 Formycins;D13.570.800.410
 Coformycin;D13.570.800.410.200
@@ -40089,7 +39406,6 @@ Adenosine Phosphosulfate;D13.695.667.138.180.080
 Adenosine Triphosphate;D13.695.667.138.236
 Adenylyl Imidodiphosphate;D13.695.667.138.236.050
 Ethenoadenosine Triphosphate;D13.695.667.138.236.250
-Clofarabine;D13.695.667.138.309
 Coenzyme A;D13.695.667.138.382
 Acyl Coenzyme A;D13.695.667.138.382.300
 Acetyl Coenzyme A;D13.695.667.138.382.300.020
@@ -40112,12 +39428,12 @@ Guanosine Diphosphate;D13.695.667.454.340
 Guanosine Diphosphate Sugars;D13.695.667.454.340.350
 Guanosine Diphosphate Fucose;D13.695.667.454.340.350.400
 Guanosine Diphosphate Mannose;D13.695.667.454.340.350.500
-Guanosine Monophosphate;D13.695.667.454.400
 Guanosine Pentaphosphate;D13.695.667.454.440
 Guanosine Tetraphosphate;D13.695.667.454.480
 Guanosine Triphosphate;D13.695.667.454.504
 Guanosine 5'-O-(3-Thiotriphosphate);D13.695.667.454.504.380
 Guanylyl Imidodiphosphate;D13.695.667.454.504.400
+Guanosine Monophosphate;D13.695.667.454.525
 RNA Caps;D13.695.667.454.700
 RNA Cap Analogs;D13.695.667.454.700.710
 Inosine Nucleotides;D13.695.667.616
@@ -40169,7 +39485,6 @@ Adenosine Phosphosulfate;D13.695.827.068.180.080
 Adenosine Triphosphate;D13.695.827.068.236
 Adenylyl Imidodiphosphate;D13.695.827.068.236.050
 Ethenoadenosine Triphosphate;D13.695.827.068.236.250
-Clofarabine;D13.695.827.068.309
 Coenzyme A;D13.695.827.068.382
 Acyl Coenzyme A;D13.695.827.068.382.300
 Acetyl Coenzyme A;D13.695.827.068.382.300.020
@@ -40198,12 +39513,12 @@ Guanosine Diphosphate;D13.695.827.426.340
 Guanosine Diphosphate Sugars;D13.695.827.426.340.350
 Guanosine Diphosphate Fucose;D13.695.827.426.340.350.400
 Guanosine Diphosphate Mannose;D13.695.827.426.340.350.500
-Guanosine Monophosphate;D13.695.827.426.400
 Guanosine Pentaphosphate;D13.695.827.426.440
 Guanosine Tetraphosphate;D13.695.827.426.480
 Guanosine Triphosphate;D13.695.827.426.504
 Guanosine 5'-O-(3-Thiotriphosphate);D13.695.827.426.504.380
 Guanylyl Imidodiphosphate;D13.695.827.426.504.400
+Guanosine Monophosphate;D13.695.827.426.525
 RNA Caps;D13.695.827.426.700
 RNA Cap Analogs;D13.695.827.426.700.710
 Inosine Nucleotides;D13.695.827.519
@@ -40296,8 +39611,7 @@ Podophyllin;D20.215.784.500.675
 Psyllium;D20.215.784.500.720
 Senna Extract;D20.215.784.500.860
 Plant Oils;D20.215.784.750
-Eucalyptus Oil;D20.215.784.750.033
-Rapeseed Oil;D20.215.784.750.066
+Canola Oil;D20.215.784.750.066
 Castor Oil;D20.215.784.750.132
 Clove Oil;D20.215.784.750.186
 Corn Oil;D20.215.784.750.240
@@ -40452,7 +39766,6 @@ Radioactive Waste;D20.693.638
 Soil Pollutants, Radioactive;D20.693.756
 Water Pollutants, Radioactive;D20.693.903
 Soil;D20.721
-Clay;D20.721.250
 Humic Substances;D20.721.500
 Tars;D20.749
 Coal Tar;D20.749.354
@@ -40485,7 +39798,6 @@ Agatoxins;D20.888.065.870.324
 omega-Agatoxin IVA;D20.888.065.870.324.500
 Wasp Venoms;D20.888.065.970
 Cnidarian Venoms;D20.888.230
-Exenatide;D20.888.300
 Fish Venoms;D20.888.370
 Mollusk Venoms;D20.888.590
 Conotoxins;D20.888.590.162
@@ -40697,7 +40009,6 @@ Sialic Acid Binding Ig-like Lectin 2;D23.050.301.350.720
 Vascular Cell Adhesion Molecule-1;D23.050.301.350.920
 Histocompatibility Antigens;D23.050.301.500
 Histocompatibility Antigens Class I;D23.050.301.500.100
-beta 2-Microglobulin;D23.050.301.500.100.175
 H-2 Antigens;D23.050.301.500.100.350
 Hemochromatosis Protein;D23.050.301.500.100.363
 Histocompatibility Antigen H-2D;D23.050.301.500.100.375
@@ -40841,7 +40152,6 @@ Hepatitis delta Antigens;D23.050.327.495.752
 HIV Antigens;D23.050.327.520
 HIV Core Protein p24;D23.050.327.520.300
 HIV Envelope Protein gp41;D23.050.327.520.330
-Enfuvirtide;D23.050.327.520.330.500
 HIV Envelope Protein gp120;D23.050.327.520.350
 Autoantigens;D23.050.422
 Centromere Protein A;D23.050.422.031
@@ -40886,7 +40196,6 @@ P Blood-Group System;D23.050.705.230.691
 Rh-Hr Blood-Group System;D23.050.705.230.775
 Histocompatibility Antigens;D23.050.705.552
 Histocompatibility Antigens Class I;D23.050.705.552.100
-beta 2-Microglobulin;D23.050.705.552.100.175
 H-2 Antigens;D23.050.705.552.100.350
 Hemochromatosis Protein;D23.050.705.552.100.375
 HLA-A Antigens;D23.050.705.552.100.400
@@ -41225,7 +40534,6 @@ Carboprost;D23.469.050.175.725.775.500.150
 Cloprostenol;D23.469.050.175.725.775.500.175
 Bimatoprost;D23.469.050.175.725.775.500.175.250
 Travoprost;D23.469.050.175.725.775.500.175.500
-Latanoprost;D23.469.050.175.725.775.500.587
 Histamine;D23.469.050.300
 Kinins;D23.469.050.375
 Bradykinin;D23.469.050.375.110
@@ -41302,7 +40610,6 @@ Carboprost;D23.469.700.670.150
 Cloprostenol;D23.469.700.670.175
 Bimatoprost;D23.469.700.670.175.250
 Travoprost;D23.469.700.670.175.500
-Latanoprost;D23.469.700.670.587
 Intercellular Signaling Peptides and Proteins;D23.529
 Adipokines;D23.529.024
 Adiponectin;D23.529.024.249
@@ -41389,7 +40696,6 @@ Erythropoietin;D23.529.374.410.240.150
 Epoetin Alfa;D23.529.374.410.240.150.750
 Granulocyte Colony-Stimulating Factor;D23.529.374.410.240.350
 Filgrastim;D23.529.374.410.240.350.500
-Lenograstim;D23.529.374.410.240.350.750
 Granulocyte-Macrophage Colony-Stimulating Factor;D23.529.374.410.240.375
 Interleukin-3;D23.529.374.410.240.400
 Macrophage Colony-Stimulating Factor;D23.529.374.410.240.500
@@ -41399,7 +40705,6 @@ Hepatocyte Growth Factor;D23.529.374.420
 Interferons;D23.529.374.440
 Interferon Type I;D23.529.374.440.890
 Interferon-alpha;D23.529.374.440.890.250
-Interferon alpha-2;D23.529.374.440.890.250.500
 Interferon-beta;D23.529.374.440.890.275
 Interferon beta-1a;D23.529.374.440.890.275.500
 Interferon beta-1b;D23.529.374.440.890.275.750
@@ -41518,7 +40823,6 @@ Neurokinin A;D23.529.812.900.500
 Neurokinin B;D23.529.812.900.550
 Physalaemin;D23.529.812.900.800
 Substance P;D23.529.812.900.866
-Midkine;D23.529.831
 Nerve Growth Factors;D23.529.850
 Brain-Derived Neurotrophic Factor;D23.529.850.100
 Ciliary Neurotrophic Factor;D23.529.850.212
@@ -41536,9 +40840,6 @@ Pituitary Adenylate Cyclase-Activating Polypeptide;D23.529.850.887
 Parathyroid Hormone-Related Protein;D23.529.890
 Platelet-Derived Growth Factor;D23.529.910
 Proto-Oncogene Proteins c-sis;D23.529.910.650
-Becaplermin;D23.529.910.650.500
-Progranulins;D23.529.917
-Granulins;D23.529.917.500
 Semaphorins;D23.529.923
 Semaphorin-3A;D23.529.923.374
 Serrate-Jagged Proteins;D23.529.930
@@ -41612,7 +40913,6 @@ Urobilin;D23.767.193.727
 Urobilinogen;D23.767.193.852
 Carotenoids;D23.767.261
 beta Carotene;D23.767.261.050
-Lycopene;D23.767.261.375
 Retinoids;D23.767.261.700
 Acitretin;D23.767.261.700.050
 Etretinate;D23.767.261.700.250
@@ -41620,7 +40920,6 @@ Fenretinide;D23.767.261.700.270
 Isotretinoin;D23.767.261.700.325
 Retinaldehyde;D23.767.261.700.690
 Tretinoin;D23.767.261.700.780
-Alitretinoin;D23.767.261.700.780.500
 Vitamin A;D23.767.261.700.860
 Xanthophylls;D23.767.261.887
 Canthaxanthin;D23.767.261.887.249
@@ -41654,7 +40953,6 @@ Mesoporphyrins;D23.767.727.620
 Metalloporphyrins;D23.767.727.640
 Chlorophyll;D23.767.727.640.220
 Bacteriochlorophylls;D23.767.727.640.220.100
-Chlorophyll A;D23.767.727.640.220.140
 Chlorophyllides;D23.767.727.640.220.180
 Pheophytins;D23.767.727.640.220.453
 Protochlorophyllide;D23.767.727.640.220.725
@@ -41759,7 +41057,6 @@ Agatoxins;D23.946.833.065.870.324
 omega-Agatoxin IVA;D23.946.833.065.870.324.500
 Wasp Venoms;D23.946.833.065.970
 Cnidarian Venoms;D23.946.833.230
-Exenatide;D23.946.833.300
 Fish Venoms;D23.946.833.370
 Mollusk Venoms;D23.946.833.590
 Conotoxins;D23.946.833.590.162
@@ -41855,7 +41152,6 @@ Lignin;D25.720.099.687
 Plant Mucilage;D25.720.099.718
 Rubber;D25.720.099.750
 Latex;D25.720.099.750.500
-Carbon Fiber;D25.720.150
 Colestipol;D25.720.200
 Cyanoacrylates;D25.720.259
 Enbucrilate;D25.720.259.341
@@ -41901,20 +41197,17 @@ Bisphenol A-Glycidyl Methacrylate;D25.720.716.822.308.200
 Compomers;D25.720.716.822.308.300
 Epoxy Resins;D25.720.716.822.461
 Resin Cements;D25.720.716.822.730
-Polyacetylene Polymer;D25.720.719
 Polyanetholesulfonate;D25.720.722
 Polyesters;D25.720.728
 Polydioxanone;D25.720.728.700
 Polyethylene Terephthalates;D25.720.728.764
 Polyglactin 910;D25.720.728.772
 Polyglycolic Acid;D25.720.728.780
-Polylactic Acid-Polyglycolic Acid Copolymer;D25.720.728.780.500
 Polyethylene Glycols;D25.720.741
 Cetomacrogol;D25.720.741.250
 Hydrogel, Polyethylene Glycol Dimethacrylate;D25.720.741.485
 Nonoxynol;D25.720.741.575
 Octoxynol;D25.720.741.610
-Polidocanol;D25.720.741.630
 Poloxalene;D25.720.741.650
 Poloxamer;D25.720.741.667
 Polyhydroxyethyl Methacrylate;D25.720.741.685
@@ -41937,6 +41230,8 @@ Bucrylate;D25.919.367.341.110
 Pharmaceutical Preparations;D26
 Controlled Substances;D26.049
 Cosmeceuticals;D26.074
+Counterfeit Drugs;D26.099
+Designer Drugs;D26.200
 Dosage Forms;D26.255
 Abuse-Deterrent Formulations;D26.255.075
 Capsules;D26.255.150
@@ -41974,15 +41269,12 @@ Adapalene, Benzoyl Peroxide Drug Combination;D26.310.032
 Aminophylline;D26.310.048
 Amlodipine Besylate, Olmesartan Medoxomil Drug Combination;D26.310.063
 Amlodipine, Valsartan Drug Combination;D26.310.094
-Amoxicillin-Potassium Clavulanate Combination;D26.310.102
-Artemether, Lumefantrine Drug Combination;D26.310.110
 Aspirin, Dipyridamole Drug Combination;D26.310.125
 Biphasic Insulins;D26.310.249
 Brimonidine Tartrate, Timolol Maleate Drug Combination;D26.310.312
 Albuterol, Ipratropium Drug Combination;D26.310.344
 Budesonide, Formoterol Fumarate Drug Combination;D26.310.348
 Buprenorphine, Naloxone Drug Combination;D26.310.352
-Cilastatin, Imipenem Drug Combination;D26.310.356
 Contraceptives, Oral, Combined;D26.310.360
 Dimenhydrinate;D26.310.368
 Efavirenz, Emtricitabine, Tenofovir Disoproxil Fumarate Drug Combination;D26.310.375
@@ -41991,12 +41283,9 @@ Emtricitabine, Rilpivirine, Tenofovir Drug Combination;D26.310.407
 Emtricitabine, Tenofovir Disoproxil Fumarate Drug Combination;D26.310.423
 Ezetimibe, Simvastatin Drug Combination;D26.310.431
 Fluticasone-Salmeterol Drug Combination;D26.310.438
-Lidocaine, Prilocaine Drug Combination;D26.310.454
 Mometasone Furoate, Formoterol Fumarate Drug Combination;D26.310.469
 Multi-Ingredient Cold, Flu, and Allergy Medications;D26.310.500
-Piperacillin, Tazobactam Drug Combination;D26.310.625
 Sitagliptin Phosphate, Metformin Hydrochloride Drug Combination;D26.310.750
-Tobramycin, Dexamethasone Drug Combination;D26.310.813
 Trimethoprim, Sulfamethoxazole Drug Combination;D26.310.875
 Drugs, Chinese Herbal;D26.335
 Drugs, Essential;D26.355
@@ -42029,10 +41318,6 @@ Glucose Solution, Hypertonic;D26.776.314.420
 Saline Solution, Hypertonic;D26.776.314.890
 Hypotonic Solutions;D26.776.399
 Isotonic Solutions;D26.776.498
-Crystalloid Solutions;D26.776.498.500
-Ringer's Lactate;D26.776.498.500.500
-Saline Solution;D26.776.498.500.750
-Ringer's Solution;D26.776.498.750
 Organ Preservation Solutions;D26.776.675
 Pharmaceutical Solutions;D26.776.708
 Cardioplegic Solutions;D26.776.708.160
@@ -42046,10 +41331,6 @@ Sclerosing Solutions;D26.776.708.822
 Rehydration Solutions;D26.776.741
 Street Drugs;D26.878
 Crack Cocaine;D26.878.250
-Substandard Drugs;D26.894
-Counterfeit Drugs;D26.894.500
-Synthetic Drugs;D26.909
-Designer Drugs;D26.909.500
 Veterinary Drugs;D26.939
 Xenobiotics;D26.969
 Chemical Actions and Uses;D27
@@ -42110,7 +41391,6 @@ Aversive Agents;D27.505.519.241
 Bradykinin Receptor Antagonists;D27.505.519.265
 Bradykinin B1 Receptor Antagonists;D27.505.519.265.249
 Bradykinin B2 Receptor Antagonists;D27.505.519.265.500
-Calcitonin Gene-Related Peptide Receptor Antagonists;D27.505.519.270
 CCR5 Receptor Antagonists;D27.505.519.275
 Cerumenolytic Agents;D27.505.519.295
 Cystine Depleting Agents;D27.505.519.334
@@ -42339,7 +41619,6 @@ Chelating Agents;D27.505.519.914.500
 Calcium Chelating Agents;D27.505.519.914.500.204
 Iron Chelating Agents;D27.505.519.914.500.410
 Siderophores;D27.505.519.914.500.410.750
-Sodium-Glucose Transporter 2 Inhibitors;D27.505.519.936
 Viral Fusion Protein Inhibitors;D27.505.519.957
 HIV Fusion Inhibitors;D27.505.519.957.500
 Physiological Effects of Drugs;D27.505.696
@@ -42352,9 +41631,6 @@ Spermatocidal Agents;D27.505.696.138.569
 Spermatogenesis-Blocking Agents;D27.505.696.138.760
 Astringents;D27.505.696.207
 Bone Density Conservation Agents;D27.505.696.242
-Calcium-Regulating Hormones and Agents;D27.505.696.260
-Calcium Channel Agonists;D27.505.696.260.250
-Calcium Channel Blockers;D27.505.696.260.500
 Central Nervous System Depressants;D27.505.696.277
 Anesthetics;D27.505.696.277.100
 Anesthetics, Combined;D27.505.696.277.100.017
@@ -42364,8 +41640,6 @@ Anesthetics, Intravenous;D27.505.696.277.100.035.075
 Anesthetics, Dissociative;D27.505.696.277.100.035.075.035
 Anesthetics, Local;D27.505.696.277.100.200
 Hypnotics and Sedatives;D27.505.696.277.350
-Sleep Aids, Pharmaceutical;D27.505.696.277.350.500
-Orexin Receptor Antagonists;D27.505.696.277.350.500.500
 Narcotics;D27.505.696.277.600
 Analgesics, Opioid;D27.505.696.277.600.500
 Tranquilizing Agents;D27.505.696.277.950
@@ -42386,12 +41660,11 @@ Angiogenesis Inducing Agents;D27.505.696.377.077.077
 Angiogenesis Inhibitors;D27.505.696.377.077.099
 Growth Inhibitors;D27.505.696.377.450
 Angiogenesis Inhibitors;D27.505.696.377.450.100
-Nutrients;D27.505.696.377.683
-Micronutrients;D27.505.696.377.683.500
-Trace Elements;D27.505.696.377.683.500.555
-Vitamins;D27.505.696.377.683.500.600
-Provitamins;D27.505.696.377.683.500.600.354
-Vitamin B Complex;D27.505.696.377.683.500.600.708
+Micronutrients;D27.505.696.377.605
+Trace Elements;D27.505.696.377.605.555
+Vitamins;D27.505.696.377.605.600
+Provitamins;D27.505.696.377.605.600.354
+Vitamin B Complex;D27.505.696.377.605.600.708
 Plant Growth Regulators;D27.505.696.377.760
 Hallucinogens;D27.505.696.388
 Hormones, Hormone Substitutes, and Hormone Antagonists;D27.505.696.399
@@ -42431,7 +41704,6 @@ Hypoglycemic Agents;D27.505.696.422
 Glycoside Hydrolase Inhibitors;D27.505.696.422.249
 Amylin Receptor Agonists;D27.505.696.422.374
 Dipeptidyl-Peptidase IV Inhibitors;D27.505.696.422.500
-Sodium-Glucose Transporter 2 Inhibitors;D27.505.696.422.750
 Immunologic Factors;D27.505.696.477
 Adjuvants, Immunologic;D27.505.696.477.067
 Agglutinins;D27.505.696.477.136
@@ -42574,7 +41846,6 @@ Anti-Inflammatory Agents, Non-Steroidal;D27.505.696.663.850.014.040.500
 Cyclooxygenase Inhibitors;D27.505.696.663.850.014.040.500.500
 Cyclooxygenase 2 Inhibitors;D27.505.696.663.850.014.040.500.500.500
 Analgesics, Short-Acting;D27.505.696.663.850.014.580
-Calcitonin Gene-Related Peptide Receptor Antagonists;D27.505.696.663.850.014.610
 Dentin Desensitizing Agents;D27.505.696.663.850.014.640
 Narcotics;D27.505.696.663.850.014.760
 Analgesics, Opioid;D27.505.696.663.850.014.760.500
@@ -42620,7 +41891,6 @@ Luteolytic Agents;D27.505.696.875.610
 Menstruation-Inducing Agents;D27.505.696.875.650
 Oxytocics;D27.505.696.875.737
 Tocolytic Agents;D27.505.696.875.825
-Secretagogues;D27.505.696.937
 Therapeutic Uses;D27.505.954
 Anti-Allergic Agents;D27.505.954.016
 Anti-Infective Agents;D27.505.954.122
@@ -42667,8 +41937,6 @@ Anti-Inflammatory Agents, Non-Steroidal;D27.505.954.158.030
 Cyclooxygenase Inhibitors;D27.505.954.158.030.500
 Cyclooxygenase 2 Inhibitors;D27.505.954.158.030.500.500
 Demulcents;D27.505.954.158.515
-Anti-Obesity Agents;D27.505.954.203
-Appetite Depressants;D27.505.954.203.155
 Antineoplastic Agents;D27.505.954.248
 Angiogenesis Inhibitors;D27.505.954.248.025
 Antibiotics, Antineoplastic;D27.505.954.248.106
@@ -42716,7 +41984,6 @@ Alcohol Deterrents;D27.505.954.427.020
 Analgesics;D27.505.954.427.040
 Analgesics, Non-Narcotic;D27.505.954.427.040.100
 Analgesics, Short-Acting;D27.505.954.427.040.381
-Calcitonin Gene-Related Peptide Receptor Antagonists;D27.505.954.427.040.409
 Dentin Desensitizing Agents;D27.505.954.427.040.437
 Narcotics;D27.505.954.427.040.550
 Analgesics, Opioid;D27.505.954.427.040.550.500
@@ -42726,6 +41993,8 @@ Antiparkinson Agents;D27.505.954.427.090.050
 Aromatic Amino Acid Decarboxylase Inhibitors;D27.505.954.427.090.050.249
 Catechol O-Methyltransferase Inhibitors;D27.505.954.427.090.050.500
 Antiemetics;D27.505.954.427.095
+Anti-Obesity Agents;D27.505.954.427.140
+Appetite Depressants;D27.505.954.427.140.155
 Antitussive Agents;D27.505.954.427.153
 Central Nervous System Depressants;D27.505.954.427.210
 Anesthetics;D27.505.954.427.210.100
@@ -42736,8 +42005,6 @@ Anesthetics, Intravenous;D27.505.954.427.210.100.035.075
 Anesthetics, Dissociative;D27.505.954.427.210.100.035.075.035
 Anesthetics, Local;D27.505.954.427.210.100.200
 Hypnotics and Sedatives;D27.505.954.427.210.350
-Sleep Aids, Pharmaceutical;D27.505.954.427.210.350.500
-Orexin Receptor Antagonists;D27.505.954.427.210.350.500.500
 Narcotics;D27.505.954.427.210.600
 Analgesics, Opioid;D27.505.954.427.210.600.500
 Tranquilizing Agents;D27.505.954.427.210.950
@@ -42853,7 +42120,8 @@ Demulcents;D27.505.954.796.210
 Expectorants;D27.505.954.796.250
 Nasal Decongestants;D27.505.954.796.560
 Pulmonary Surfactants;D27.505.954.796.600
-Smoking Cessation Agents;D27.505.954.810
+Sleep Aids, Pharmaceutical;D27.505.954.842
+Orexin Receptor Antagonists;D27.505.954.842.500
 Stimulants, Historical;D27.505.954.888
 Urological Agents;D27.505.954.944
 Specialty Uses of Chemicals;D27.720
@@ -43066,8 +42334,7 @@ Cytostatic Agents;D27.888.569.199
 Cytotoxins;D27.888.569.213
 Hemolytic Agents;D27.888.569.213.444
 Dermotoxins;D27.888.569.242
-Immunoconjugates;D27.888.569.257
-Immunotoxins;D27.888.569.257.500
+Immunotoxins;D27.888.569.271
 Irritants;D27.888.569.300
 Mutagens;D27.888.569.468
 Aneugens;D27.888.569.468.060
@@ -43209,13 +42476,13 @@ Periodic Acid-Schiff Reaction;E01.370.225.500.620.670.615
 Prussian Blue Reaction;E01.370.225.500.620.670.660
 Shadowing (Histology);E01.370.225.500.620.670.770
 Silver Staining;E01.370.225.500.620.670.780
+Tissue Embedding;E01.370.225.500.620.720
+Paraffin Embedding;E01.370.225.500.620.720.610
+Plastic Embedding;E01.370.225.500.620.720.640
 Tissue Preservation;E01.370.225.500.620.760
 Cryopreservation;E01.370.225.500.620.760.160
 Freeze Drying;E01.370.225.500.620.760.160.260
 Freeze Substitution;E01.370.225.500.620.760.160.260.270
-Tissue Embedding;E01.370.225.500.620.760.440
-Paraffin Embedding;E01.370.225.500.620.760.440.610
-Plastic Embedding;E01.370.225.500.620.760.440.640
 Tissue Fixation;E01.370.225.500.620.760.720
 Metabolic Flux Analysis;E01.370.225.500.810
 Genetic Testing;E01.370.225.562
@@ -43286,13 +42553,13 @@ Neuroanatomical Tract-Tracing Techniques;E01.370.225.750.600.670.570
 Prussian Blue Reaction;E01.370.225.750.600.670.660
 Shadowing (Histology);E01.370.225.750.600.670.770
 Silver Staining;E01.370.225.750.600.670.780
+Tissue Embedding;E01.370.225.750.600.720
+Paraffin Embedding;E01.370.225.750.600.720.610
+Plastic Embedding;E01.370.225.750.600.720.640
 Tissue Preservation;E01.370.225.750.600.760
 Cryopreservation;E01.370.225.750.600.760.160
 Freeze Drying;E01.370.225.750.600.760.160.260
 Freeze Substitution;E01.370.225.750.600.760.160.260.270
-Tissue Embedding;E01.370.225.750.600.760.440
-Paraffin Embedding;E01.370.225.750.600.760.440.610
-Plastic Embedding;E01.370.225.750.600.760.440.640
 Tissue Fixation;E01.370.225.750.600.760.720
 Immunologic Tests;E01.370.225.812
 Antibody-Coated Bacteria Test, Urinary;E01.370.225.812.049
@@ -43557,10 +42824,11 @@ Coronary Angiography;E01.370.350.700.060.200
 Phlebography;E01.370.350.700.060.600
 Portography;E01.370.350.700.060.610
 Arthrography;E01.370.350.700.070
+Cineradiography;E01.370.350.700.150
+Cineangiography;E01.370.350.700.150.190
 Electrokymography;E01.370.350.700.200
 Fluoroscopy;E01.370.350.700.225
 Barium Enema;E01.370.350.700.225.313
-Cineradiography;E01.370.350.700.225.469
 Photofluorography;E01.370.350.700.225.625
 Hysterosalpingography;E01.370.350.700.325
 Lymphography;E01.370.350.700.475
@@ -43641,7 +42909,6 @@ Positron Emission Tomography Computed Tomography;E01.370.350.710.800.399.500
 Tomography, Emission-Computed, Single-Photon;E01.370.350.710.800.800
 Cardiac-Gated Single-Photon Emission Computer-Assisted Tomography;E01.370.350.710.800.800.500
 Single Photon Emission Computed Tomography Computed Tomography;E01.370.350.710.800.800.750
-Ventilation-Perfusion Scan;E01.370.350.710.900
 Respiratory-Gated Imaging Techniques;E01.370.350.730
 Spectroscopy, Near-Infrared;E01.370.350.750
 Stroboscopy;E01.370.350.755
@@ -43655,7 +42922,6 @@ Electron Microscope Tomography;E01.370.350.825.249
 Magnetic Resonance Imaging;E01.370.350.825.500
 Cholangiopancreatography, Magnetic Resonance;E01.370.350.825.500.100
 Diffusion Magnetic Resonance Imaging;E01.370.350.825.500.150
-Diffusion Tensor Imaging;E01.370.350.825.500.150.500
 Echo-Planar Imaging;E01.370.350.825.500.200
 Fluorine-19 Magnetic Resonance Imaging;E01.370.350.825.500.350
 Magnetic Resonance Angiography;E01.370.350.825.500.500
@@ -43694,7 +42960,6 @@ Echoencephalography;E01.370.350.850.260
 Ultrasonography, Doppler, Transcranial;E01.370.350.850.260.850
 Elasticity Imaging Techniques;E01.370.350.850.270
 Endosonography;E01.370.350.850.280
-Focused Assessment with Sonography of Trauma;E01.370.350.850.423
 Microscopy, Acoustic;E01.370.350.850.565
 Ultrasonography, Doppler;E01.370.350.850.850
 Echocardiography, Doppler;E01.370.350.850.850.220
@@ -43953,7 +43218,6 @@ Positron Emission Tomography Computed Tomography;E01.370.384.730.800.399.500
 Tomography, Emission-Computed, Single-Photon;E01.370.384.730.800.800
 Cardiac-Gated Single-Photon Emission Computer-Assisted Tomography;E01.370.384.730.800.800.500
 Single Photon Emission Computed Tomography Computed Tomography;E01.370.384.730.800.800.750
-Ventilation-Perfusion Scan;E01.370.384.730.900
 Schilling Test;E01.370.384.750
 Diagnostic Techniques, Respiratory System;E01.370.386
 Bronchography;E01.370.386.100
@@ -43998,7 +43262,6 @@ Maximal Voluntary Ventilation;E01.370.386.700.660.500
 Spirometry;E01.370.386.700.750
 Bronchospirometry;E01.370.386.700.750.100
 Valsalva Maneuver;E01.370.386.700.950
-Ventilation-Perfusion Scan;E01.370.386.700.963
 Work of Breathing;E01.370.386.700.975
 Respiratory Sounds;E01.370.386.720
 Respiratory-Gated Imaging Techniques;E01.370.386.730
@@ -44178,7 +43441,6 @@ Somatotypes;E01.370.600.115.800
 Facial Expression;E01.370.600.225
 Facies;E01.370.600.230
 Gait;E01.370.600.250
-Gait Analysis;E01.370.600.250.250
 Walking Speed;E01.370.600.250.500
 Gynecological Examination;E01.370.600.293
 Heart Rate Determination;E01.370.600.315
@@ -44227,14 +43489,13 @@ Early Detection of Cancer;E01.390.500
 Incidental Findings;E01.410
 Prodromal Symptoms;E01.599
 Prognosis;E01.789
+Disease-Free Survival;E01.789.200
 Medical Futility;E01.789.600
 Neoplasm Grading;E01.789.612
 Neoplasm Staging;E01.789.625
 Nomograms;E01.789.650
 Pregnancy Outcome;E01.789.700
 Treatment Outcome;E01.789.800
-Disease-Free Survival;E01.789.800.190
-Progression-Free Survival;E01.789.800.285
 Response Evaluation Criteria in Solid Tumors;E01.789.800.379
 Sustained Virologic Response;E01.789.800.570
 Therapeutic Index;E01.789.800.665
@@ -44473,7 +43734,6 @@ Contraindications, Drug;E02.208.200
 Contraindications, Procedure;E02.208.600
 Cosmetic Techniques;E02.218
 Abdominoplasty;E02.218.042
-Lipoabdominoplasty;E02.218.042.500
 Body Contouring;E02.218.064
 Body Modification, Non-Therapeutic;E02.218.085
 Body Piercing;E02.218.085.090
@@ -44687,7 +43947,6 @@ Gastric Bypass;E02.570.500.062.249
 Gastroplasty;E02.570.500.062.750
 Jejunoileal Bypass;E02.570.500.062.875
 Lipectomy;E02.570.500.062.937
-Lipoabdominoplasty;E02.570.500.062.937.500
 Precision Medicine;E02.574
 Insufflation;E02.583
 Intubation;E02.585
@@ -44779,7 +44038,6 @@ Sign Language;E02.760.169.063.500.200.609.668
 Dance Therapy;E02.760.169.063.500.230
 Early Ambulation;E02.760.169.063.500.335
 Exercise Therapy;E02.760.169.063.500.387
-Endurance Training;E02.760.169.063.500.387.250
 Motion Therapy, Continuous Passive;E02.760.169.063.500.387.500
 Muscle Stretching Exercises;E02.760.169.063.500.387.750
 Plyometric Exercise;E02.760.169.063.500.387.812
@@ -44801,7 +44059,6 @@ Telerehabilitation;E02.760.169.063.500.891
 Patient Discharge;E02.760.169.125
 Patient Handoff;E02.760.169.249
 Patient Transfer;E02.760.169.624
-Retention in Care;E02.760.169.671
 Transition to Adult Care;E02.760.169.718
 Transitional Care;E02.760.169.812
 Critical Care;E02.760.190
@@ -44809,7 +44066,6 @@ Early Goal-Directed Therapy;E02.760.190.203
 Intensive Care, Neonatal;E02.760.190.405
 Custodial Care;E02.760.215
 Day Care, Medical;E02.760.246
-Delayed Diagnosis;E02.760.273
 Episode of Care;E02.760.300
 Foster Home Care;E02.760.352
 Hospitalization;E02.760.400
@@ -44884,7 +44140,6 @@ Dance Therapy;E02.779.474.186
 Tai Ji;E02.779.474.913
 Yoga;E02.779.474.937
 Exercise Therapy;E02.779.483
-Endurance Training;E02.779.483.250
 Motion Therapy, Continuous Passive;E02.779.483.500
 Muscle Stretching Exercises;E02.779.483.750
 Plyometric Exercise;E02.779.483.812
@@ -44908,7 +44163,6 @@ Preservation, Biological;E02.792
 Cryopreservation;E02.792.156
 Freeze Drying;E02.792.156.260
 Freeze Substitution;E02.792.156.260.270
-Plastination;E02.792.400
 Refrigeration;E02.792.643
 Tissue Preservation;E02.792.833
 Blood Preservation;E02.792.833.230
@@ -44927,12 +44181,6 @@ Tympanocentesis;E02.800.550.905
 Phlebotomy;E02.800.558
 Bloodletting;E02.800.558.500
 Spinal Puncture;E02.800.779
-Radiofrequency Therapy;E02.808
-Pulsed Radiofrequency Treatment;E02.808.500
-Radiofrequency Ablation;E02.808.750
-Catheter Ablation;E02.808.750.500
-Bronchial Thermoplasty;E02.808.750.500.500
-Short-Wave Therapy;E02.808.875
 Radiotherapy;E02.815
 Brachytherapy;E02.815.150
 Chemoradiotherapy;E02.815.160
@@ -44941,9 +44189,9 @@ Cranial Irradiation;E02.815.190
 Pituitary Irradiation;E02.815.190.600
 Craniospinal Irradiation;E02.815.230
 Heavy Ion Radiotherapy;E02.815.250
-Proton Therapy;E02.815.250.500
 Hemibody Irradiation;E02.815.270
 Lymphatic Irradiation;E02.815.350
+Proton Therapy;E02.815.435
 Radioimmunotherapy;E02.815.520
 Radiosurgery;E02.815.530
 Radiotherapy Setup Errors;E02.815.565
@@ -44952,8 +44200,9 @@ Radiotherapy, Computer-Assisted;E02.815.635
 Radiotherapy, Conformal;E02.815.635.700
 Radiotherapy, Intensity-Modulated;E02.815.635.700.700
 Radiotherapy Dosage;E02.815.639
-Dose Fractionation, Radiation;E02.815.639.200
-Radiation Dose Hypofractionation;E02.815.639.200.500
+Dose Fractionation;E02.815.639.200
+Dose Hypofractionation;E02.815.639.200.500
+Dose Hypofractionation;E02.815.639.600
 Radiotherapy, High-Energy;E02.815.722
 Neutron Capture Therapy;E02.815.722.500
 Boron Neutron Capture Therapy;E02.815.722.500.100
@@ -44986,7 +44235,6 @@ Pulsed Radiofrequency Treatment;E02.831.535.468.599
 Spinal Cord Stimulation;E02.831.535.468.699
 Transcutaneous Electric Nerve Stimulation;E02.831.535.468.800
 Exercise Therapy;E02.831.535.483
-Endurance Training;E02.831.535.483.250
 Motion Therapy, Continuous Passive;E02.831.535.483.500
 Muscle Stretching Exercises;E02.831.535.483.750
 Plyometric Exercise;E02.831.535.483.812
@@ -45112,8 +44360,6 @@ Radiotherapy Planning, Computer-Assisted;E02.950.825
 Surgery, Computer-Assisted;E02.950.875
 Robotic Surgical Procedures;E02.950.875.500
 Therapy with Helminths;E02.960
-Tobacco Use Cessation Devices;E02.980
-Nicotine Chewing Gum;E02.980.500
 Anesthesia and Analgesia;E03
 Analgesia;E03.091
 Acupuncture Analgesia;E03.091.048
@@ -45161,6 +44407,8 @@ Neuromuscular Blockade;E03.706
 Preanesthetic Medication;E03.806
 Surgical Procedures, Operative;E04
 Ablation Techniques;E04.014
+Catheter Ablation;E04.014.085
+Bronchial Thermoplasty;E04.014.085.500
 Cautery;E04.014.170
 Electrocoagulation;E04.014.170.402
 Argon Plasma Coagulation;E04.014.170.402.054
@@ -45177,9 +44425,6 @@ Keratomileusis, Laser In Situ;E04.014.520.480.750
 Photorefractive Keratectomy;E04.014.520.480.875
 Laser Coagulation;E04.014.520.530
 Lithotripsy, Laser;E04.014.520.550
-Radiofrequency Ablation;E04.014.760
-Catheter Ablation;E04.014.760.500
-Bronchial Thermoplasty;E04.014.760.500.500
 Ambulatory Surgical Procedures;E04.030
 Anastomosis, Surgical;E04.035
 Anastomosis, Roux-en-Y;E04.035.070
@@ -45217,7 +44462,6 @@ Gastric Bypass;E04.062.249
 Gastroplasty;E04.062.750
 Jejunoileal Bypass;E04.062.875
 Lipectomy;E04.062.937
-Lipoabdominoplasty;E04.062.937.500
 Biopsy;E04.074
 Biopsy, Needle;E04.074.119
 Biopsy, Fine-Needle;E04.074.119.500
@@ -45380,8 +44624,6 @@ Pancreatectomy;E04.210.752
 Pancreaticoduodenectomy;E04.210.760
 Pancreaticojejunostomy;E04.210.762
 Peritoneovenous Shunt;E04.210.790
-Proctectomy;E04.210.895
-Proctocolectomy, Restorative;E04.210.895.500
 Dissection;E04.221
 Microdissection;E04.221.580
 Drainage;E04.237
@@ -45400,7 +44642,6 @@ Hypophysectomy;E04.270.532
 Hypophysectomy, Chemical;E04.270.532.490
 Islets of Langerhans Transplantation;E04.270.550
 Parathyroidectomy;E04.270.694
-Pinealectomy;E04.270.775
 Thyroidectomy;E04.270.856
 Extracorporeal Circulation;E04.292
 Cardiopulmonary Bypass;E04.292.413
@@ -45794,7 +45035,6 @@ Tympanocentesis;E04.665.600.905
 Spinal Puncture;E04.665.700
 Reconstructive Surgical Procedures;E04.680
 Abdominoplasty;E04.680.025
-Lipoabdominoplasty;E04.680.025.500
 Acetabuloplasty;E04.680.038
 Arthroplasty;E04.680.101
 Anterior Cruciate Ligament Reconstruction;E04.680.101.026
@@ -46099,7 +45339,7 @@ Gas Chromatography-Mass Spectrometry;E05.196.181.349.500
 Chromatography, Liquid;E05.196.181.400
 Capillary Electrochromatography;E05.196.181.400.150
 Chromatography, Affinity;E05.196.181.400.170
-Tandem Affinity Purification;E05.196.181.400.170.750
+Immunochromatography;E05.196.181.400.170.500
 Chromatography, Gel;E05.196.181.400.250
 Chromatography, Agarose;E05.196.181.400.250.200
 Chromatography, High Pressure Liquid;E05.196.181.400.300
@@ -46192,7 +45432,6 @@ Fluorescence Polarization;E05.196.712.516.600.390
 Fluorescence Polarization Immunoassay;E05.196.712.516.600.390.350
 Fluorescence Recovery After Photobleaching;E05.196.712.516.600.393
 Fluorophotometry;E05.196.712.516.600.410
-Quantitative Light-Induced Fluorescence;E05.196.712.516.600.543
 Spectrometry, Fluorescence;E05.196.712.516.600.676
 Fluorescence Resonance Energy Transfer;E05.196.712.516.600.676.500
 Nephelometry and Turbidimetry;E05.196.712.650
@@ -46371,13 +45610,13 @@ Periodic Acid-Schiff Reaction;E05.200.500.620.670.620
 Prussian Blue Reaction;E05.200.500.620.670.660
 Shadowing (Histology);E05.200.500.620.670.770
 Silver Staining;E05.200.500.620.670.780
+Tissue Embedding;E05.200.500.620.720
+Paraffin Embedding;E05.200.500.620.720.610
+Plastic Embedding;E05.200.500.620.720.640
 Tissue Preservation;E05.200.500.620.760
 Cryopreservation;E05.200.500.620.760.160
 Freeze Drying;E05.200.500.620.760.160.260
 Freeze Substitution;E05.200.500.620.760.160.260.270
-Tissue Embedding;E05.200.500.620.760.440
-Paraffin Embedding;E05.200.500.620.760.440.610
-Plastic Embedding;E05.200.500.620.760.440.640
 Tissue Fixation;E05.200.500.620.760.720
 Metabolic Flux Analysis;E05.200.500.810
 Patch-Clamp Techniques;E05.200.500.905
@@ -46449,13 +45688,13 @@ Neuroanatomical Tract-Tracing Techniques;E05.200.750.600.670.570
 Prussian Blue Reaction;E05.200.750.600.670.660
 Shadowing (Histology);E05.200.750.600.670.770
 Silver Staining;E05.200.750.600.670.780
+Tissue Embedding;E05.200.750.600.720
+Paraffin Embedding;E05.200.750.600.720.610
+Plastic Embedding;E05.200.750.600.720.640
 Tissue Preservation;E05.200.750.600.760
 Cryopreservation;E05.200.750.600.760.160
 Freeze Drying;E05.200.750.600.760.160.260
 Freeze Substitution;E05.200.750.600.760.160.260.270
-Tissue Embedding;E05.200.750.600.760.440
-Paraffin Embedding;E05.200.750.600.760.440.610
-Plastic Embedding;E05.200.750.600.760.440.640
 Tissue Fixation;E05.200.750.600.760.720
 Immunologic Tests;E05.200.812
 Antibody-Coated Bacteria Test, Urinary;E05.200.812.049
@@ -46654,16 +45893,11 @@ Decision Support Techniques;E05.245
 Data Interpretation, Statistical;E05.245.380
 Dermatoglyphics;E05.256
 Dilatation;E05.284
-Drug Development;E05.290
-Drug Approval;E05.290.250
-Compassionate Use Trials;E05.290.250.199
-Investigational New Drug Application;E05.290.250.400
-Drug Design;E05.290.500
-Polypharmacology;E05.290.500.500
-Drug Evaluation;E05.290.625
-Drug Evaluation, Preclinical;E05.290.750
-Drug Repositioning;E05.290.875
 Drug Discovery;E05.295
+Drug Design;E05.295.500
+Polypharmacology;E05.295.500.500
+Drug Evaluation, Preclinical;E05.295.750
+Drug Repositioning;E05.295.875
 Ecological Parameter Monitoring;E05.298
 Electrochemical Techniques;E05.301
 Conductometry;E05.301.160
@@ -46716,10 +45950,9 @@ Health Impact Assessment;E05.318.308.237
 Interviews as Topic;E05.318.308.420
 Lot Quality Assurance Sampling;E05.318.308.461
 Narration;E05.318.308.502
-Negative Results;E05.318.308.544
 Nutrition Assessment;E05.318.308.585
 Preliminary Data;E05.318.308.763
-Records;E05.318.308.940
+Records as Topic;E05.318.308.940
 Birth Certificates;E05.318.308.940.250
 Death Certificates;E05.318.308.940.350
 Dental Records;E05.318.308.940.375
@@ -46797,62 +46030,6 @@ Survival Rate;E05.318.308.985.550.900
 Pregnancy Rate;E05.318.308.985.775
 Birth Rate;E05.318.308.985.775.500
 Disease Notification;E05.318.362
-Epidemiologic Research Design;E05.318.370
-Control Groups;E05.318.370.074
-Cross-Over Studies;E05.318.370.150
-Double-Blind Method;E05.318.370.300
-Genome-Wide Association Study;E05.318.370.392
-Lost to Follow-Up;E05.318.370.438
-Matched-Pair Analysis;E05.318.370.485
-Meta-Analysis as Topic;E05.318.370.500
-Network Meta-Analysis;E05.318.370.500.500
-Random Allocation;E05.318.370.700
-Reproducibility of Results;E05.318.370.725
-Data Accuracy;E05.318.370.725.250
-Scientific Experimental Error;E05.318.370.725.250.500
-Dimensional Measurement Accuracy;E05.318.370.725.500
-Sample Size;E05.318.370.762
-Sensitivity and Specificity;E05.318.370.800
-Predictive Value of Tests;E05.318.370.800.650
-ROC Curve;E05.318.370.800.750
-Signal-To-Noise Ratio;E05.318.370.800.875
-Single-Blind Method;E05.318.370.850
-Epidemiologic Study Characteristics;E05.318.372
-Clinical Studies as Topic;E05.318.372.250
-Clinical Trials as Topic;E05.318.372.250.250
-Adaptive Clinical Trials as Topic;E05.318.372.250.250.100
-Clinical Trials, Phase I as Topic;E05.318.372.250.250.200
-Clinical Trials, Phase II as Topic;E05.318.372.250.250.210
-Clinical Trials, Phase III as Topic;E05.318.372.250.250.220
-Clinical Trials, Phase IV as Topic;E05.318.372.250.250.230
-Controlled Clinical Trials as Topic;E05.318.372.250.250.365
-Non-Randomized Controlled Trials as Topic;E05.318.372.250.250.365.250
-Randomized Controlled Trials as Topic;E05.318.372.250.250.365.500
-Equivalence Trials as Topic;E05.318.372.250.250.365.500.250
-Intention to Treat Analysis;E05.318.372.250.250.365.500.500
-Pragmatic Clinical Trials as Topic;E05.318.372.250.250.365.500.750
-Clinical Trials, Veterinary as Topic;E05.318.372.250.375
-Observational Studies as Topic;E05.318.372.250.500
-Epidemiologic Studies;E05.318.372.500
-Case-Control Studies;E05.318.372.500.500
-Retrospective Studies;E05.318.372.500.500.500
-Cohort Studies;E05.318.372.500.750
-Follow-Up Studies;E05.318.372.500.750.249
-Longitudinal Studies;E05.318.372.500.750.500
-National Longitudinal Study of Adolescent Health;E05.318.372.500.750.500.500
-Prospective Studies;E05.318.372.500.750.625
-Retrospective Studies;E05.318.372.500.750.750
-Controlled Before-After Studies;E05.318.372.500.812
-Cross-Sectional Studies;E05.318.372.500.875
-Historically Controlled Study;E05.318.372.500.912
-Interrupted Time Series Analysis;E05.318.372.500.931
-Seroepidemiologic Studies;E05.318.372.500.950
-HIV Seroprevalence;E05.318.372.500.950.375
-Feasibility Studies;E05.318.372.550
-Multicenter Studies as Topic;E05.318.372.658
-Pilot Projects;E05.318.372.750
-Sampling Studies;E05.318.372.875
-Twin Studies as Topic;E05.318.372.900
 Epidemiological Monitoring;E05.318.375
 Geographic Mapping;E05.318.389
 Molecular Epidemiology;E05.318.416
@@ -46871,14 +46048,11 @@ Biometric Identification;E05.318.740.225.500
 DNA Fingerprinting;E05.318.740.225.500.500
 Biostatistics;E05.318.740.237
 Cluster Analysis;E05.318.740.250
-Latent Class Analysis;E05.318.740.250.338
 Small-Area Analysis;E05.318.740.250.675
 Space-Time Clustering;E05.318.740.250.700
 Confidence Intervals;E05.318.740.275
 Data Interpretation, Statistical;E05.318.740.300
 Discriminant Analysis;E05.318.740.350
-Equipment and Supplies Utilization;E05.318.740.375
-Facilities and Services Utilization;E05.318.740.388
 Factor Analysis, Statistical;E05.318.740.400
 Matched-Pair Analysis;E05.318.740.475
 Models, Statistical;E05.318.740.500
@@ -46907,7 +46081,6 @@ Adverse Outcome Pathways;E05.318.740.600.800.715.250
 Healthcare Failure Mode and Effect Analysis;E05.318.740.600.800.715.500
 Risk Factors;E05.318.740.600.800.725
 Uncertainty;E05.318.740.600.900
-Procedures and Techniques Utilization;E05.318.740.675
 Regression Analysis;E05.318.740.750
 Least-Squares Analysis;E05.318.740.750.400
 Linear Models;E05.318.740.750.425
@@ -46933,8 +46106,62 @@ Markov Chains;E05.318.740.996.500
 Survival Analysis;E05.318.740.998
 Disease-Free Survival;E05.318.740.998.300
 Kaplan-Meier Estimate;E05.318.740.998.650
-Progression-Free Survival;E05.318.740.998.738
 Proportional Hazards Models;E05.318.740.998.825
+Epidemiologic Study Characteristics;E05.318.760
+Clinical Studies as Topic;E05.318.760.250
+Clinical Trials as Topic;E05.318.760.250.500
+Adaptive Clinical Trials as Topic;E05.318.760.250.500.100
+Clinical Trials, Phase I as Topic;E05.318.760.250.500.200
+Clinical Trials, Phase II as Topic;E05.318.760.250.500.210
+Clinical Trials, Phase III as Topic;E05.318.760.250.500.220
+Clinical Trials, Phase IV as Topic;E05.318.760.250.500.230
+Controlled Clinical Trials as Topic;E05.318.760.250.500.365
+Non-Randomized Controlled Trials as Topic;E05.318.760.250.500.365.250
+Randomized Controlled Trials as Topic;E05.318.760.250.500.365.500
+Equivalence Trials as Topic;E05.318.760.250.500.365.500.125
+Intention to Treat Analysis;E05.318.760.250.500.365.500.250
+Pragmatic Clinical Trials as Topic;E05.318.760.250.500.365.500.500
+Observational Studies as Topic;E05.318.760.250.750
+Epidemiologic Studies;E05.318.760.500
+Case-Control Studies;E05.318.760.500.500
+Retrospective Studies;E05.318.760.500.500.500
+Cohort Studies;E05.318.760.500.750
+Follow-Up Studies;E05.318.760.500.750.249
+Longitudinal Studies;E05.318.760.500.750.500
+National Longitudinal Study of Adolescent Health;E05.318.760.500.750.500.500
+Prospective Studies;E05.318.760.500.750.625
+Retrospective Studies;E05.318.760.500.750.750
+Controlled Before-After Studies;E05.318.760.500.812
+Cross-Sectional Studies;E05.318.760.500.875
+Historically Controlled Study;E05.318.760.500.912
+Interrupted Time Series Analysis;E05.318.760.500.931
+Seroepidemiologic Studies;E05.318.760.500.950
+HIV Seroprevalence;E05.318.760.500.950.375
+Feasibility Studies;E05.318.760.550
+Multicenter Studies as Topic;E05.318.760.658
+Pilot Projects;E05.318.760.750
+Sampling Studies;E05.318.760.875
+Twin Studies as Topic;E05.318.760.900
+Epidemiologic Research Design;E05.318.780
+Control Groups;E05.318.780.074
+Cross-Over Studies;E05.318.780.150
+Double-Blind Method;E05.318.780.300
+Genome-Wide Association Study;E05.318.780.392
+Lost to Follow-Up;E05.318.780.438
+Matched-Pair Analysis;E05.318.780.485
+Meta-Analysis as Topic;E05.318.780.500
+Network Meta-Analysis;E05.318.780.500.500
+Random Allocation;E05.318.780.700
+Reproducibility of Results;E05.318.780.725
+Data Accuracy;E05.318.780.725.250
+Scientific Experimental Error;E05.318.780.725.250.500
+Dimensional Measurement Accuracy;E05.318.780.725.500
+Sample Size;E05.318.780.762
+Sensitivity and Specificity;E05.318.780.800
+Predictive Value of Tests;E05.318.780.800.650
+ROC Curve;E05.318.780.800.750
+Signal-To-Noise Ratio;E05.318.780.800.875
+Single-Blind Method;E05.318.780.850
 Equipment Design;E05.320
 Orthodontic Appliance Design;E05.320.274
 Prosthesis Design;E05.320.550
@@ -47134,6 +46361,7 @@ Fluorescence Polarization Immunoassay;E05.478.566.159.350
 Immunoblotting;E05.478.566.320
 Blotting, Western;E05.478.566.320.200
 Blotting, Far-Western;E05.478.566.320.200.200
+Immunochromatography;E05.478.566.335
 Immunoenzyme Techniques;E05.478.566.350
 Enzyme-Linked Immunosorbent Assay;E05.478.566.350.170
 Enzyme-Linked Immunospot Assay;E05.478.566.350.170.500
@@ -47359,7 +46587,6 @@ Models, Molecular;E05.599.595
 Molecular Docking Simulation;E05.599.595.249
 Molecular Dynamics Simulation;E05.599.595.500
 Models, Nursing;E05.599.645
-Shared Governance, Nursing;E05.599.645.500
 Models, Organizational;E05.599.670
 Models, Psychological;E05.599.695
 Neurolinguistic Programming;E05.599.695.550
@@ -47458,7 +46685,6 @@ Preservation, Biological;E05.760
 Cryopreservation;E05.760.156
 Freeze Drying;E05.760.156.260
 Freeze Substitution;E05.760.156.260.270
-Plastination;E05.760.400
 Refrigeration;E05.760.643
 Tissue Preservation;E05.760.833
 Blood Preservation;E05.760.833.230
@@ -47466,6 +46692,9 @@ Blood Safety;E05.760.833.230.500
 Cold Ischemia;E05.760.833.445
 Organ Preservation;E05.760.833.660
 Semen Preservation;E05.760.833.890
+Protein Refolding;E05.790
+Protein Unfolding;E05.793
+Protein Denaturation;E05.793.500
 Psychological Techniques;E05.796
 Behavior Observation Techniques;E05.796.112
 Galvanic Skin Response;E05.796.332
@@ -47646,7 +46875,6 @@ Diagnosis, Oral;E06.342
 Dental Caries Activity Tests;E06.342.250
 Dental Pulp Test;E06.342.377
 Photography, Dental;E06.342.488
-Quantitative Light-Induced Fluorescence;E06.342.626
 Radiography, Dental;E06.342.764
 Age Determination by Teeth;E06.342.764.142
 Radiography, Bitewing;E06.342.764.600
@@ -47660,7 +46888,6 @@ Dental Implantation, Endosseous, Endodontic;E06.397.345
 Dental Pulp Capping;E06.397.370
 Pulpectomy;E06.397.633
 Pulpotomy;E06.397.695
-Regenerative Endodontics;E06.397.737
 Root Canal Therapy;E06.397.778
 Apexification;E06.397.778.188
 Dental Pulp Devitalization;E06.397.778.377
@@ -47718,14 +46945,13 @@ Mandibular Advancement;E06.658.280
 Orthodontic Anchorage Procedures;E06.658.337
 Orthodontic Appliance Design;E06.658.450
 Orthodontic Appliances;E06.658.453
-Orthodontic Appliances, Fixed;E06.658.453.255
-Orthodontic Brackets;E06.658.453.255.500
 Occlusal Splints;E06.658.453.510
 Orthodontic Appliances, Functional;E06.658.453.560
 Activator Appliances;E06.658.453.560.100
 Orthodontic Appliances, Removable;E06.658.453.578
 Activator Appliances;E06.658.453.578.100
 Extraoral Traction Appliances;E06.658.453.578.360
+Orthodontic Brackets;E06.658.453.590
 Orthodontic Retainers;E06.658.453.637
 Orthodontic Wires;E06.658.453.684
 Orthodontics, Corrective;E06.658.578
@@ -47780,9 +47006,9 @@ Dental Implants;E06.780.346.593
 Dental Implants, Single-Tooth;E06.780.346.593.185
 Dental Prosthesis Design;E06.780.346.625
 Dental Implant-Abutment Design;E06.780.346.625.500
+Dental Prosthesis, Implant-Supported;E06.780.346.630
 Dental Prosthesis Repair;E06.780.346.656
 Dental Prosthesis Retention;E06.780.346.687
-Dental Prosthesis, Implant-Supported;E06.780.346.706
 Dental Restoration Failure;E06.780.346.725
 Dental Restoration, Permanent;E06.780.346.737
 Dental Restoration Repair;E06.780.346.737.112
@@ -47792,27 +47018,27 @@ Dental Restoration, Temporary;E06.780.346.740
 Dental Veneers;E06.780.346.750
 Dentures;E06.780.346.760
 Denture Bases;E06.780.346.760.281
+Denture, Complete;E06.780.346.760.290
+Denture, Complete, Immediate;E06.780.346.760.290.254
+Denture, Complete, Lower;E06.780.346.760.290.379
+Denture, Complete, Upper;E06.780.346.760.290.504
 Denture Design;E06.780.346.760.300
 Denture Liners;E06.780.346.760.357
+Denture, Overlay;E06.780.346.760.395
+Denture, Partial;E06.780.346.760.433
+Denture, Partial, Fixed;E06.780.346.760.433.271
+Denture, Partial, Fixed, Resin-Bonded;E06.780.346.760.433.271.260
+Denture, Partial, Immediate;E06.780.346.760.433.342
+Denture, Partial, Removable;E06.780.346.760.433.413
+Denture, Partial, Temporary;E06.780.346.760.433.484
+Denture Precision Attachment;E06.780.346.760.433.555
 Denture Rebasing;E06.780.346.760.471
 Denture Repair;E06.780.346.760.500
 Denture Retention;E06.780.346.760.550
-Denture, Complete;E06.780.346.760.775
-Denture, Complete, Immediate;E06.780.346.760.775.254
-Denture, Complete, Lower;E06.780.346.760.775.379
-Denture, Complete, Upper;E06.780.346.760.775.504
-Denture, Overlay;E06.780.346.760.887
-Denture, Partial;E06.780.346.760.943
-Denture, Partial, Fixed;E06.780.346.760.943.271
-Denture, Partial, Fixed, Resin-Bonded;E06.780.346.760.943.271.260
-Denture, Partial, Immediate;E06.780.346.760.943.342
-Denture, Partial, Removable;E06.780.346.760.943.413
-Denture, Partial, Temporary;E06.780.346.760.943.484
-Denture Precision Attachment;E06.780.346.760.943.555
 Palatal Obturators;E06.780.346.850
 Tooth, Artificial;E06.780.346.875
 Dental Marginal Adaptation;E06.780.620
-Tissue Conditioning, Dental;E06.780.895
+Tissue Conditioning (Dental);E06.780.895
 Surgery, Oral;E06.892
 Orthognathic Surgery;E06.892.500
 Technology, Dental;E06.912
@@ -48018,7 +47244,6 @@ Artificial Limbs;E07.695.050
 Auditory Brain Stem Implants;E07.695.075
 Bioprosthesis;E07.695.100
 Blood Vessel Prosthesis;E07.695.110
-Bone-Anchored Prosthesis;E07.695.118
 Bone-Implant Interface;E07.695.125
 Breast Implants;E07.695.140
 Cochlear Implants;E07.695.150
@@ -48261,7 +47486,6 @@ Survivorship;F01.058.144.500
 Feedback, Psychological;F01.058.288
 Orientation;F01.058.577
 Orientation, Spatial;F01.058.577.500
-Posttraumatic Growth, Psychological;F01.058.683
 Sense of Coherence;F01.058.788
 Attitude;F01.100
 Attitude of Health Personnel;F01.100.050
@@ -48284,9 +47508,7 @@ Vaccination Refusal;F01.100.150.750.750.500
 Catastrophization;F01.100.575
 Optimism;F01.100.787
 Pessimism;F01.100.893
-Respect;F01.100.907
 Stereotyping;F01.100.920
-Wit and Humor as Topic;F01.100.960
 Behavior;F01.145
 Accident Proneness;F01.145.015
 Adolescent Behavior;F01.145.022
@@ -48328,7 +47550,6 @@ Affective Symptoms;F01.145.126.100
 Aggression;F01.145.126.125
 Agonistic Behavior;F01.145.126.125.100
 Bullying;F01.145.126.125.550
-Cyberbullying;F01.145.126.125.550.500
 Catatonia;F01.145.126.156
 Child Reactive Disorders;F01.145.126.159
 Delusions;F01.145.126.200
@@ -48357,8 +47578,6 @@ Suicidal Ideation;F01.145.126.980.875.149
 Suicide, Assisted;F01.145.126.980.875.300
 Suicide, Attempted;F01.145.126.980.875.600
 Stress, Psychological;F01.145.126.990
-Burnout, Psychological;F01.145.126.990.367
-Burnout, Professional;F01.145.126.990.367.500
 Occupational Stress;F01.145.126.990.734
 Compassion Fatigue;F01.145.126.990.734.500
 Wandering Behavior;F01.145.126.995
@@ -48393,7 +47612,6 @@ Criminal Behavior;F01.145.250
 Driving Under the Influence;F01.145.250.250
 Dangerous Behavior;F01.145.263
 Driving Under the Influence;F01.145.263.500
-Road Rage;F01.145.263.750
 Drinking Behavior;F01.145.317
 Alcohol Abstinence;F01.145.317.134
 Alcohol Drinking;F01.145.317.269
@@ -48435,7 +47653,6 @@ Patient Satisfaction;F01.145.488.887.625
 Patient Preference;F01.145.488.887.625.500
 Treatment Refusal;F01.145.488.887.750
 Vaccination Refusal;F01.145.488.887.750.500
-Hoarding;F01.145.493
 Illness Behavior;F01.145.499
 Imitative Behavior;F01.145.510
 Impulsive Behavior;F01.145.527
@@ -48451,6 +47668,7 @@ Marijuana Smoking;F01.145.610.875
 Motor Activity;F01.145.632
 Freezing Reaction, Cataleptic;F01.145.632.555
 Immobility Response, Tonic;F01.145.632.680
+Hoarding;F01.145.655
 Multitasking Behavior;F01.145.666
 Personal Satisfaction;F01.145.677
 Reproductive Behavior;F01.145.688
@@ -48459,7 +47677,6 @@ Risk Reduction Behavior;F01.145.699
 HIV Serosorting;F01.145.699.400
 Risk-Taking;F01.145.722
 Gambling;F01.145.722.408
-Sedentary Behavior;F01.145.749
 Self Stimulation;F01.145.775
 Sexual Behavior;F01.145.802
 Coitus;F01.145.802.188
@@ -48505,7 +47722,6 @@ Femininity;F01.145.813.199
 Gift Giving;F01.145.813.208
 Harassment, Non-Sexual;F01.145.813.213
 Bullying;F01.145.813.213.500
-Cyberbullying;F01.145.813.213.500.500
 Help-Seeking Behavior;F01.145.813.217
 Helping Behavior;F01.145.813.225
 Incivility;F01.145.813.301
@@ -48590,7 +47806,6 @@ Affect;F01.470.047
 Irritable Mood;F01.470.047.110
 Anger;F01.470.093
 Rage;F01.470.093.640
-Road Rage;F01.470.093.640.500
 Anxiety;F01.470.132
 Anxiety, Castration;F01.470.132.150
 Koro;F01.470.132.150.500
@@ -48600,28 +47815,26 @@ Performance Anxiety;F01.470.132.650
 Apathy;F01.470.137
 Bereavement;F01.470.142
 Grief;F01.470.142.110
-Disenfranchised Grief;F01.470.142.110.500
 Boredom;F01.470.192
 Courage;F01.470.257
-Disgust;F01.470.307
 Euphoria;F01.470.323
 Expressed Emotion;F01.470.342
 Fear;F01.470.361
+Dental Anxiety;F01.470.361.300
 Panic;F01.470.361.585
 Forgiveness;F01.470.383
 Frustration;F01.470.405
 Guilt;F01.470.483
 Shame;F01.470.483.666
-Embarrassment;F01.470.483.666.500
 Happiness;F01.470.516
 Hate;F01.470.548
 Hope;F01.470.572
 Hostility;F01.470.596
 Jealousy;F01.470.653
+Laughter;F01.470.693
 Loneliness;F01.470.713
 Love;F01.470.734
 Pleasure;F01.470.867
-Sadness;F01.470.933
 Human Characteristics;F01.510
 Human Development;F01.525
 Adolescent Development;F01.525.049
@@ -48686,7 +47899,6 @@ Authoritarianism;F01.752.098
 Character;F01.752.190
 Creativity;F01.752.264
 Dependency (Psychology);F01.752.330
-Egocentrism;F01.752.343
 Empathy;F01.752.355
 Individuality;F01.752.488
 Intelligence;F01.752.543
@@ -48718,7 +47930,6 @@ Oral Stage;F01.752.747.722.626
 Self Concept;F01.752.747.792
 Body Image;F01.752.747.792.110
 Diagnostic Self Evaluation;F01.752.747.792.220
-Egocentrism;F01.752.747.792.379
 Self-Assessment;F01.752.747.792.537
 Self Disclosure;F01.752.747.792.662
 Self Efficacy;F01.752.747.792.700
@@ -48756,7 +47967,6 @@ Parenting;F01.829.263.370.310
 Paternal Behavior;F01.829.263.370.330
 Paternal Deprivation;F01.829.263.370.380
 Sibling Relations;F01.829.263.370.450
-Family Separation;F01.829.263.387
 Grandparents;F01.829.263.403
 Military Family;F01.829.263.435
 Nuclear Family;F01.829.263.500
@@ -48805,7 +48015,6 @@ Duty to Recontact;F01.829.401.650.505
 Nurse-Patient Relations;F01.829.401.650.600
 Physician-Patient Relations;F01.829.401.650.675
 Researcher-Subject Relations;F01.829.401.650.837
-Therapeutic Alliance;F01.829.401.650.918
 Social Skills;F01.829.401.737
 Trust;F01.829.401.825
 Life Style;F01.829.458
@@ -48813,7 +48022,7 @@ Healthy Lifestyle;F01.829.458.205
 Healthy Aging;F01.829.458.205.250
 Healthy Diet;F01.829.458.205.500
 Life Change Events;F01.829.458.410
-Sedentary Behavior;F01.829.458.705
+Sedentary Lifestyle;F01.829.458.705
 Morale;F01.829.477
 Morals;F01.829.500
 Conscience;F01.829.500.359
@@ -48911,7 +48120,6 @@ Transfer (Psychology);F02.463.425.910
 Verbal Learning;F02.463.425.952
 Paired-Associate Learning;F02.463.425.952.500
 Serial Learning;F02.463.425.952.747
-Mentalization;F02.463.467
 Mind-Body Relations, Metaphysical;F02.463.509
 Mindfulness;F02.463.551
 Perception;F02.463.593
@@ -49011,7 +48219,6 @@ Volition;F02.463.902
 Parapsychology;F02.550
 Telepathy;F02.550.847
 Personal Autonomy;F02.600
-Posttraumatic Growth, Psychological;F02.647
 Psycholinguistics;F02.694
 Neurolinguistic Programming;F02.694.550
 Semantic Differential;F02.694.663
@@ -49150,11 +48357,9 @@ Sleep Hygiene;F02.830.855.734
 Sleep Latency;F02.830.855.765
 Sleep Stages;F02.830.855.796
 Sleep, REM;F02.830.855.796.671
-Sleep, Slow-Wave;F02.830.855.796.835
 Stress, Psychological;F02.830.900
-Burnout, Psychological;F02.830.900.333
-Burnout, Professional;F02.830.900.333.500
 Occupational Stress;F02.830.900.666
+Burnout, Professional;F02.830.900.666.500
 Compassion Fatigue;F02.830.900.666.750
 Religion and Psychology;F02.880
 Pastoral Care;F02.880.410
@@ -49180,7 +48385,7 @@ Firesetting Behavior;F03.250.300
 Gambling;F03.250.400
 Trichotillomania;F03.250.800
 Dissociative Disorders;F03.300
-Dissociative Identity Disorder;F03.300.500
+Multiple Personality Disorder;F03.300.500
 Elimination Disorders;F03.388
 Encopresis;F03.388.300
 Enuresis;F03.388.400
@@ -49354,7 +48559,6 @@ Marijuana Abuse;F03.900.635
 Marijuana Use;F03.900.643
 Neonatal Abstinence Syndrome;F03.900.650
 Opioid-Related Disorders;F03.900.675
-Heroin Dependence;F03.900.675.300
 Morphine Dependence;F03.900.675.600
 Opium Dependence;F03.900.675.800
 Phencyclidine Abuse;F03.900.700
@@ -49403,7 +48607,6 @@ Psycholinguistics;F04.096.586
 Neurolinguistic Programming;F04.096.586.550
 Psychology;F04.096.628
 Environmental Psychology;F04.096.628.033
-Forensic Psychology;F04.096.628.049
 Psychology, Adolescent;F04.096.628.065
 Psychology, Child;F04.096.628.193
 Cognitive Science;F04.096.628.255
@@ -49522,15 +48725,14 @@ Aversive Therapy;F04.754.137.174
 Biofeedback, Psychology;F04.754.137.301
 Feedback, Sensory;F04.754.137.301.500
 Neurofeedback;F04.754.137.301.750
-Cognitive Behavioral Therapy;F04.754.137.350
-Acceptance and Commitment Therapy;F04.754.137.350.249
-Mindfulness;F04.754.137.350.500
 Cognitive Remediation;F04.754.137.365
+Cognitive Therapy;F04.754.137.428
+Acceptance and Commitment Therapy;F04.754.137.428.249
+Mindfulness;F04.754.137.428.500
 Desensitization, Psychologic;F04.754.137.506
 Eye Movement Desensitization Reprocessing;F04.754.137.506.162
 Implosive Therapy;F04.754.137.506.325
 Virtual Reality Exposure Therapy;F04.754.137.506.662
-Dialectical Behavior Therapy;F04.754.137.628
 Relaxation Therapy;F04.754.137.750
 Meditation;F04.754.137.750.500
 Sleep Phase Chronotherapy;F04.754.137.875
@@ -49553,7 +48755,7 @@ Autosuggestion;F04.754.424.771.299
 Imagery (Psychotherapy);F04.754.462
 Music Therapy;F04.754.549
 Narrative Therapy;F04.754.570
-Person-Centered Psychotherapy;F04.754.592
+Person-Centered Therapy;F04.754.592
 Play Therapy;F04.754.664
 Psychoanalytic Therapy;F04.754.709
 Free Association;F04.754.709.437
@@ -49562,7 +48764,6 @@ Psychotherapeutic Processes;F04.754.720
 Abreaction;F04.754.720.107
 Catharsis;F04.754.720.107.333
 Association;F04.754.720.346
-Therapeutic Alliance;F04.754.720.605
 Transference (Psychology);F04.754.720.864
 Countertransference (Psychology);F04.754.720.864.363
 Psychotherapy, Brief;F04.754.738
@@ -49575,13 +48776,12 @@ Milieu Therapy;F04.754.864.392
 Therapeutic Community;F04.754.864.392.701
 Psychotherapy, Group;F04.754.864.581
 Couples Therapy;F04.754.864.581.136
-Marital Therapy;F04.754.864.581.136.500
 Family Therapy;F04.754.864.581.273
+Marital Therapy;F04.754.864.581.550
 Psychodrama;F04.754.864.581.679
 Role Playing;F04.754.864.581.679.653
 Sensitivity Training Groups;F04.754.864.581.813
 Residential Treatment;F04.754.864.696
-Therapeutic Alliance;F04.754.932
 Schizophrenic Psychology;F04.824
 Physical Phenomena;G01
 Absorption;G01.015
@@ -49632,7 +48832,6 @@ Membrane Fluidity;G01.154.500
 Membrane Potentials;G01.154.535
 Protein Folding;G01.154.651
 Protein Refolding;G01.154.651.501
-Protein Renaturation;G01.154.651.501.500
 Protein Unfolding;G01.154.651.750
 Protein Denaturation;G01.154.651.750.500
 RNA Folding;G01.154.709
@@ -49666,7 +48865,6 @@ Hot Springs;G01.311.355.750.500
 Hydrothermal Vents;G01.311.355.750.500.400
 Ice Cover;G01.311.400
 Lakes;G01.311.580
-Caspian Sea;G01.311.580.500
 Landslides;G01.311.603
 Oceans and Seas;G01.311.625
 Bays;G01.311.625.080
@@ -49675,7 +48873,6 @@ Oil and Gas Fields;G01.311.687
 Ponds;G01.311.718
 Rivers;G01.311.750
 Soil;G01.311.820
-Clay;G01.311.820.250
 Permafrost;G01.311.820.500
 Tidal Waves;G01.311.910
 Tsunamis;G01.311.933
@@ -49715,7 +48912,6 @@ Compressive Strength;G01.374.180
 Elasticity;G01.374.590
 Compliance;G01.374.590.210
 Elastic Modulus;G01.374.590.605
-Flexural Strength;G01.374.604
 Friction;G01.374.618
 Hardness;G01.374.647
 Hardness Tests;G01.374.647.457
@@ -49872,7 +49068,6 @@ Nitrogen Fixation;G02.111.071.630
 Base Composition;G02.111.080
 Binding, Competitive;G02.111.084
 Biocatalysis;G02.111.086
-Biomineralization;G02.111.092
 Biosynthetic Pathways;G02.111.098
 Biotinylation;G02.111.109
 Body Composition;G02.111.130
@@ -50133,9 +49328,7 @@ Protein Modification, Translational;G02.111.660.871.790
 Protein Processing, Post-Translational;G02.111.660.871.790.600
 ADP-Ribosylation;G02.111.660.871.790.600.200
 Poly ADP Ribosylation;G02.111.660.871.790.600.200.500
-Protein Carbamylation;G02.111.660.871.790.600.250
 Citrullination;G02.111.660.871.790.600.300
-Protein Carbonylation;G02.111.660.871.790.600.350
 Protein Prenylation;G02.111.660.871.790.600.400
 Protein Splicing;G02.111.660.871.790.600.700
 Ubiquitination;G02.111.660.871.790.600.925
@@ -50153,6 +49346,7 @@ Prenylation;G02.111.672
 Protein Prenylation;G02.111.672.500
 Protein Aggregation, Pathological;G02.111.675
 Protein Binding;G02.111.679
+Protein Carbonylation;G02.111.682
 Protein Folding;G02.111.688
 Protein Refolding;G02.111.688.501
 Protein Renaturation;G02.111.688.501.500
@@ -50162,9 +49356,7 @@ Protein Modification, Translational;G02.111.691
 Protein Processing, Post-Translational;G02.111.691.600
 ADP-Ribosylation;G02.111.691.600.200
 Poly ADP Ribosylation;G02.111.691.600.200.500
-Protein Carbamylation;G02.111.691.600.250
 Citrullination;G02.111.691.600.300
-Protein Carbonylation;G02.111.691.600.350
 Protein Prenylation;G02.111.691.600.400
 Protein Splicing;G02.111.691.600.700
 Ubiquitination;G02.111.691.600.775
@@ -50298,7 +49490,6 @@ Photophosphorylation;G02.740.842
 Photosynthesis;G02.740.921
 Polymerization;G02.750
 Proton-Motive Force;G02.765
-Pyrolysis;G02.785
 Solubility;G02.805
 Specific Gravity;G02.819
 Spontaneous Combustion;G02.833
@@ -50412,7 +49603,6 @@ Halogenation;G03.360
 Heterotrophic Processes;G03.393
 Hydrogenation;G03.409
 Hydroxylation;G03.425
-Insulin Secretion;G03.442
 Lipid Metabolism;G03.458
 Lipogenesis;G03.458.249
 Lipolysis;G03.458.500
@@ -50439,7 +49629,6 @@ Kallikrein-Kinin System;G03.615.500.500
 Water Loss, Insensible;G03.615.500.750
 Oxidative Stress;G03.673
 Nitrosative Stress;G03.673.345
-Protein Carbamylation;G03.673.518
 Protein Carbonylation;G03.673.690
 Oxygen Consumption;G03.680
 Anaerobic Threshold;G03.680.110
@@ -50457,9 +49646,7 @@ Protein Modification, Translational;G03.734.871.790
 Protein Processing, Post-Translational;G03.734.871.790.600
 ADP-Ribosylation;G03.734.871.790.600.200
 Poly ADP Ribosylation;G03.734.871.790.600.200.500
-Protein Carbamylation;G03.734.871.790.600.250
 Citrullination;G03.734.871.790.600.300
-Protein Carbonylation;G03.734.871.790.600.350
 Protein Prenylation;G03.734.871.790.600.400
 Protein Splicing;G03.734.871.790.600.700
 Ubiquitination;G03.734.871.790.600.831
@@ -50830,9 +50017,7 @@ Protein Modification, Translational;G05.308.670
 Protein Processing, Post-Translational;G05.308.670.600
 ADP-Ribosylation;G05.308.670.600.200
 Poly ADP Ribosylation;G05.308.670.600.200.500
-Protein Carbamylation;G05.308.670.600.250
 Citrullination;G05.308.670.600.300
-Protein Carbonylation;G05.308.670.600.350
 Protein Prenylation;G05.308.670.600.400
 Protein Splicing;G05.308.670.600.700
 Ubiquitination;G05.308.670.600.831
@@ -50866,7 +50051,6 @@ Gene Rearrangement, delta-Chain T-Cell Antigen Receptor;G05.344.801.261
 Gene Rearrangement, gamma-Chain T-Cell Antigen Receptor;G05.344.801.311
 V(D)J Recombination;G05.344.900
 Genetic Background;G05.346
-Genetic Profile;G05.346.500
 Genetic Fitness;G05.347
 Genetic Linkage;G05.348
 Linkage Disequilibrium;G05.348.500
@@ -51519,7 +50703,6 @@ Transformation, Bacterial;G06.099.850
 DNA Transformation Competence;G06.099.850.500
 Viral Tropism;G06.099.925
 Biofilms;G06.120
-Extracellular Polymeric Substance Matrix;G06.120.500
 Catabolite Repression;G06.173
 Drug Resistance, Microbial;G06.225
 Drug Resistance, Bacterial;G06.225.347
@@ -51541,10 +50724,9 @@ Drug Resistance, Multiple, Viral;G06.225.420.500
 Germ-Free Life;G06.320
 Specific Pathogen-Free Organisms;G06.320.676
 Hemadsorption;G06.365
-Host Microbial Interactions;G06.373
-Host-Pathogen Interactions;G06.462
-Host Specificity;G06.462.380
-Immune Evasion;G06.462.400
+Host-Pathogen Interactions;G06.380
+Host Specificity;G06.380.380
+Immune Evasion;G06.380.400
 Microbial Interactions;G06.550
 Antibiosis;G06.550.050
 Quorum Sensing;G06.550.700
@@ -51583,7 +50765,7 @@ Virulence;G06.930
 Physiological Phenomena;G07
 Adaptation, Physiological;G07.025
 Acclimatization;G07.025.133
-Salt Tolerance;G07.025.133.250
+Salt-Tolerance;G07.025.133.250
 Thermotolerance;G07.025.133.500
 Anatomic Variation;G07.049
 Bacterial Shedding;G07.075
@@ -51726,18 +50908,9 @@ Dietary Fiber;G07.203.300.400
 Prebiotics;G07.203.300.400.500
 Dietary Proteins;G07.203.300.428
 Egg Proteins, Dietary;G07.203.300.428.317
-Meat Proteins;G07.203.300.428.472
-Fish Proteins, Dietary;G07.203.300.428.472.250
-Poultry Proteins;G07.203.300.428.472.500
-Shellfish Proteins;G07.203.300.428.472.750
 Milk Proteins;G07.203.300.428.626
 Whey Proteins;G07.203.300.428.626.500
-Plant Proteins, Dietary;G07.203.300.428.920
-Fruit Proteins;G07.203.300.428.920.113
-Grain Proteins;G07.203.300.428.920.225
-Nut Proteins;G07.203.300.428.920.450
-Pea Proteins;G07.203.300.428.920.500
-Soybean Proteins;G07.203.300.428.920.750
+Vegetable Proteins;G07.203.300.428.920
 Dietary Supplements;G07.203.300.456
 Prebiotics;G07.203.300.456.249
 Probiotics;G07.203.300.456.500
@@ -51778,26 +50951,18 @@ Lunch;G07.203.300.590.560
 Snacks;G07.203.300.590.780
 Meat;G07.203.300.600
 Meat Products;G07.203.300.600.500
-Meat Proteins;G07.203.300.600.625
-Fish Proteins, Dietary;G07.203.300.600.625.250
-Poultry Proteins;G07.203.300.600.625.500
-Shellfish Proteins;G07.203.300.600.625.750
 Poultry;G07.203.300.600.750
 Poultry Products;G07.203.300.600.750.500
-Poultry Proteins;G07.203.300.600.750.750
 Red Meat;G07.203.300.600.813
 Seafood;G07.203.300.600.875
 Fish Products;G07.203.300.600.875.400
 Fish Flour;G07.203.300.600.875.400.400
-Fish Proteins, Dietary;G07.203.300.600.875.550
 Shellfish;G07.203.300.600.875.700
-Shellfish Proteins;G07.203.300.600.875.700.500
+Micronutrients;G07.203.300.631
+Trace Elements;G07.203.300.631.555
+Vitamins;G07.203.300.631.600
+Provitamins;G07.203.300.631.600.500
 Molasses;G07.203.300.662
-Nutrients;G07.203.300.681
-Micronutrients;G07.203.300.681.500
-Trace Elements;G07.203.300.681.500.555
-Vitamins;G07.203.300.681.500.600
-Provitamins;G07.203.300.681.500.600.500
 Nuts;G07.203.300.700
 Raw Foods;G07.203.300.737
 Seeds;G07.203.300.775
@@ -51808,6 +50973,7 @@ Vegetable Products;G07.203.300.850.450
 Soy Foods;G07.203.300.850.450.500
 Soy Milk;G07.203.300.850.450.500.500
 Soybean Proteins;G07.203.300.850.450.500.750
+Vegetable Proteins;G07.203.300.850.900
 Nutritional Physiological Phenomena;G07.203.650
 Animal Nutritional Physiological Phenomena;G07.203.650.161
 Appetite Regulation;G07.203.650.170
@@ -51936,18 +51102,15 @@ Aging;G07.345.124
 Cognitive Aging;G07.345.124.260
 Immunosenescence;G07.345.124.390
 Longevity;G07.345.124.519
-Biomineralization;G07.345.155
-Calcification, Physiologic;G07.345.155.500
-Tooth Calcification;G07.345.155.500.710
+Calcification, Physiologic;G07.345.186
+Tooth Calcification;G07.345.186.710
 Growth;G07.345.249
 Body Size;G07.345.249.314
 Body Height;G07.345.249.314.100
 Body Weight;G07.345.249.314.120
 Birth Weight;G07.345.249.314.120.186
 Body Weight Changes;G07.345.249.314.120.200
-Body-Weight Trajectory;G07.345.249.314.120.200.463
 Weight Gain;G07.345.249.314.120.200.926
-Gestational Weight Gain;G07.345.249.314.120.200.926.500
 Weight Loss;G07.345.249.314.120.200.963
 Body Weight Maintenance;G07.345.249.314.120.250
 Fetal Weight;G07.345.249.314.120.300
@@ -51988,11 +51151,10 @@ Dentinogenesis;G07.345.500.325.377.186
 Fetal Organ Maturity;G07.345.500.325.377.249
 Lymphangiogenesis;G07.345.500.325.377.437
 Musculoskeletal Development;G07.345.500.325.377.625
-Biomineralization;G07.345.500.325.377.625.050
-Bone Development;G07.345.500.325.377.625.050.500
-Calcification, Physiologic;G07.345.500.325.377.625.050.500.175
-Maxillofacial Development;G07.345.500.325.377.625.050.500.478
-Osteogenesis;G07.345.500.325.377.625.050.500.729
+Bone Development;G07.345.500.325.377.625.100
+Calcification, Physiologic;G07.345.500.325.377.625.100.175
+Maxillofacial Development;G07.345.500.325.377.625.100.478
+Osteogenesis;G07.345.500.325.377.625.100.729
 Chondrogenesis;G07.345.500.325.377.625.180
 Muscle Development;G07.345.500.325.377.625.590
 Neurogenesis;G07.345.500.325.377.687
@@ -52043,7 +51205,6 @@ Osmoregulation;G07.410.810
 Water-Electrolyte Balance;G07.410.810.500
 Kallikrein-Kinin System;G07.410.810.500.500
 Water Loss, Insensible;G07.410.810.500.750
-Insulin Secretion;G07.475
 Longevity;G07.540
 Movement;G07.568
 Locomotion;G07.568.500
@@ -52156,14 +51317,9 @@ Dose-Response Relationship, Radiation;G07.738.500
 Stress, Physiological;G07.775
 Cold-Shock Response;G07.775.249
 Heat-Shock Response;G07.775.500
-Thermotolerance;G07.775.500.500
-Osmoregulation;G07.775.625
 Oxidative Stress;G07.775.750
 Nitrosative Stress;G07.775.750.500
-Protein Carbamylation;G07.775.750.625
 Protein Carbonylation;G07.775.750.750
-Salt Stress;G07.775.813
-Salt Tolerance;G07.775.813.500
 Thermosensing;G07.850
 Virus Shedding;G07.925
 Reproductive and Urinary Physiological Phenomena;G08
@@ -52191,7 +51347,6 @@ Fetal Viability;G08.686.220
 Fetal Weight;G08.686.280
 Follicular Atresia;G08.686.290
 Gestational Age;G08.686.320
-Gestational Weight Gain;G08.686.330
 Gravidity;G08.686.340
 Labor Presentation;G08.686.520
 Breech Presentation;G08.686.520.150
@@ -52205,6 +51360,7 @@ Fertile Period;G08.686.605.154
 Follicular Phase;G08.686.605.310
 Luteal Phase;G08.686.605.410
 Menstruation;G08.686.605.428
+Menstruation;G08.686.617
 Ovarian Reserve;G08.686.628
 Oviparity;G08.686.650
 Ovoviviparity;G08.686.655
@@ -52289,16 +51445,11 @@ Uterine Contraction;G08.686.784.769.326.700
 Maternal-Fetal Exchange;G08.686.784.769.455
 Parity;G08.686.784.769.472
 Parturition;G08.686.784.769.490
-Birth Setting;G08.686.784.769.490.062
-Home Childbirth;G08.686.784.769.490.062.500
+Home Childbirth;G08.686.784.769.490.124
 Natural Childbirth;G08.686.784.769.490.249
 Term Birth;G08.686.784.769.490.500
 Placentation;G08.686.784.769.491
 Pregnancy in Adolescence;G08.686.784.769.494
-Pregnancy Outcome;G08.686.784.769.496
-Abortion, Spontaneous;G08.686.784.769.496.125
-Live Birth;G08.686.784.769.496.249
-Stillbirth;G08.686.784.769.496.500
 Pregnancy, Animal;G08.686.784.769.498
 Litter Size;G08.686.784.769.498.300
 Pregnancy, High-Risk;G08.686.784.769.500
@@ -52306,6 +51457,9 @@ Pregnancy Maintenance;G08.686.784.769.520
 Corpus Luteum Maintenance;G08.686.784.769.520.500
 Pregnancy, Multiple;G08.686.784.769.525
 Superfetation;G08.686.784.769.525.608
+Pregnancy Outcome;G08.686.784.769.530
+Live Birth;G08.686.784.769.530.249
+Stillbirth;G08.686.784.769.530.500
 Pregnancy, Unplanned;G08.686.784.769.570
 Pregnancy, Unwanted;G08.686.784.769.580
 Prenatal Nutritional Physiological Phenomena;G08.686.784.769.600
@@ -52604,7 +51758,6 @@ Muscle Stretching Exercises;G11.427.410.698.277.249
 Physical Conditioning, Animal;G11.427.410.698.277.280
 Physical Conditioning, Human;G11.427.410.698.277.311
 Circuit-Based Exercise;G11.427.410.698.277.311.125
-Endurance Training;G11.427.410.698.277.311.188
 High-Intensity Interval Training;G11.427.410.698.277.311.250
 Plyometric Exercise;G11.427.410.698.277.311.500
 Resistance Training;G11.427.410.698.277.311.750
@@ -52637,11 +51790,10 @@ Hand Strength;G11.427.560.500
 Pinch Strength;G11.427.560.500.500
 Muscle Tonus;G11.427.565
 Musculoskeletal Development;G11.427.578
-Biomineralization;G11.427.578.050
-Bone Development;G11.427.578.050.500
-Calcification, Physiologic;G11.427.578.050.500.175
-Maxillofacial Development;G11.427.578.050.500.478
-Osteogenesis;G11.427.578.050.500.729
+Bone Development;G11.427.578.100
+Calcification, Physiologic;G11.427.578.100.175
+Maxillofacial Development;G11.427.578.100.478
+Osteogenesis;G11.427.578.100.729
 Chondrogenesis;G11.427.578.180
 Muscle Development;G11.427.578.590
 Physical Endurance;G11.427.680
@@ -52655,8 +51807,6 @@ Posture;G11.427.695
 Head-Down Tilt;G11.427.695.300
 Knee-Chest Position;G11.427.695.380
 Prone Position;G11.427.695.525
-Sitting Position;G11.427.695.575
-Standing Position;G11.427.695.600
 Supine Position;G11.427.695.625
 Psychomotor Performance;G11.427.700
 Range of Motion, Articular;G11.427.760
@@ -52776,7 +51926,6 @@ Sleep;G11.561.803
 Sleep Latency;G11.561.803.377
 Sleep Stages;G11.561.803.754
 Sleep, REM;G11.561.803.754.671
-Sleep, Slow-Wave;G11.561.803.754.835
 Speech;G11.561.812
 Speech Acoustics;G11.561.812.650
 Speech Intelligibility;G11.561.812.686
@@ -52992,7 +52141,7 @@ Biological Phenomena;G16
 Adaptation, Biological;G16.012
 Adaptation, Physiological;G16.012.500
 Acclimatization;G16.012.500.133
-Salt Tolerance;G16.012.500.133.250
+Salt-Tolerance;G16.012.500.133.250
 Thermotolerance;G16.012.500.133.500
 Allostasis;G16.012.500.274
 Body Temperature Regulation;G16.012.500.535
@@ -53113,7 +52262,6 @@ Seawater;G16.500.275.725.500
 Oceans and Seas;G16.500.275.725.500.650
 Aquatic Organisms;G16.500.275.725.500.650.075
 Soil;G16.500.275.815
-Clay;G16.500.275.815.250
 Permafrost;G16.500.275.815.500
 Wilderness;G16.500.275.965
 Eutrophication;G16.500.285
@@ -53153,11 +52301,10 @@ Water Cycle;G16.500.943
 Water Movements;G16.500.971
 Environmental Biomarkers;G16.505
 Extinction, Biological;G16.510
-Host Microbial Interactions;G16.527
-Host-Pathogen Interactions;G16.527.200
-Host Specificity;G16.527.200.380
-Host-Parasite Interactions;G16.527.200.400
-Immune Evasion;G16.527.200.700
+Host-Pathogen Interactions;G16.543
+Host Specificity;G16.543.380
+Host-Parasite Interactions;G16.543.400
+Immune Evasion;G16.543.700
 Host-Seeking Behavior;G16.559
 Life History Traits;G16.575
 Organelle Biogenesis;G16.645
@@ -53188,18 +52335,15 @@ Mathematical Concepts;G17
 Algorithms;G17.035
 Artificial Intelligence;G17.035.250
 Machine Learning;G17.035.250.500
-Deep Learning;G17.035.250.500.250
 Supervised Machine Learning;G17.035.250.500.500
 Support Vector Machine;G17.035.250.500.500.500
 Unsupervised Machine Learning;G17.035.250.500.750
-Latent Class Analysis;G17.035.625
 Decision Theory;G17.162
 Decision Trees;G17.162.500
 Fourier Analysis;G17.226
 Fractals;G17.290
 Game Theory;G17.388
 Neural Networks (Computer);G17.485
-Deep Learning;G17.485.500
 Nomograms;G17.582
 Probability;G17.680
 Odds Ratio;G17.680.500
@@ -53352,9 +52496,8 @@ Neurophysiology;H01.158.610.268
 Pharmacology;H01.158.703
 Biopharmaceutics;H01.158.703.003
 Chemistry, Pharmaceutical;H01.158.703.007
-Drug Development;H01.158.703.007.338
-Drug Design;H01.158.703.007.338.500
 Drug Discovery;H01.158.703.007.675
+Drug Design;H01.158.703.007.675.500
 Ethnopharmacology;H01.158.703.015
 Neuropharmacology;H01.158.703.030
 Pharmacoepidemiology;H01.158.703.045
@@ -53400,9 +52543,8 @@ Chemistry, Inorganic;H01.181.370
 Chemistry, Bioinorganic;H01.181.370.310
 Chemistry, Organic;H01.181.404
 Chemistry, Pharmaceutical;H01.181.466
-Drug Development;H01.181.466.338
-Drug Design;H01.181.466.338.500
 Drug Discovery;H01.181.466.675
+Drug Design;H01.181.466.675.500
 Chemistry, Physical;H01.181.529
 Crystallography;H01.181.529.240
 Electrochemistry;H01.181.529.307
@@ -53429,12 +52571,8 @@ Marine Biology;H01.277.750.500
 Paleontology;H01.277.875
 Materials Science;H01.413
 Mathematics;H01.548
-Data Analysis;H01.548.338
 Nonlinear Dynamics;H01.548.675
 Statistics as Topic;H01.548.832
-Correlation of Data;H01.548.832.500
-Facilities and Services Utilization;H01.548.832.625
-Procedures and Techniques Utilization;H01.548.832.750
 Microtechnology;H01.570
 Nanotechnology;H01.603
 Nanomedicine;H01.603.600
@@ -53455,7 +52593,6 @@ Mechanics;H01.671.515
 Meteorology;H01.671.547
 Nuclear Physics;H01.671.579
 Quantum Theory;H01.671.579.800
-Density Functional Theory;H01.671.579.800.500
 Optics and Photonics;H01.671.617
 Fiber Optic Technology;H01.671.617.249
 Microscopy;H01.671.617.562
@@ -53540,7 +52677,6 @@ Preventive Dentistry;H02.163.721
 School Dentistry;H02.163.809
 Specialties, Dental;H02.163.876
 Endodontics;H02.163.876.213
-Regenerative Endodontics;H02.163.876.213.500
 Orthodontics;H02.163.876.439
 Pathology, Oral;H02.163.876.506
 Pediatric Dentistry;H02.163.876.600
@@ -53690,7 +52826,6 @@ Telerehabilitation;H02.403.840.850
 Theranostic Nanomedicine;H02.403.845
 Travel Medicine;H02.403.850
 Tropical Medicine;H02.403.879
-Vaccinology;H02.403.894
 Venereology;H02.403.909
 Wilderness Medicine;H02.403.959
 Mortuary Practice;H02.438
@@ -53841,7 +52976,6 @@ Body Packing;I01.198.240.142
 Corpse Dismemberment;I01.198.240.194
 Defamation;I01.198.240.240
 Drug Trafficking;I01.198.240.247
-Euthanasia, Involuntary;I01.198.240.250
 Fraud;I01.198.240.300
 Identity Theft;I01.198.240.300.249
 Medical Identity Theft;I01.198.240.300.249.500
@@ -53856,14 +52990,12 @@ Human Trafficking;I01.198.240.748.470
 Rape;I01.198.240.748.640
 Theft;I01.198.240.810
 Violence;I01.198.240.856
-Adverse Childhood Experiences;I01.198.240.856.175
 Domestic Violence;I01.198.240.856.350
 Child Abuse;I01.198.240.856.350.250
 Child Abuse, Sexual;I01.198.240.856.350.250.255
 Elder Abuse;I01.198.240.856.350.390
 Spouse Abuse;I01.198.240.856.350.750
 Gender-Based Violence;I01.198.240.856.463
-Gun Violence;I01.198.240.856.519
 Intimate Partner Violence;I01.198.240.856.575
 Spouse Abuse;I01.198.240.856.575.500
 Physical Abuse;I01.198.240.856.688
@@ -53899,7 +53031,6 @@ Lie Detection;I01.198.780.937.619
 Paternity;I01.198.780.937.766
 Body Remains;I01.198.780.937.883
 Forensic Nursing;I01.198.780.952
-Forensic Psychology;I01.198.780.960
 Forensic Toxicology;I01.198.780.968
 Demography;I01.240
 Age Distribution;I01.240.050
@@ -54006,7 +53137,7 @@ Developed Countries;I01.615.500.250
 Developing Countries;I01.615.500.300
 European Union;I01.615.500.475
 International Educational Exchange;I01.615.500.650
-Medical Missions;I01.615.500.750
+Medical Missions, Official;I01.615.500.750
 Policy;I01.655
 Fiscal Policy;I01.655.125
 Smoke-Free Policy;I01.655.249
@@ -54017,10 +53148,8 @@ Environmental Policy;I01.655.500.608.180
 Family Planning Policy;I01.655.500.608.200
 Health Policy;I01.655.500.608.400
 Health Care Reform;I01.655.500.608.400.285
-International Health Regulations;I01.655.500.608.400.468
 Nutrition Policy;I01.655.500.608.400.650
 Recommended Dietary Allowances;I01.655.500.608.400.650.500
-Sustainable Development;I01.655.500.608.700
 Political Systems;I01.696
 Apartheid;I01.696.050
 Capitalism;I01.696.100
@@ -54156,10 +53285,7 @@ City Planning;I01.880.709.202
 Environment Design;I01.880.709.359
 Urban Renewal;I01.880.709.876
 Social Problems;I01.880.735
-Adverse Childhood Experiences;I01.880.735.035
 Bullying;I01.880.735.070
-Cyberbullying;I01.880.735.070.500
-Child Labor;I01.880.735.105
 Civil Disorders;I01.880.735.140
 Riots;I01.880.735.140.652
 Crime;I01.880.735.191
@@ -54170,9 +53296,7 @@ Organ Trafficking;I01.880.735.191.152
 Prescription Drug Diversion;I01.880.735.191.204
 Theft;I01.880.735.191.410
 Dangerous Behavior;I01.880.735.223
-Aggressive Driving;I01.880.735.223.125
 Driving Under the Influence;I01.880.735.223.250
-Road Rage;I01.880.735.223.375
 Stalking;I01.880.735.223.500
 Divorce;I01.880.735.255
 Doping in Sports;I01.880.735.265
@@ -54181,9 +53305,9 @@ Euthanasia;I01.880.735.344.500
 Euthanasia, Active;I01.880.735.344.500.249
 Euthanasia, Active, Voluntary;I01.880.735.344.500.249.200
 Human Rights Abuses;I01.880.735.384
-Enslavement;I01.880.735.384.350
 Human Trafficking;I01.880.735.384.399
 Organ Trafficking;I01.880.735.384.599
+Slavery;I01.880.735.384.800
 Illegitimacy;I01.880.735.424
 Incest;I01.880.735.442
 Incivility;I01.880.735.461
@@ -54192,7 +53316,6 @@ Needle Sharing;I01.880.735.580
 Parental Death;I01.880.735.607
 Maternal Death;I01.880.735.607.500
 Poverty;I01.880.735.634
-Self-Neglect;I01.880.735.657
 Sex Work;I01.880.735.679
 Quackery;I01.880.735.728
 Runaway Behavior;I01.880.735.779
@@ -54209,7 +53332,6 @@ Suicide, Assisted;I01.880.735.856.300
 Suicide, Attempted;I01.880.735.856.600
 Underage Drinking;I01.880.735.878
 Violence;I01.880.735.900
-Adverse Childhood Experiences;I01.880.735.900.175
 Domestic Violence;I01.880.735.900.350
 Child Abuse;I01.880.735.900.350.250
 Child Abuse, Sexual;I01.880.735.900.350.250.255
@@ -54217,7 +53339,6 @@ Elder Abuse;I01.880.735.900.350.390
 Spouse Abuse;I01.880.735.900.350.750
 Ethnic Violence;I01.880.735.900.575
 Ethnic Cleansing;I01.880.735.900.575.500
-Gun Violence;I01.880.735.900.632
 Intimate Partner Violence;I01.880.735.900.688
 Spouse Abuse;I01.880.735.900.688.500
 Physical Abuse;I01.880.735.900.744
@@ -54274,7 +53395,6 @@ Food Assistance;I01.880.787.839.500
 Social Work;I01.880.792
 Social Work, Psychiatric;I01.880.792.410
 Sociological Factors;I01.880.853
-Adverse Childhood Experiences;I01.880.853.050
 Culture;I01.880.853.100
 Acculturation;I01.880.853.100.079
 Cross-Cultural Comparison;I01.880.853.100.257
@@ -54295,7 +53415,6 @@ Single Person;I01.880.853.150.423.500.725
 Single Parent;I01.880.853.150.423.500.725.700
 Widowhood;I01.880.853.150.423.500.862
 Family Relations;I01.880.853.150.439
-Family Separation;I01.880.853.150.446
 Grandparents;I01.880.853.150.452
 Illegitimacy;I01.880.853.150.465
 Military Family;I01.880.853.150.482
@@ -54329,7 +53448,6 @@ Social Marginalization;I01.880.853.872
 Social Norms;I01.880.853.903
 Socialization;I01.880.853.934
 Socioeconomic Factors;I01.880.853.996
-Economic Status;I01.880.853.996.268
 Poverty;I01.880.853.996.535
 Poverty Areas;I01.880.853.996.535.550
 Social Class;I01.880.853.996.755
@@ -54341,7 +53459,6 @@ Education;I02
 Curriculum;I02.158
 Competency-Based Education;I02.158.210
 Interdisciplinary Studies;I02.158.405
-Disability Studies;I02.158.405.500
 Mainstreaming (Education);I02.158.600
 Problem-Based Learning;I02.158.660
 Education, Distance;I02.195
@@ -54451,16 +53568,12 @@ Study Guide as Topic;I02.903.923
 Human Activities;I03
 Activities of Daily Living;I03.050
 Independent Living;I03.050.500
-Self Care;I03.050.563
-Self-Neglect;I03.050.625
 Social Participation;I03.050.750
 Anti-Vaccination Movement;I03.088
 Automobile Driving;I03.125
-Aggressive Driving;I03.125.150
 Automobile Driver Examination;I03.125.299
 Distracted Driving;I03.125.474
 Driving Under the Influence;I03.125.649
-Road Rage;I03.125.824
 Diet Fads;I03.287
 Exercise;I03.350
 Cool-Down Exercise;I03.350.124
@@ -54468,7 +53581,6 @@ Gymnastics;I03.350.156
 Muscle Stretching Exercises;I03.350.249
 Physical Conditioning, Human;I03.350.311
 Circuit-Based Exercise;I03.350.311.125
-Endurance Training;I03.350.311.188
 High-Intensity Interval Training;I03.350.311.250
 Plyometric Exercise;I03.350.311.500
 Resistance Training;I03.350.311.750
@@ -54529,13 +53641,11 @@ Relaxation;I03.450.769
 Rest;I03.450.769.647
 Nudism;I03.548
 Retirement;I03.702
-Screen Time;I03.723
 Stakeholder Participation;I03.743
 Survival;I03.784
 Temperance Movement;I03.833
 Travel;I03.883
 Air Travel;I03.883.209
-Expeditions;I03.883.532
 Travel-Related Illness;I03.883.855
 Jet Lag Syndrome;I03.883.855.500
 Work;I03.946
@@ -54588,11 +53698,11 @@ Public-Private Sector Partnerships;J01.219.843
 Small Business;J01.219.921
 Conservation of Natural Resources;J01.256
 Conservation of Energy Resources;J01.256.078
-Conservation of Water Resources;J01.256.100
 Endangered Species;J01.256.214
 Environmental Restoration and Remediation;J01.256.282
 Green Chemistry Technology;J01.256.350
 Recycling;J01.256.675
+Conservation of Water Resources;J01.256.837
 Engineering;J01.293
 Bioengineering;J01.293.069
 Bioprinting;J01.293.069.124
@@ -54680,6 +53790,10 @@ Coal Mining;J01.576.655.875.500.500
 Oil and Gas Industry;J01.576.655.875.750
 Hydraulic Fracking;J01.576.655.875.750.500
 Textile Industry;J01.576.655.937
+Textiles;J01.576.655.937.800
+Cotton Fiber;J01.576.655.937.800.299
+Nylons;J01.576.655.937.800.600
+Wool;J01.576.655.937.800.800
 Tobacco Industry;J01.576.655.968
 Product Packaging;J01.576.761
 Drug Packaging;J01.576.761.300
@@ -54762,7 +53876,6 @@ Hypromellose Derivatives;J01.637.051.720.099.500.719
 Latex;J01.637.051.720.099.625
 Lignin;J01.637.051.720.099.687
 Rubber;J01.637.051.720.099.750
-Carbon Fiber;J01.637.051.720.150
 Colestipol;J01.637.051.720.200
 Cyanoacrylates;J01.637.051.720.259
 Enbucrilate;J01.637.051.720.259.341
@@ -54806,20 +53919,17 @@ Bisphenol A-Glycidyl Methacrylate;J01.637.051.720.716.822.308.200
 Compomers;J01.637.051.720.716.822.308.300
 Epoxy Resins;J01.637.051.720.716.822.461
 Resin Cements;J01.637.051.720.716.822.730
-Polyacetylene Polymer;J01.637.051.720.719
 Polyanetholesulfonate;J01.637.051.720.722
 Polyesters;J01.637.051.720.728
 Polydioxanone;J01.637.051.720.728.700
 Polyethylene Terephthalates;J01.637.051.720.728.764
 Polyglactin 910;J01.637.051.720.728.772
 Polyglycolic Acid;J01.637.051.720.728.780
-Polylactic Acid-Polyglycolic Acid Copolymer;J01.637.051.720.728.780.500
 Polyethylene Glycols;J01.637.051.720.741
 Cetomacrogol;J01.637.051.720.741.250
 Hydrogel, Polyethylene Glycol Dimethacrylate;J01.637.051.720.741.485
 Nonoxynol;J01.637.051.720.741.575
 Octoxynol;J01.637.051.720.741.610
-Polidocanol;J01.637.051.720.741.630
 Poloxalene;J01.637.051.720.741.650
 Poloxamer;J01.637.051.720.741.667
 Polyhydroxyethyl Methacrylate;J01.637.051.720.741.685
@@ -54919,12 +54029,11 @@ Electronic Nicotine Delivery Systems;J01.637.767.500
 Smoking Pipes;J01.637.767.750
 Smoking Water Pipes;J01.637.767.750.500
 Tobacco Products;J01.637.767.844
+Nicotine Chewing Gum;J01.637.767.844.250
 Tobacco, Smokeless;J01.637.767.844.500
 Tobacco, Waterpipe;J01.637.767.844.750
 Sports Equipment;J01.637.825
-Textiles;J01.637.836
-Cotton Fiber;J01.637.836.299
-Wool Fiber;J01.637.836.649
+Tobacco Use Cessation Products;J01.637.847
 Weapons;J01.637.870
 Bombs;J01.637.870.175
 Nuclear Weapons;J01.637.870.175.500
@@ -54934,6 +54043,7 @@ Weapons of Mass Destruction;J01.637.870.900
 Biological Warfare Agents;J01.637.870.900.100
 Chemical Warfare Agents;J01.637.870.900.200
 Nuclear Weapons;J01.637.870.900.575
+Wool;J01.637.883
 Military Science;J01.675
 Natural Resources;J01.728
 Water Resources;J01.728.500
@@ -54957,7 +54067,6 @@ Industrial Microbiology;J01.897.120.460
 Educational Technology;J01.897.280
 Audiovisual Aids;J01.897.280.500
 Books, Illustrated;J01.897.280.500.117
-Graphic Novels as Topic;J01.897.280.500.117.500
 Exhibits as Topic;J01.897.280.500.269
 Maps as Topic;J01.897.280.500.426
 Medical Illustration;J01.897.280.500.480
@@ -55113,18 +54222,9 @@ Dietary Fiber;J02.500.400
 Prebiotics;J02.500.400.500
 Dietary Proteins;J02.500.428
 Egg Proteins, Dietary;J02.500.428.317
-Meat Proteins;J02.500.428.472
-Fish Proteins, Dietary;J02.500.428.472.250
-Poultry Proteins;J02.500.428.472.500
-Shellfish Proteins;J02.500.428.472.750
 Milk Proteins;J02.500.428.626
 Whey Proteins;J02.500.428.626.500
-Plant Proteins, Dietary;J02.500.428.920
-Fruit Proteins;J02.500.428.920.125
-Grain Proteins;J02.500.428.920.250
-Nut Proteins;J02.500.428.920.375
-Pea Proteins;J02.500.428.920.500
-Soybean Proteins;J02.500.428.920.750
+Vegetable Proteins;J02.500.428.920
 Dietary Supplements;J02.500.456
 Prebiotics;J02.500.456.249
 Probiotics;J02.500.456.500
@@ -55165,26 +54265,18 @@ Lunch;J02.500.590.560
 Snacks;J02.500.590.780
 Meat;J02.500.600
 Meat Products;J02.500.600.500
-Meat Proteins;J02.500.600.625
-Fish Proteins, Dietary;J02.500.600.625.250
-Poultry Proteins;J02.500.600.625.500
-Shellfish Proteins;J02.500.600.625.750
 Poultry;J02.500.600.750
 Poultry Products;J02.500.600.750.500
-Poultry Proteins;J02.500.600.750.750
 Red Meat;J02.500.600.813
 Seafood;J02.500.600.875
 Fish Products;J02.500.600.875.400
 Fish Flour;J02.500.600.875.400.400
-Fish Proteins, Dietary;J02.500.600.875.550
 Shellfish;J02.500.600.875.700
-Shellfish Proteins;J02.500.600.875.700.500
+Micronutrients;J02.500.631
+Trace Elements;J02.500.631.555
+Vitamins;J02.500.631.600
+Provitamins;J02.500.631.600.500
 Molasses;J02.500.662
-Nutrients;J02.500.681
-Micronutrients;J02.500.681.500
-Trace Elements;J02.500.681.500.555
-Vitamins;J02.500.681.500.600
-Provitamins;J02.500.681.500.600.500
 Nuts;J02.500.700
 Raw Foods;J02.500.737
 Seeds;J02.500.775
@@ -55195,6 +54287,7 @@ Vegetable Products;J02.500.850.800
 Soy Foods;J02.500.850.800.500
 Soy Milk;J02.500.850.800.500.500
 Soybean Proteins;J02.500.850.800.500.750
+Vegetable Proteins;J02.500.850.900
 Non-Medical Public and Private Facilities;J03
 Adult Day Care Centers;J03.040
 Cemeteries;J03.150
@@ -55210,13 +54303,13 @@ Refugee Camps;J03.340.825
 Information Centers;J03.400
 Archives;J03.400.208
 Libraries;J03.400.596
+Libraries, Dental;J03.400.596.363
+Libraries, Digital;J03.400.596.413
+Libraries, Hospital;J03.400.596.463
+Libraries, Medical;J03.400.596.563
+National Library of Medicine (U.S.);J03.400.596.563.725
+Libraries, Nursing;J03.400.596.663
 Libraries, Special;J03.400.596.831
-Libraries, Dental;J03.400.596.831.500
-Libraries, Digital;J03.400.596.831.750
-Libraries, Hospital;J03.400.596.831.875
-Libraries, Medical;J03.400.596.831.937
-National Library of Medicine (U.S.);J03.400.596.831.937.725
-Libraries, Nursing;J03.400.596.831.968
 Laboratories;J03.520
 Manufacturing and Industrial Facilities;J03.540
 Abattoirs;J03.540.020
@@ -55230,6 +54323,7 @@ Prisons;J03.693
 Concentration Camps;J03.693.358
 Private Facilities;J03.700
 Public Facilities;J03.720
+Religious Missions;J03.748
 Residential Facilities;J03.775
 Assisted Living Facilities;J03.775.187
 Group Homes;J03.775.375
@@ -55279,8 +54373,6 @@ Emblems and Insignia;K01.400.255
 Eugenics;K01.400.307
 Genealogy and Heraldry;K01.400.359
 Historiography;K01.400.441
-History of Dentistry;K01.400.450
-History of Pharmacy;K01.400.456
 History, Ancient;K01.400.470
 History, Early Modern 1451-1600;K01.400.475
 History, 15th Century;K01.400.475.500
@@ -55312,6 +54404,7 @@ Afghan Campaign 2001-;K01.400.504.984.124
 Fukushima Nuclear Accident;K01.400.504.984.186
 Iraq War, 2003-2011;K01.400.504.984.249
 September 11 Terrorist Attacks;K01.400.504.984.500
+History of Dentistry;K01.400.551
 History of Medicine;K01.400.552
 History of Nursing;K01.400.608
 Natural History;K01.400.703
@@ -55325,7 +54418,6 @@ Aphorisms and Proverbs as Topic;K01.517.116
 Bible;K01.517.172
 Biography as Topic;K01.517.211
 Autobiography as Topic;K01.517.211.215
-Diary as Topic;K01.517.211.361
 Famous Persons;K01.517.211.506
 Personal Narratives as Topic;K01.517.211.753
 Drama;K01.517.333
@@ -55468,13 +54560,10 @@ Phylogeny;L01.100.697
 Communication;L01.143
 Access to Information;L01.143.024
 Advertising as Topic;L01.143.050
-Blogging;L01.143.140
 Communication Barriers;L01.143.230
 Digital Divide;L01.143.230.500
 Computer Literacy;L01.143.256
-Data Visualization;L01.143.288
 Diffusion of Innovation;L01.143.320
-Implementation Science;L01.143.320.400
 Technology Transfer;L01.143.320.800
 Disclosure;L01.143.335
 Health Communication;L01.143.350
@@ -55482,7 +54571,6 @@ Information Dissemination;L01.143.443
 Information Literacy;L01.143.450
 Health Literacy;L01.143.450.500
 Information Seeking Behavior;L01.143.458
-Internet Access;L01.143.539
 Negotiating;L01.143.620
 Nonverbal Communication;L01.143.649
 Lipreading;L01.143.649.263
@@ -55497,10 +54585,8 @@ Scholarly Communication;L01.143.865
 Interdisciplinary Communication;L01.143.865.500
 Peer Review, Research;L01.143.865.750
 Social Networking;L01.143.910
-Online Social Networking;L01.143.910.250
 Scholarly Communication;L01.143.910.500
 Communications Media;L01.178
-Blogging;L01.178.148
 Mass Media;L01.178.590
 Motion Pictures;L01.178.590.500
 Radio;L01.178.590.700
@@ -55535,48 +54621,47 @@ Reference Books;L01.178.682.192.836
 Almanacs as Topic;L01.178.682.192.836.072
 Atlases as Topic;L01.178.682.192.836.147
 Dictionaries as Topic;L01.178.682.192.836.285
-Dictionaries, Chemical as Topic;L01.178.682.192.836.285.206
+Dictionaries, Chemical;L01.178.682.192.836.285.206
 Dictionaries, Classical as Topic;L01.178.682.192.836.285.277
 Dictionaries, Dental as Topic;L01.178.682.192.836.285.348
-Dictionaries, Medical as Topic;L01.178.682.192.836.285.419
+Dictionaries, Medical;L01.178.682.192.836.285.419
 Dictionaries, Pharmaceutic as Topic;L01.178.682.192.836.285.490
+Dictionaries, Polyglot as Topic;L01.178.682.192.836.285.561
 Directories as Topic;L01.178.682.192.836.339
-Dispensatories as Topic;L01.178.682.192.836.390
+Dispensatories;L01.178.682.192.836.390
 Encyclopedias as Topic;L01.178.682.192.836.456
 Formularies as Topic;L01.178.682.192.836.535
 Formularies, Dental as Topic;L01.178.682.192.836.535.310
-Formularies, Homeopathic as Topic;L01.178.682.192.836.535.435
-Formularies, Hospital as Topic;L01.178.682.192.836.535.561
+Formularies, Homeopathic;L01.178.682.192.836.535.435
+Formularies, Hospital;L01.178.682.192.836.535.561
 Herbals as Topic;L01.178.682.192.836.642
 Pharmacopoeias as Topic;L01.178.682.192.836.749
-Pharmacopoeias, Homeopathic as Topic;L01.178.682.192.836.749.599
+Pharmacopoeias, Homeopathic;L01.178.682.192.836.749.599
 Reference Books, Medical;L01.178.682.192.836.842
-Dictionaries, Medical as Topic;L01.178.682.192.836.842.385
+Dictionaries, Medical;L01.178.682.192.836.842.385
 Textbooks as Topic;L01.178.682.192.900
 Broadsides as Topic;L01.178.682.236
 Calendars as Topic;L01.178.682.263
 Catalogs as Topic;L01.178.682.290
-Catalogs, Commercial as Topic;L01.178.682.290.183
-Catalogs, Drug as Topic;L01.178.682.290.283
+Catalogs, Commercial;L01.178.682.290.183
+Catalogs, Booksellers';L01.178.682.290.183.249
+Catalogs, Publishers';L01.178.682.290.183.416
+Catalogs, Drug;L01.178.682.290.283
 Catalogs, Library;L01.178.682.290.383
-Catalogs, Union as Topic;L01.178.682.290.483
+Catalogs, Union;L01.178.682.290.483
 Academic Dissertations as Topic;L01.178.682.389
 Erotica;L01.178.682.441
 Government Publications as Topic;L01.178.682.492
-Gray Literature;L01.178.682.550
 Manuscripts as Topic;L01.178.682.608
 Manuscripts, Medical as Topic;L01.178.682.608.526
 Pamphlets;L01.178.682.707
-Preprints as Topic;L01.178.682.733
 Review Literature as Topic;L01.178.682.759
 Consensus Development Conferences as Topic;L01.178.682.759.150
 Consensus Development Conferences, NIH as Topic;L01.178.682.759.150.500
-Systematic Reviews as Topic;L01.178.682.759.575
 Serial Publications;L01.178.682.829
 Newspapers as Topic;L01.178.682.829.481
 Periodicals as Topic;L01.178.682.829.678
 Translations;L01.178.682.920
-Social Media;L01.178.751
 Teaching Materials;L01.178.820
 Audiovisual Aids;L01.178.820.090
 Exhibits as Topic;L01.178.820.090.269
@@ -55643,18 +54728,13 @@ Knowledge Bases;L01.224.050.375.480
 Biological Ontologies;L01.224.050.375.480.500
 Gene Ontology;L01.224.050.375.480.500.500
 Machine Learning;L01.224.050.375.530
-Deep Learning;L01.224.050.375.530.250
 Supervised Machine Learning;L01.224.050.375.530.500
 Support Vector Machine;L01.224.050.375.530.500.500
 Unsupervised Machine Learning;L01.224.050.375.530.750
 Natural Language Processing;L01.224.050.375.580
 Neural Networks (Computer);L01.224.050.375.605
-Deep Learning;L01.224.050.375.605.500
 Robotics;L01.224.050.375.630
-Latent Class Analysis;L01.224.050.687
-Database Management Systems;L01.224.068
-Data Systems;L01.224.068.500
-Electronic Data Processing;L01.224.085
+Automatic Data Processing;L01.224.085
 Punched-Card Systems;L01.224.085.800
 Cloud Computing;L01.224.097
 Computer Graphics;L01.224.108
@@ -55671,9 +54751,8 @@ Virtual Reality;L01.224.160.875
 Computer Systems;L01.224.230
 Computer Communication Networks;L01.224.230.110
 Internet;L01.224.230.110.500
-Internet Access;L01.224.230.110.500.625
+Blogging;L01.224.230.110.500.500
 Social Media;L01.224.230.110.500.750
-Web Archives as Topic;L01.224.230.110.500.875
 Local Area Networks;L01.224.230.110.600
 Computers;L01.224.230.260
 Computer Peripherals;L01.224.230.260.115
@@ -55738,7 +54817,6 @@ Computer-Aided Design;L01.296.110.150
 Printing, Three-Dimensional;L01.296.110.150.500
 Stereolithography;L01.296.110.150.500.500
 Virtual Reality;L01.296.555
-Data Science;L01.305
 Informatics;L01.313
 Computational Biology;L01.313.124
 Consumer Health Informatics;L01.313.187
@@ -55772,7 +54850,6 @@ MedlinePlus;L01.313.500.750.280.730
 PubMed;L01.313.500.750.280.750
 MEDLINE;L01.313.500.750.280.750.500
 Information Systems;L01.313.500.750.300
-Big Data;L01.313.500.750.300.092
 Community Networks;L01.313.500.750.300.184
 Databases as Topic;L01.313.500.750.300.188
 Databases, Bibliographic;L01.313.500.750.300.188.300
@@ -55796,6 +54873,21 @@ Integrated Advanced Information Management Systems;L01.313.500.750.300.420
 Knowledge Bases;L01.313.500.750.300.550
 Biological Ontologies;L01.313.500.750.300.550.500
 Gene Ontology;L01.313.500.750.300.550.500.500
+Management Information Systems;L01.313.500.750.300.680
+Clinical Laboratory Information Systems;L01.313.500.750.300.680.055
+Clinical Pharmacy Information Systems;L01.313.500.750.300.680.083
+Database Management Systems;L01.313.500.750.300.680.110
+Decision Support Systems, Management;L01.313.500.750.300.680.135
+Healthcare Common Procedure Coding System;L01.313.500.750.300.680.350
+Hospital Information Systems;L01.313.500.750.300.680.360
+Ambulatory Care Information Systems;L01.313.500.750.300.680.360.113
+Medical Order Entry Systems;L01.313.500.750.300.680.360.450
+Operating Room Information Systems;L01.313.500.750.300.680.360.500
+Office Automation;L01.313.500.750.300.680.580
+Word Processing;L01.313.500.750.300.680.580.950
+Personnel Staffing and Scheduling Information Systems;L01.313.500.750.300.680.800
+Radiology Information Systems;L01.313.500.750.300.680.900
+Teleradiology;L01.313.500.750.300.680.900.500
 Medical Records Systems, Computerized;L01.313.500.750.300.695
 Health Smart Cards;L01.313.500.750.300.695.300
 Medical Order Entry Systems;L01.313.500.750.300.695.600
@@ -55813,26 +54905,22 @@ Public Health Informatics;L01.313.750
 Information Centers;L01.346
 Archives;L01.346.208
 Libraries;L01.346.596
+Libraries, Dental;L01.346.596.388
+Libraries, Digital;L01.346.596.438
+Libraries, Medical;L01.346.596.613
+Libraries, Nursing;L01.346.596.663
 Libraries, Special;L01.346.596.719
-Libraries, Dental;L01.346.596.719.500
-Libraries, Digital;L01.346.596.719.750
-Libraries, Hospital;L01.346.596.719.813
-Libraries, Medical;L01.346.596.719.875
-National Library of Medicine (U.S.);L01.346.596.719.875.500
-Libraries, Nursing;L01.346.596.719.937
+National Library of Medicine (U.S.);L01.346.798
 Information Management;L01.399
 Data Collection;L01.399.250
 Common Data Elements;L01.399.250.090
 Crowdsourcing;L01.399.250.179
 Data Accuracy;L01.399.250.202
-Data Aggregation;L01.399.250.213
 Datasets as Topic;L01.399.250.224
-Forms as Topic;L01.399.250.372
 Interviews as Topic;L01.399.250.520
 Metadata;L01.399.250.590
 Narration;L01.399.250.660
-Negative Results;L01.399.250.780
-Records;L01.399.250.900
+Records as Topic;L01.399.250.900
 Birth Certificates;L01.399.250.900.250
 Death Certificates;L01.399.250.900.350
 Dental Records;L01.399.250.900.375
@@ -55883,7 +54971,6 @@ Library Technical Services;L01.453.819
 Cataloging;L01.453.819.250
 Book Classification;L01.453.819.250.150
 Information Storage and Retrieval;L01.470
-Collections as Topic;L01.470.375
 Data Compression;L01.470.500
 Data Mining;L01.470.625
 Multifactor Dimensionality Reduction;L01.470.625.500
@@ -55917,7 +55004,6 @@ Speech;L01.559.423.676
 Translating;L01.559.423.796
 Writing;L01.559.423.906
 Authorship;L01.559.423.906.215
-Blogging;L01.559.423.906.296
 Correspondence as Topic;L01.559.423.906.377
 Electronic Mail;L01.559.423.906.377.333
 Text Messaging;L01.559.423.906.377.666
@@ -55954,7 +55040,6 @@ Postcards as Topic;L01.731
 Publishing;L01.737
 Access to Information;L01.737.030
 Book Industry;L01.737.150
-Book Imprints;L01.737.150.159
 Bookbinding;L01.737.150.317
 Bookselling;L01.737.150.340
 Book Prices;L01.737.150.340.250
@@ -55967,7 +55052,6 @@ Journalism, Medical;L01.737.498.550
 Open Access Publishing;L01.737.569
 Peer Review, Research;L01.737.640
 Plagiarism;L01.737.684
-Preprints as Topic;L01.737.736
 Printing;L01.737.787
 Publication Bias;L01.737.813
 Retraction of Publication as Topic;L01.737.840
@@ -56030,8 +55114,6 @@ Disaster Victims;M01.159
 Drug Users;M01.169
 Emigrants and Immigrants;M01.189
 Undocumented Immigrants;M01.189.500
-Enslaved Persons;M01.210
-Ex-Smokers;M01.219
 Famous Persons;M01.228
 Friends;M01.252
 Grandparents;M01.264
@@ -56054,7 +55136,6 @@ Triplets;M01.438.768
 Twins;M01.438.873
 Twins, Dizygotic;M01.438.873.920
 Twins, Monozygotic;M01.438.873.940
-Non-Smokers;M01.482
 Occupational Groups;M01.526
 Administrative Personnel;M01.526.070
 Case Managers;M01.526.070.245
@@ -56091,7 +55172,7 @@ Licensed Practical Nurses;M01.526.485.067.450
 Medical Record Administrators;M01.526.485.067.550
 Medical Secretaries;M01.526.485.067.600
 Medical Receptionists;M01.526.485.067.600.630
-Nursing Assistants;M01.526.485.067.652
+Nurses' Aides;M01.526.485.067.652
 Psychiatric Aides;M01.526.485.067.652.628
 Operating Room Technicians;M01.526.485.067.700
 Pharmacy Technicians;M01.526.485.067.735
@@ -56268,6 +55349,7 @@ Transgender Persons;M01.777.500
 Sexual Partners;M01.778
 Siblings;M01.781
 Single Person;M01.785
+Slaves;M01.800
 Smokers;M01.808
 Spouses;M01.816
 Students;M01.848
@@ -56379,16 +55461,14 @@ One Health;N01.400.530
 Oral Health;N01.400.535
 Physical Fitness;N01.400.545
 Cardiorespiratory Fitness;N01.400.545.500
-Physical Functional Performance;N01.400.545.750
-Gait Analysis;N01.400.545.750.500
 Population Health;N01.400.548
-Rural Health;N01.400.548.750
-Suburban Health;N01.400.548.813
-Urban Health;N01.400.548.875
 Public Health;N01.400.550
 Reproductive Health;N01.400.625
+Rural Health;N01.400.650
 Sexual Health;N01.400.663
 Social Determinants of Health;N01.400.675
+Suburban Health;N01.400.700
+Urban Health;N01.400.800
 Veterans Health;N01.400.850
 Women's Health;N01.400.900
 Maternal Health;N01.400.900.500
@@ -56397,13 +55477,11 @@ Rural Population;N01.600.725
 Suburban Population;N01.600.775
 Urban Population;N01.600.900
 Socioeconomic Factors;N01.824
-Economic Status;N01.824.098
 Educational Status;N01.824.196
 Academic Failure;N01.824.196.125
 Literacy;N01.824.196.500
 Employment;N01.824.245
 Career Mobility;N01.824.245.175
-Child Labor;N01.824.245.263
 Employment, Supported;N01.824.245.350
 Personnel Downsizing;N01.824.245.600
 Return to Work;N01.824.245.725
@@ -56543,7 +55621,6 @@ Hospital Administration;N02.278.354
 Medication Systems, Hospital;N02.278.354.675
 Product Line Management;N02.278.354.700
 Hospital Units;N02.278.388
-Clinical Observation Units;N02.278.388.075
 Delivery Rooms;N02.278.388.150
 Hemodialysis Units, Hospital;N02.278.388.200
 Intensive Care Units;N02.278.388.493
@@ -56582,7 +55659,6 @@ Hospitals, Special;N02.278.421.556
 Cancer Care Facilities;N02.278.421.556.070
 Cardiac Care Facilities;N02.278.421.556.110
 Hospices;N02.278.421.556.185
-Hospitals, Rehabilitation;N02.278.421.556.193
 Hospitals, Chronic Disease;N02.278.421.556.200
 Hospitals, Convalescent;N02.278.421.556.294
 Hospitals, Isolation;N02.278.421.556.330
@@ -56619,7 +55695,7 @@ Nursing Homes;N02.278.825.610
 Intermediate Care Facilities;N02.278.825.610.480
 Skilled Nursing Facilities;N02.278.825.610.770
 Student Run Clinic;N02.278.912
-Health Workforce;N02.350
+Health Manpower;N02.350
 Health Personnel;N02.360
 Allied Health Personnel;N02.360.067
 Animal Technicians;N02.360.067.040
@@ -56635,7 +55711,7 @@ Licensed Practical Nurses;N02.360.067.450
 Medical Record Administrators;N02.360.067.550
 Medical Secretaries;N02.360.067.600
 Medical Receptionists;N02.360.067.600.630
-Nursing Assistants;N02.360.067.652
+Nurses' Aides;N02.360.067.652
 Psychiatric Aides;N02.360.067.652.628
 Operating Room Technicians;N02.360.067.700
 Pharmacy Technicians;N02.360.067.730
@@ -56689,7 +55765,6 @@ Nurses, Male;N02.360.650.670
 Nurses, Public Health;N02.360.650.835
 Nursing Staff;N02.360.680
 Nursing Staff, Hospital;N02.360.680.490
-Shared Governance, Nursing;N02.360.680.490.500
 Nutritionists;N02.360.695
 Occupational Therapists;N02.360.710
 Optometrists;N02.360.725
@@ -56701,7 +55776,6 @@ Hospital Volunteers;N02.360.740.400
 Medical Staff, Hospital;N02.360.740.422
 Hospitalists;N02.360.740.422.400
 Nursing Staff, Hospital;N02.360.740.523
-Shared Governance, Nursing;N02.360.740.523.500
 Pharmacists;N02.360.780
 Physical Therapists;N02.360.790
 Physician Executives;N02.360.800
@@ -56760,9 +55834,9 @@ Home Health Nursing;N02.421.143.150.500
 Parish Nursing;N02.421.143.150.750
 Community Mental Health Services;N02.421.143.183
 Community Networks;N02.421.143.202
-Community Participation;N02.421.143.212
-Patient Participation;N02.421.143.212.300
 Community Pharmacy Services;N02.421.143.221
+Community Participation;N02.421.143.262
+Patient Participation;N02.421.143.262.300
 Counseling;N02.421.143.303
 Distance Counseling;N02.421.143.303.175
 Sex Counseling;N02.421.143.303.700
@@ -56802,6 +55876,7 @@ Advanced Trauma Life Support Care;N02.421.297.028
 Call Centers;N02.421.297.036
 Emergency Medical Dispatch;N02.421.297.043
 Emergency Medical Service Communication Systems;N02.421.297.058
+Emergency Police Dispatcher;N02.421.297.127
 Emergency Service, Hospital;N02.421.297.195
 Trauma Centers;N02.421.297.195.480
 Emergency Services, Psychiatric;N02.421.297.200
@@ -56882,14 +55957,12 @@ Aftercare;N02.421.585.169.063
 Patient Discharge;N02.421.585.169.125
 Patient Handoff;N02.421.585.169.249
 Patient Transfer;N02.421.585.169.624
-Retention in Care;N02.421.585.169.671
 Transition to Adult Care;N02.421.585.169.718
 Transitional Care;N02.421.585.169.812
 Critical Care;N02.421.585.190
 Intensive Care, Neonatal;N02.421.585.190.500
 Custodial Care;N02.421.585.215
 Day Care, Medical;N02.421.585.246
-Delayed Diagnosis;N02.421.585.273
 Episode of Care;N02.421.585.300
 Foster Home Care;N02.421.585.352
 Hospitalization;N02.421.585.400
@@ -56958,7 +56031,6 @@ Electronic Prescribing;N02.421.668.778.750
 Preventive Health Services;N02.421.726
 Diagnostic Services;N02.421.726.233
 Clinical Laboratory Services;N02.421.726.233.110
-Diagnostic Screening Programs;N02.421.726.233.138
 Direct-To-Consumer Screening and Testing;N02.421.726.233.166
 Genetic Testing;N02.421.726.233.221
 Genetic Carrier Screening;N02.421.726.233.221.250
@@ -57004,7 +56076,6 @@ Rehabilitation;N02.421.784
 Activities of Daily Living;N02.421.784.110
 Cardiac Rehabilitation;N02.421.784.244
 Correction of Hearing Impairment;N02.421.784.377
-Hospitals, Rehabilitation;N02.421.784.411
 Mental Health Recovery;N02.421.784.444
 Neurological Rehabilitation;N02.421.784.511
 Stroke Rehabilitation;N02.421.784.511.500
@@ -57130,7 +56201,7 @@ Insurance Carriers;N03.219.521.576.160
 Insurance Claim Reporting;N03.219.521.576.210
 Insurance Claim Review;N03.219.521.576.215
 Insurance Coverage;N03.219.521.576.265
-Universal Health Insurance;N03.219.521.576.265.500
+Universal Coverage;N03.219.521.576.265.500
 Insurance, Disability;N03.219.521.576.300
 Workers' Compensation;N03.219.521.576.300.900
 Insurance, Health;N03.219.521.576.343
@@ -57154,7 +56225,6 @@ Insurance, Physician Services;N03.219.521.576.343.616
 Medicare Assignment;N03.219.521.576.343.616.508
 Insurance, Psychiatric;N03.219.521.576.343.658
 Insurance, Surgical;N03.219.521.576.343.700
-Insurance, Vision;N03.219.521.576.343.750
 Managed Care Programs;N03.219.521.576.343.800
 Competitive Medical Plans;N03.219.521.576.343.800.175
 Health Maintenance Organizations;N03.219.521.576.343.800.400
@@ -57178,9 +56248,8 @@ Patient Protection and Affordable Care Act;N03.219.521.576.343.918
 Health Insurance Exchanges;N03.219.521.576.343.918.500
 Prepaid Health Plans;N03.219.521.576.343.925
 Health Maintenance Organizations;N03.219.521.576.343.925.400
-Prior Authorization;N03.219.521.576.343.944
 Single-Payer System;N03.219.521.576.343.962
-Value-Based Health Insurance;N03.219.521.576.343.972
+Value-Based Insurance;N03.219.521.576.343.972
 Value-Based Purchasing;N03.219.521.576.343.981
 Insurance, Liability;N03.219.521.576.443
 Insurance, Life;N03.219.521.576.543
@@ -57208,7 +56277,6 @@ Health Care Sector;N03.219.650
 Inflation, Economic;N03.219.680
 Investments;N03.219.702
 Medical Indigency;N03.219.780
-Public Expenditures;N03.219.840
 Taxes;N03.219.900
 Income Tax;N03.219.900.250
 Tax Equity and Fiscal Responsibility Act;N03.219.900.880
@@ -57279,7 +56347,6 @@ Consumer Organizations;N03.540.245
 Community Participation;N03.540.245.360
 Patient Participation;N03.540.245.360.300
 Faith-Based Organizations;N03.540.297
-Religious Missions;N03.540.297.500
 Government;N03.540.348
 Federal Government;N03.540.348.500
 United States Government Agencies;N03.540.348.500.500
@@ -57350,7 +56417,6 @@ International Planned Parenthood Federation;N03.540.514.320
 Organisation for Economic Co-Operation and Development;N03.540.514.481
 Red Cross;N03.540.514.642
 United Nations;N03.540.514.718
-UNESCO;N03.540.514.718.400
 World Health Organization;N03.540.514.718.800
 Pan American Health Organization;N03.540.514.718.800.628
 Labor Unions;N03.540.571
@@ -57384,7 +56450,6 @@ American Nurses' Association;N03.540.828.672.274
 International Council of Nurses;N03.540.828.672.463
 Societies, Pharmaceutical;N03.540.828.755
 Societies, Scientific;N03.540.828.838
-Societies, Veterinary;N03.540.828.919
 Policy;N03.623
 Social Control Policies;N03.623.500
 Organizational Policy;N03.623.500.550
@@ -57475,7 +56540,6 @@ Legislation, Food;N03.706.615.412
 Legislation, Hospital;N03.706.615.420
 Medicare Part C;N03.706.615.420.249
 Legislation, Medical;N03.706.615.473
-International Health Regulations;N03.706.615.473.250
 Medical Device Legislation;N03.706.615.473.500
 Legislation, Nursing;N03.706.615.544
 Legislation, Pharmacy;N03.706.615.615
@@ -57519,7 +56583,6 @@ Decision Making, Organizational;N04.452.190
 Efficiency;N04.452.209
 Efficiency, Organizational;N04.452.209.500
 Eligibility Determination;N04.452.264
-Facilities and Services Utilization;N04.452.289
 Fee Schedules;N04.452.313
 Relative Value Scales;N04.452.313.500
 Governing Board;N04.452.394
@@ -57606,8 +56669,6 @@ Personnel Staffing and Scheduling Information Systems;N04.452.515.800
 Radiology Information Systems;N04.452.515.825
 Teleradiology;N04.452.515.825.500
 Mandatory Programs;N04.452.521
-Workforce;N04.452.525
-Health Workforce;N04.452.525.500
 Medication Systems;N04.452.528
 Medication Reconciliation;N04.452.528.460
 Medication Systems, Hospital;N04.452.528.473
@@ -57618,7 +56679,6 @@ Organizational Affiliation;N04.452.602
 Transfer Agreement;N04.452.602.713
 Organizational Culture;N04.452.606
 Organizational Innovation;N04.452.610
-Change Management;N04.452.610.125
 Entrepreneurship;N04.452.610.250
 Organizational Objectives;N04.452.615
 Ownership;N04.452.633
@@ -57730,7 +56790,7 @@ Interdepartmental Relations;N04.452.822.388
 Interinstitutional Relations;N04.452.822.400
 Patient Satisfaction;N04.452.822.700
 Patient Preference;N04.452.822.700.500
-Records;N04.452.859
+Records as Topic;N04.452.859
 Birth Certificates;N04.452.859.132
 Consent Forms;N04.452.859.198
 Death Certificates;N04.452.859.264
@@ -57767,7 +56827,6 @@ Security Measures;N04.452.910
 Biometric Identification;N04.452.910.099
 Computer Security;N04.452.910.200
 Data Anonymization;N04.452.910.200.500
-Shared Governance, Nursing;N04.452.921
 Time Management;N04.452.932
 Total Quality Management;N04.452.955
 Voluntary Programs;N04.452.977
@@ -57801,7 +56860,6 @@ Patient-Centered Care;N04.590.233.727.407
 Narrative Medicine;N04.590.233.727.407.250
 Patient Navigation;N04.590.233.727.407.500
 Refusal to Treat;N04.590.233.727.605
-Conscientious Refusal to Treat;N04.590.233.727.605.500
 Progressive Patient Care;N04.590.233.799
 Crew Resource Management, Healthcare;N04.590.254
 Critical Pathways;N04.590.275
@@ -57860,7 +56918,6 @@ Minimal Clinically Important Difference;N04.761.559.590.399.750
 Patient Reported Outcome Measures;N04.761.559.590.399.875
 Treatment Outcome;N04.761.559.590.800
 Early Termination of Clinical Trials;N04.761.559.590.800.379
-Progression-Free Survival;N04.761.559.590.800.474
 Response Evaluation Criteria in Solid Tumors;N04.761.559.590.800.569
 Sustained Virologic Response;N04.761.559.590.800.665
 Therapeutic Index;N04.761.559.590.800.713
@@ -57891,7 +56948,7 @@ Time Out, Healthcare;N04.761.700.635
 Total Quality Management;N04.761.700.675
 Quality Improvement;N04.761.744
 Meaningful Use;N04.761.744.500
-Value-Based Health Insurance;N04.761.744.750
+Value-Based Insurance;N04.761.744.750
 Quality Indicators, Health Care;N04.761.789
 Risk Adjustment;N04.761.789.800
 Standard of Care;N04.761.789.900
@@ -57907,7 +56964,6 @@ Attitude of Health Personnel;N05.300.100
 Alert Fatigue, Health Personnel;N05.300.100.169
 Nurse's Role;N05.300.100.337
 Refusal to Treat;N05.300.100.675
-Conscientious Refusal to Treat;N05.300.100.675.500
 Attitude to Death;N05.300.125
 Attitude to Health;N05.300.150
 Health Services Misuse;N05.300.150.395
@@ -57938,7 +56994,7 @@ Accountable Care Organizations;N05.300.380.500
 Health Expenditures;N05.300.385
 Health Priorities;N05.300.400
 Health Resources;N05.300.420
-Health Workforce;N05.300.420.400
+Health Manpower;N05.300.420.400
 Strategic Stockpile;N05.300.420.700
 Health Services Accessibility;N05.300.430
 Health Care Rationing;N05.300.430.375
@@ -57954,8 +57010,6 @@ Surge Capacity;N05.300.450.760
 Healthcare Disparities;N05.300.493
 Medical Tourism;N05.300.515
 Needs Assessment;N05.300.537
-Nurses Improving Care for Health System Elders;N05.300.559
-Population Health Management;N05.300.570
 Practice Patterns, Dentists';N05.300.580
 Practice Patterns, Nurses';N05.300.581
 Practice Patterns, Physicians';N05.300.625
@@ -58082,7 +57136,6 @@ Cohort Effect;N05.715.350.350.225
 Healthy Worker Effect;N05.715.350.350.375
 Placebo Effect;N05.715.350.350.625
 Nocebo Effect;N05.715.350.350.625.500
-Race Factors;N05.715.350.463
 Reproductive History;N05.715.350.575
 Sex Factors;N05.715.350.675
 Health Care Evaluation Mechanisms;N05.715.360
@@ -58095,10 +57148,9 @@ Focus Groups;N05.715.360.300.269
 Geriatric Assessment;N05.715.360.300.360
 Interviews as Topic;N05.715.360.300.400
 Narration;N05.715.360.300.480
-Negative Results;N05.715.360.300.520
 Nutrition Assessment;N05.715.360.300.560
 Preliminary Data;N05.715.360.300.638
-Records;N05.715.360.300.715
+Records as Topic;N05.715.360.300.715
 Birth Certificates;N05.715.360.300.715.175
 Consent Forms;N05.715.360.300.715.245
 Death Certificates;N05.715.360.300.715.315
@@ -58154,62 +57206,6 @@ Diet Surveys;N05.715.360.300.800.469.300
 Patient Health Questionnaire;N05.715.360.300.800.485
 Self Report;N05.715.360.300.800.500
 Advance Directive Adherence;N05.715.360.317
-Epidemiologic Research Design;N05.715.360.325
-Cross-Over Studies;N05.715.360.325.150
-Double-Blind Method;N05.715.360.325.320
-Matched-Pair Analysis;N05.715.360.325.500
-Meta-Analysis as Topic;N05.715.360.325.515
-Network Meta-Analysis;N05.715.360.325.515.500
-Random Allocation;N05.715.360.325.675
-Reproducibility of Results;N05.715.360.325.685
-Data Accuracy;N05.715.360.325.685.250
-Dimensional Measurement Accuracy;N05.715.360.325.685.500
-Sample Size;N05.715.360.325.692
-Sensitivity and Specificity;N05.715.360.325.700
-Predictive Value of Tests;N05.715.360.325.700.640
-ROC Curve;N05.715.360.325.700.680
-Signal-To-Noise Ratio;N05.715.360.325.700.840
-Single-Blind Method;N05.715.360.325.730
-Epidemiologic Study Characteristics;N05.715.360.330
-Clinical Protocols;N05.715.360.330.125
-Antineoplastic Protocols;N05.715.360.330.125.500
-Clinical Trial Protocols as Topic;N05.715.360.330.125.625
-Standing Orders;N05.715.360.330.125.750
-Clinical Studies as Topic;N05.715.360.330.250
-Clinical Trials as Topic;N05.715.360.330.250.250
-Adaptive Clinical Trials as Topic;N05.715.360.330.250.250.100
-Clinical Trials, Phase I as Topic;N05.715.360.330.250.250.200
-Clinical Trials, Phase II as Topic;N05.715.360.330.250.250.210
-Clinical Trials, Phase III as Topic;N05.715.360.330.250.250.220
-Clinical Trials, Phase IV as Topic;N05.715.360.330.250.250.230
-Controlled Clinical Trials as Topic;N05.715.360.330.250.250.365
-Non-Randomized Controlled Trials as Topic;N05.715.360.330.250.250.365.250
-Randomized Controlled Trials as Topic;N05.715.360.330.250.250.365.500
-Equivalence Trials as Topic;N05.715.360.330.250.250.365.500.250
-Intention to Treat Analysis;N05.715.360.330.250.250.365.500.500
-Pragmatic Clinical Trials as Topic;N05.715.360.330.250.250.365.500.750
-Clinical Trials, Veterinary as Topic;N05.715.360.330.250.375
-Observational Studies as Topic;N05.715.360.330.250.500
-Epidemiologic Studies;N05.715.360.330.500
-Case-Control Studies;N05.715.360.330.500.500
-Retrospective Studies;N05.715.360.330.500.500.500
-Cohort Studies;N05.715.360.330.500.750
-Follow-Up Studies;N05.715.360.330.500.750.350
-Longitudinal Studies;N05.715.360.330.500.750.500
-National Longitudinal Study of Adolescent Health;N05.715.360.330.500.750.500.500
-Prospective Studies;N05.715.360.330.500.750.650
-Retrospective Studies;N05.715.360.330.500.750.825
-Controlled Before-After Studies;N05.715.360.330.500.812
-Cross-Sectional Studies;N05.715.360.330.500.875
-Interrupted Time Series Analysis;N05.715.360.330.500.912
-Seroepidemiologic Studies;N05.715.360.330.500.950
-HIV Seroprevalence;N05.715.360.330.500.950.375
-Feasibility Studies;N05.715.360.330.550
-Multicenter Studies as Topic;N05.715.360.330.643
-Pilot Projects;N05.715.360.330.720
-Sampling Studies;N05.715.360.330.875
-Lot Quality Assurance Sampling;N05.715.360.330.875.500
-Twin Studies as Topic;N05.715.360.330.900
 Evaluation Studies as Topic;N05.715.360.335
 Validation Studies as Topic;N05.715.360.335.500
 Guideline Adherence;N05.715.360.395
@@ -58221,13 +57217,11 @@ Critical Care Outcomes;N05.715.360.575.575.200
 Failure to Rescue, Health Care;N05.715.360.575.575.300
 Patient Outcome Assessment;N05.715.360.575.575.399
 Critical Care Outcomes;N05.715.360.575.575.399.250
-GRADE Approach;N05.715.360.575.575.399.375
 Lysholm Knee Score;N05.715.360.575.575.399.500
 Minimal Clinically Important Difference;N05.715.360.575.575.399.750
 Patient Reported Outcome Measures;N05.715.360.575.575.399.875
 Treatment Outcome;N05.715.360.575.575.800
 Early Termination of Clinical Trials;N05.715.360.575.575.800.379
-Progression-Free Survival;N05.715.360.575.575.800.474
 Response Evaluation Criteria in Solid Tumors;N05.715.360.575.575.800.569
 Sustained Virologic Response;N05.715.360.575.575.800.665
 Treatment Failure;N05.715.360.575.575.800.760
@@ -58242,14 +57236,11 @@ Actuarial Analysis;N05.715.360.750.100
 Analysis of Variance;N05.715.360.750.125
 Multivariate Analysis;N05.715.360.750.125.500
 Cluster Analysis;N05.715.360.750.200
-Latent Class Analysis;N05.715.360.750.200.375
 Small-Area Analysis;N05.715.360.750.200.750
 Space-Time Clustering;N05.715.360.750.200.775
 Confidence Intervals;N05.715.360.750.220
 Data Interpretation, Statistical;N05.715.360.750.300
 Discriminant Analysis;N05.715.360.750.325
-Equipment and Supplies Utilization;N05.715.360.750.338
-Facilities and Services Utilization;N05.715.360.750.344
 Factor Analysis, Statistical;N05.715.360.750.350
 Matched-Pair Analysis;N05.715.360.750.500
 Models, Statistical;N05.715.360.750.530
@@ -58276,7 +57267,6 @@ Healthcare Failure Mode and Effect Analysis;N05.715.360.750.625.700.690.400
 Risk Adjustment;N05.715.360.750.625.700.690.800
 Risk Factors;N05.715.360.750.625.700.700
 Uncertainty;N05.715.360.750.625.850
-Procedures and Techniques Utilization;N05.715.360.750.660
 Regression Analysis;N05.715.360.750.695
 Least-Squares Analysis;N05.715.360.750.695.440
 Linear Models;N05.715.360.750.695.460
@@ -58301,8 +57291,61 @@ Markov Chains;N05.715.360.750.770.500
 Survival Analysis;N05.715.360.750.795
 Disease-Free Survival;N05.715.360.750.795.300
 Kaplan-Meier Estimate;N05.715.360.750.795.650
-Progression-Free Survival;N05.715.360.750.795.738
 Proportional Hazards Models;N05.715.360.750.795.825
+Epidemiologic Study Characteristics;N05.715.360.775
+Clinical Studies as Topic;N05.715.360.775.088
+Clinical Trials as Topic;N05.715.360.775.088.500
+Adaptive Clinical Trials as Topic;N05.715.360.775.088.500.100
+Clinical Trials, Phase I as Topic;N05.715.360.775.088.500.200
+Clinical Trials, Phase II as Topic;N05.715.360.775.088.500.210
+Clinical Trials, Phase III as Topic;N05.715.360.775.088.500.220
+Clinical Trials, Phase IV as Topic;N05.715.360.775.088.500.230
+Controlled Clinical Trials as Topic;N05.715.360.775.088.500.387
+Non-Randomized Controlled Trials as Topic;N05.715.360.775.088.500.387.250
+Randomized Controlled Trials as Topic;N05.715.360.775.088.500.387.500
+Equivalence Trials as Topic;N05.715.360.775.088.500.387.500.250
+Intention to Treat Analysis;N05.715.360.775.088.500.387.500.500
+Pragmatic Clinical Trials as Topic;N05.715.360.775.088.500.387.500.750
+Observational Studies as Topic;N05.715.360.775.088.750
+Epidemiologic Studies;N05.715.360.775.175
+Case-Control Studies;N05.715.360.775.175.200
+Retrospective Studies;N05.715.360.775.175.200.710
+Cohort Studies;N05.715.360.775.175.250
+Follow-Up Studies;N05.715.360.775.175.250.350
+Longitudinal Studies;N05.715.360.775.175.250.450
+National Longitudinal Study of Adolescent Health;N05.715.360.775.175.250.450.500
+Prospective Studies;N05.715.360.775.175.250.630
+Retrospective Studies;N05.715.360.775.175.250.815
+Controlled Before-After Studies;N05.715.360.775.175.262
+Cross-Sectional Studies;N05.715.360.775.175.275
+Interrupted Time Series Analysis;N05.715.360.775.175.537
+Seroepidemiologic Studies;N05.715.360.775.175.800
+HIV Seroprevalence;N05.715.360.775.175.800.375
+Clinical Protocols;N05.715.360.775.225
+Antineoplastic Protocols;N05.715.360.775.225.500
+Standing Orders;N05.715.360.775.225.750
+Feasibility Studies;N05.715.360.775.350
+Multicenter Studies as Topic;N05.715.360.775.508
+Pilot Projects;N05.715.360.775.625
+Sampling Studies;N05.715.360.775.700
+Lot Quality Assurance Sampling;N05.715.360.775.700.500
+Twin Studies as Topic;N05.715.360.775.750
+Epidemiologic Research Design;N05.715.360.780
+Cross-Over Studies;N05.715.360.780.150
+Double-Blind Method;N05.715.360.780.320
+Matched-Pair Analysis;N05.715.360.780.500
+Meta-Analysis as Topic;N05.715.360.780.515
+Network Meta-Analysis;N05.715.360.780.515.500
+Random Allocation;N05.715.360.780.675
+Reproducibility of Results;N05.715.360.780.685
+Data Accuracy;N05.715.360.780.685.250
+Dimensional Measurement Accuracy;N05.715.360.780.685.500
+Sample Size;N05.715.360.780.692
+Sensitivity and Specificity;N05.715.360.780.700
+Predictive Value of Tests;N05.715.360.780.700.640
+ROC Curve;N05.715.360.780.700.680
+Signal-To-Noise Ratio;N05.715.360.780.700.840
+Single-Blind Method;N05.715.360.780.730
 Technology Assessment, Biomedical;N05.715.360.825
 Narrative Medicine;N05.715.520
 Peer Review, Health Care;N05.715.680
@@ -58317,28 +57360,16 @@ Cities;N06.230.069
 Confined Spaces;N06.230.074
 Conservation of Natural Resources;N06.230.080
 Conservation of Energy Resources;N06.230.080.078
-Conservation of Water Resources;N06.230.080.100
 Endangered Species;N06.230.080.200
 Environmental Restoration and Remediation;N06.230.080.600
 Biodegradation, Environmental;N06.230.080.600.500
-Sustainable Development;N06.230.080.900
+Conservation of Water Resources;N06.230.080.800
 Disasters;N06.230.100
 Disaster Planning;N06.230.100.035
 Strategic Stockpile;N06.230.100.035.500
 Emergencies;N06.230.100.083
 Emergency Shelter;N06.230.100.121
 Mass Casualty Incidents;N06.230.100.160
-Medical Countermeasures;N06.230.100.195
-Natural Disasters;N06.230.100.230
-Avalanches;N06.230.100.230.050
-Cyclonic Storms;N06.230.100.230.100
-Droughts;N06.230.100.230.150
-Earthquakes;N06.230.100.230.200
-Floods;N06.230.100.230.250
-Landslides;N06.230.100.230.625
-Tidal Waves;N06.230.100.230.800
-Tornadoes;N06.230.100.230.850
-Wildfires;N06.230.100.230.925
 Relief Work;N06.230.100.300
 Rescue Work;N06.230.100.350
 Ecosystem;N06.230.124
@@ -58383,8 +57414,6 @@ Solar Energy;N06.230.132.644.500
 Water Movements;N06.230.132.644.750
 Tidal Waves;N06.230.132.644.750.500
 Wind;N06.230.132.644.875
-Environment Design;N06.230.145
-Built Environment;N06.230.145.500
 Environment, Controlled;N06.230.150
 Air Conditioning;N06.230.150.050
 Diving;N06.230.150.150
@@ -58403,6 +57432,7 @@ Weightlessness Simulation;N06.230.150.440.950
 Hindlimb Suspension;N06.230.150.440.950.400
 Temperature;N06.230.150.450
 Ventilation;N06.230.150.520
+Environment Design;N06.230.200
 Environmental Policy;N06.230.204
 Explosions;N06.230.208
 Fires;N06.230.216
@@ -58464,7 +57494,6 @@ Odorants;N06.230.480
 Rain;N06.230.520
 Acid Rain;N06.230.520.050
 Soil;N06.230.600
-Clay;N06.230.600.250
 Permafrost;N06.230.600.500
 Steam;N06.230.650
 Structure Collapse;N06.230.750
@@ -58570,7 +57599,6 @@ Noise;N06.850.460.610
 Noise, Occupational;N06.850.460.610.526
 Noise, Transportation;N06.850.460.610.680
 Petroleum Pollution;N06.850.460.660
-Traffic-Related Pollution;N06.850.460.685
 Waste Products;N06.850.460.710
 Electronic Waste;N06.850.460.710.189
 Hazardous Waste;N06.850.460.710.380
@@ -58610,7 +57638,6 @@ Reproductive History;N06.850.490.812
 Gravidity;N06.850.490.812.250
 Parity;N06.850.490.812.600
 Sex Factors;N06.850.490.875
-Syndemic;N06.850.490.937
 Epidemiologic Measurements;N06.850.505
 Biometry;N06.850.505.200
 Anthropometry;N06.850.505.200.100
@@ -58677,10 +57704,9 @@ Geriatric Assessment;N06.850.520.308.225
 Interviews as Topic;N06.850.520.308.420
 Lot Quality Assurance Sampling;N06.850.520.308.461
 Narration;N06.850.520.308.502
-Negative Results;N06.850.520.308.544
 Nutrition Assessment;N06.850.520.308.585
 Preliminary Data;N06.850.520.308.763
-Records;N06.850.520.308.940
+Records as Topic;N06.850.520.308.940
 Birth Certificates;N06.850.520.308.940.250
 Death Certificates;N06.850.520.308.940.350
 Dental Records;N06.850.520.308.940.375
@@ -58782,7 +57808,6 @@ Randomized Controlled Trials as Topic;N06.850.520.450.250.250.365.500
 Equivalence Trials as Topic;N06.850.520.450.250.250.365.500.250
 Intention to Treat Analysis;N06.850.520.450.250.250.365.500.500
 Pragmatic Clinical Trials as Topic;N06.850.520.450.250.250.365.500.750
-Clinical Trials, Veterinary as Topic;N06.850.520.450.250.375
 Observational Studies as Topic;N06.850.520.450.250.500
 Epidemiologic Studies;N06.850.520.450.500
 Case-Control Studies;N06.850.520.450.500.500
@@ -58813,13 +57838,11 @@ Analysis of Variance;N06.850.520.830.150
 Multivariate Analysis;N06.850.520.830.150.500
 Area Under Curve;N06.850.520.830.200
 Cluster Analysis;N06.850.520.830.250
-Latent Class Analysis;N06.850.520.830.250.338
 Small-Area Analysis;N06.850.520.830.250.675
 Space-Time Clustering;N06.850.520.830.250.700
 Confidence Intervals;N06.850.520.830.275
 Data Interpretation, Statistical;N06.850.520.830.300
 Discriminant Analysis;N06.850.520.830.350
-Facilities and Services Utilization;N06.850.520.830.375
 Factor Analysis, Statistical;N06.850.520.830.400
 Matched-Pair Analysis;N06.850.520.830.475
 Models, Statistical;N06.850.520.830.500
@@ -58846,7 +57869,6 @@ Risk Assessment;N06.850.520.830.600.800.715
 Healthcare Failure Mode and Effect Analysis;N06.850.520.830.600.800.715.500
 Risk Factors;N06.850.520.830.600.800.725
 Uncertainty;N06.850.520.830.600.900
-Procedures and Techniques Utilization;N06.850.520.830.675
 Regression Analysis;N06.850.520.830.750
 Least-Squares Analysis;N06.850.520.830.750.400
 Linear Models;N06.850.520.830.750.425
@@ -58871,7 +57893,6 @@ Markov Chains;N06.850.520.830.996.500
 Survival Analysis;N06.850.520.830.998
 Disease-Free Survival;N06.850.520.830.998.300
 Kaplan-Meier Estimate;N06.850.520.830.998.650
-Progression-Free Survival;N06.850.520.830.998.825
 Equipment Contamination;N06.850.540
 Biofouling;N06.850.540.500
 Equipment Reuse;N06.850.585
@@ -58945,7 +57966,6 @@ Multiphasic Screening;N06.850.780.500.560
 Neonatal Screening;N06.850.780.500.580
 Substance Abuse Detection;N06.850.780.500.765
 Vision Screening;N06.850.780.500.950
-Medical Countermeasures;N06.850.780.588
 Population Surveillance;N06.850.780.675
 Biosurveillance;N06.850.780.675.324
 Public Health Surveillance;N06.850.780.675.487
@@ -59003,23 +58023,23 @@ Fluoridation;N06.890.235
 Health Education, Dental;N06.890.410
 Publication Components;V01
 Abstracts;V01.070
-Advertisement;V01.100
+Advertisements;V01.100
 Animation;V01.110
-Architectural Drawing;V01.140
+Architectural Drawings;V01.140
 Bibliography;V01.165
 Biobibliography;V01.165.150
 Biography;V01.175
-Blog;V01.175.125
+Blogs;V01.175.125
 Interview;V01.175.250
-Personal Narrative;V01.175.500
+Personal Narratives;V01.175.500
 Autobiography;V01.175.500.100
 Book Illustrations;V01.185
-Caricature;V01.185.500
-Drawing;V01.185.625
+Caricatures;V01.185.500
+Drawings;V01.185.625
 Maps;V01.185.687
-Portrait;V01.185.843
+Portraits;V01.185.843
 Bookplates;V01.195
-Chart;V01.200
+Charts;V01.200
 Comment;V01.205
 Editorial;V01.250
 Electronic Supplementary Materials;V01.255
@@ -59037,148 +58057,131 @@ Retraction of Publication;V01.775
 Publication Formats;V02
 Abbreviations;V02.025
 Abstracts;V02.035
-Academic Dissertation;V02.050
-Account Book;V02.060
-Address;V02.070
-Lecture;V02.070.500
-Sermon;V02.070.750
-Almanac;V02.110
+Academic Dissertations;V02.050
+Account Books;V02.060
+Addresses;V02.070
+Lectures;V02.070.500
+Sermons;V02.070.750
+Almanacs;V02.110
 Anecdotes;V02.115
 Animation;V02.120
-Annual Report;V02.130
+Annual Reports;V02.130
 Aphorisms and Proverbs;V02.135
-Architectural Drawing;V02.140
-Atlas;V02.150
+Architectural Drawings;V02.140
+Atlases;V02.150
 Bibliography;V02.165
 Biobibliography;V02.165.500
 Biography;V02.170
-Blog;V02.170.250
+Blogs;V02.170.250
 Interview;V02.170.500
-Personal Narrative;V02.170.750
+Personal Narratives;V02.170.750
 Autobiography;V02.170.750.100
-Book Review;V02.180
-Broadside;V02.200
-Calendar;V02.220
-Catalog;V02.240
-Catalog, Bookseller;V02.240.050
-Catalog, Commercial;V02.240.100
-Catalog, Drug;V02.240.125
-Catalog, Publisher;V02.240.219
-Catalog, Union;V02.240.313
-Price List;V02.240.500
-Chart;V02.245
+Book Reviews;V02.180
+Broadsides;V02.200
+Calendars;V02.220
+Catalogs;V02.240
+Price Lists;V02.240.500
+Charts;V02.245
 Chronology;V02.250
 Classical Article;V02.255
-Collected Work;V02.260
+Collected Works;V02.260
 Collected Correspondence;V02.260.260
 Festschrift;V02.260.400
-Web Archive;V02.260.700
-Collection;V02.265
+Collections;V02.265
 Comment;V02.267
-Congress;V02.270
+Congresses;V02.270
 Consensus Development Conference;V02.270.250
 Consensus Development Conference, NIH;V02.270.250.500
 Overall;V02.270.500
-Cookbook;V02.272
+Cookbooks;V02.272
 Corrected and Republished Article;V02.275
 Database;V02.300
 Dataset;V02.302
-Diary;V02.305
+Diaries;V02.305
 Dictionary;V02.310
-Dictionary, Chemical;V02.310.113
-Dictionary, Classical;V02.310.225
-Dictionary, Dental;V02.310.363
-Dictionary, Medical;V02.310.400
-Dictionary, Pharmaceutic;V02.310.450
-Dictionary, Polyglot;V02.310.475
+Phrases;V02.310.500
+Terminology;V02.310.750
 Directory;V02.312
-Dispensatory;V02.314
 Documentaries and Factual Films;V02.315
 Duplicate Publication;V02.320
 Editorial;V02.335
-Encyclopedia;V02.350
+Encyclopedias;V02.350
 Ephemera;V02.355
-Advertisement;V02.355.249
+Advertisements;V02.355.249
 Letter;V02.355.374
-Poster;V02.355.500
+Posters;V02.355.500
 Programs;V02.355.750
 Prospectuses;V02.355.775
 Essays;V02.365
-Eulogy;V02.375
-Funeral Sermon;V02.375.400
-Examination Question;V02.395
-Exhibition;V02.415
-Fictional Work;V02.450
-Form;V02.460
-Formulary;V02.480
-Formularies, Dental;V02.480.375
-Formularies, Hospital;V02.480.750
-Formulary, Homeopathic;V02.480.775
-Government Document;V02.500
-Guidebook;V02.510
+Eulogies;V02.375
+Funeral Sermons;V02.375.400
+Examination Questions;V02.395
+Exhibitions;V02.415
+Fictional Works;V02.450
+Forms;V02.460
+Formularies;V02.480
+Government Publications;V02.500
+Graphic Novels;V02.503
+Guidebooks;V02.510
 Guideline;V02.515
 Practice Guideline;V02.515.500
-Handbook;V02.520
+Handbooks;V02.520
 Historical Article;V02.530
 Biography;V02.530.150
-Blog;V02.530.150.250
+Blogs;V02.530.150.250
 Interview;V02.530.150.500
-Personal Narrative;V02.530.150.750
+Personal Narratives;V02.530.150.750
 Autobiography;V02.530.150.750.100
 Classical Article;V02.530.250
 Festschrift;V02.530.400
-Wit and Humor;V02.540
-Cartoon;V02.540.200
+Humor;V02.540
+Cartoons;V02.540.200
 Incunabula;V02.545
-Index;V02.550
+Indexes;V02.550
 Instructional Films and Videos;V02.575
 Journal Article;V02.600
 Introductory Journal Article;V02.600.249
 Review;V02.600.500
 Consensus Development Conference;V02.600.500.500
 Consensus Development Conference, NIH;V02.600.500.500.500
-Laboratory Manual;V02.605
-Lecture Note;V02.607
-Legal Case;V02.610
+Laboratory Manuals;V02.605
+Lecture Notes;V02.607
+Legal Cases;V02.610
 Legislation;V02.620
 Letter;V02.625
-Manuscript;V02.630
-Manuscript, Medical;V02.630.250
-Preprint;V02.630.500
-Meeting Abstract;V02.650
+Manuscripts;V02.630
+Meeting Abstracts;V02.650
 Monograph;V02.660
-Textbook;V02.660.500
+Textbooks;V02.660.500
 News;V02.665
 Newspaper Article;V02.667
-Nurses Instruction;V02.668
-Outline;V02.670
+Nurses' Instruction;V02.668
+Outlines;V02.670
 Overall;V02.672
 Festschrift;V02.672.500
-Patent;V02.675
+Patents;V02.675
 Periodical Index;V02.682
-Periodical;V02.690
-Pharmacopeia;V02.695
-Herbal;V02.695.500
-Pharmacopoeia, Homeopathic;V02.695.750
-Photograph;V02.697
-Phrase;V02.699
-Pictorial Work;V02.700
-Caricature;V02.700.074
-Cartoon;V02.700.149
-Drawing;V02.700.300
-Graphic Novels;V02.700.415
+Periodicals;V02.690
+Pharmacopoeias;V02.695
+Herbals;V02.695.500
+Photographs;V02.697
+Pictorial Works;V02.700
+Caricatures;V02.700.074
+Cartoons;V02.700.149
+Drawings;V02.700.300
+Graphic Novels;V02.700.375
 Maps;V02.700.450
-Portrait;V02.700.600
+Portraits;V02.700.600
 Poetry;V02.712
-Popular Work;V02.725
+Popular Works;V02.725
 Juvenile Literature;V02.725.500
 Patient Education Handout;V02.725.750
-Postcard;V02.731
+Postcards;V02.731
 Problems and Exercises;V02.734
 Programmed Instruction;V02.735
-Public Service Announcement;V02.736
+Public Service Announcements;V02.736
 Published Erratum;V02.737
-Resource Guide;V02.750
+Resource Guides;V02.750
 Retracted Publication;V02.800
 Retraction of Publication;V02.825
 Review;V02.912
@@ -59186,12 +58189,11 @@ Consensus Development Conference;V02.912.500
 Consensus Development Conference, NIH;V02.912.500.500
 Statistics;V02.925
 Study Guide;V02.928
-Table;V02.930
+Tables;V02.930
 Technical Report;V02.935
-Terminology;V02.938
 Unedited Footage;V02.940
 Union Lists;V02.945
-Unpublished Work;V02.950
+Unpublished Works;V02.950
 Video-Audio Media;V02.970
 Webcasts;V02.990
 Study Characteristics;V03
@@ -59208,10 +58210,7 @@ Controlled Clinical Trial;V03.175.250.500
 Randomized Controlled Trial;V03.175.250.500.500
 Equivalence Trial;V03.175.250.500.500.125
 Pragmatic Clinical Trial;V03.175.250.500.500.500
-Clinical Trial Protocol;V03.175.313
-Clinical Trial, Veterinary;V03.175.375
 Observational Study;V03.175.500
-Observational Study, Veterinary;V03.175.750
 Comparative Study;V03.250
 Consensus Development Conference;V03.300
 Consensus Development Conference, NIH;V03.300.300
@@ -59219,7 +58218,6 @@ Evaluation Studies;V03.400
 Meta-Analysis;V03.600
 Multicenter Study;V03.650
 Scientific Integrity Review;V03.800
-Systematic Review;V03.850
 Twin Study;V03.900
 Validation Studies;V03.950
 Support of Research;V04
@@ -59466,6 +58464,7 @@ Borneo;Z01.252.145.103
 Brunei;Z01.252.145.130
 Cambodia;Z01.252.145.182
 Indochina;Z01.252.145.232
+Timor-Leste;Z01.252.145.281
 Indonesia;Z01.252.145.380
 Laos;Z01.252.145.435
 Malaysia;Z01.252.145.487
@@ -59474,7 +58473,6 @@ Myanmar;Z01.252.145.570
 Philippines;Z01.252.145.671
 Singapore;Z01.252.145.774
 Thailand;Z01.252.145.841
-Timor-Leste;Z01.252.145.900
 Vietnam;Z01.252.145.945
 Asia, Western;Z01.252.245
 Bangladesh;Z01.252.245.131
